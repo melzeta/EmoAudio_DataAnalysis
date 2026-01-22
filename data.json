@@ -1,0 +1,6345 @@
+{
+  "count": "",
+  "songData": {
+    "amusement": {
+      "amusement_02936": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_02936"
+      },
+      "amusement_02938": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_02938"
+      },
+      "amusement_02943": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_02943"
+      },
+      "amusement_02945": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_02945"
+      },
+      "amusement_02946": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_02946"
+      },
+      "amusement_08239": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08239"
+      },
+      "amusement_08267": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08267"
+      },
+      "amusement_08269": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08269"
+      },
+      "amusement_08270": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08270"
+      },
+      "amusement_08272": {
+        "counter": 4,
+        "path": "songs/amusement/amusement_08272"
+      },
+      "amusement_08275": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08275"
+      },
+      "amusement_08284": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08284"
+      },
+      "amusement_08296": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08296"
+      },
+      "amusement_08297": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08297"
+      },
+      "amusement_08302": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08302"
+      },
+      "amusement_08307": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08307"
+      },
+      "amusement_08310": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08310"
+      },
+      "amusement_08311": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08311"
+      },
+      "amusement_08316": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08316"
+      },
+      "amusement_08335": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08335"
+      },
+      "amusement_08336": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08336"
+      },
+      "amusement_08339": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_08339"
+      },
+      "amusement_17642": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_17642"
+      },
+      "amusement_17644": {
+        "counter": 2,
+        "path": "songs/amusement/amusement_17644"
+      },
+      "amusement_17647": {
+        "counter": 2,
+        "path": "songs/amusement/amusement_17647"
+      },
+      "amusement_17657": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_17657"
+      },
+      "amusement_17660": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_17660"
+      },
+      "amusement_17661": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_17661"
+      },
+      "amusement_18892": {
+        "counter": 1,
+        "path": "songs/amusement/amusement_18892"
+      },
+      "amusement_19692": {
+        "counter": 2,
+        "path": "songs/amusement/amusement_19692"
+      }
+    },
+    "anger": {
+      "anger_01988": {
+        "counter": 1,
+        "path": "songs/anger/anger_01988"
+      },
+      "anger_01989": {
+        "counter": 1,
+        "path": "songs/anger/anger_01989"
+      },
+      "anger_01997": {
+        "counter": 1,
+        "path": "songs/anger/anger_01997"
+      },
+      "anger_02002": {
+        "counter": 1,
+        "path": "songs/anger/anger_02002"
+      },
+      "anger_02004": {
+        "counter": 1,
+        "path": "songs/anger/anger_02004"
+      },
+      "anger_02009": {
+        "counter": 1,
+        "path": "songs/anger/anger_02009"
+      },
+      "anger_02010": {
+        "counter": 1,
+        "path": "songs/anger/anger_02010"
+      },
+      "anger_02012": {
+        "counter": 1,
+        "path": "songs/anger/anger_02012"
+      },
+      "anger_04337": {
+        "counter": 1,
+        "path": "songs/anger/anger_04337"
+      },
+      "anger_04341": {
+        "counter": 1,
+        "path": "songs/anger/anger_04341"
+      },
+      "anger_04345": {
+        "counter": 1,
+        "path": "songs/anger/anger_04345"
+      },
+      "anger_04353": {
+        "counter": 1,
+        "path": "songs/anger/anger_04353"
+      },
+      "anger_04355": {
+        "counter": 1,
+        "path": "songs/anger/anger_04355"
+      },
+      "anger_04393": {
+        "counter": 1,
+        "path": "songs/anger/anger_04393"
+      },
+      "anger_04394": {
+        "counter": 1,
+        "path": "songs/anger/anger_04394"
+      },
+      "anger_04395": {
+        "counter": 1,
+        "path": "songs/anger/anger_04395"
+      },
+      "anger_08253": {
+        "counter": 1,
+        "path": "songs/anger/anger_08253"
+      },
+      "anger_08256": {
+        "counter": 1,
+        "path": "songs/anger/anger_08256"
+      },
+      "anger_08259": {
+        "counter": 1,
+        "path": "songs/anger/anger_08259"
+      },
+      "anger_08261": {
+        "counter": 1,
+        "path": "songs/anger/anger_08261"
+      },
+      "anger_08262": {
+        "counter": 1,
+        "path": "songs/anger/anger_08262"
+      },
+      "anger_08270": {
+        "counter": 1,
+        "path": "songs/anger/anger_08270"
+      },
+      "anger_08272": {
+        "counter": 1,
+        "path": "songs/anger/anger_08272"
+      },
+      "anger_09078": {
+        "counter": 1,
+        "path": "songs/anger/anger_09078"
+      },
+      "anger_10022": {
+        "counter": 1,
+        "path": "songs/anger/anger_10022"
+      },
+      "anger_10023": {
+        "counter": 0,
+        "path": "songs/anger/anger_10023"
+      },
+      "anger_10025": {
+        "counter": 2,
+        "path": "songs/anger/anger_10025"
+      },
+      "anger_10048": {
+        "counter": 1,
+        "path": "songs/anger/anger_10048"
+      },
+      "anger_10049": {
+        "counter": 0,
+        "path": "songs/anger/anger_10049"
+      },
+      "anger_10052": {
+        "counter": 2,
+        "path": "songs/anger/anger_10052"
+      }
+    },
+    "awe": {
+      "awe_09115": {
+        "counter": 1,
+        "path": "songs/awe/awe_09115"
+      },
+      "awe_09117": {
+        "counter": 1,
+        "path": "songs/awe/awe_09117"
+      },
+      "awe_09139": {
+        "counter": 1,
+        "path": "songs/awe/awe_09139"
+      },
+      "awe_09141": {
+        "counter": 1,
+        "path": "songs/awe/awe_09141"
+      },
+      "awe_09142": {
+        "counter": 1,
+        "path": "songs/awe/awe_09142"
+      },
+      "awe_09143": {
+        "counter": 1,
+        "path": "songs/awe/awe_09143"
+      },
+      "awe_09144": {
+        "counter": 1,
+        "path": "songs/awe/awe_09144"
+      },
+      "awe_09145": {
+        "counter": 1,
+        "path": "songs/awe/awe_09145"
+      },
+      "awe_09147": {
+        "counter": 1,
+        "path": "songs/awe/awe_09147"
+      },
+      "awe_09148": {
+        "counter": 1,
+        "path": "songs/awe/awe_09148"
+      },
+      "awe_09150": {
+        "counter": 1,
+        "path": "songs/awe/awe_09150"
+      },
+      "awe_09151": {
+        "counter": 0,
+        "path": "songs/awe/awe_09151"
+      },
+      "awe_09152": {
+        "counter": 1,
+        "path": "songs/awe/awe_09152"
+      },
+      "awe_09153": {
+        "counter": 1,
+        "path": "songs/awe/awe_09153"
+      },
+      "awe_09154": {
+        "counter": 1,
+        "path": "songs/awe/awe_09154"
+      },
+      "awe_09155": {
+        "counter": 1,
+        "path": "songs/awe/awe_09155"
+      },
+      "awe_09156": {
+        "counter": 0,
+        "path": "songs/awe/awe_09156"
+      },
+      "awe_09157": {
+        "counter": 0,
+        "path": "songs/awe/awe_09157"
+      },
+      "awe_09158": {
+        "counter": 1,
+        "path": "songs/awe/awe_09158"
+      },
+      "awe_09161": {
+        "counter": 0,
+        "path": "songs/awe/awe_09161"
+      },
+      "awe_09162": {
+        "counter": 1,
+        "path": "songs/awe/awe_09162"
+      },
+      "awe_09163": {
+        "counter": 1,
+        "path": "songs/awe/awe_09163"
+      },
+      "awe_09164": {
+        "counter": 0,
+        "path": "songs/awe/awe_09164"
+      },
+      "awe_09165": {
+        "counter": 1,
+        "path": "songs/awe/awe_09165"
+      },
+      "awe_09166": {
+        "counter": 1,
+        "path": "songs/awe/awe_09166"
+      },
+      "awe_09167": {
+        "counter": 1,
+        "path": "songs/awe/awe_09167"
+      },
+      "awe_09168": {
+        "counter": 1,
+        "path": "songs/awe/awe_09168"
+      },
+      "awe_09172": {
+        "counter": 1,
+        "path": "songs/awe/awe_09172"
+      },
+      "awe_14548": {
+        "counter": 1,
+        "path": "songs/awe/awe_14548"
+      },
+      "awe_15281": {
+        "counter": 1,
+        "path": "songs/awe/awe_15281"
+      }
+    },
+    "contentment": {
+      "contentment_08263": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_08263"
+      },
+      "contentment_09956": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09956"
+      },
+      "contentment_09968": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09968"
+      },
+      "contentment_09985": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09985"
+      },
+      "contentment_09986": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09986"
+      },
+      "contentment_09991": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09991"
+      },
+      "contentment_09992": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09992"
+      },
+      "contentment_09995": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09995"
+      },
+      "contentment_09996": {
+        "counter": 2,
+        "path": "songs/contentment/contentment_09996"
+      },
+      "contentment_09997": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09997"
+      },
+      "contentment_09998": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09998"
+      },
+      "contentment_09999": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_09999"
+      },
+      "contentment_10001": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10001"
+      },
+      "contentment_10002": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10002"
+      },
+      "contentment_10003": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10003"
+      },
+      "contentment_10004": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10004"
+      },
+      "contentment_10006": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10006"
+      },
+      "contentment_10007": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10007"
+      },
+      "contentment_10009": {
+        "counter": 0,
+        "path": "songs/contentment/contentment_10009"
+      },
+      "contentment_10012": {
+        "counter": 0,
+        "path": "songs/contentment/contentment_10012"
+      },
+      "contentment_10014": {
+        "counter": 0,
+        "path": "songs/contentment/contentment_10014"
+      },
+      "contentment_10017": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10017"
+      },
+      "contentment_10021": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10021"
+      },
+      "contentment_10023": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10023"
+      },
+      "contentment_10027": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10027"
+      },
+      "contentment_10028": {
+        "counter": 0,
+        "path": "songs/contentment/contentment_10028"
+      },
+      "contentment_10029": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10029"
+      },
+      "contentment_10032": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10032"
+      },
+      "contentment_10033": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10033"
+      },
+      "contentment_10110": {
+        "counter": 1,
+        "path": "songs/contentment/contentment_10110"
+      }
+    },
+    "disgust": {
+      "disgust_00509": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_00509"
+      },
+      "disgust_00534": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_00534"
+      },
+      "disgust_02047": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_02047"
+      },
+      "disgust_02051": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_02051"
+      },
+      "disgust_02058": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_02058"
+      },
+      "disgust_02529": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_02529"
+      },
+      "disgust_02553": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_02553"
+      },
+      "disgust_02554": {
+        "counter": 2,
+        "path": "songs/disgust/disgust_02554"
+      },
+      "disgust_03228": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_03228"
+      },
+      "disgust_03239": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_03239"
+      },
+      "disgust_03956": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_03956"
+      },
+      "disgust_04038": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_04038"
+      },
+      "disgust_04041": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_04041"
+      },
+      "disgust_04104": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_04104"
+      },
+      "disgust_06427": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_06427"
+      },
+      "disgust_06466": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_06466"
+      },
+      "disgust_06493": {
+        "counter": 0,
+        "path": "songs/disgust/disgust_06493"
+      },
+      "disgust_06543": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_06543"
+      },
+      "disgust_06979": {
+        "counter": 0,
+        "path": "songs/disgust/disgust_06979"
+      },
+      "disgust_07002": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_07002"
+      },
+      "disgust_07618": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_07618"
+      },
+      "disgust_07687": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_07687"
+      },
+      "disgust_08857": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_08857"
+      },
+      "disgust_08884": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_08884"
+      },
+      "disgust_09313": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_09313"
+      },
+      "disgust_09969": {
+        "counter": 0,
+        "path": "songs/disgust/disgust_09969"
+      },
+      "disgust_10025": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_10025"
+      },
+      "disgust_10795": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_10795"
+      },
+      "disgust_10797": {
+        "counter": 1,
+        "path": "songs/disgust/disgust_10797"
+      },
+      "disgust_10816": {
+        "counter": 0,
+        "path": "songs/disgust/disgust_10816"
+      }
+    },
+    "excitement": {
+      "excitement_07977": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_07977"
+      },
+      "excitement_07980": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_07980"
+      },
+      "excitement_07981": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_07981"
+      },
+      "excitement_07982": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_07982"
+      },
+      "excitement_07983": {
+        "counter": 0,
+        "path": "songs/excitement/excitement_07983"
+      },
+      "excitement_07984": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_07984"
+      },
+      "excitement_07985": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_07985"
+      },
+      "excitement_08003": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08003"
+      },
+      "excitement_08004": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08004"
+      },
+      "excitement_08007": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08007"
+      },
+      "excitement_08008": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08008"
+      },
+      "excitement_08022": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08022"
+      },
+      "excitement_08023": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08023"
+      },
+      "excitement_08024": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08024"
+      },
+      "excitement_08026": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08026"
+      },
+      "excitement_08027": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08027"
+      },
+      "excitement_08031": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08031"
+      },
+      "excitement_08032": {
+        "counter": 0,
+        "path": "songs/excitement/excitement_08032"
+      },
+      "excitement_08033": {
+        "counter": 0,
+        "path": "songs/excitement/excitement_08033"
+      },
+      "excitement_08037": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_08037"
+      },
+      "excitement_09961": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_09961"
+      },
+      "excitement_15991": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_15991"
+      },
+      "excitement_15993": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_15993"
+      },
+      "excitement_15994": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_15994"
+      },
+      "excitement_15995": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_15995"
+      },
+      "excitement_15996": {
+        "counter": 0,
+        "path": "songs/excitement/excitement_15996"
+      },
+      "excitement_15999": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_15999"
+      },
+      "excitement_16001": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_16001"
+      },
+      "excitement_16004": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_16004"
+      },
+      "excitement_16006": {
+        "counter": 1,
+        "path": "songs/excitement/excitement_16006"
+      }
+    },
+    "fear": {
+      "fear_03283": {
+        "counter": 1,
+        "path": "songs/fear/fear_03283"
+      },
+      "fear_03287": {
+        "counter": 1,
+        "path": "songs/fear/fear_03287"
+      },
+      "fear_03297": {
+        "counter": 1,
+        "path": "songs/fear/fear_03297"
+      },
+      "fear_03308": {
+        "counter": 1,
+        "path": "songs/fear/fear_03308"
+      },
+      "fear_03314": {
+        "counter": 1,
+        "path": "songs/fear/fear_03314"
+      },
+      "fear_09001": {
+        "counter": 1,
+        "path": "songs/fear/fear_09001"
+      },
+      "fear_09148": {
+        "counter": 1,
+        "path": "songs/fear/fear_09148"
+      },
+      "fear_09151": {
+        "counter": 1,
+        "path": "songs/fear/fear_09151"
+      },
+      "fear_09153": {
+        "counter": 1,
+        "path": "songs/fear/fear_09153"
+      },
+      "fear_09155": {
+        "counter": 1,
+        "path": "songs/fear/fear_09155"
+      },
+      "fear_09164": {
+        "counter": 1,
+        "path": "songs/fear/fear_09164"
+      },
+      "fear_09170": {
+        "counter": 1,
+        "path": "songs/fear/fear_09170"
+      },
+      "fear_09171": {
+        "counter": 1,
+        "path": "songs/fear/fear_09171"
+      },
+      "fear_09173": {
+        "counter": 1,
+        "path": "songs/fear/fear_09173"
+      },
+      "fear_09177": {
+        "counter": 1,
+        "path": "songs/fear/fear_09177"
+      },
+      "fear_09183": {
+        "counter": 1,
+        "path": "songs/fear/fear_09183"
+      },
+      "fear_09191": {
+        "counter": 1,
+        "path": "songs/fear/fear_09191"
+      },
+      "fear_09195": {
+        "counter": 1,
+        "path": "songs/fear/fear_09195"
+      },
+      "fear_09199": {
+        "counter": 0,
+        "path": "songs/fear/fear_09199"
+      },
+      "fear_09206": {
+        "counter": 1,
+        "path": "songs/fear/fear_09206"
+      },
+      "fear_09208": {
+        "counter": 1,
+        "path": "songs/fear/fear_09208"
+      },
+      "fear_09220": {
+        "counter": 0,
+        "path": "songs/fear/fear_09220"
+      },
+      "fear_09224": {
+        "counter": 1,
+        "path": "songs/fear/fear_09224"
+      },
+      "fear_09229": {
+        "counter": 1,
+        "path": "songs/fear/fear_09229"
+      },
+      "fear_09240": {
+        "counter": 0,
+        "path": "songs/fear/fear_09240"
+      },
+      "fear_09245": {
+        "counter": 1,
+        "path": "songs/fear/fear_09245"
+      },
+      "fear_09247": {
+        "counter": 1,
+        "path": "songs/fear/fear_09247"
+      },
+      "fear_09248": {
+        "counter": 1,
+        "path": "songs/fear/fear_09248"
+      },
+      "fear_09249": {
+        "counter": 1,
+        "path": "songs/fear/fear_09249"
+      },
+      "fear_14992": {
+        "counter": 1,
+        "path": "songs/fear/fear_14992"
+      }
+    },
+    "sadness": {
+      "sadness_03392": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03392"
+      },
+      "sadness_03440": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03440"
+      },
+      "sadness_03442": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03442"
+      },
+      "sadness_03445": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03445"
+      },
+      "sadness_03448": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03448"
+      },
+      "sadness_03451": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03451"
+      },
+      "sadness_03452": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03452"
+      },
+      "sadness_03454": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03454"
+      },
+      "sadness_03455": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03455"
+      },
+      "sadness_03457": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03457"
+      },
+      "sadness_03471": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03471"
+      },
+      "sadness_03474": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03474"
+      },
+      "sadness_03475": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03475"
+      },
+      "sadness_03477": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_03477"
+      },
+      "sadness_06469": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_06469"
+      },
+      "sadness_07944": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07944"
+      },
+      "sadness_07945": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07945"
+      },
+      "sadness_07946": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07946"
+      },
+      "sadness_07947": {
+        "counter": 2,
+        "path": "songs/sadness/sadness_07947"
+      },
+      "sadness_07963": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07963"
+      },
+      "sadness_07964": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07964"
+      },
+      "sadness_07965": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07965"
+      },
+      "sadness_07966": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07966"
+      },
+      "sadness_07967": {
+        "counter": 0,
+        "path": "songs/sadness/sadness_07967"
+      },
+      "sadness_07971": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07971"
+      },
+      "sadness_07972": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07972"
+      },
+      "sadness_07973": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07973"
+      },
+      "sadness_07975": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07975"
+      },
+      "sadness_07976": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07976"
+      },
+      "sadness_07977": {
+        "counter": 1,
+        "path": "songs/sadness/sadness_07977"
+      }
+    }
+  },
+  "userData": {
+    "user_109856": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "rarely",
+        "music_frequency": "daily",
+        "music_genres": [
+          "rock",
+          "jazz"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.59,
+            "anger": 0.22,
+            "arousal": 0.6,
+            "awe": 0.65,
+            "contentment": 0.47,
+            "disgust": 0.24,
+            "excitement": 0.64,
+            "fear": 0.25,
+            "like_song": 0.33,
+            "listen_recreationally": 0.34,
+            "sadness": 0.59,
+            "use_in_videogame": 0.52,
+            "valence": 0.52
+          },
+          "song": "songs/sadness/sadness_03440.mp3",
+          "timeSpentSeconds": 81
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.23,
+            "anger": 0.72,
+            "arousal": 0.74,
+            "awe": 0.96,
+            "contentment": 0.15,
+            "disgust": 0.62,
+            "excitement": 0.57,
+            "fear": 0.73,
+            "like_song": 0.53,
+            "listen_recreationally": 0.19,
+            "sadness": 0.69,
+            "use_in_videogame": 0.85,
+            "valence": 0.27
+          },
+          "song": "songs/amusement/amusement_08297.mp3",
+          "timeSpentSeconds": 65
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.41,
+            "anger": 0.4,
+            "arousal": 0.72,
+            "awe": 0.7,
+            "contentment": 0.23,
+            "disgust": 0.55,
+            "excitement": 0.47,
+            "fear": 0.75,
+            "like_song": 0.37,
+            "listen_recreationally": 0.35,
+            "sadness": 0.5,
+            "use_in_videogame": 0.68,
+            "valence": 0.49
+          },
+          "song": "songs/amusement/amusement_08307.mp3",
+          "timeSpentSeconds": 85
+        }
+      ],
+      "participantName": "Andrea",
+      "prolificId": "0000",
+      "timeSpentSeconds": 231,
+      "timestamp": 1756389661256,
+      "userId": "user_109856"
+    },
+    "user_110993": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Lorenzo Muzio",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756397993693,
+      "userId": "user_110993"
+    },
+    "user_121546": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "weekly",
+        "music_genres": [
+          "pop",
+          "rock",
+          "electronic",
+          "country"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.21,
+            "anger": 0,
+            "arousal": 0.68,
+            "awe": 0.24,
+            "contentment": 0.46,
+            "disgust": 0,
+            "excitement": 0.68,
+            "fear": 0.21,
+            "like_song": 0.77,
+            "listen_recreationally": 0.71,
+            "sadness": 0.22,
+            "use_in_videogame": 1,
+            "valence": 0.68
+          },
+          "song": "songs/sadness/sadness_07944.mp3",
+          "timeSpentSeconds": 204
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.04,
+            "anger": 0.46,
+            "arousal": 0.49,
+            "awe": 0.45,
+            "contentment": 0.06,
+            "disgust": 0.45,
+            "excitement": 0.16,
+            "fear": 0.16,
+            "like_song": 0.47,
+            "listen_recreationally": 0.39,
+            "sadness": 0.62,
+            "use_in_videogame": 0.19,
+            "valence": 0.35
+          },
+          "song": "songs/sadness/sadness_03457.mp3",
+          "timeSpentSeconds": 93
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.42,
+            "anger": 0.17,
+            "arousal": 0.55,
+            "awe": 0,
+            "contentment": 0.45,
+            "disgust": 0,
+            "excitement": 0.67,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 0.84,
+            "sadness": 0.18,
+            "use_in_videogame": 0.96,
+            "valence": 0.69
+          },
+          "song": "songs/anger/anger_01989.mp3",
+          "timeSpentSeconds": 62
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.2,
+            "anger": 0.19,
+            "arousal": 0.11,
+            "awe": 0.6,
+            "contentment": 0.2,
+            "disgust": 0.42,
+            "excitement": 0.22,
+            "fear": 0.45,
+            "like_song": 0.57,
+            "listen_recreationally": 0.53,
+            "sadness": 0.47,
+            "use_in_videogame": 0.7,
+            "valence": 0.54
+          },
+          "song": "songs/anger/anger_09078.mp3",
+          "timeSpentSeconds": 51
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.46,
+            "anger": 0.22,
+            "arousal": 0.52,
+            "awe": 0.45,
+            "contentment": 0.15,
+            "disgust": 0.16,
+            "excitement": 0.43,
+            "fear": 0.15,
+            "like_song": 0.28,
+            "listen_recreationally": 0.48,
+            "sadness": 0.21,
+            "use_in_videogame": 0.7,
+            "valence": 0.53
+          },
+          "song": "songs/contentment/contentment_09986.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.19,
+            "anger": 0.65,
+            "arousal": 0.68,
+            "awe": 0.46,
+            "contentment": 0.46,
+            "disgust": 0.47,
+            "excitement": 0.63,
+            "fear": 0.25,
+            "like_song": 0.35,
+            "listen_recreationally": 0.12,
+            "sadness": 0.22,
+            "use_in_videogame": 0.47,
+            "valence": 0.52
+          },
+          "song": "songs/amusement/amusement_08302.mp3",
+          "timeSpentSeconds": 34
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.45,
+            "arousal": 0.2,
+            "awe": 0.19,
+            "contentment": 0.16,
+            "disgust": 0.65,
+            "excitement": 0.19,
+            "fear": 0.41,
+            "like_song": 0.45,
+            "listen_recreationally": 0.46,
+            "sadness": 0.66,
+            "use_in_videogame": 0.7,
+            "valence": 0.51
+          },
+          "song": "songs/contentment/contentment_10027.mp3",
+          "timeSpentSeconds": 43
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.46,
+            "anger": 0.41,
+            "arousal": 0.69,
+            "awe": 0.18,
+            "contentment": 0.22,
+            "disgust": 0.45,
+            "excitement": 0.68,
+            "fear": 0.4,
+            "like_song": 0.87,
+            "listen_recreationally": 0.56,
+            "sadness": 0.15,
+            "use_in_videogame": 0.95,
+            "valence": 0.64
+          },
+          "song": "songs/amusement/amusement_02938.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0.2,
+            "arousal": 0.53,
+            "awe": 0.48,
+            "contentment": 0.48,
+            "disgust": 0.19,
+            "excitement": 0.19,
+            "fear": 0.05,
+            "like_song": 0.57,
+            "listen_recreationally": 0.52,
+            "sadness": 0.04,
+            "use_in_videogame": 0.69,
+            "valence": 0.73
+          },
+          "song": "songs/awe/awe_09148.mp3",
+          "timeSpentSeconds": 37
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.16,
+            "anger": 0.58,
+            "arousal": 0.31,
+            "awe": 0.19,
+            "contentment": 0.01,
+            "disgust": 0.63,
+            "excitement": 0.42,
+            "fear": 0.19,
+            "like_song": 0.11,
+            "listen_recreationally": 0.07,
+            "sadness": 0.42,
+            "use_in_videogame": 0.49,
+            "valence": 0.37
+          },
+          "song": "songs/fear/fear_09248.mp3",
+          "timeSpentSeconds": 37
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.89,
+            "arousal": 0.32,
+            "awe": 0.61,
+            "contentment": 0.15,
+            "disgust": 0.64,
+            "excitement": 0.45,
+            "fear": 0.69,
+            "like_song": 0,
+            "listen_recreationally": 0.17,
+            "sadness": 0.65,
+            "use_in_videogame": 0.2,
+            "valence": 0.11
+          },
+          "song": "songs/fear/fear_09195.mp3",
+          "timeSpentSeconds": 54
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.18,
+            "anger": 0.42,
+            "arousal": 0.35,
+            "awe": 0.46,
+            "contentment": 0.19,
+            "disgust": 0.63,
+            "excitement": 0.47,
+            "fear": 0.46,
+            "like_song": 0.41,
+            "listen_recreationally": 0.31,
+            "sadness": 0.44,
+            "use_in_videogame": 0.31,
+            "valence": 0.51
+          },
+          "song": "songs/disgust/disgust_04041.mp3",
+          "timeSpentSeconds": 30
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.68,
+            "anger": 0,
+            "arousal": 0.69,
+            "awe": 0.45,
+            "contentment": 0.43,
+            "disgust": 0.2,
+            "excitement": 0.48,
+            "fear": 0.08,
+            "like_song": 0.92,
+            "listen_recreationally": 0.87,
+            "sadness": 0.09,
+            "use_in_videogame": 0.92,
+            "valence": 0.97
+          },
+          "song": "songs/excitement/excitement_07984.mp3",
+          "timeSpentSeconds": 31
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.66,
+            "anger": 0.68,
+            "arousal": 0.66,
+            "awe": 0.62,
+            "contentment": 0.5,
+            "disgust": 0.24,
+            "excitement": 0.68,
+            "fear": 0.21,
+            "like_song": 0.93,
+            "listen_recreationally": 0.87,
+            "sadness": 0.45,
+            "use_in_videogame": 1,
+            "valence": 0.37
+          },
+          "song": "songs/excitement/excitement_15991.mp3",
+          "timeSpentSeconds": 41
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.6,
+            "anger": 0.41,
+            "arousal": 0.54,
+            "awe": 0.51,
+            "contentment": 0.17,
+            "disgust": 0.62,
+            "excitement": 0.45,
+            "fear": 0.21,
+            "like_song": 0.7,
+            "listen_recreationally": 0.72,
+            "sadness": 0.64,
+            "use_in_videogame": 0.77,
+            "valence": 0.1
+          },
+          "song": "songs/disgust/disgust_02529.mp3",
+          "timeSpentSeconds": 28
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0.23,
+            "arousal": 0.66,
+            "awe": 0.48,
+            "contentment": 0.48,
+            "disgust": 0.62,
+            "excitement": 0.51,
+            "fear": 0.25,
+            "like_song": 0.93,
+            "listen_recreationally": 0.56,
+            "sadness": 0.45,
+            "use_in_videogame": 0.9,
+            "valence": 0.71
+          },
+          "song": "songs/awe/awe_09155.mp3",
+          "timeSpentSeconds": 31
+        }
+      ],
+      "participantName": "Marco",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "same_genre"
+      },
+      "timeSpentSeconds": 866,
+      "timestamp": 1756411998455,
+      "userId": "user_121546"
+    },
+    "user_149689": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "electronic"
+        ],
+        "nationality": "bangladeshi",
+        "plays_instrument": "no",
+        "prolific_id": "31413"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.51,
+            "anger": 0.41,
+            "arousal": 0.27,
+            "awe": 0.51,
+            "contentment": 0.38,
+            "disgust": 0.58,
+            "excitement": 0.38,
+            "fear": 0.57,
+            "like_song": 0.55,
+            "listen_recreationally": 0.41,
+            "sadness": 0.49,
+            "use_in_videogame": 0.57,
+            "valence": 0.27
+          },
+          "song": "songs/amusement/amusement_17647.mp3",
+          "timeSpentSeconds": 74
+        }
+      ],
+      "participantName": "test 333",
+      "prolificId": "31413",
+      "timeSpentSeconds": 74,
+      "timestamp": 1766139840017,
+      "userId": "user_149689"
+    },
+    "user_154811": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "rarely",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "participantName": "Mattia Ricciardi",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1766223628312,
+      "userId": "user_154811"
+    },
+    "user_177985": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "pop"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Daniele Olimpieri",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756391530077,
+      "userId": "user_177985"
+    },
+    "user_230868": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.41,
+            "anger": 0,
+            "arousal": 0.28,
+            "awe": 0.31,
+            "contentment": 0.14,
+            "disgust": 0.09,
+            "excitement": 0.11,
+            "fear": 0,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0.86,
+            "valence": 0.32
+          },
+          "song": "songs/awe/awe_09165.mp3",
+          "timeSpentSeconds": 125
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.29,
+            "anger": 0,
+            "arousal": 0.44,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.66,
+            "fear": 0,
+            "like_song": 0.61,
+            "listen_recreationally": 0.54,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.57
+          },
+          "song": "songs/excitement/excitement_16004.mp3",
+          "timeSpentSeconds": 61
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0,
+            "arousal": 0.61,
+            "awe": 0,
+            "contentment": 0.89,
+            "disgust": 0,
+            "excitement": 0.6,
+            "fear": 0,
+            "like_song": 0.64,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0.69,
+            "valence": 0.82
+          },
+          "song": "songs/sadness/sadness_06469.mp3",
+          "timeSpentSeconds": 108
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.4,
+            "anger": 0,
+            "arousal": 0.57,
+            "awe": 0,
+            "contentment": 0.33,
+            "disgust": 0.39,
+            "excitement": 0.36,
+            "fear": 0,
+            "like_song": 0.89,
+            "listen_recreationally": 0.33,
+            "sadness": 0,
+            "use_in_videogame": 0,
+            "valence": 0.57
+          },
+          "song": "songs/awe/awe_14548.mp3",
+          "timeSpentSeconds": 81
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.75,
+            "arousal": 0.68,
+            "awe": 0.22,
+            "contentment": 0.2,
+            "disgust": 0.8,
+            "excitement": 0.43,
+            "fear": 0.71,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0.91,
+            "use_in_videogame": 0,
+            "valence": 0.7
+          },
+          "song": "songs/amusement/amusement_19692.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0,
+            "arousal": 0.66,
+            "awe": 0.68,
+            "contentment": 0.39,
+            "disgust": 0.23,
+            "excitement": 0,
+            "fear": 0.26,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0.41,
+            "use_in_videogame": 0,
+            "valence": 0.99
+          },
+          "song": "songs/disgust/disgust_00509.mp3",
+          "timeSpentSeconds": 52
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.74,
+            "anger": 0.16,
+            "arousal": 1,
+            "awe": 0.61,
+            "contentment": 0.66,
+            "disgust": 0.58,
+            "excitement": 0,
+            "fear": 0.28,
+            "like_song": 0.41,
+            "listen_recreationally": 0.4,
+            "sadness": 0.46,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/contentment/contentment_09968.mp3",
+          "timeSpentSeconds": 56
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.54,
+            "anger": 0,
+            "arousal": 0.87,
+            "awe": 0.38,
+            "contentment": 0.45,
+            "disgust": 0,
+            "excitement": 0.84,
+            "fear": 0,
+            "like_song": 0,
+            "listen_recreationally": 0.43,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/fear/fear_09170.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.84,
+            "anger": 0,
+            "arousal": 0.76,
+            "awe": 0.51,
+            "contentment": 0.54,
+            "disgust": 0.09,
+            "excitement": 1,
+            "fear": 0,
+            "like_song": 0.7,
+            "listen_recreationally": 0.62,
+            "sadness": 0,
+            "use_in_videogame": 0.98,
+            "valence": 0.73
+          },
+          "song": "songs/contentment/contentment_09985.mp3",
+          "timeSpentSeconds": 58
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.52,
+            "arousal": 0.96,
+            "awe": 0.52,
+            "contentment": 0.87,
+            "disgust": 0.79,
+            "excitement": 0,
+            "fear": 0.8,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0,
+            "valence": 0.97
+          },
+          "song": "songs/anger/anger_08256.mp3",
+          "timeSpentSeconds": 41
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.74,
+            "arousal": 0.91,
+            "awe": 0.37,
+            "contentment": 0.31,
+            "disgust": 0.47,
+            "excitement": 0.83,
+            "fear": 0.85,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0.97,
+            "use_in_videogame": 0.87,
+            "valence": 0.91
+          },
+          "song": "songs/fear/fear_09173.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.18,
+            "anger": 0.65,
+            "arousal": 0.72,
+            "awe": 0.29,
+            "contentment": 0.39,
+            "disgust": 0.86,
+            "excitement": 0.83,
+            "fear": 0.76,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0.68,
+            "use_in_videogame": 0,
+            "valence": 0.72
+          },
+          "song": "songs/sadness/sadness_07972.mp3",
+          "timeSpentSeconds": 42
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.76,
+            "anger": 0,
+            "arousal": 0.75,
+            "awe": 0.67,
+            "contentment": 0.94,
+            "disgust": 0,
+            "excitement": 0.69,
+            "fear": 0,
+            "like_song": 0.88,
+            "listen_recreationally": 0.97,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.87
+          },
+          "song": "songs/amusement/amusement_08269.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.8,
+            "arousal": 0.53,
+            "awe": 0.44,
+            "contentment": 0.44,
+            "disgust": 0.54,
+            "excitement": 0,
+            "fear": 0.64,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0.8,
+            "use_in_videogame": 0.44,
+            "valence": 0.47
+          },
+          "song": "songs/excitement/excitement_15995.mp3",
+          "timeSpentSeconds": 81
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 1,
+            "arousal": 0.43,
+            "awe": 0.43,
+            "contentment": 0.37,
+            "disgust": 0.89,
+            "excitement": 0.49,
+            "fear": 1,
+            "like_song": 0.34,
+            "listen_recreationally": 0.33,
+            "sadness": 1,
+            "use_in_videogame": 0,
+            "valence": 0.52
+          },
+          "song": "songs/disgust/disgust_06466.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.81,
+            "anger": 0,
+            "arousal": 1,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.6,
+            "fear": 0.24,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.89
+          },
+          "song": "songs/anger/anger_01988.mp3",
+          "timeSpentSeconds": 52
+        }
+      ],
+      "participantName": "Francesco",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "same_genre"
+      },
+      "timeSpentSeconds": 992,
+      "timestamp": 1756393272252,
+      "userId": "user_230868"
+    },
+    "user_232445": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "000000",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756390620861,
+      "userId": "user_232445"
+    },
+    "user_262493": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "35_44",
+        "gender": "prefer_not_say",
+        "instrument_frequency": "rarely",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "rock"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.67,
+            "anger": 0.21,
+            "arousal": 0.49,
+            "awe": 0.49,
+            "contentment": 0.48,
+            "disgust": 0,
+            "excitement": 0.73,
+            "fear": 0,
+            "like_song": 0.84,
+            "listen_recreationally": 0.7,
+            "sadness": 0,
+            "use_in_videogame": 0.51,
+            "valence": 0.49
+          },
+          "song": "songs/contentment/contentment_10110.mp3",
+          "timeSpentSeconds": 66
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.23,
+            "anger": 0,
+            "arousal": 0.25,
+            "awe": 0,
+            "contentment": 0.23,
+            "disgust": 0,
+            "excitement": 0.11,
+            "fear": 0,
+            "like_song": 0.47,
+            "listen_recreationally": 0.18,
+            "sadness": 0,
+            "use_in_videogame": 0.17,
+            "valence": 0.26
+          },
+          "song": "songs/amusement/amusement_08284.mp3",
+          "timeSpentSeconds": 72
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.49,
+            "anger": 0.48,
+            "arousal": 0.5,
+            "awe": 0.28,
+            "contentment": 0.23,
+            "disgust": 0.18,
+            "excitement": 0.59,
+            "fear": 0,
+            "like_song": 0.52,
+            "listen_recreationally": 0.19,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.5
+          },
+          "song": "songs/amusement/amusement_08336.mp3",
+          "timeSpentSeconds": 27
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.56,
+            "anger": 0.41,
+            "arousal": 0.5,
+            "awe": 0.58,
+            "contentment": 0.42,
+            "disgust": 0,
+            "excitement": 0.56,
+            "fear": 0,
+            "like_song": 0.64,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.56
+          },
+          "song": "songs/awe/awe_09115.mp3",
+          "timeSpentSeconds": 34
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.53,
+            "anger": 0.39,
+            "arousal": 0.25,
+            "awe": 0.39,
+            "contentment": 0.28,
+            "disgust": 0,
+            "excitement": 0.44,
+            "fear": 0.61,
+            "like_song": 0.51,
+            "listen_recreationally": 0.14,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.51
+          },
+          "song": "songs/disgust/disgust_00534.mp3",
+          "timeSpentSeconds": 34
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.38,
+            "anger": 0.37,
+            "arousal": 0.51,
+            "awe": 0.38,
+            "contentment": 0.36,
+            "disgust": 0.37,
+            "excitement": 0.4,
+            "fear": 0,
+            "like_song": 0.43,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.4
+          },
+          "song": "songs/contentment/contentment_08263.mp3",
+          "timeSpentSeconds": 34
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.23,
+            "anger": 0.01,
+            "arousal": 0.43,
+            "awe": 0.01,
+            "contentment": 0.01,
+            "disgust": 0.01,
+            "excitement": 0.24,
+            "fear": 0.01,
+            "like_song": 0.21,
+            "listen_recreationally": 0.2,
+            "sadness": 0.01,
+            "use_in_videogame": 0.83,
+            "valence": 0.51
+          },
+          "song": "songs/sadness/sadness_07964.mp3",
+          "timeSpentSeconds": 33
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.23,
+            "anger": 0.23,
+            "arousal": 0.49,
+            "awe": 0.25,
+            "contentment": 0.24,
+            "disgust": 0.02,
+            "excitement": 0,
+            "fear": 0.72,
+            "like_song": 0.21,
+            "listen_recreationally": 0.07,
+            "sadness": 0.02,
+            "use_in_videogame": 0.95,
+            "valence": 0.28
+          },
+          "song": "songs/fear/fear_14992.mp3",
+          "timeSpentSeconds": 24
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.51,
+            "anger": 0.47,
+            "arousal": 0.49,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.25,
+            "fear": 0,
+            "like_song": 0.52,
+            "listen_recreationally": 0.19,
+            "sadness": 0.01,
+            "use_in_videogame": 0.84,
+            "valence": 0.74
+          },
+          "song": "songs/excitement/excitement_08023.mp3",
+          "timeSpentSeconds": 26
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.49,
+            "anger": 0.25,
+            "arousal": 0.74,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.73,
+            "fear": 0.01,
+            "like_song": 0.66,
+            "listen_recreationally": 0.07,
+            "sadness": 0,
+            "use_in_videogame": 0.97,
+            "valence": 0.5
+          },
+          "song": "songs/awe/awe_09167.mp3",
+          "timeSpentSeconds": 25
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.71,
+            "anger": 0.03,
+            "arousal": 0.5,
+            "awe": 0.22,
+            "contentment": 0.02,
+            "disgust": 0.01,
+            "excitement": 0.57,
+            "fear": 0.01,
+            "like_song": 0.21,
+            "listen_recreationally": 0.03,
+            "sadness": 0.03,
+            "use_in_videogame": 0.97,
+            "valence": 0.73
+          },
+          "song": "songs/anger/anger_04341.mp3",
+          "timeSpentSeconds": 28
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.99,
+            "anger": 0.58,
+            "arousal": 0.74,
+            "awe": 0.72,
+            "contentment": 0.47,
+            "disgust": 0.02,
+            "excitement": 0.97,
+            "fear": 0.01,
+            "like_song": 0.82,
+            "listen_recreationally": 0.81,
+            "sadness": 0.01,
+            "use_in_videogame": 0.68,
+            "valence": 0.5
+          },
+          "song": "songs/anger/anger_04353.mp3",
+          "timeSpentSeconds": 34
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.49,
+            "anger": 0.22,
+            "arousal": 0.74,
+            "awe": 0.74,
+            "contentment": 0.48,
+            "disgust": 0,
+            "excitement": 0.73,
+            "fear": 0.03,
+            "like_song": 0.69,
+            "listen_recreationally": 0.19,
+            "sadness": 0.01,
+            "use_in_videogame": 0.83,
+            "valence": 0.52
+          },
+          "song": "songs/disgust/disgust_10797.mp3",
+          "timeSpentSeconds": 29
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.72,
+            "anger": 0.02,
+            "arousal": 0.51,
+            "awe": 0.7,
+            "contentment": 0.49,
+            "disgust": 0.02,
+            "excitement": 0.57,
+            "fear": 0.01,
+            "like_song": 0.83,
+            "listen_recreationally": 0.94,
+            "sadness": 0.01,
+            "use_in_videogame": 0.19,
+            "valence": 0.51
+          },
+          "song": "songs/sadness/sadness_03454.mp3",
+          "timeSpentSeconds": 26
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.7,
+            "anger": 0.01,
+            "arousal": 0.48,
+            "awe": 0.71,
+            "contentment": 0.73,
+            "disgust": 0.02,
+            "excitement": 0.51,
+            "fear": 0.02,
+            "like_song": 0.67,
+            "listen_recreationally": 0.38,
+            "sadness": 0.01,
+            "use_in_videogame": 0.83,
+            "valence": 0.98
+          },
+          "song": "songs/excitement/excitement_08027.mp3",
+          "timeSpentSeconds": 22
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.72,
+            "anger": 0.01,
+            "arousal": 0.5,
+            "awe": 0.5,
+            "contentment": 0.49,
+            "disgust": 0.01,
+            "excitement": 0.48,
+            "fear": 0.01,
+            "like_song": 0.51,
+            "listen_recreationally": 0.2,
+            "sadness": 0.01,
+            "use_in_videogame": 0.69,
+            "valence": 0.72
+          },
+          "song": "songs/fear/fear_09148.mp3",
+          "timeSpentSeconds": 22
+        }
+      ],
+      "participantName": "Eddy",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "They sound all as typical soundtracks of videogames, some of them for a cut scene and some of them for fighting ",
+        "similarity": "same_genre"
+      },
+      "timeSpentSeconds": 536,
+      "timestamp": 1756390143002,
+      "userId": "user_262493"
+    },
+    "user_265646": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "45_54",
+        "gender": "male",
+        "instrument_frequency": "rarely",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "jazz",
+          "classical",
+          "electronic",
+          "country",
+          "other"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.73,
+            "arousal": 0.28,
+            "awe": 0.69,
+            "contentment": 0,
+            "disgust": 0.12,
+            "excitement": 0,
+            "fear": 1,
+            "like_song": 0.18,
+            "listen_recreationally": 0.15,
+            "sadness": 1,
+            "use_in_videogame": 1,
+            "valence": 0.25
+          },
+          "song": "songs/anger/anger_08261.mp3",
+          "timeSpentSeconds": 89
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0,
+            "arousal": 0.45,
+            "awe": 0.23,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 0.2,
+            "listen_recreationally": 0.26,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.59
+          },
+          "song": "songs/anger/anger_10022.mp3",
+          "timeSpentSeconds": 62
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.08,
+            "arousal": 0.41,
+            "awe": 0.14,
+            "contentment": 0.09,
+            "disgust": 0,
+            "excitement": 0.07,
+            "fear": 0.11,
+            "like_song": 0.16,
+            "listen_recreationally": 0.2,
+            "sadness": 0.32,
+            "use_in_videogame": 1,
+            "valence": 0.35
+          },
+          "song": "songs/awe/awe_09147.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.06,
+            "anger": 0.1,
+            "arousal": 0.34,
+            "awe": 0.15,
+            "contentment": 0.17,
+            "disgust": 0.19,
+            "excitement": 0.17,
+            "fear": 0.24,
+            "like_song": 0.23,
+            "listen_recreationally": 0.19,
+            "sadness": 0.2,
+            "use_in_videogame": 1,
+            "valence": 0.36
+          },
+          "song": "songs/disgust/disgust_07687.mp3",
+          "timeSpentSeconds": 38
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.06,
+            "anger": 1,
+            "arousal": 0.91,
+            "awe": 0.09,
+            "contentment": 0.18,
+            "disgust": 1,
+            "excitement": 0.06,
+            "fear": 0.18,
+            "like_song": 0.26,
+            "listen_recreationally": 0.21,
+            "sadness": 0.16,
+            "use_in_videogame": 1,
+            "valence": 0
+          },
+          "song": "songs/disgust/disgust_07618.mp3",
+          "timeSpentSeconds": 33
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.11,
+            "anger": 0.12,
+            "arousal": 0.17,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0.03,
+            "excitement": 0.08,
+            "fear": 0.18,
+            "like_song": 0.06,
+            "listen_recreationally": 0,
+            "sadness": 0.07,
+            "use_in_videogame": 0.81,
+            "valence": 0.17
+          },
+          "song": "songs/contentment/contentment_10021.mp3",
+          "timeSpentSeconds": 58
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.06,
+            "anger": 0.02,
+            "arousal": 0.35,
+            "awe": 0.02,
+            "contentment": 0.03,
+            "disgust": 0.15,
+            "excitement": 0.04,
+            "fear": 0.08,
+            "like_song": 0.15,
+            "listen_recreationally": 0.24,
+            "sadness": 0.12,
+            "use_in_videogame": 0.11,
+            "valence": 0.36
+          },
+          "song": "songs/amusement/amusement_08275.mp3",
+          "timeSpentSeconds": 32
+        }
+      ],
+      "participantName": "0000",
+      "prolificId": "0000",
+      "timeSpentSeconds": 360,
+      "timestamp": 1756450804104,
+      "userId": "user_265646"
+    },
+    "user_275551": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "classical"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.59,
+            "awe": 0,
+            "contentment": 1,
+            "disgust": 0,
+            "excitement": 0.44,
+            "fear": 0,
+            "like_song": 0.88,
+            "listen_recreationally": 0.66,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.42
+          },
+          "song": "songs/contentment/contentment_09992.mp3",
+          "timeSpentSeconds": 171
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0,
+            "arousal": 0.49,
+            "awe": 0,
+            "contentment": 0.03,
+            "disgust": 0,
+            "excitement": 0.28,
+            "fear": 0.34,
+            "like_song": 0.57,
+            "listen_recreationally": 0.56,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.49
+          },
+          "song": "songs/awe/awe_09158.mp3",
+          "timeSpentSeconds": 94
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.22,
+            "anger": 0,
+            "arousal": 0.68,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.44,
+            "fear": 0.4,
+            "like_song": 0.22,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.45
+          },
+          "song": "songs/excitement/excitement_08022.mp3",
+          "timeSpentSeconds": 51
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.18,
+            "anger": 0,
+            "arousal": 0.4,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.31,
+            "fear": 0.28,
+            "like_song": 0.51,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.43
+          },
+          "song": "songs/contentment/contentment_09995.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0,
+            "arousal": 0.6,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.48,
+            "fear": 0.71,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.49
+          },
+          "song": "songs/fear/fear_09001.mp3",
+          "timeSpentSeconds": 36
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0,
+            "arousal": 0.4,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.39,
+            "fear": 0.59,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.44
+          },
+          "song": "songs/sadness/sadness_03474.mp3",
+          "timeSpentSeconds": 63
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.61,
+            "anger": 0,
+            "arousal": 0.72,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 0.48,
+            "like_song": 0.76,
+            "listen_recreationally": 0.75,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.46
+          },
+          "song": "songs/disgust/disgust_04104.mp3",
+          "timeSpentSeconds": 41
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.68,
+            "awe": 0,
+            "contentment": 0.61,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 0,
+            "like_song": 0.81,
+            "listen_recreationally": 0.56,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.43
+          },
+          "song": "songs/fear/fear_09245.mp3",
+          "timeSpentSeconds": 56
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.77,
+            "awe": 0.59,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 1,
+            "like_song": 0.61,
+            "listen_recreationally": 0.17,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.4
+          },
+          "song": "songs/sadness/sadness_03392.mp3",
+          "timeSpentSeconds": 37
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.66,
+            "anger": 0,
+            "arousal": 0.7,
+            "awe": 0.72,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 0.65,
+            "like_song": 0.48,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.61
+          },
+          "song": "songs/amusement/amusement_17642.mp3",
+          "timeSpentSeconds": 27
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.81,
+            "anger": 0,
+            "arousal": 0.88,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.46,
+            "fear": 0,
+            "like_song": 0.62,
+            "listen_recreationally": 0.47,
+            "sadness": 0,
+            "use_in_videogame": 0.55,
+            "valence": 0.54
+          },
+          "song": "songs/excitement/excitement_15999.mp3",
+          "timeSpentSeconds": 31
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.16,
+            "anger": 0,
+            "arousal": 0.23,
+            "awe": 0,
+            "contentment": 0.19,
+            "disgust": 0,
+            "excitement": 0.07,
+            "fear": 0,
+            "like_song": 0.78,
+            "listen_recreationally": 0.48,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.44
+          },
+          "song": "songs/anger/anger_10048.mp3",
+          "timeSpentSeconds": 59
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.43,
+            "anger": 0,
+            "arousal": 0.53,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0.09,
+            "excitement": 0.7,
+            "fear": 0.65,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0,
+            "valence": 0.48
+          },
+          "song": "songs/disgust/disgust_02554.mp3",
+          "timeSpentSeconds": 31
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.75,
+            "anger": 0,
+            "arousal": 0.8,
+            "awe": 0.73,
+            "contentment": 0.3,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 0.67,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.53
+          },
+          "song": "songs/amusement/amusement_08267.mp3",
+          "timeSpentSeconds": 28
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.72,
+            "awe": 0,
+            "contentment": 0.93,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 0,
+            "like_song": 0.77,
+            "listen_recreationally": 0.78,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.6
+          },
+          "song": "songs/anger/anger_10025.mp3",
+          "timeSpentSeconds": 27
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.66,
+            "anger": 0,
+            "arousal": 0.78,
+            "awe": 0.22,
+            "contentment": 0.56,
+            "disgust": 0,
+            "excitement": 0.75,
+            "fear": 0.09,
+            "like_song": 0.29,
+            "listen_recreationally": 0.12,
+            "sadness": 0,
+            "use_in_videogame": 0.25,
+            "valence": 0.74
+          },
+          "song": "songs/awe/awe_09168.mp3",
+          "timeSpentSeconds": 52
+        }
+      ],
+      "participantName": "Andrea Bertaccini",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "same_genre"
+      },
+      "timeSpentSeconds": 849,
+      "timestamp": 1756392187154,
+      "userId": "user_275551"
+    },
+    "user_312057": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "weekly",
+        "music_frequency": "daily",
+        "music_genres": [
+          "classical",
+          "hiphop",
+          "electronic",
+          "other"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "participantName": "Cristian",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756400460358,
+      "userId": "user_312057"
+    },
+    "user_316556": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "rock",
+          "electronic"
+        ],
+        "nationality": "albanian",
+        "plays_instrument": "no",
+        "prolific_id": "user_316556"
+      },
+      "participantName": "Aldion zotaj",
+      "prolificId": "user_316556",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756460042814,
+      "userId": "user_316556"
+    },
+    "user_317503": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "rarely",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "participantName": "Pasquale1",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1766223948058,
+      "userId": "user_317503"
+    },
+    "user_356731": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Michele Rienzo",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756391541348,
+      "userId": "user_356731"
+    },
+    "user_383081": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Marco",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756410936567,
+      "userId": "user_383081"
+    },
+    "user_387386": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "weekly",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "classical"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "user_387386"
+      },
+      "participantName": "Corrado",
+      "prolificId": "user_387386",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756425340746,
+      "userId": "user_387386"
+    },
+    "user_396139": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "electronic"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Manuel Valeri",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756392503704,
+      "userId": "user_396139"
+    },
+    "user_417724": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "daily",
+        "music_frequency": "weekly",
+        "music_genres": [
+          "jazz",
+          "classical"
+        ],
+        "nationality": "argentine",
+        "plays_instrument": "yes",
+        "prolific_id": "121212"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.46,
+            "anger": 0.42,
+            "arousal": 0.67,
+            "awe": 0.42,
+            "contentment": 0.94,
+            "disgust": 0.63,
+            "excitement": 0.28,
+            "fear": 0.78,
+            "like_song": 0.48,
+            "listen_recreationally": 1,
+            "sadness": 0.57,
+            "use_in_videogame": 0.52,
+            "valence": 0.75
+          },
+          "song": "songs/amusement/amusement_17644.mp3",
+          "timeSpentSeconds": 120
+        }
+      ],
+      "participantName": "DanDaMobileTest",
+      "prolificId": "121212",
+      "timeSpentSeconds": 120,
+      "timestamp": 1766224097696,
+      "userId": "user_417724"
+    },
+    "user_425149": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Corrado",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756425213913,
+      "userId": "user_425149"
+    },
+    "user_440568": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "weekly",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "rock",
+          "jazz",
+          "classical"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.1,
+            "anger": 0.28,
+            "arousal": 0.74,
+            "awe": 0.02,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.48,
+            "fear": 0.38,
+            "like_song": 0.67,
+            "listen_recreationally": 0.83,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.47
+          },
+          "song": "songs/amusement/amusement_02946.mp3",
+          "timeSpentSeconds": 309
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0,
+            "arousal": 0.5,
+            "awe": 0.48,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0.49,
+            "like_song": 0.36,
+            "listen_recreationally": 0.21,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.74
+          },
+          "song": "songs/amusement/amusement_08316.mp3",
+          "timeSpentSeconds": 146
+        }
+      ],
+      "participantName": "Stefano Barra",
+      "prolificId": "0000",
+      "timeSpentSeconds": 455,
+      "timestamp": 1756405246394,
+      "userId": "user_440568"
+    },
+    "user_453271": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "35_44",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "pop",
+          "other"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Diego l.",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756418057037,
+      "userId": "user_453271"
+    },
+    "user_458052": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "rock"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Peter",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756390893684,
+      "userId": "user_458052"
+    },
+    "user_462697": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "female",
+        "instrument_frequency": "",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "pop",
+          "rock"
+        ],
+        "nationality": "american",
+        "plays_instrument": "no",
+        "prolific_id": "555"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.38,
+            "anger": 0.1,
+            "arousal": 0.41,
+            "awe": 0.64,
+            "contentment": 0.1,
+            "disgust": 0.64,
+            "excitement": 0.81,
+            "fear": 0.84,
+            "like_song": 0.29,
+            "listen_recreationally": 0.9,
+            "sadness": 0.13,
+            "use_in_videogame": 0.88,
+            "valence": 0.16
+          },
+          "song": "songs/awe/awe_09162.mp3",
+          "timeSpentSeconds": 88
+        }
+      ],
+      "participantName": "Giambolino Giambettino",
+      "prolificId": "555",
+      "timeSpentSeconds": 88,
+      "timestamp": 1756453445620,
+      "userId": "user_462697"
+    },
+    "user_471338": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "nonbinary",
+        "instrument_frequency": "several_week",
+        "music_frequency": "weekly",
+        "music_genres": [
+          "rock",
+          "classical"
+        ],
+        "nationality": "american",
+        "plays_instrument": "yes",
+        "prolific_id": "56789"
+      },
+      "participantName": "Giambolino Giambettino",
+      "prolificId": "56789",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756453002563,
+      "userId": "user_471338"
+    },
+    "user_476090": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "35_44",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "pop",
+          "other"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.28,
+            "anger": 0.54,
+            "arousal": 0.39,
+            "awe": 0.79,
+            "contentment": 0.11,
+            "disgust": 0.09,
+            "excitement": 0.08,
+            "fear": 0.72,
+            "like_song": 0.79,
+            "listen_recreationally": 0.19,
+            "sadness": 0.26,
+            "use_in_videogame": 1,
+            "valence": 0.41
+          },
+          "song": "songs/disgust/disgust_03239.mp3",
+          "timeSpentSeconds": 186
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.76,
+            "anger": 0.15,
+            "arousal": 0.6,
+            "awe": 0.11,
+            "contentment": 0.75,
+            "disgust": 0.06,
+            "excitement": 0.51,
+            "fear": 0.08,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.09,
+            "use_in_videogame": 1,
+            "valence": 0.63
+          },
+          "song": "songs/amusement/amusement_17657.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.77,
+            "anger": 0.33,
+            "arousal": 0.73,
+            "awe": 0.55,
+            "contentment": 0.52,
+            "disgust": 0.09,
+            "excitement": 0.54,
+            "fear": 0.33,
+            "like_song": 0.7,
+            "listen_recreationally": 0.51,
+            "sadness": 0.16,
+            "use_in_videogame": 1,
+            "valence": 0.63
+          },
+          "song": "songs/fear/fear_09164.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.75,
+            "anger": 0.06,
+            "arousal": 0.43,
+            "awe": 0.27,
+            "contentment": 0.72,
+            "disgust": 0.07,
+            "excitement": 0.5,
+            "fear": 0.06,
+            "like_song": 1,
+            "listen_recreationally": 0.73,
+            "sadness": 0.09,
+            "use_in_videogame": 1,
+            "valence": 0.65
+          },
+          "song": "songs/contentment/contentment_10006.mp3",
+          "timeSpentSeconds": 38
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.65,
+            "anger": 0.24,
+            "arousal": 0.39,
+            "awe": 0.59,
+            "contentment": 0.28,
+            "disgust": 0.45,
+            "excitement": 0.41,
+            "fear": 0.23,
+            "like_song": 0.62,
+            "listen_recreationally": 0.45,
+            "sadness": 0,
+            "use_in_videogame": 0.72,
+            "valence": 0.45
+          },
+          "song": "songs/amusement/amusement_08270.mp3",
+          "timeSpentSeconds": 57
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.02,
+            "anger": 0.15,
+            "arousal": 0.11,
+            "awe": 0.57,
+            "contentment": 0.75,
+            "disgust": 0.35,
+            "excitement": 0.27,
+            "fear": 0.4,
+            "like_song": 0.16,
+            "listen_recreationally": 0,
+            "sadness": 0.44,
+            "use_in_videogame": 0.45,
+            "valence": 0.12
+          },
+          "song": "songs/fear/fear_09155.mp3",
+          "timeSpentSeconds": 66
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.44,
+            "anger": 0.47,
+            "arousal": 0.43,
+            "awe": 0.12,
+            "contentment": 0.22,
+            "disgust": 0.21,
+            "excitement": 0.37,
+            "fear": 0.24,
+            "like_song": 0.31,
+            "listen_recreationally": 0.31,
+            "sadness": 0.45,
+            "use_in_videogame": 0.61,
+            "valence": 0.42
+          },
+          "song": "songs/awe/awe_09153.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.17,
+            "anger": 0.19,
+            "arousal": 0.49,
+            "awe": 0.45,
+            "contentment": 0.24,
+            "disgust": 0.43,
+            "excitement": 0.14,
+            "fear": 0.48,
+            "like_song": 0.38,
+            "listen_recreationally": 0.32,
+            "sadness": 0.59,
+            "use_in_videogame": 0.79,
+            "valence": 0.49
+          },
+          "song": "songs/disgust/disgust_07002.mp3",
+          "timeSpentSeconds": 81
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0.49,
+            "arousal": 0.43,
+            "awe": 0.65,
+            "contentment": 0.47,
+            "disgust": 0.15,
+            "excitement": 0.17,
+            "fear": 0.15,
+            "like_song": 1,
+            "listen_recreationally": 0.7,
+            "sadness": 0,
+            "use_in_videogame": 0.84,
+            "valence": 0.48
+          },
+          "song": "songs/awe/awe_15281.mp3",
+          "timeSpentSeconds": 59
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.68,
+            "anger": 0,
+            "arousal": 0.41,
+            "awe": 0,
+            "contentment": 0.58,
+            "disgust": 0,
+            "excitement": 0.49,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.21,
+            "use_in_videogame": 1,
+            "valence": 0.63
+          },
+          "song": "songs/anger/anger_04394.mp3",
+          "timeSpentSeconds": 339
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.47,
+            "anger": 0,
+            "arousal": 0.68,
+            "awe": 0.24,
+            "contentment": 0.21,
+            "disgust": 0,
+            "excitement": 0.26,
+            "fear": 0,
+            "like_song": 0.64,
+            "listen_recreationally": 0.52,
+            "sadness": 0.25,
+            "use_in_videogame": 1,
+            "valence": 0.6
+          },
+          "song": "songs/excitement/excitement_15994.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.06,
+            "anger": 0.48,
+            "arousal": 0.2,
+            "awe": 0.5,
+            "contentment": 0,
+            "disgust": 0.17,
+            "excitement": 0.41,
+            "fear": 0.33,
+            "like_song": 0.36,
+            "listen_recreationally": 0.7,
+            "sadness": 0.12,
+            "use_in_videogame": 0.81,
+            "valence": 0.08
+          },
+          "song": "songs/sadness/sadness_07966.mp3",
+          "timeSpentSeconds": 63
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.4,
+            "anger": 0.24,
+            "arousal": 0.8,
+            "awe": 0.45,
+            "contentment": 0,
+            "disgust": 0.21,
+            "excitement": 0.48,
+            "fear": 0.19,
+            "like_song": 0.63,
+            "listen_recreationally": 0.83,
+            "sadness": 0.21,
+            "use_in_videogame": 1,
+            "valence": 0.67
+          },
+          "song": "songs/anger/anger_04393.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.31,
+            "arousal": 0.34,
+            "awe": 0.65,
+            "contentment": 0,
+            "disgust": 0.41,
+            "excitement": 0.44,
+            "fear": 0.57,
+            "like_song": 0.48,
+            "listen_recreationally": 0.56,
+            "sadness": 0.15,
+            "use_in_videogame": 0.83,
+            "valence": 0.33
+          },
+          "song": "songs/sadness/sadness_03471.mp3",
+          "timeSpentSeconds": 121
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.38,
+            "anger": 0,
+            "arousal": 0.31,
+            "awe": 0.52,
+            "contentment": 0.38,
+            "disgust": 0,
+            "excitement": 0.41,
+            "fear": 0.5,
+            "like_song": 0.57,
+            "listen_recreationally": 0.57,
+            "sadness": 0.32,
+            "use_in_videogame": 0.83,
+            "valence": 0.64
+          },
+          "song": "songs/contentment/contentment_09999.mp3",
+          "timeSpentSeconds": 44
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.7,
+            "anger": 0.58,
+            "arousal": 0.77,
+            "awe": 0.48,
+            "contentment": 0.25,
+            "disgust": 0,
+            "excitement": 0.72,
+            "fear": 0.84,
+            "like_song": 0.91,
+            "listen_recreationally": 0.74,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.7
+          },
+          "song": "songs/excitement/excitement_07985.mp3",
+          "timeSpentSeconds": 64
+        }
+      ],
+      "participantName": "Diego l.",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "different_genre"
+      },
+      "timeSpentSeconds": 1353,
+      "timestamp": 1756419528822,
+      "userId": "user_476090"
+    },
+    "user_481304": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "electronic"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Michele Rienzo",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756391676142,
+      "userId": "user_481304"
+    },
+    "user_493263": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "female",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "rock",
+          "electronic",
+          "country"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.39,
+            "anger": 0.03,
+            "arousal": 0.57,
+            "awe": 0.13,
+            "contentment": 0.39,
+            "disgust": 0,
+            "excitement": 0.33,
+            "fear": 0,
+            "like_song": 0.72,
+            "listen_recreationally": 0.17,
+            "sadness": 0,
+            "use_in_videogame": 0.68,
+            "valence": 1
+          },
+          "song": "songs/amusement/amusement_02945.mp3",
+          "timeSpentSeconds": 198
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.42,
+            "anger": 0,
+            "arousal": 0.39,
+            "awe": 0.04,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.11,
+            "fear": 0.12,
+            "like_song": 0.43,
+            "listen_recreationally": 0.01,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.39
+          },
+          "song": "songs/amusement/amusement_02936.mp3",
+          "timeSpentSeconds": 67
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.4,
+            "anger": 0.16,
+            "arousal": 0.51,
+            "awe": 0.4,
+            "contentment": 0.36,
+            "disgust": 0,
+            "excitement": 0.36,
+            "fear": 0.07,
+            "like_song": 1,
+            "listen_recreationally": 0.35,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.57
+          },
+          "song": "songs/contentment/contentment_09956.mp3",
+          "timeSpentSeconds": 73
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.16,
+            "anger": 0.14,
+            "arousal": 0.38,
+            "awe": 0.1,
+            "contentment": 0,
+            "disgust": 0.09,
+            "excitement": 0.09,
+            "fear": 0,
+            "like_song": 0.37,
+            "listen_recreationally": 0.02,
+            "sadness": 0,
+            "use_in_videogame": 0.57,
+            "valence": 0.36
+          },
+          "song": "songs/disgust/disgust_08884.mp3",
+          "timeSpentSeconds": 96
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.13,
+            "anger": 0,
+            "arousal": 0.32,
+            "awe": 0.06,
+            "contentment": 0.09,
+            "disgust": 0.3,
+            "excitement": 0.04,
+            "fear": 0,
+            "like_song": 0.1,
+            "listen_recreationally": 0.02,
+            "sadness": 0.13,
+            "use_in_videogame": 0.58,
+            "valence": 0.04
+          },
+          "song": "songs/disgust/disgust_02051.mp3",
+          "timeSpentSeconds": 69
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.15,
+            "anger": 0,
+            "arousal": 0.17,
+            "awe": 0.07,
+            "contentment": 0,
+            "disgust": 0.43,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 0,
+            "listen_recreationally": 0.02,
+            "sadness": 0,
+            "use_in_videogame": 0,
+            "valence": 0.17
+          },
+          "song": "songs/sadness/sadness_07977.mp3",
+          "timeSpentSeconds": 61
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.39,
+            "anger": 0,
+            "arousal": 0.39,
+            "awe": 0.17,
+            "contentment": 0.08,
+            "disgust": 0,
+            "excitement": 0.09,
+            "fear": 0,
+            "like_song": 0.61,
+            "listen_recreationally": 0.37,
+            "sadness": 0,
+            "use_in_videogame": 0.59,
+            "valence": 0.74
+          },
+          "song": "songs/anger/anger_10052.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.32,
+            "anger": 0,
+            "arousal": 0.62,
+            "awe": 0.1,
+            "contentment": 0.32,
+            "disgust": 0,
+            "excitement": 0.06,
+            "fear": 0,
+            "like_song": 0.72,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0.58,
+            "valence": 0.46
+          },
+          "song": "songs/sadness/sadness_07973.mp3",
+          "timeSpentSeconds": 72
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.39,
+            "anger": 0,
+            "arousal": 0.57,
+            "awe": 0.37,
+            "contentment": 0.38,
+            "disgust": 0,
+            "excitement": 0.07,
+            "fear": 0,
+            "like_song": 0.54,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0.87,
+            "valence": 0.35
+          },
+          "song": "songs/awe/awe_09166.mp3",
+          "timeSpentSeconds": 64
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.54,
+            "anger": 0,
+            "arousal": 0.59,
+            "awe": 0.25,
+            "contentment": 0.62,
+            "disgust": 0,
+            "excitement": 0.65,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 0.45,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.59
+          },
+          "song": "songs/awe/awe_09163.mp3",
+          "timeSpentSeconds": 60
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.09,
+            "anger": 0,
+            "arousal": 0.32,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0.35,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 0.4,
+            "listen_recreationally": 0.06,
+            "sadness": 0,
+            "use_in_videogame": 0.4,
+            "valence": 0.29
+          },
+          "song": "songs/fear/fear_03297.mp3",
+          "timeSpentSeconds": 54
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.3,
+            "anger": 0.15,
+            "arousal": 0.64,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.29,
+            "fear": 0.34,
+            "like_song": 0.64,
+            "listen_recreationally": 0.13,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.57
+          },
+          "song": "songs/excitement/excitement_16001.mp3",
+          "timeSpentSeconds": 54
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.49,
+            "anger": 0,
+            "arousal": 0.64,
+            "awe": 0.3,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 0.49,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0.59,
+            "valence": 0.61
+          },
+          "song": "songs/contentment/contentment_09996.mp3",
+          "timeSpentSeconds": 51
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.43,
+            "anger": 0,
+            "arousal": 0.54,
+            "awe": 0,
+            "contentment": 0.33,
+            "disgust": 0,
+            "excitement": 0.36,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 0.46,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/anger/anger_02009.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.06,
+            "anger": 0,
+            "arousal": 0.6,
+            "awe": 0.31,
+            "contentment": 0.07,
+            "disgust": 0,
+            "excitement": 0.36,
+            "fear": 0,
+            "like_song": 0.44,
+            "listen_recreationally": 0.03,
+            "sadness": 0,
+            "use_in_videogame": 0.45,
+            "valence": 0.58
+          },
+          "song": "songs/excitement/excitement_07977.mp3",
+          "timeSpentSeconds": 42
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.16,
+            "anger": 0.16,
+            "arousal": 0.3,
+            "awe": 0.34,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.31,
+            "fear": 0.39,
+            "like_song": 0.39,
+            "listen_recreationally": 0,
+            "sadness": 0.16,
+            "use_in_videogame": 0.67,
+            "valence": 0.36
+          },
+          "song": "songs/fear/fear_09151.mp3",
+          "timeSpentSeconds": 59
+        }
+      ],
+      "participantName": "Marta Ghedin",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "cant_say"
+      },
+      "timeSpentSeconds": 1116,
+      "timestamp": 1756395456210,
+      "userId": "user_493263"
+    },
+    "user_506002": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "monthly",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "jazz",
+          "classical",
+          "country",
+          "other"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.41,
+            "anger": 0,
+            "arousal": 0.41,
+            "awe": 0.12,
+            "contentment": 0,
+            "disgust": 0.47,
+            "excitement": 0,
+            "fear": 0.46,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0.97,
+            "valence": 0.41
+          },
+          "song": "songs/contentment/contentment_10017.mp3",
+          "timeSpentSeconds": 246
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.99,
+            "awe": 0.53,
+            "contentment": 0.34,
+            "disgust": 0,
+            "excitement": 0.24,
+            "fear": 0,
+            "like_song": 0.86,
+            "listen_recreationally": 0.11,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/sadness/sadness_03452.mp3",
+          "timeSpentSeconds": 79
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.31,
+            "anger": 0,
+            "arousal": 0.63,
+            "awe": 0.18,
+            "contentment": 0.15,
+            "disgust": 0,
+            "excitement": 0.69,
+            "fear": 0.13,
+            "like_song": 0.58,
+            "listen_recreationally": 0.2,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/anger/anger_02004.mp3",
+          "timeSpentSeconds": 134
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.48,
+            "awe": 0.47,
+            "contentment": 0.55,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 0.66,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/amusement/amusement_08310.mp3",
+          "timeSpentSeconds": 68
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.13,
+            "anger": 0,
+            "arousal": 0.71,
+            "awe": 0.41,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0.56,
+            "like_song": 0.63,
+            "listen_recreationally": 0.19,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.53
+          },
+          "song": "songs/disgust/disgust_04038.mp3",
+          "timeSpentSeconds": 52
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 1,
+            "arousal": 1,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 1,
+            "excitement": 0,
+            "fear": 1,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0
+          },
+          "song": "songs/amusement/amusement_17660.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.67,
+            "anger": 0.24,
+            "arousal": 0.48,
+            "awe": 0.12,
+            "contentment": 0.63,
+            "disgust": 0,
+            "excitement": 0.12,
+            "fear": 0,
+            "like_song": 0.35,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/fear/fear_09249.mp3",
+          "timeSpentSeconds": 53
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0,
+            "arousal": 0.52,
+            "awe": 0.32,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0.29,
+            "like_song": 0.5,
+            "listen_recreationally": 0.57,
+            "sadness": 1,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/sadness/sadness_07965.mp3",
+          "timeSpentSeconds": 76
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 1,
+            "awe": 0.47,
+            "contentment": 1,
+            "disgust": 0,
+            "excitement": 0.64,
+            "fear": 0,
+            "like_song": 0.57,
+            "listen_recreationally": 0.14,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/contentment/contentment_09997.mp3",
+          "timeSpentSeconds": 36
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.63,
+            "anger": 0,
+            "arousal": 0.4,
+            "awe": 0.16,
+            "contentment": 0.46,
+            "disgust": 0.22,
+            "excitement": 0.36,
+            "fear": 0,
+            "like_song": 0.19,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.69
+          },
+          "song": "songs/excitement/excitement_08008.mp3",
+          "timeSpentSeconds": 64
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 1,
+            "awe": 0.63,
+            "contentment": 0.3,
+            "disgust": 0,
+            "excitement": 0.65,
+            "fear": 0,
+            "like_song": 0.75,
+            "listen_recreationally": 0.67,
+            "sadness": 0,
+            "use_in_videogame": 0.99,
+            "valence": 1
+          },
+          "song": "songs/awe/awe_09142.mp3",
+          "timeSpentSeconds": 43
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.85,
+            "anger": 0,
+            "arousal": 1,
+            "awe": 0.34,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.64,
+            "fear": 1,
+            "like_song": 0.78,
+            "listen_recreationally": 0.78,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/excitement/excitement_16006.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.25,
+            "anger": 1,
+            "arousal": 0.65,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.15,
+            "fear": 1,
+            "like_song": 0.57,
+            "listen_recreationally": 0.52,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.59
+          },
+          "song": "songs/fear/fear_03287.mp3",
+          "timeSpentSeconds": 70
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.65,
+            "anger": 0,
+            "arousal": 0.44,
+            "awe": 0.16,
+            "contentment": 0.35,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 0.58,
+            "listen_recreationally": 0.57,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/anger/anger_04345.mp3",
+          "timeSpentSeconds": 65
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.72,
+            "awe": 1,
+            "contentment": 0.54,
+            "disgust": 0,
+            "excitement": 0.77,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 0.51,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/awe/awe_09141.mp3",
+          "timeSpentSeconds": 39
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 1,
+            "arousal": 1,
+            "awe": 0.18,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 1,
+            "fear": 0.53,
+            "like_song": 0.61,
+            "listen_recreationally": 0.44,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/disgust/disgust_03228.mp3",
+          "timeSpentSeconds": 42
+        }
+      ],
+      "participantName": "Lorenzo Muzio",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "Sembrano prese da un videogioco medievale o mitologico. Sicuramente  molte scaturiscono sensazioni, ma alcune lasciano indifferenti se non messe in un contesto (es: scena di un videogioco)",
+        "similarity": "same_genre"
+      },
+      "timeSpentSeconds": 1159,
+      "timestamp": 1756403313343,
+      "userId": "user_506002"
+    },
+    "user_522555": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "weekly",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "pop"
+        ],
+        "nationality": "azerbaijani",
+        "plays_instrument": "yes",
+        "prolific_id": "56789"
+      },
+      "participantName": "Giambolino Giambettino",
+      "prolificId": "56789",
+      "timeSpentSeconds": 0,
+      "timestamp": 1766138666674,
+      "userId": "user_522555"
+    },
+    "user_584217": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.03,
+            "anger": 0.05,
+            "arousal": 0.42,
+            "awe": 0.05,
+            "contentment": 0.1,
+            "disgust": 0.01,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 0.2,
+            "listen_recreationally": 0.2,
+            "sadness": 0,
+            "use_in_videogame": 0.19,
+            "valence": 0.39
+          },
+          "song": "songs/anger/anger_08270.mp3",
+          "timeSpentSeconds": 69
+        }
+      ],
+      "participantName": "Alessio Mattiuzzo",
+      "prolificId": "0000",
+      "timeSpentSeconds": 69,
+      "timestamp": 1756391111714,
+      "userId": "user_584217"
+    },
+    "user_608592": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "rock",
+          "hiphop",
+          "electronic"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.15,
+            "anger": 0.04,
+            "arousal": 0.19,
+            "awe": 0.4,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.02,
+            "fear": 0.02,
+            "like_song": 0.54,
+            "listen_recreationally": 0.31,
+            "sadness": 0.37,
+            "use_in_videogame": 1,
+            "valence": 0.52
+          },
+          "song": "songs/contentment/contentment_10001.mp3",
+          "timeSpentSeconds": 81
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.3,
+            "anger": 0.2,
+            "arousal": 0.39,
+            "awe": 0.06,
+            "contentment": 0.03,
+            "disgust": 0.14,
+            "excitement": 0.43,
+            "fear": 0.23,
+            "like_song": 0.27,
+            "listen_recreationally": 0.15,
+            "sadness": 0,
+            "use_in_videogame": 0.83,
+            "valence": 0.52
+          },
+          "song": "songs/anger/anger_01997.mp3",
+          "timeSpentSeconds": 43
+        }
+      ],
+      "participantName": "N",
+      "prolificId": "0000",
+      "timeSpentSeconds": 124,
+      "timestamp": 1756393597227,
+      "userId": "user_608592"
+    },
+    "user_609277": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "rock",
+          "hiphop",
+          "electronic",
+          "country"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0.25,
+            "arousal": 0.73,
+            "awe": 0.25,
+            "contentment": 0.49,
+            "disgust": 0.05,
+            "excitement": 0.49,
+            "fear": 0.01,
+            "like_song": 0.6,
+            "listen_recreationally": 0.38,
+            "sadness": 0.02,
+            "use_in_videogame": 0.5,
+            "valence": 0.51
+          },
+          "song": "songs/amusement/amusement_18892.mp3",
+          "timeSpentSeconds": 53
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.72,
+            "anger": 0.48,
+            "arousal": 0.86,
+            "awe": 0.24,
+            "contentment": 0.5,
+            "disgust": 0.25,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "like_song": 0.62,
+            "listen_recreationally": 0.49,
+            "sadness": 0.01,
+            "use_in_videogame": 0.49,
+            "valence": 0.5
+          },
+          "song": "songs/fear/fear_09208.mp3",
+          "timeSpentSeconds": 84
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.23,
+            "anger": 0.02,
+            "arousal": 0.74,
+            "awe": 0.25,
+            "contentment": 0.49,
+            "disgust": 0.01,
+            "excitement": 0.51,
+            "fear": 0.02,
+            "like_song": 0.49,
+            "listen_recreationally": 0.49,
+            "sadness": 0,
+            "use_in_videogame": 0.58,
+            "valence": 0.74
+          },
+          "song": "songs/awe/awe_09150.mp3",
+          "timeSpentSeconds": 151
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.5,
+            "anger": 0.49,
+            "arousal": 0.74,
+            "awe": 0.51,
+            "contentment": 0.25,
+            "disgust": 0.26,
+            "excitement": 0.51,
+            "fear": 0.5,
+            "like_song": 0.49,
+            "listen_recreationally": 0.49,
+            "sadness": 0.24,
+            "use_in_videogame": 0.49,
+            "valence": 0.3
+          },
+          "song": "songs/fear/fear_03308.mp3",
+          "timeSpentSeconds": 82
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.73,
+            "anger": 0.26,
+            "arousal": 0.51,
+            "awe": 0.26,
+            "contentment": 0.48,
+            "disgust": 0.01,
+            "excitement": 0.26,
+            "fear": 0.02,
+            "like_song": 0.5,
+            "listen_recreationally": 0.48,
+            "sadness": 0.01,
+            "use_in_videogame": 0.37,
+            "valence": 0.72
+          },
+          "song": "songs/sadness/sadness_07946.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.5,
+            "anger": 0.49,
+            "arousal": 0.73,
+            "awe": 0.73,
+            "contentment": 0.26,
+            "disgust": 0.25,
+            "excitement": 0.52,
+            "fear": 0.25,
+            "like_song": 0.5,
+            "listen_recreationally": 0.48,
+            "sadness": 0.03,
+            "use_in_videogame": 0.61,
+            "valence": 0.51
+          },
+          "song": "songs/contentment/contentment_10023.mp3",
+          "timeSpentSeconds": 72
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.51,
+            "anger": 0.25,
+            "arousal": 0.74,
+            "awe": 0.46,
+            "contentment": 0.49,
+            "disgust": 0.03,
+            "excitement": 0.73,
+            "fear": 0.01,
+            "like_song": 0.58,
+            "listen_recreationally": 0.48,
+            "sadness": 0.01,
+            "use_in_videogame": 0.48,
+            "valence": 0.71
+          },
+          "song": "songs/anger/anger_04337.mp3",
+          "timeSpentSeconds": 57
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.47,
+            "anger": 0.25,
+            "arousal": 0.49,
+            "awe": 0.24,
+            "contentment": 0.46,
+            "disgust": 0.02,
+            "excitement": 0.48,
+            "fear": 0,
+            "like_song": 0.48,
+            "listen_recreationally": 0.49,
+            "sadness": 0.01,
+            "use_in_videogame": 0.6,
+            "valence": 0.51
+          },
+          "song": "songs/excitement/excitement_08037.mp3",
+          "timeSpentSeconds": 81
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.51,
+            "anger": 0.27,
+            "arousal": 0.49,
+            "awe": 0.49,
+            "contentment": 0.25,
+            "disgust": 0.24,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "like_song": 0.48,
+            "listen_recreationally": 0.49,
+            "sadness": 0,
+            "use_in_videogame": 0.48,
+            "valence": 0.28
+          },
+          "song": "songs/disgust/disgust_10795.mp3",
+          "timeSpentSeconds": 52
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.97,
+            "anger": 0.52,
+            "arousal": 0.96,
+            "awe": 0.74,
+            "contentment": 0.49,
+            "disgust": 0.04,
+            "excitement": 0.75,
+            "fear": 0.25,
+            "like_song": 0.61,
+            "listen_recreationally": 0.38,
+            "sadness": 0,
+            "use_in_videogame": 0.61,
+            "valence": 0.73
+          },
+          "song": "songs/excitement/excitement_08026.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.71,
+            "anger": 0.26,
+            "arousal": 0.74,
+            "awe": 0.74,
+            "contentment": 0.5,
+            "disgust": 0.03,
+            "excitement": 0.5,
+            "fear": 0.24,
+            "like_song": 0.61,
+            "listen_recreationally": 0.4,
+            "sadness": 0.02,
+            "use_in_videogame": 0.59,
+            "valence": 0.5
+          },
+          "song": "songs/amusement/amusement_19692.mp3",
+          "timeSpentSeconds": 51
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.74,
+            "anger": 0.49,
+            "arousal": 0.99,
+            "awe": 0.51,
+            "contentment": 0.73,
+            "disgust": 0.25,
+            "excitement": 0.74,
+            "fear": 0.24,
+            "like_song": 0.62,
+            "listen_recreationally": 0.61,
+            "sadness": 0.01,
+            "use_in_videogame": 0.26,
+            "valence": 0.74
+          },
+          "song": "songs/anger/anger_02002.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0.02,
+            "arousal": 0.26,
+            "awe": 0.49,
+            "contentment": 0.46,
+            "disgust": 0.01,
+            "excitement": 0.5,
+            "fear": 0.02,
+            "like_song": 0.56,
+            "listen_recreationally": 0.48,
+            "sadness": 0.24,
+            "use_in_videogame": 0.61,
+            "valence": 0.72
+          },
+          "song": "songs/awe/awe_09172.mp3",
+          "timeSpentSeconds": 46
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.26,
+            "anger": 0.47,
+            "arousal": 0.28,
+            "awe": 0.25,
+            "contentment": 0.25,
+            "disgust": 0.01,
+            "excitement": 0.22,
+            "fear": 0.24,
+            "like_song": 0.21,
+            "listen_recreationally": 0.19,
+            "sadness": 0,
+            "use_in_videogame": 0.48,
+            "valence": 0.51
+          },
+          "song": "songs/contentment/contentment_10033.mp3",
+          "timeSpentSeconds": 63
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.24,
+            "anger": 0.49,
+            "arousal": 0.51,
+            "awe": 0.5,
+            "contentment": 0.02,
+            "disgust": 0.51,
+            "excitement": 0.24,
+            "fear": 0.25,
+            "like_song": 0.51,
+            "listen_recreationally": 0.5,
+            "sadness": 0.02,
+            "use_in_videogame": 0.49,
+            "valence": 0.28
+          },
+          "song": "songs/disgust/disgust_06427.mp3",
+          "timeSpentSeconds": 109
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.73,
+            "anger": 0.49,
+            "arousal": 0.99,
+            "awe": 0.96,
+            "contentment": 0.48,
+            "disgust": 0.24,
+            "excitement": 0.74,
+            "fear": 0.25,
+            "like_song": 0.57,
+            "listen_recreationally": 0.38,
+            "sadness": 0.49,
+            "use_in_videogame": 0.61,
+            "valence": 0.5
+          },
+          "song": "songs/sadness/sadness_07963.mp3",
+          "timeSpentSeconds": 45
+        }
+      ],
+      "participantName": "francesco",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "same_song_sections"
+      },
+      "timeSpentSeconds": 1087,
+      "timestamp": 1756468361931,
+      "userId": "user_609277"
+    },
+    "user_643420": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Vittorio Linfante",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1766222331839,
+      "userId": "user_643420"
+    },
+    "user_659795": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "35_44",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "electronic"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Alessandro Lugoboni",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756393297883,
+      "userId": "user_659795"
+    },
+    "user_662015": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Bruno Mateus",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756460982731,
+      "userId": "user_662015"
+    },
+    "user_664044": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "rock"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.37,
+            "anger": 0.44,
+            "arousal": 0.4,
+            "awe": 1,
+            "contentment": 0.68,
+            "disgust": 0.56,
+            "excitement": 0.21,
+            "fear": 1,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.85,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/amusement/amusement_17644.mp3",
+          "timeSpentSeconds": 93
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0.29,
+            "arousal": 0.69,
+            "awe": 0.34,
+            "contentment": 0.83,
+            "disgust": 0.04,
+            "excitement": 0.79,
+            "fear": 0.19,
+            "like_song": 0.64,
+            "listen_recreationally": 0.34,
+            "sadness": 0.33,
+            "use_in_videogame": 1,
+            "valence": 0.37
+          },
+          "song": "songs/amusement/amusement_08335.mp3",
+          "timeSpentSeconds": 57
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.78,
+            "anger": 0.36,
+            "arousal": 0.66,
+            "awe": 0.29,
+            "contentment": 0.74,
+            "disgust": 0.13,
+            "excitement": 0.83,
+            "fear": 0.04,
+            "like_song": 0.63,
+            "listen_recreationally": 0.35,
+            "sadness": 0.06,
+            "use_in_videogame": 0.19,
+            "valence": 0.55
+          },
+          "song": "songs/sadness/sadness_03455.mp3",
+          "timeSpentSeconds": 62
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.82,
+            "anger": 0.51,
+            "arousal": 0.6,
+            "awe": 0.41,
+            "contentment": 0.5,
+            "disgust": 0.31,
+            "excitement": 0.57,
+            "fear": 0.24,
+            "like_song": 0,
+            "listen_recreationally": 0.19,
+            "sadness": 0.27,
+            "use_in_videogame": 0.39,
+            "valence": 0.67
+          },
+          "song": "songs/fear/fear_03283.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 0.82,
+            "awe": 0,
+            "contentment": 0.61,
+            "disgust": 0,
+            "excitement": 0.67,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.78
+          },
+          "song": "songs/anger/anger_08272.mp3",
+          "timeSpentSeconds": 38
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.09,
+            "anger": 1,
+            "arousal": 0.4,
+            "awe": 0.82,
+            "contentment": 0.18,
+            "disgust": 0.55,
+            "excitement": 0.03,
+            "fear": 0.66,
+            "like_song": 0.17,
+            "listen_recreationally": 0,
+            "sadness": 0.38,
+            "use_in_videogame": 0.33,
+            "valence": 0.39
+          },
+          "song": "songs/sadness/sadness_03445.mp3",
+          "timeSpentSeconds": 43
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.84,
+            "anger": 0.65,
+            "arousal": 0.62,
+            "awe": 0.4,
+            "contentment": 0.46,
+            "disgust": 0.08,
+            "excitement": 0.16,
+            "fear": 0.53,
+            "like_song": 0.04,
+            "listen_recreationally": 0.4,
+            "sadness": 0.69,
+            "use_in_videogame": 0.33,
+            "valence": 0.61
+          },
+          "song": "songs/disgust/disgust_10025.mp3",
+          "timeSpentSeconds": 32
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.47,
+            "anger": 0.61,
+            "arousal": 0.45,
+            "awe": 0.44,
+            "contentment": 0.44,
+            "disgust": 0.47,
+            "excitement": 0.48,
+            "fear": 0.36,
+            "like_song": 0.1,
+            "listen_recreationally": 0.18,
+            "sadness": 0.61,
+            "use_in_videogame": 0.1,
+            "valence": 0.82
+          },
+          "song": "songs/contentment/contentment_09998.mp3",
+          "timeSpentSeconds": 31
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.02,
+            "anger": 0.34,
+            "arousal": 0.39,
+            "awe": 0.97,
+            "contentment": 0.43,
+            "disgust": 0.62,
+            "excitement": 0.18,
+            "fear": 0.85,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 1,
+            "use_in_videogame": 0.29,
+            "valence": 0.12
+          },
+          "song": "songs/anger/anger_10025.mp3",
+          "timeSpentSeconds": 43
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.45,
+            "anger": 1,
+            "arousal": 0.73,
+            "awe": 1,
+            "contentment": 0.18,
+            "disgust": 0.41,
+            "excitement": 0.68,
+            "fear": 0.36,
+            "like_song": 0.59,
+            "listen_recreationally": 0,
+            "sadness": 0.34,
+            "use_in_videogame": 1,
+            "valence": 0.44
+          },
+          "song": "songs/disgust/disgust_02554.mp3",
+          "timeSpentSeconds": 114
+        }
+      ],
+      "participantName": "Peter",
+      "prolificId": "0000",
+      "timeSpentSeconds": 561,
+      "timestamp": 1756391538192,
+      "userId": "user_664044"
+    },
+    "user_676057": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "francesco",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756466364368,
+      "userId": "user_676057"
+    },
+    "user_742865": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "several_week",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "rock"
+        ],
+        "nationality": "andorran",
+        "plays_instrument": "yes",
+        "prolific_id": "56789"
+      },
+      "participantName": "Giambolino Giambettino",
+      "prolificId": "56789",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756452762874,
+      "userId": "user_742865"
+    },
+    "user_781798": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "female",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "electronic",
+          "other"
+        ],
+        "nationality": "austrian",
+        "plays_instrument": "no",
+        "prolific_id": "000000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.49,
+            "anger": 0.31,
+            "arousal": 0.37,
+            "awe": 0.73,
+            "contentment": 0.47,
+            "disgust": 0.74,
+            "excitement": 0.48,
+            "fear": 0.24,
+            "like_song": 0.35,
+            "listen_recreationally": 0.53,
+            "sadness": 0.24,
+            "use_in_videogame": 0.37,
+            "valence": 0.8
+          },
+          "song": "songs/anger/anger_04395.mp3",
+          "timeSpentSeconds": 80
+        }
+      ],
+      "participantName": "test_to_show_how_it_works",
+      "prolificId": "000000",
+      "timeSpentSeconds": 80,
+      "timestamp": 1763489073282,
+      "userId": "user_781798"
+    },
+    "user_782570": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "daily",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.5,
+            "anger": 0.48,
+            "arousal": 0.65,
+            "awe": 0.33,
+            "contentment": 0.46,
+            "disgust": 0,
+            "excitement": 0.68,
+            "fear": 0,
+            "like_song": 0.83,
+            "listen_recreationally": 0.78,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.69
+          },
+          "song": "songs/anger/anger_08259.mp3",
+          "timeSpentSeconds": 170
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0,
+            "arousal": 0.48,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0.4,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 0.15,
+            "listen_recreationally": 0.15,
+            "sadness": 0,
+            "use_in_videogame": 0.12,
+            "valence": 0.49
+          },
+          "song": "songs/sadness/sadness_07971.mp3",
+          "timeSpentSeconds": 74
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.42,
+            "anger": 0,
+            "arousal": 0.71,
+            "awe": 0.19,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.21,
+            "fear": 0,
+            "like_song": 0.69,
+            "listen_recreationally": 0.34,
+            "sadness": 0,
+            "use_in_videogame": 0.72,
+            "valence": 0.7
+          },
+          "song": "songs/awe/awe_09145.mp3",
+          "timeSpentSeconds": 74
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.59,
+            "anger": 0,
+            "arousal": 0.61,
+            "awe": 0.29,
+            "contentment": 0.13,
+            "disgust": 0,
+            "excitement": 0.42,
+            "fear": 0.01,
+            "like_song": 0.67,
+            "listen_recreationally": 0.6,
+            "sadness": 0,
+            "use_in_videogame": 0.79,
+            "valence": 0.73
+          },
+          "song": "songs/contentment/contentment_10004.mp3",
+          "timeSpentSeconds": 249
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.58,
+            "anger": 0,
+            "arousal": 0.63,
+            "awe": 0.61,
+            "contentment": 0.63,
+            "disgust": 0,
+            "excitement": 0.57,
+            "fear": 0,
+            "like_song": 0.76,
+            "listen_recreationally": 0.76,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.74
+          },
+          "song": "songs/contentment/contentment_10007.mp3",
+          "timeSpentSeconds": 78
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.59,
+            "anger": 0,
+            "arousal": 0.64,
+            "awe": 0.46,
+            "contentment": 0.47,
+            "disgust": 0.01,
+            "excitement": 0.13,
+            "fear": 0,
+            "like_song": 0.71,
+            "listen_recreationally": 0.5,
+            "sadness": 0,
+            "use_in_videogame": 0.76,
+            "valence": 0.59
+          },
+          "song": "songs/sadness/sadness_07945.mp3",
+          "timeSpentSeconds": 72
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.54,
+            "anger": 0,
+            "arousal": 0.57,
+            "awe": 0.38,
+            "contentment": 0.09,
+            "disgust": 0,
+            "excitement": 0.72,
+            "fear": 0.48,
+            "like_song": 0.77,
+            "listen_recreationally": 0.51,
+            "sadness": 0.01,
+            "use_in_videogame": 1,
+            "valence": 0.67
+          },
+          "song": "songs/fear/fear_09177.mp3",
+          "timeSpentSeconds": 52
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.2,
+            "anger": 0,
+            "arousal": 0.51,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.18,
+            "fear": 0.48,
+            "like_song": 0.78,
+            "listen_recreationally": 0.29,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.72
+          },
+          "song": "songs/disgust/disgust_09313.mp3",
+          "timeSpentSeconds": 66
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.63,
+            "anger": 0,
+            "arousal": 0.63,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0.01,
+            "excitement": 0.65,
+            "fear": 0.11,
+            "like_song": 0.67,
+            "listen_recreationally": 0.66,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.76
+          },
+          "song": "songs/fear/fear_09206.mp3",
+          "timeSpentSeconds": 54
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.74,
+            "anger": 0,
+            "arousal": 0.75,
+            "awe": 0.41,
+            "contentment": 0.39,
+            "disgust": 0,
+            "excitement": 0.38,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 1
+          },
+          "song": "songs/anger/anger_02012.mp3",
+          "timeSpentSeconds": 38
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.21,
+            "anger": 0,
+            "arousal": 0.57,
+            "awe": 0,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.55,
+            "fear": 0.52,
+            "like_song": 1,
+            "listen_recreationally": 0.52,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.51
+          },
+          "song": "songs/amusement/amusement_17661.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.45,
+            "anger": 0,
+            "arousal": 0.6,
+            "awe": 0.23,
+            "contentment": 0.2,
+            "disgust": 0,
+            "excitement": 0.48,
+            "fear": 0.1,
+            "like_song": 1,
+            "listen_recreationally": 0.65,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.8
+          },
+          "song": "songs/excitement/excitement_08024.mp3",
+          "timeSpentSeconds": 49
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.18,
+            "anger": 0,
+            "arousal": 0.56,
+            "awe": 0.18,
+            "contentment": 0,
+            "disgust": 0.61,
+            "excitement": 0.14,
+            "fear": 0.64,
+            "like_song": 1,
+            "listen_recreationally": 0.7,
+            "sadness": 0.01,
+            "use_in_videogame": 1,
+            "valence": 0.49
+          },
+          "song": "songs/awe/awe_09152.mp3",
+          "timeSpentSeconds": 87
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.6,
+            "anger": 0,
+            "arousal": 0.61,
+            "awe": 0.38,
+            "contentment": 0.07,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 0.22,
+            "sadness": 0.26,
+            "use_in_videogame": 1,
+            "valence": 0.78
+          },
+          "song": "songs/disgust/disgust_03956.mp3",
+          "timeSpentSeconds": 47
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.15,
+            "anger": 0,
+            "arousal": 0.51,
+            "awe": 0,
+            "contentment": 0.04,
+            "disgust": 0,
+            "excitement": 0.11,
+            "fear": 0,
+            "like_song": 0.21,
+            "listen_recreationally": 0,
+            "sadness": 0,
+            "use_in_videogame": 0.07,
+            "valence": 0.66
+          },
+          "song": "songs/excitement/excitement_09961.mp3",
+          "timeSpentSeconds": 56
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.16,
+            "anger": 0,
+            "arousal": 0.42,
+            "awe": 0.18,
+            "contentment": 0.09,
+            "disgust": 0,
+            "excitement": 0.19,
+            "fear": 0,
+            "like_song": 0.45,
+            "listen_recreationally": 0.08,
+            "sadness": 0,
+            "use_in_videogame": 0.39,
+            "valence": 0.46
+          },
+          "song": "songs/amusement/amusement_08296.mp3",
+          "timeSpentSeconds": 65
+        }
+      ],
+      "participantName": "Davide Venerando",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "same_genre"
+      },
+      "timeSpentSeconds": 1276,
+      "timestamp": 1756452621943,
+      "userId": "user_782570"
+    },
+    "user_820406": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "35_44",
+        "gender": "male",
+        "instrument_frequency": "monthly",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "pop",
+          "rock",
+          "country"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "yes",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.46,
+            "anger": 0,
+            "arousal": 0.05,
+            "awe": 0,
+            "contentment": 0.35,
+            "disgust": 0,
+            "excitement": 0.24,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 0.7,
+            "valence": 0.55
+          },
+          "song": "songs/excitement/excitement_07980.mp3",
+          "timeSpentSeconds": 202
+        }
+      ],
+      "participantName": "Gianfranco",
+      "prolificId": "0000",
+      "timeSpentSeconds": 202,
+      "timestamp": 1756397380027,
+      "userId": "user_820406"
+    },
+    "user_821289": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "rock",
+          "electronic",
+          "country"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Francesco",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756466311799,
+      "userId": "user_821289"
+    },
+    "user_840944": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Manuel Valeri",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756391901083,
+      "userId": "user_840944"
+    },
+    "user_864685": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "18_24",
+        "gender": "male",
+        "instrument_frequency": "monthly",
+        "music_frequency": "several_week",
+        "music_genres": [
+          "rock"
+        ],
+        "nationality": "barbadian",
+        "plays_instrument": "yes",
+        "prolific_id": "56789"
+      },
+      "participantName": "Giambolino Giambettino",
+      "prolificId": "56789",
+      "timeSpentSeconds": 0,
+      "timestamp": 1766144273061,
+      "userId": "user_864685"
+    },
+    "user_876459": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "hiphop",
+          "electronic",
+          "country"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.45,
+            "anger": 0.33,
+            "arousal": 0.48,
+            "awe": 0.5,
+            "contentment": 0.5,
+            "disgust": 0.3,
+            "excitement": 0.71,
+            "fear": 0.67,
+            "like_song": 0.54,
+            "listen_recreationally": 1,
+            "sadness": 0.66,
+            "use_in_videogame": 1,
+            "valence": 0.23
+          },
+          "song": "songs/fear/fear_09183.mp3",
+          "timeSpentSeconds": 80
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.44,
+            "anger": 0,
+            "arousal": 0.36,
+            "awe": 0.5,
+            "contentment": 0.44,
+            "disgust": 0.07,
+            "excitement": 0.49,
+            "fear": 0.49,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.13,
+            "use_in_videogame": 0.69,
+            "valence": 0.54
+          },
+          "song": "songs/awe/awe_09144.mp3",
+          "timeSpentSeconds": 44
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.5,
+            "anger": 0.16,
+            "arousal": 0.67,
+            "awe": 0.12,
+            "contentment": 0.5,
+            "disgust": 0.09,
+            "excitement": 0.5,
+            "fear": 0.51,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.29,
+            "use_in_videogame": 0.66,
+            "valence": 0.54
+          },
+          "song": "songs/contentment/contentment_09991.mp3",
+          "timeSpentSeconds": 38
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.5,
+            "anger": 0.55,
+            "arousal": 0.43,
+            "awe": 0.5,
+            "contentment": 0.54,
+            "disgust": 0.06,
+            "excitement": 0.25,
+            "fear": 0.23,
+            "like_song": 0.64,
+            "listen_recreationally": 0.6,
+            "sadness": 0.24,
+            "use_in_videogame": 0.62,
+            "valence": 0.65
+          },
+          "song": "songs/amusement/amusement_02943.mp3",
+          "timeSpentSeconds": 45
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.38,
+            "anger": 0.46,
+            "arousal": 0.6,
+            "awe": 0.5,
+            "contentment": 0.37,
+            "disgust": 0.2,
+            "excitement": 0.35,
+            "fear": 0.2,
+            "like_song": 0.08,
+            "listen_recreationally": 0.29,
+            "sadness": 0.18,
+            "use_in_videogame": 0.63,
+            "valence": 0.66
+          },
+          "song": "songs/disgust/disgust_02047.mp3",
+          "timeSpentSeconds": 50
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.46,
+            "anger": 0.18,
+            "arousal": 0.44,
+            "awe": 0.34,
+            "contentment": 0.33,
+            "disgust": 0.13,
+            "excitement": 0.35,
+            "fear": 0.21,
+            "like_song": 0.69,
+            "listen_recreationally": 0.69,
+            "sadness": 0.11,
+            "use_in_videogame": 0.76,
+            "valence": 0.54
+          },
+          "song": "songs/amusement/amusement_08339.mp3",
+          "timeSpentSeconds": 30
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.87,
+            "anger": 0.83,
+            "arousal": 0.53,
+            "awe": 0.66,
+            "contentment": 0.83,
+            "disgust": 0.17,
+            "excitement": 0.5,
+            "fear": 0.71,
+            "like_song": 0.9,
+            "listen_recreationally": 1,
+            "sadness": 0.6,
+            "use_in_videogame": 1,
+            "valence": 0.61
+          },
+          "song": "songs/anger/anger_10052.mp3",
+          "timeSpentSeconds": 35
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.94,
+            "anger": 0.06,
+            "arousal": 0.87,
+            "awe": 0.9,
+            "contentment": 0.9,
+            "disgust": 0.09,
+            "excitement": 0.97,
+            "fear": 0.82,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.94,
+            "use_in_videogame": 1,
+            "valence": 0.87
+          },
+          "song": "songs/awe/awe_09154.mp3",
+          "timeSpentSeconds": 35
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0.4,
+            "arousal": 0.31,
+            "awe": 0.35,
+            "contentment": 0.31,
+            "disgust": 0.23,
+            "excitement": 0.16,
+            "fear": 0.24,
+            "like_song": 0.66,
+            "listen_recreationally": 1,
+            "sadness": 0.43,
+            "use_in_videogame": 1,
+            "valence": 0.36
+          },
+          "song": "songs/fear/fear_09153.mp3",
+          "timeSpentSeconds": 29
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.47,
+            "anger": 0.47,
+            "arousal": 0.54,
+            "awe": 0.4,
+            "contentment": 0.85,
+            "disgust": 0.06,
+            "excitement": 0.46,
+            "fear": 0.54,
+            "like_song": 0.75,
+            "listen_recreationally": 0.71,
+            "sadness": 0.43,
+            "use_in_videogame": 1,
+            "valence": 0.54
+          },
+          "song": "songs/sadness/sadness_03442.mp3",
+          "timeSpentSeconds": 31
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.33,
+            "anger": 0.38,
+            "arousal": 0.54,
+            "awe": 0.41,
+            "contentment": 0.44,
+            "disgust": 0.05,
+            "excitement": 0.41,
+            "fear": 0.48,
+            "like_song": 0.71,
+            "listen_recreationally": 0.75,
+            "sadness": 0.41,
+            "use_in_videogame": 1,
+            "valence": 0.54
+          },
+          "song": "songs/disgust/disgust_06543.mp3",
+          "timeSpentSeconds": 32
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.45,
+            "anger": 0.17,
+            "arousal": 0.63,
+            "awe": 0,
+            "contentment": 0.41,
+            "disgust": 0,
+            "excitement": 0,
+            "fear": 0.43,
+            "like_song": 0.66,
+            "listen_recreationally": 0.69,
+            "sadness": 0.11,
+            "use_in_videogame": 1,
+            "valence": 0.56
+          },
+          "song": "songs/excitement/excitement_08007.mp3",
+          "timeSpentSeconds": 35
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.02,
+            "anger": 0.17,
+            "arousal": 0.4,
+            "awe": 0.22,
+            "contentment": 0.41,
+            "disgust": 0.01,
+            "excitement": 0.04,
+            "fear": 0.08,
+            "like_song": 0.66,
+            "listen_recreationally": 0.52,
+            "sadness": 0.26,
+            "use_in_videogame": 0.17,
+            "valence": 0.46
+          },
+          "song": "songs/sadness/sadness_03451.mp3",
+          "timeSpentSeconds": 31
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.49,
+            "anger": 0.43,
+            "arousal": 0.39,
+            "awe": 0.32,
+            "contentment": 0.37,
+            "disgust": 0.46,
+            "excitement": 0.51,
+            "fear": 0.44,
+            "like_song": 0.6,
+            "listen_recreationally": 0.58,
+            "sadness": 0.45,
+            "use_in_videogame": 0.62,
+            "valence": 0.49
+          },
+          "song": "songs/contentment/contentment_09996.mp3",
+          "timeSpentSeconds": 22
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.48,
+            "anger": 0.2,
+            "arousal": 0.36,
+            "awe": 0.44,
+            "contentment": 0.38,
+            "disgust": 0,
+            "excitement": 0.38,
+            "fear": 0.24,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.24,
+            "use_in_videogame": 1,
+            "valence": 0.42
+          },
+          "song": "songs/anger/anger_08262.mp3",
+          "timeSpentSeconds": 33
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.58,
+            "anger": 0.32,
+            "arousal": 0.47,
+            "awe": 0.38,
+            "contentment": 0.35,
+            "disgust": 0,
+            "excitement": 0.46,
+            "fear": 0.56,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0.65,
+            "use_in_videogame": 1,
+            "valence": 0.6
+          },
+          "song": "songs/excitement/excitement_08031.mp3",
+          "timeSpentSeconds": 32
+        }
+      ],
+      "participantName": "Lorenzo",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "same_genre"
+      },
+      "timeSpentSeconds": 602,
+      "timestamp": 1756395111111,
+      "userId": "user_876459"
+    },
+    "user_884395": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "electronic"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "000000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.58,
+            "anger": 0.16,
+            "arousal": 0.62,
+            "awe": 0.35,
+            "contentment": 0.37,
+            "disgust": 0.06,
+            "excitement": 0.6,
+            "fear": 0.02,
+            "like_song": 1,
+            "listen_recreationally": 0.72,
+            "sadness": 0.15,
+            "use_in_videogame": 1,
+            "valence": 0.59
+          },
+          "song": "songs/contentment/contentment_10003.mp3",
+          "timeSpentSeconds": 118
+        }
+      ],
+      "participantName": "Andrea Bellini",
+      "prolificId": "000000",
+      "timeSpentSeconds": 118,
+      "timestamp": 1756390800363,
+      "userId": "user_884395"
+    },
+    "user_896343": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "rock",
+          "other"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Filippo Muzzini",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756389434013,
+      "userId": "user_896343"
+    },
+    "user_898462": {
+      "completed": false,
+      "consentGiven": true,
+      "participantName": "Mat",
+      "prolificId": "",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756466781252,
+      "userId": "user_898462"
+    },
+    "user_953094": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "electronic"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "000000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.43,
+            "anger": 0.33,
+            "arousal": 0.15,
+            "awe": 0.44,
+            "contentment": 0.41,
+            "disgust": 0.65,
+            "excitement": 0.4,
+            "fear": 0.24,
+            "like_song": 0,
+            "listen_recreationally": 0.05,
+            "sadness": 0.16,
+            "use_in_videogame": 0.54,
+            "valence": 0.45
+          },
+          "song": "songs/amusement/amusement_08239.mp3",
+          "timeSpentSeconds": 77
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.21,
+            "anger": 0.4,
+            "arousal": 0.22,
+            "awe": 0.32,
+            "contentment": 0.41,
+            "disgust": 0.68,
+            "excitement": 0.38,
+            "fear": 0.18,
+            "like_song": 0,
+            "listen_recreationally": 0,
+            "sadness": 0.23,
+            "use_in_videogame": 0.6,
+            "valence": 0.16
+          },
+          "song": "songs/disgust/disgust_02553.mp3",
+          "timeSpentSeconds": 46
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.37,
+            "anger": 0,
+            "arousal": 0.49,
+            "awe": 0,
+            "contentment": 0.3,
+            "disgust": 0,
+            "excitement": 0.42,
+            "fear": 0,
+            "like_song": 0.81,
+            "listen_recreationally": 0.96,
+            "sadness": 0,
+            "use_in_videogame": 0.26,
+            "valence": 0.4
+          },
+          "song": "songs/amusement/amusement_17647.mp3",
+          "timeSpentSeconds": 50
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.41,
+            "anger": 0,
+            "arousal": 0.51,
+            "awe": 0.1,
+            "contentment": 0.39,
+            "disgust": 0.17,
+            "excitement": 0.39,
+            "fear": 0,
+            "like_song": 0.6,
+            "listen_recreationally": 0.66,
+            "sadness": 0,
+            "use_in_videogame": 0.93,
+            "valence": 0.4
+          },
+          "song": "songs/awe/awe_09139.mp3",
+          "timeSpentSeconds": 40
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.25,
+            "anger": 0.01,
+            "arousal": 0.48,
+            "awe": 0.04,
+            "contentment": 0.59,
+            "disgust": 0,
+            "excitement": 0.2,
+            "fear": 0,
+            "like_song": 0.94,
+            "listen_recreationally": 0.94,
+            "sadness": 0,
+            "use_in_videogame": 0,
+            "valence": 0.52
+          },
+          "song": "songs/contentment/contentment_10032.mp3",
+          "timeSpentSeconds": 39
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.62,
+            "anger": 0.02,
+            "arousal": 0.69,
+            "awe": 0.62,
+            "contentment": 0.02,
+            "disgust": 0.02,
+            "excitement": 0.6,
+            "fear": 0.02,
+            "like_song": 0.7,
+            "listen_recreationally": 0.61,
+            "sadness": 0.05,
+            "use_in_videogame": 0.93,
+            "valence": 0.77
+          },
+          "song": "songs/excitement/excitement_07981.mp3",
+          "timeSpentSeconds": 28
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.35,
+            "anger": 0,
+            "arousal": 0.17,
+            "awe": 0,
+            "contentment": 0.4,
+            "disgust": 0.08,
+            "excitement": 0.02,
+            "fear": 0,
+            "like_song": 0.79,
+            "listen_recreationally": 0.78,
+            "sadness": 0,
+            "use_in_videogame": 0.56,
+            "valence": 0.43
+          },
+          "song": "songs/anger/anger_08253.mp3",
+          "timeSpentSeconds": 32
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.59,
+            "anger": 0,
+            "arousal": 0.55,
+            "awe": 0,
+            "contentment": 0.44,
+            "disgust": 0,
+            "excitement": 0.03,
+            "fear": 0,
+            "like_song": 0.88,
+            "listen_recreationally": 0.95,
+            "sadness": 0,
+            "use_in_videogame": 0.7,
+            "valence": 0.67
+          },
+          "song": "songs/fear/fear_09171.mp3",
+          "timeSpentSeconds": 36
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.51,
+            "anger": 0,
+            "arousal": 0.69,
+            "awe": 0,
+            "contentment": 0.28,
+            "disgust": 0,
+            "excitement": 0.35,
+            "fear": 0,
+            "like_song": 0.99,
+            "listen_recreationally": 0.99,
+            "sadness": 0,
+            "use_in_videogame": 0.94,
+            "valence": 0.56
+          },
+          "song": "songs/anger/anger_02010.mp3",
+          "timeSpentSeconds": 32
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.13,
+            "anger": 0.15,
+            "arousal": 0.54,
+            "awe": 0.46,
+            "contentment": 0.02,
+            "disgust": 0,
+            "excitement": 0.73,
+            "fear": 0.53,
+            "like_song": 0.58,
+            "listen_recreationally": 0.6,
+            "sadness": 0,
+            "use_in_videogame": 0.3,
+            "valence": 0.14
+          },
+          "song": "songs/disgust/disgust_02058.mp3",
+          "timeSpentSeconds": 41
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0,
+            "arousal": 1,
+            "awe": 0,
+            "contentment": 0.73,
+            "disgust": 0,
+            "excitement": 0.85,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 1,
+            "valence": 0.72
+          },
+          "song": "songs/contentment/contentment_10029.mp3",
+          "timeSpentSeconds": 32
+        },
+        {
+          "emotionValues": {
+            "amusement": 0,
+            "anger": 0.34,
+            "arousal": 0.02,
+            "awe": 0.53,
+            "contentment": 0,
+            "disgust": 0,
+            "excitement": 0.79,
+            "fear": 0.67,
+            "like_song": 0.99,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 0.52,
+            "valence": 0.09
+          },
+          "song": "songs/excitement/excitement_07982.mp3",
+          "timeSpentSeconds": 35
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.27,
+            "anger": 0,
+            "arousal": 0.44,
+            "awe": 0,
+            "contentment": 0.06,
+            "disgust": 0.07,
+            "excitement": 0.45,
+            "fear": 0,
+            "like_song": 0.75,
+            "listen_recreationally": 0.72,
+            "sadness": 0,
+            "use_in_videogame": 0.52,
+            "valence": 0.49
+          },
+          "song": "songs/sadness/sadness_03448.mp3",
+          "timeSpentSeconds": 39
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.26,
+            "anger": 0.38,
+            "arousal": 0.68,
+            "awe": 0.55,
+            "contentment": 0.04,
+            "disgust": 0,
+            "excitement": 0.64,
+            "fear": 0.26,
+            "like_song": 0.73,
+            "listen_recreationally": 0.71,
+            "sadness": 0,
+            "use_in_videogame": 0.7,
+            "valence": 0
+          },
+          "song": "songs/awe/awe_09117.mp3",
+          "timeSpentSeconds": 31
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.23,
+            "anger": 0,
+            "arousal": 0.43,
+            "awe": 0,
+            "contentment": 0.32,
+            "disgust": 0,
+            "excitement": 0.55,
+            "fear": 0.05,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 0.29,
+            "valence": 0.45
+          },
+          "song": "songs/sadness/sadness_07975.mp3",
+          "timeSpentSeconds": 27
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.55,
+            "anger": 0.27,
+            "arousal": 0.48,
+            "awe": 0.05,
+            "contentment": 0.59,
+            "disgust": 0,
+            "excitement": 0.6,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 1,
+            "sadness": 0,
+            "use_in_videogame": 0.69,
+            "valence": 0.54
+          },
+          "song": "songs/fear/fear_03314.mp3",
+          "timeSpentSeconds": 29
+        }
+      ],
+      "participantName": "Andrea Bellini",
+      "prolificId": "000000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "different_genre"
+      },
+      "timeSpentSeconds": 614,
+      "timestamp": 1756397307471,
+      "userId": "user_953094"
+    },
+    "user_961536": {
+      "completed": true,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "45_54",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "electronic"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "emotionResponses": [
+        {
+          "emotionValues": {
+            "amusement": 0.89,
+            "anger": 0.74,
+            "arousal": 0.66,
+            "awe": 0.78,
+            "contentment": 0.69,
+            "disgust": 0.65,
+            "excitement": 0.49,
+            "fear": 0.56,
+            "like_song": 1,
+            "listen_recreationally": 0.79,
+            "sadness": 0.59,
+            "use_in_videogame": 0.62,
+            "valence": 1
+          },
+          "song": "songs/contentment/contentment_10002.mp3",
+          "timeSpentSeconds": 82
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.55,
+            "anger": 0.67,
+            "arousal": 0.45,
+            "awe": 0.7,
+            "contentment": 0.64,
+            "disgust": 0,
+            "excitement": 0.75,
+            "fear": 0.03,
+            "like_song": 0.6,
+            "listen_recreationally": 0.39,
+            "sadness": 0,
+            "use_in_videogame": 0.68,
+            "valence": 1
+          },
+          "song": "songs/disgust/disgust_08857.mp3",
+          "timeSpentSeconds": 73
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.86,
+            "anger": 0.08,
+            "arousal": 0.88,
+            "awe": 0.41,
+            "contentment": 0.47,
+            "disgust": 0,
+            "excitement": 0.94,
+            "fear": 0,
+            "like_song": 1,
+            "listen_recreationally": 0.94,
+            "sadness": 0,
+            "use_in_videogame": 0.81,
+            "valence": 0.95
+          },
+          "song": "songs/anger/anger_04355.mp3",
+          "timeSpentSeconds": 59
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.74,
+            "anger": 0.15,
+            "arousal": 0.96,
+            "awe": 0.71,
+            "contentment": 0.36,
+            "disgust": 0,
+            "excitement": 0.42,
+            "fear": 0.46,
+            "like_song": 0.42,
+            "listen_recreationally": 0.88,
+            "sadness": 0.04,
+            "use_in_videogame": 0.75,
+            "valence": 0.95
+          },
+          "song": "songs/amusement/amusement_08311.mp3",
+          "timeSpentSeconds": 33
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.2,
+            "anger": 0.91,
+            "arousal": 0.37,
+            "awe": 0.64,
+            "contentment": 0.74,
+            "disgust": 0.06,
+            "excitement": 0.77,
+            "fear": 0.7,
+            "like_song": 0.7,
+            "listen_recreationally": 0.79,
+            "sadness": 0.07,
+            "use_in_videogame": 0.82,
+            "valence": 0.44
+          },
+          "song": "songs/sadness/sadness_07947.mp3",
+          "timeSpentSeconds": 38
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.2,
+            "anger": 0.91,
+            "arousal": 0.37,
+            "awe": 0.64,
+            "contentment": 0.74,
+            "disgust": 0.06,
+            "excitement": 0.77,
+            "fear": 0.7,
+            "like_song": 0.7,
+            "listen_recreationally": 0.79,
+            "sadness": 0.07,
+            "use_in_videogame": 0.82,
+            "valence": 0.44
+          },
+          "song": "songs/sadness/sadness_07947.mp3",
+          "timeSpentSeconds": 43
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.51,
+            "anger": 0.01,
+            "arousal": 0.36,
+            "awe": 0.36,
+            "contentment": 0.3,
+            "disgust": 0,
+            "excitement": 0.16,
+            "fear": 0.09,
+            "like_song": 0.04,
+            "listen_recreationally": 0.05,
+            "sadness": 0.12,
+            "use_in_videogame": 0,
+            "valence": 0.3
+          },
+          "song": "songs/fear/fear_09191.mp3",
+          "timeSpentSeconds": 42
+        },
+        {
+          "emotionValues": {
+            "amusement": 1,
+            "anger": 0.57,
+            "arousal": 1,
+            "awe": 0.76,
+            "contentment": 0.9,
+            "disgust": 0,
+            "excitement": 0.32,
+            "fear": 0.3,
+            "like_song": 0.84,
+            "listen_recreationally": 0.59,
+            "sadness": 0.01,
+            "use_in_videogame": 0.94,
+            "valence": 0.67
+          },
+          "song": "songs/awe/awe_09143.mp3",
+          "timeSpentSeconds": 33
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.32,
+            "anger": 0.86,
+            "arousal": 1,
+            "awe": 0.65,
+            "contentment": 0.1,
+            "disgust": 0.09,
+            "excitement": 0.13,
+            "fear": 0.53,
+            "like_song": 0.54,
+            "listen_recreationally": 0.3,
+            "sadness": 0.78,
+            "use_in_videogame": 0.94,
+            "valence": 0.54
+          },
+          "song": "songs/fear/fear_09247.mp3",
+          "timeSpentSeconds": 32
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.18,
+            "anger": 0.19,
+            "arousal": 0.18,
+            "awe": 0.15,
+            "contentment": 0.93,
+            "disgust": 0,
+            "excitement": 0.32,
+            "fear": 0,
+            "like_song": 0.66,
+            "listen_recreationally": 0.46,
+            "sadness": 0.01,
+            "use_in_videogame": 1,
+            "valence": 0.36
+          },
+          "song": "songs/excitement/excitement_08004.mp3",
+          "timeSpentSeconds": 36
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.94,
+            "anger": 0.02,
+            "arousal": 1,
+            "awe": 0.53,
+            "contentment": 0.42,
+            "disgust": 0.05,
+            "excitement": 0.31,
+            "fear": 0.03,
+            "like_song": 0.56,
+            "listen_recreationally": 0.43,
+            "sadness": 0.11,
+            "use_in_videogame": 0.18,
+            "valence": 0.82
+          },
+          "song": "songs/sadness/sadness_03477.mp3",
+          "timeSpentSeconds": 33
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.37,
+            "anger": 0.08,
+            "arousal": 0.95,
+            "awe": 0.75,
+            "contentment": 0.55,
+            "disgust": 0.02,
+            "excitement": 0.04,
+            "fear": 0.26,
+            "like_song": 0.21,
+            "listen_recreationally": 0.12,
+            "sadness": 0.47,
+            "use_in_videogame": 0.96,
+            "valence": 0.99
+          },
+          "song": "songs/excitement/excitement_08003.mp3",
+          "timeSpentSeconds": 36
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.71,
+            "anger": 0,
+            "arousal": 0.92,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "like_song": 0.29,
+            "listen_recreationally": 0.28,
+            "sadness": 0.87,
+            "use_in_videogame": 0.98,
+            "valence": 0.88
+          },
+          "song": "songs/amusement/amusement_08272.mp3",
+          "timeSpentSeconds": 32
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.71,
+            "anger": 0,
+            "arousal": 0.92,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "like_song": 0.29,
+            "listen_recreationally": 0.28,
+            "sadness": 0.87,
+            "use_in_videogame": 0.98,
+            "valence": 0.88
+          },
+          "song": "songs/amusement/amusement_08272.mp3",
+          "timeSpentSeconds": 38
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.71,
+            "anger": 0,
+            "arousal": 0.92,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "like_song": 0.29,
+            "listen_recreationally": 0.28,
+            "sadness": 0.87,
+            "use_in_videogame": 0.98,
+            "valence": 0.88
+          },
+          "song": "songs/amusement/amusement_08272.mp3",
+          "timeSpentSeconds": 48
+        },
+        {
+          "emotionValues": {
+            "amusement": 0.71,
+            "anger": 0,
+            "arousal": 0.92,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "like_song": 0.29,
+            "listen_recreationally": 0.28,
+            "sadness": 0.87,
+            "use_in_videogame": 0.98,
+            "valence": 0.88
+          },
+          "song": "songs/amusement/amusement_08272.mp3",
+          "timeSpentSeconds": 58
+        }
+      ],
+      "participantName": "Alfredo",
+      "prolificId": "0000",
+      "questionaire": {
+        "additional_comments": "",
+        "similarity": "different_genre"
+      },
+      "timeSpentSeconds": 716,
+      "timestamp": 1756401847150,
+      "userId": "user_961536"
+    },
+    "user_981400": {
+      "completed": false,
+      "consentGiven": true,
+      "demographics": {
+        "age_range": "25_34",
+        "gender": "male",
+        "instrument_frequency": "",
+        "music_frequency": "daily",
+        "music_genres": [
+          "pop",
+          "hiphop",
+          "electronic",
+          "other"
+        ],
+        "nationality": "italian",
+        "plays_instrument": "no",
+        "prolific_id": "0000"
+      },
+      "participantName": "Luca pasini",
+      "prolificId": "0000",
+      "timeSpentSeconds": 0,
+      "timestamp": 1756390664576,
+      "userId": "user_981400"
+    }
+  }
+}
