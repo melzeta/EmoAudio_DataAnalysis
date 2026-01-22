@@ -60,8 +60,7 @@ df_users, df_responses = load_and_process_data()
 st.sidebar.title("🎵 Analisi Emozioni")
 menu = st.sidebar.radio("Sezioni:", [
     "📊 Panoramica Dataset", 
-    "🕷️ Spider Charts (Il tuo codice)", 
-    "🏆 Top Canzoni (Purity Score)"
+    "🕷️ Spider Charts"
 ])
 # --- SEZIONE 1: PANORAMICA DATASET ---
 if menu == "📊 Panoramica Dataset":
@@ -137,7 +136,7 @@ if menu == "📊 Panoramica Dataset":
 
 
 # --- SEZIONE 2: SPIDER CHARTS ---
-elif menu == "🕷️ Spider Charts (Il tuo codice)":
+elif menu == "🕷️ Spider Charts":
     st.header("Analisi del Trasferimento Emotivo")
     st.write("Per individuare 5 canzoni per categoria, ho presupposto che una canzone possa rappresentare più di un'emozione")
     st.write("Per individuare le canzoni che rappresentano al meglio un'emozione ho preso l'average")
@@ -177,37 +176,6 @@ elif menu == "🕷️ Spider Charts (Il tuo codice)":
 
     st.divider()
 
-    # # --- TABELLA RIASSUNTIVA TOP 5 (EXECUTIVE SUMMARY) ---
-    # st.subheader("Top 5 Performers per Categoria")
-
-    # # Calcoliamo le medie
-    # summary_stats = df_responses.groupby('song_path').agg({
-    #     e: 'mean' for e in emotions_list
-    # }).reset_index()
-
-    # summary_rows = []
-
-    # for emotion in emotions_list:
-    #     # Prendi le top 5 per questa emozione
-    #     top_5_songs = summary_stats.nlargest(5, emotion)
-        
-    #     # Creiamo una stringa formattata con i nomi e i punteggi
-    #     # Esempio: "1. song_a (0.85), 2. song_b (0.82)..."
-    #     ranked_list = [
-    #         f"{i+1}. {row['song_path'].split('/')[-1]} ({row[emotion]:.2f})"
-    #         for i, (_, row) in enumerate(top_5_songs.iterrows())
-    #     ]
-        
-    #     summary_rows.append({
-    #         "Emozione": emotion.upper(),
-    #         "Top 5 Songs (Ranked by Avg Score)": "  |  ".join(ranked_list)
-    #     })
-
-    # # Visualizziamo la tabella a tutta larghezza
-    # st.table(pd.DataFrame(summary_rows))
-    # st.divider()
-    
-    # Per ogni emozione, creiamo la sezione
     for emotion in emotions_list:
         st.markdown(f"## {emotion.upper()}")
         # Usiamo il colore dedicato per la linea di separazione
@@ -267,12 +235,3 @@ elif menu == "🕷️ Spider Charts (Il tuo codice)":
                 st.markdown(f"<p style='text-align: center; font-size: 11px; color: gray;'>Users: {int(song_row['num_users'])}<br>Score: {song_row[emotion]:.2f}</p>", unsafe_allow_html=True)
         
         st.markdown("---")
-
-# --- SEZIONE 3: TOP CANZONI (PURITY) ---
-elif menu == "🏆 Top Canzoni (Purity Score)":
-    st.header("Classifica Efficacia Canzoni")
-    st.write("Le canzoni che hanno generato la risposta emotiva più 'pura' (meno confusa).")
-    
-    # Logica per calcolare la Purity (Esempio: Valore Max / Somma degli altri)
-    # Possiamo implementarla insieme una volta che hai finito gli spider charts!
-    st.warning("Sezione in costruzione: la implementeremo dopo gli Spider Charts.")
