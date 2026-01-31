@@ -167,8 +167,8 @@ if menu == "📊 Panoramica Dataset":
 
 # --- SEZIONE 2: SPIDER CHARTS ---
 elif menu == "🕷️ Spider Charts":
-    st.header("Highest AVG per Song")
-    st.write("Top 5 songs per emotion category based on average user ratings")
+    st.header("Punteggio Medio Più Alto per Canzone")
+    st.write("Top 5 canzoni per categoria emotiva basate sui punteggi medi degli utenti")
     # Assicurati che questa lista coincida con le chiavi di emotion_colors
     emotions_list = ["amusement", "anger", "sadness", "contentment", "disgust", "awe", "fear", "excitement"]
     
@@ -291,8 +291,8 @@ elif menu == "🕷️ Spider Charts":
         st.markdown("---")
     # --- NUOVA SEZIONE: INTER-RATER AGREEMENT ---
     st.divider()
-    st.header("Inter-Rater Agreement Analysis")
-    st.write("Analysis of songs listened by multiple users, comparing individual responses with original emotion values")
+    st.header("Analisi dell'Accordo tra Valutatori")
+    st.write("Analisi delle canzoni ascoltate da più utenti, confrontando le risposte individuali con i valori emozionali originali")
     
     # Trova canzoni con almeno 2 utenti
     song_user_counts = df_responses.groupby('song_path')['user_id'].nunique().reset_index()
@@ -322,7 +322,7 @@ elif menu == "🕷️ Spider Charts":
         original_values = original_emotions.get(song_path_for_match, {})
         
         # Crea expander
-        with st.expander(f"**{song_name}** - {num_users} users", expanded=(idx == 0)):
+        with st.expander(f"**{song_name}** - {num_users} utenti", expanded=(idx == 0)):
             
             # Prepara dati per il grafico
             plot_data = []
@@ -347,7 +347,7 @@ elif menu == "🕷️ Spider Charts":
             for user_idx in range(num_users):
                 user_data = df_plot[df_plot['Source'] == f'User {user_idx + 1}']
                 fig.add_trace(go.Bar(
-                    name=f'User {user_idx + 1}',
+                    name=f'Utente {user_idx + 1}',
                     x=user_data['Emotion'],
                     y=user_data['Score'],
                     marker_color=colors[user_idx % len(colors)]
@@ -357,7 +357,7 @@ elif menu == "🕷️ Spider Charts":
             if original_values:
                 original_scores = [original_values.get(e, 0) for e in emotions_list]
                 fig.add_trace(go.Scatter(
-                    name='Original Values',
+                    name='Valori Originali',
                     x=emotions_list,
                     y=original_scores,
                     mode='lines+markers',
@@ -366,9 +366,9 @@ elif menu == "🕷️ Spider Charts":
                 ))
             
             fig.update_layout(
-                title=f"Individual User Responses vs Original Values - {song_name}",
-                xaxis_title="Emotion",
-                yaxis_title="Score",
+                title=f"Risposte Individuali vs Valori Originali - {song_name}",
+                xaxis_title="Emozione",
+                yaxis_title="Punteggio",
                 yaxis=dict(range=[0, 1]),
                 barmode='group',
                 height=400,
@@ -378,31 +378,31 @@ elif menu == "🕷️ Spider Charts":
             st.plotly_chart(fig, use_container_width=True, key=f"agreement_{idx}")
             
             # Mostra statistiche
-            st.subheader("Statistics")
+            st.subheader("Statistiche")
             col1, col2 = st.columns(2)
             
             with col1:
-                st.markdown("**Mean ± Std Dev per Emotion:**")
+                st.markdown("**Media ± Deviazione Standard per Emozione:**")
                 stats_rows = []
                 for e in emotions_list:
                     stats_rows.append({
-                        'Emotion': e.capitalize(),
-                        'Mean': f"{emotion_stats[e]['mean']:.3f}",
-                        'Std Dev': f"{emotion_stats[e]['std']:.3f}"
+                        'Emozione': e.capitalize(),
+                        'Media': f"{emotion_stats[e]['mean']:.3f}",
+                        'Dev Std': f"{emotion_stats[e]['std']:.3f}"
                     })
                 st.dataframe(pd.DataFrame(stats_rows), hide_index=True, use_container_width=True)
             
             with col2:
                 if original_values:
-                    st.markdown("**Comparison with Original:**")
+                    st.markdown("**Confronto con Originale:**")
                     comparison_rows = []
                     for e in emotions_list:
                         diff = abs(emotion_stats[e]['mean'] - original_values.get(e, 0))
                         comparison_rows.append({
-                            'Emotion': e.capitalize(),
-                            'Original': f"{original_values.get(e, 0):.3f}",
-                            'Difference': f"{diff:.3f}"
+                            'Emozione': e.capitalize(),
+                            'Originale': f"{original_values.get(e, 0):.3f}",
+                            'Differenza': f"{diff:.3f}"
                         })
                     st.dataframe(pd.DataFrame(comparison_rows), hide_index=True, use_container_width=True)
                 else:
-                    st.info("No original emotion data available for this song")
+                    st.info("Dati emozionali originali non disponibili per questa canzone")
