@@ -56,6 +56,37 @@ def load_and_process_data():
 
 df_users, df_responses = load_and_process_data()
 
+@st.cache_data
+def load_original_emotions():
+    """Carica i valori emozionali originali delle canzoni"""
+    try:
+        df_original = pd.read_csv('original_emotions.csv')
+        
+        # Crea un dizionario per accesso rapido: {nome_file: {emozione: valore}}
+        original_dict = {}
+        for _, row in df_original.iterrows():
+            # Estrai solo il nome del file dall'image_path
+            filename = row['image_path'].split('\\')[-1].replace('.jpg', '.wav')
+            
+            original_dict[filename] = {
+                'amusement': row['score_amusement'],
+                'anger': row['score_anger'],
+                'awe': row['score_awe'],
+                'contentment': row['score_contentment'],
+                'disgust': row['score_disgust'],
+                'excitement': row['score_excitement'],
+                'fear': row['score_fear'],
+                'sadness': row['score_sadness']
+            }
+        
+        return original_dict
+    except FileNotFoundError:
+        st.warning("⚠️ File original_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
+        return {}
+
+# Carica i dati originali
+original_emotions = load_original_emotions()
+
 # --- SIDEBAR ---
 st.sidebar.title("🎵 Analisi Emozioni")
 menu = st.sidebar.radio("Sezioni:", [
@@ -134,7 +165,6 @@ if menu == "📊 Panoramica Dataset":
             interagito con le canzoni.
         """)
 
-
 # --- SEZIONE 2: SPIDER CHARTS ---
 elif menu == "🕷️ Spider Charts":
     st.header("Analisi del Trasferimento Emotivo")
@@ -182,7 +212,6 @@ elif menu == "🕷️ Spider Charts":
         st.markdown(f"<div style='background-color: {emotion_colors.get(emotion, '#ccc')}; height: 4px; margin-bottom: 20px;'></div>", unsafe_allow_html=True)
         
         # 1. Raggruppamento dati: calcoliamo la media di TUTTE le emozioni per ogni canzone
-        # Questo ci serve per vedere se l'emozione dominante è quella giusta
         song_stats = df_responses.groupby('song_path').agg({
             e: 'mean' for e in emotions_list
         }).reset_index()
@@ -191,9 +220,6 @@ elif menu == "🕷️ Spider Charts":
         user_counts = df_responses.groupby('song_path')['user_id'].nunique().reset_index()
         song_stats = song_stats.merge(user_counts, on='song_path')
         song_stats.rename(columns={'user_id': 'num_users'}, inplace=True)
-        
-        # Calcola il total average (media di tutte le 8 emozioni per quella canzone)
-        song_stats['total_avg'] = song_stats[emotions_list].mean(axis=1)
         
         # 2. Ordina per l'emozione corrente e prendi top 5
         top_5 = song_stats.nlargest(5, emotion)
@@ -207,17 +233,36 @@ elif menu == "🕷️ Spider Charts":
                 # Accorciamo il nome se troppo lungo per non rompere il layout
                 song_name = (song_full_name[:15] + '..') if len(song_full_name) > 17 else song_full_name
                 
-                # Prepara i dati per lo spider chart
-                values = [song_row[e] for e in emotions_list]
+                # Valori degli utenti
+                user_values = [song_row[e] for e in emotions_list]
                 
-                # Crea spider chart con Plotly Graph Objects (più stabile di px per i radar)
+                # Cerca i valori originali
+                original_values = None
+                if song_full_name in original_emotions:
+                    original_values = [original_emotions[song_full_name][e] for e in emotions_list]
+                
+                # Crea spider chart con Plotly Graph Objects
                 fig = go.Figure()
+                
+                # Se abbiamo i valori originali, mostrali (linea grigia tratteggiata)
+                if original_values:
+                    fig.add_trace(go.Scatterpolar(
+                        r=original_values,
+                        theta=emotions_list,
+                        fill='toself',
+                        line=dict(color='gray', dash='dash', width=2),
+                        fillcolor='rgba(128, 128, 128, 0.15)',
+                        name='Originale',
+                        opacity=0.7
+                    ))
+                
+                # Valori utenti (linea colorata solida)
                 fig.add_trace(go.Scatterpolar(
-                    r=values,
+                    r=user_values,
                     theta=emotions_list,
                     fill='toself',
-                    line_color=emotion_colors.get(emotion, "#1f77b4"),
-                    name=song_name
+                    line=dict(color=emotion_colors.get(emotion, "#1f77b4"), width=2),
+                    name='Utenti'
                 ))
                 
                 fig.update_layout(
@@ -225,13 +270,24 @@ elif menu == "🕷️ Spider Charts":
                         radialaxis=dict(visible=True, range=[0, 1], showticklabels=False),
                         angularaxis=dict(tickfont=dict(size=8))
                     ),
-                    showlegend=False,
-                    margin=dict(l=30, r=30, t=50, b=20),
-                    height=250,
-                    title=dict(text=f"<b>{song_name}</b>", font=dict(size=11), y=0.9, x=0.5, xanchor='center')
+                    showlegend=True,
+                    legend=dict(
+                        orientation="h",
+                        yanchor="bottom",
+                        y=-0.35,
+                        xanchor="center",
+                        x=0.5,
+                        font=dict(size=7)
+                    ),
+                    margin=dict(l=30, r=30, t=50, b=50),
+                    height=300,
+                    title=dict(text=f"<b>{song_name}</b>", font=dict(size=11), y=0.93, x=0.5, xanchor='center')
                 )
                 
                 st.plotly_chart(fig, use_container_width=True, key=f"{emotion}_{idx}")
-                st.markdown(f"<p style='text-align: center; font-size: 11px; color: gray;'>Users: {int(song_row['num_users'])}<br>Score: {song_row[emotion]:.2f}</p>", unsafe_allow_html=True)
+                
+                # Info sotto il grafico
+                match_status = "✓ Match" if song_full_name in original_emotions else "⚠ No data"
+                st.markdown(f"<p style='text-align: center; font-size: 10px; color: gray;'>Users: {int(song_row['num_users'])} | Score: {song_row[emotion]:.2f}<br>{match_status}</p>", unsafe_allow_html=True)
         
         st.markdown("---")
