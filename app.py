@@ -78,13 +78,15 @@ def load_original_emotions():
             st.warning("⚠️ File original_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
             return {}
     
-    # Crea un dizionario per accesso rapido: {nome_file: {emozione: valore}}
+    # Crea un dizionario per accesso rapido: {nome_base_file: {emozione: valore}}
     original_dict = {}
     for _, row in df_original.iterrows():
-        # Estrai solo il nome del file dall'image_path
-        filename = row['image_path'].split('\\')[-1].replace('.jpg', '.wav')
+        # Estrai il nome base del file senza estensione dall'image_path
+        full_filename = row['image_path'].split('\\')[-1]
+        # Rimuovi l'estensione per matching flessibile
+        base_filename = full_filename.rsplit('.', 1)[0]  # es: "amusement_00810"
         
-        original_dict[filename] = {
+        original_dict[base_filename] = {
             'amusement': row['score_amusement'],
             'anger': row['score_anger'],
             'awe': row['score_awe'],
@@ -243,21 +245,33 @@ elif menu == "🕷️ Spider Charts":
         for idx, (index, song_row) in enumerate(top_5.iterrows()):
             with cols[idx]:
                 song_full_name = song_row['song_path'].split('/')[-1]
+                # Estrai il nome base senza estensione per il matching
+                song_base_name = song_full_name.rsplit('.', 1)[0]
                 # Accorciamo il nome se troppo lungo per non rompere il layout
                 song_name = (song_full_name[:15] + '..') if len(song_full_name) > 17 else song_full_name
                 
                 # Valori degli utenti
                 user_values = [song_row[e] for e in emotions_list]
                 
-                # Cerca i valori originali
+                # Cerca i valori originali usando il nome base
                 original_values = None
-                if song_full_name in original_emotions:
-                    original_values = [original_emotions[song_full_name][e] for e in emotions_list]
+                if song_base_name in original_emotions:
+                    original_values = [original_emotions[song_base_name][e] for e in emotions_list]
                 
                 # Crea spider chart con Plotly Graph Objects
                 fig = go.Figure()
                 
-                # Se abbiamo i valori originali, mostrali (linea grigia tratteggiata)
+                # Valori utenti (linea colorata solida) - PRIMA per stare sopra
+                fig.add_trace(go.Scatterpolar(
+                    r=user_values,
+                    theta=emotions_list,
+                    fill='toself',
+                    line=dict(color=emotion_colors.get(emotion, "#1f77b4"), width=2),
+                    name='Utenti',
+                    showlegend=False
+                ))
+                
+                # Valori originali (linea grigia tratteggiata) - DOPO per stare sotto
                 if original_values:
                     fig.add_trace(go.Scatterpolar(
                         r=original_values,
@@ -266,41 +280,24 @@ elif menu == "🕷️ Spider Charts":
                         line=dict(color='gray', dash='dash', width=2),
                         fillcolor='rgba(128, 128, 128, 0.15)',
                         name='Originale',
-                        opacity=0.7
+                        opacity=0.7,
+                        showlegend=False
                     ))
-                
-                # Valori utenti (linea colorata solida)
-                fig.add_trace(go.Scatterpolar(
-                    r=user_values,
-                    theta=emotions_list,
-                    fill='toself',
-                    line=dict(color=emotion_colors.get(emotion, "#1f77b4"), width=2),
-                    name='Utenti'
-                ))
                 
                 fig.update_layout(
                     polar=dict(
                         radialaxis=dict(visible=True, range=[0, 1], showticklabels=False),
                         angularaxis=dict(tickfont=dict(size=8))
                     ),
-                    showlegend=True,
-                    legend=dict(
-                        orientation="h",
-                        yanchor="bottom",
-                        y=-0.35,
-                        xanchor="center",
-                        x=0.5,
-                        font=dict(size=7)
-                    ),
-                    margin=dict(l=30, r=30, t=50, b=50),
-                    height=300,
-                    title=dict(text=f"<b>{song_name}</b>", font=dict(size=11), y=0.93, x=0.5, xanchor='center')
+                    showlegend=False,
+                    margin=dict(l=30, r=30, t=50, b=30),
+                    height=280,
+                    title=dict(text=f"<b>{song_name}</b>", font=dict(size=11), y=0.92, x=0.5, xanchor='center')
                 )
                 
                 st.plotly_chart(fig, use_container_width=True, key=f"{emotion}_{idx}")
                 
                 # Info sotto il grafico
-                match_status = "✓ Match" if song_full_name in original_emotions else "⚠ No data"
-                st.markdown(f"<p style='text-align: center; font-size: 10px; color: gray;'>Users: {int(song_row['num_users'])} | Score: {song_row[emotion]:.2f}<br>{match_status}</p>", unsafe_allow_html=True)
+                st.markdown(f"<p style='text-align: center; font-size: 10px; color: gray;'>Users: {int(song_row['num_users'])} | Score: {song_row[emotion]:.2f}</p>", unsafe_allow_html=True)
         
         st.markdown("---")
