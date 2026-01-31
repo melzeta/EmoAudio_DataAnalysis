@@ -103,21 +103,12 @@ menu = st.sidebar.radio("Sezioni:", [
 if menu == "📊 Panoramica Dataset":
     st.header("Esplorazione Generale dei Dati")
 
-    col1, col2, col3, col4 = st.columns(4)
+    col_left, col_right = st.columns([1, 2])
     
     utenti_unici = df_users['user_id'].nunique() 
     tot_risposte = len(df_responses)
     canzoni_uniche = df_responses['song_path'].nunique()
     media_risposte = round(tot_risposte / utenti_unici, 1) if utenti_unici > 0 else 0
-
-    col1.metric("Utenti Unici", utenti_unici)
-    col2.metric("Totale Risposte", tot_risposte)
-    col3.metric("Canzoni Uniche", canzoni_uniche)
-    col4.metric("Media Risposte/Utente", media_risposte)
-    
-    st.divider()
-
-    col_left, col_right = st.columns(2)
     
     chart_layout = dict(
         plot_bgcolor="rgba(0,0,0,0)",
@@ -127,6 +118,13 @@ if menu == "📊 Panoramica Dataset":
     )
 
     with col_left:
+        st.subheader("Metriche Principali")
+        st.metric("Utenti Unici", utenti_unici)
+        st.metric("Totale Risposte", tot_risposte)
+        st.metric("Canzoni Uniche", canzoni_uniche)
+        st.metric("Media Risposte/Utente", media_risposte)
+
+    with col_right:
         st.subheader("Distribuzione per Genere")
         gender_counts = df_users['gender'].value_counts().reset_index()
         gender_counts.columns = ['Genere', 'Conteggio']
@@ -137,10 +135,9 @@ if menu == "📊 Panoramica Dataset":
             values='Conteggio',
             color_discrete_sequence=px.colors.qualitative.Pastel
         )
-        fig_gender.update_layout(**chart_layout, height=300)
+        fig_gender.update_layout(**chart_layout, height=250)
         st.plotly_chart(fig_gender, use_container_width=True)
-
-    with col_right:
+        
         st.subheader("Distribuzione per Età")
         age_counts = df_users['age'].value_counts().sort_index().reset_index()
         age_counts.columns = ['Età', 'Conteggio']
@@ -151,33 +148,43 @@ if menu == "📊 Panoramica Dataset":
             y='Conteggio',
             color_discrete_sequence=['#3498db']
         )
-        fig_age.update_layout(**chart_layout, height=300, xaxis_title="Età", yaxis_title="Numero Utenti")
+        fig_age.update_layout(**chart_layout, height=250, xaxis_title="Età", yaxis_title="Numero Utenti")
         st.plotly_chart(fig_age, use_container_width=True)
 
     st.divider()
 
-    st.subheader("Numero di Risposte per Utente")
-    responses_per_user = df_users['num_responses'].value_counts().sort_index().reset_index()
-    responses_per_user.columns = ['Numero Risposte', 'Numero Utenti']
+    col_chart, col_info = st.columns([2, 1])
     
-    fig_responses = px.bar(
-        responses_per_user,
-        x='Numero Risposte',
-        y='Numero Utenti',
-        color_discrete_sequence=['#e74c3c']
-    )
-    fig_responses.update_layout(**chart_layout, height=350)
-    st.plotly_chart(fig_responses, use_container_width=True)
-
-    st.divider()
-
-    st.subheader("Informazioni Aggiuntive")
-    utenti_attivi = df_users[df_users['num_responses'] > 0].shape[0]
-    st.markdown(f"""
-        Su un totale di **{utenti_unici}** utenti registrati, 
-        i dati analizzati derivano dai **{utenti_attivi}** utenti che hanno effettivamente 
-        interagito con le canzoni.
-    """)
+    with col_chart:
+        st.subheader("Numero di Risposte per Utente")
+        responses_per_user = df_users['num_responses'].value_counts().sort_index().reset_index()
+        responses_per_user.columns = ['Numero Risposte', 'Numero Utenti']
+        
+        fig_responses = px.bar(
+            responses_per_user,
+            x='Numero Risposte',
+            y='Numero Utenti',
+            color_discrete_sequence=['#e74c3c']
+        )
+        fig_responses.update_layout(**chart_layout, height=300)
+        st.plotly_chart(fig_responses, use_container_width=True)
+    
+    with col_info:
+        st.subheader("Informazioni Aggiuntive")
+        utenti_attivi = df_users[df_users['num_responses'] > 0].shape[0]
+        st.markdown(f"""
+            Su un totale di **{utenti_unici}** utenti registrati, 
+            i dati analizzati derivano dai **{utenti_attivi}** utenti che hanno effettivamente 
+            interagito con le canzoni.
+        """)
+        
+        st.subheader("Ulteriori Commenti")
+        st.text_area(
+            "Aggiungi note o osservazioni:",
+            placeholder="Inserisci qui eventuali commenti sull'analisi...",
+            height=100,
+            key="additional_comments"
+        )
 
 # ============================================================================
 # SECTION 2: SPIDER CHARTS
@@ -193,7 +200,8 @@ elif menu == "🕷️ Spider Charts":
 
     with col_img:
         st.subheader("Modello Emotivo")
-        st.image("plutchik.png", caption="Ruota delle Emozioni di Plutchik", use_container_width=True)
+        image_width = st.slider("Dimensione immagine:", min_value=200, max_value=800, value=400, step=50, key="image_size")
+        st.image("plutchik.png", caption="Ruota delle Emozioni di Plutchik", width=image_width)
 
     with col_tab:
         st.subheader("Top 5 per Categoria")
