@@ -167,9 +167,8 @@ if menu == "📊 Panoramica Dataset":
 
 # --- SEZIONE 2: SPIDER CHARTS ---
 elif menu == "🕷️ Spider Charts":
-    st.header("Analisi del Trasferimento Emotivo")
-    st.write("Per individuare 5 canzoni per categoria, ho presupposto che una canzone possa rappresentare più di un'emozione")
-    st.write("Per individuare le canzoni che rappresentano al meglio un'emozione ho preso l'average")
+    st.header("Highest AVG per Song")
+    st.write("Top 5 songs per emotion category based on average user ratings")
     # Assicurati che questa lista coincida con le chiavi di emotion_colors
     emotions_list = ["amusement", "anger", "sadness", "contentment", "disgust", "awe", "fear", "excitement"]
     
@@ -290,78 +289,120 @@ elif menu == "🕷️ Spider Charts":
                 st.markdown(f"<p style='text-align: center; font-size: 10px; color: gray;'>Users: {int(song_row['num_users'])} | Score: {song_row[emotion]:.2f}</p>", unsafe_allow_html=True)
         
         st.markdown("---")
-    # --- NUOVA SEZIONE: ANALISI DI ACCURATEZZA ---
+    # --- NUOVA SEZIONE: INTER-RATER AGREEMENT ---
     st.divider()
-    st.header("📊 Analisi di Accuratezza del Trasferimento Emotivo")
-    st.write("Analisi delle canzoni ordinate per numero di ascoltatori, confrontando l'emozione prevista con quella effettivamente percepita.")
+    st.header("Inter-Rater Agreement Analysis")
+    st.write("Analysis of songs listened by multiple users, comparing individual responses with original emotion values")
     
-    # Calcola statistiche per ogni canzone
-    song_analysis = df_responses.groupby('song_path').agg({
-        'user_id': 'nunique',
-        **{e: 'mean' for e in emotions_list}
-    }).reset_index()
-    song_analysis.rename(columns={'user_id': 'num_users'}, inplace=True)
+    # Trova canzoni con almeno 2 utenti
+    song_user_counts = df_responses.groupby('song_path')['user_id'].nunique().reset_index()
+    song_user_counts.rename(columns={'user_id': 'num_users'}, inplace=True)
+    songs_multi_users = song_user_counts[song_user_counts['num_users'] >= 2].sort_values('num_users', ascending=False)
     
-    # Filtra solo canzoni con almeno 2 utenti
-    song_analysis = song_analysis[song_analysis['num_users'] >= 2]
-    
-    # Ordina per numero di utenti (decrescente)
-    song_analysis = song_analysis.sort_values('num_users', ascending=False)
-    
-    # Per ogni canzone, determina l'emozione intended e actual
-    for idx, row in song_analysis.iterrows():
-        song_path = row['song_path']
+    # Per ogni canzone con più utenti
+    for idx, song_row in songs_multi_users.iterrows():
+        song_path = song_row['song_path']
         song_name = song_path.split('/')[-1]
-        num_users = int(row['num_users'])
+        num_users = int(song_row['num_users'])
         
-        # Estrai l'emozione intended dal path (es: "songs/amusement/..." -> "amusement")
-        intended_emotion = song_path.split('/')[1] if len(song_path.split('/')) > 1 else "unknown"
+        # Ottieni le risposte di tutti gli utenti per questa canzone
+        user_responses = df_responses[df_responses['song_path'] == song_path]
         
-        # Trova l'emozione actual (quella con lo score più alto)
-        emotion_scores = {e: row[e] for e in emotions_list}
-        actual_emotion = max(emotion_scores, key=emotion_scores.get)
-        actual_score = emotion_scores[actual_emotion]
+        # Calcola media e std per ogni emozione
+        emotion_stats = {}
+        for e in emotions_list:
+            emotion_stats[e] = {
+                'mean': user_responses[e].mean(),
+                'std': user_responses[e].std()
+            }
         
-        # Verifica accuratezza
-        is_accurate = intended_emotion == actual_emotion
-        accuracy_icon = "✅" if is_accurate else "❌"
+        # Ottieni valori originali
+        song_path_clean = song_path.replace('songs/', '')
+        song_path_for_match = song_path_clean.replace('/', '\\')
+        original_values = original_emotions.get(song_path_for_match, {})
         
-        # Crea un expander per ogni canzone
-        with st.expander(f"{accuracy_icon} **{song_name}** - {num_users} utenti", expanded=(idx == 0)):
-            col1, col2 = st.columns([1, 2])
+        # Crea expander
+        with st.expander(f"**{song_name}** - {num_users} users", expanded=(idx == 0)):
+            
+            # Prepara dati per il grafico
+            plot_data = []
+            
+            # Aggiungi risposta di ogni utente
+            for user_idx, (_, user_row) in enumerate(user_responses.iterrows()):
+                for e in emotions_list:
+                    plot_data.append({
+                        'Emotion': e,
+                        'Score': user_row[e],
+                        'Source': f'User {user_idx + 1}',
+                        'Type': 'User Response'
+                    })
+            
+            df_plot = pd.DataFrame(plot_data)
+            
+            # Crea grafico a barre raggruppate
+            fig = go.Figure()
+            
+            # Aggiungi barre per ogni utente
+            colors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c']
+            for user_idx in range(num_users):
+                user_data = df_plot[df_plot['Source'] == f'User {user_idx + 1}']
+                fig.add_trace(go.Bar(
+                    name=f'User {user_idx + 1}',
+                    x=user_data['Emotion'],
+                    y=user_data['Score'],
+                    marker_color=colors[user_idx % len(colors)]
+                ))
+            
+            # Aggiungi linea per valori originali se disponibili
+            if original_values:
+                original_scores = [original_values.get(e, 0) for e in emotions_list]
+                fig.add_trace(go.Scatter(
+                    name='Original Values',
+                    x=emotions_list,
+                    y=original_scores,
+                    mode='lines+markers',
+                    line=dict(color='gray', width=3, dash='dash'),
+                    marker=dict(size=8, color='gray')
+                ))
+            
+            fig.update_layout(
+                title=f"Individual User Responses vs Original Values - {song_name}",
+                xaxis_title="Emotion",
+                yaxis_title="Score",
+                yaxis=dict(range=[0, 1]),
+                barmode='group',
+                height=400,
+                showlegend=True
+            )
+            
+            st.plotly_chart(fig, use_container_width=True, key=f"agreement_{idx}")
+            
+            # Mostra statistiche
+            st.subheader("Statistics")
+            col1, col2 = st.columns(2)
             
             with col1:
-                st.markdown(f"""
-                **👥 Utenti:** {num_users}  
-                **🎯 Emozione Prevista:** {intended_emotion.upper()}  
-                **💭 Emozione Percepita:** {actual_emotion.upper()}  
-                **📊 Score Percepito:** {actual_score:.2f}  
-                **✓ Accuratezza:** {'CORRETTA' if is_accurate else 'ERRATA'}
-                """)
+                st.markdown("**Mean ± Std Dev per Emotion:**")
+                stats_rows = []
+                for e in emotions_list:
+                    stats_rows.append({
+                        'Emotion': e.capitalize(),
+                        'Mean': f"{emotion_stats[e]['mean']:.3f}",
+                        'Std Dev': f"{emotion_stats[e]['std']:.3f}"
+                    })
+                st.dataframe(pd.DataFrame(stats_rows), hide_index=True, use_container_width=True)
             
             with col2:
-                # Crea un bar chart con tutte le emozioni
-                emotion_data = pd.DataFrame({
-                    'Emozione': emotions_list,
-                    'Score': [emotion_scores[e] for e in emotions_list],
-                    'Tipo': ['Prevista' if e == intended_emotion else 'Altra' for e in emotions_list]
-                })
-                
-                fig = px.bar(
-                    emotion_data,
-                    x='Emozione',
-                    y='Score',
-                    color='Tipo',
-                    color_discrete_map={'Prevista': emotion_colors.get(intended_emotion, '#FF6B6B'), 'Altra': '#95a5a6'},
-                    title=f"Distribuzione Emozioni - {song_name}"
-                )
-                
-                fig.update_layout(
-                    height=300,
-                    showlegend=True,
-                    xaxis_title="",
-                    yaxis_title="Score Medio",
-                    yaxis=dict(range=[0, 1])
-                )
-                
-                st.plotly_chart(fig, use_container_width=True, key=f"accuracy_{idx}")
+                if original_values:
+                    st.markdown("**Comparison with Original:**")
+                    comparison_rows = []
+                    for e in emotions_list:
+                        diff = abs(emotion_stats[e]['mean'] - original_values.get(e, 0))
+                        comparison_rows.append({
+                            'Emotion': e.capitalize(),
+                            'Original': f"{original_values.get(e, 0):.3f}",
+                            'Difference': f"{diff:.3f}"
+                        })
+                    st.dataframe(pd.DataFrame(comparison_rows), hide_index=True, use_container_width=True)
+                else:
+                    st.info("No original emotion data available for this song")
