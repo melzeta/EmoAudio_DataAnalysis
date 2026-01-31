@@ -59,8 +59,8 @@ df_users, df_responses = load_and_process_data()
 @st.cache_data
 def load_original_emotions():
     """Carica i valori emozionali originali delle canzoni"""
-    # URL di Google Drive (sostituisci con il tuo link quando disponibile)
-    GOOGLE_DRIVE_URL = None  # Esempio: "https://drive.google.com/uc?id=YOUR_FILE_ID"
+    # URL di Google Drive per caricare i dati originali su Streamlit Cloud
+    GOOGLE_DRIVE_URL = "https://drive.google.com/uc?id=12Hb0oxZi9s4_AnYn3NBFX2mg4F6BbXqt"
     
     try:
         # Prova prima a caricare il file locale
