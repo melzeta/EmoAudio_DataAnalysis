@@ -167,7 +167,7 @@ if menu == "📊 Panoramica Dataset":
 
 # --- SEZIONE 2: SPIDER CHARTS ---
 elif menu == "🕷️ Spider Charts":
-    st.header("Punteggio Medio Più Alto per Canzone")
+    st.header("Highest AVG per Song")
     st.write("Top 5 canzoni per categoria emotiva basate sui punteggi medi degli utenti")
     # Assicurati che questa lista coincida con le chiavi di emotion_colors
     emotions_list = ["amusement", "anger", "sadness", "contentment", "disgust", "awe", "fear", "excitement"]
@@ -291,7 +291,7 @@ elif menu == "🕷️ Spider Charts":
         st.markdown("---")
     # --- NUOVA SEZIONE: INTER-RATER AGREEMENT ---
     st.divider()
-    st.header("Analisi dell'Accordo tra Valutatori")
+    st.header("Inter-Rater Agreement Analysis")
     st.write("Analisi delle canzoni ascoltate da più utenti, confrontando le risposte individuali con i valori emozionali originali")
     
     # Trova canzoni con almeno 2 utenti
