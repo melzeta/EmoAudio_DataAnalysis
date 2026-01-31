@@ -290,7 +290,6 @@ elif menu == "🕷️ Spider Charts":
         
         st.markdown("---")
     # --- NUOVA SEZIONE: INTER-RATER AGREEMENT ---
-    st.divider()
     st.header("Inter-Rater Agreement Analysis")
     st.write("Analisi delle canzoni ascoltate da più utenti, confrontando le risposte individuali con i valori emozionali originali")
     
