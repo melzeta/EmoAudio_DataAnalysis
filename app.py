@@ -59,42 +59,27 @@ df_users, df_responses = load_and_process_data()
 @st.cache_data
 def load_original_emotions():
     """Carica i valori emozionali originali delle canzoni"""
-    # URL di Google Drive per caricare i dati originali su Streamlit Cloud
-    GOOGLE_DRIVE_URL = "https://drive.google.com/uc?id=12Hb0oxZi9s4_AnYn3NBFX2mg4F6BbXqt"
-    
     try:
-        # Prova prima a caricare il file locale
-        df_original = pd.read_csv('original_emotions.csv')
+        df_original = pd.read_csv('song_emotions.csv')
     except FileNotFoundError:
-        # Se non esiste localmente, prova da Google Drive
-        if GOOGLE_DRIVE_URL:
-            try:
-                df_original = pd.read_csv(GOOGLE_DRIVE_URL)
-                st.info("📥 Dati originali caricati da Google Drive")
-            except Exception as e:
-                st.warning(f"⚠️ Impossibile caricare i dati originali: {e}")
-                return {}
-        else:
-            st.warning("⚠️ File original_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
-            return {}
+        st.warning("⚠️ File song_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
+        return {}
     
-    # Crea un dizionario per accesso rapido: {nome_base_file: {emozione: valore}}
+    # Crea un dizionario per accesso rapido: {filename: {emozione: valore}}
     original_dict = {}
     for _, row in df_original.iterrows():
-        # Estrai il nome base del file senza estensione dall'image_path
-        full_filename = row['image_path'].split('\\')[-1]
-        # Rimuovi l'estensione per matching flessibile
-        base_filename = full_filename.rsplit('.', 1)[0]  # es: "amusement_00810"
+        # Il filename è già nel formato corretto: "amusement\amusement_19692.mp3"
+        filename = row['filename']
         
-        original_dict[base_filename] = {
-            'amusement': row['score_amusement'],
-            'anger': row['score_anger'],
-            'awe': row['score_awe'],
-            'contentment': row['score_contentment'],
-            'disgust': row['score_disgust'],
-            'excitement': row['score_excitement'],
-            'fear': row['score_fear'],
-            'sadness': row['score_sadness']
+        original_dict[filename] = {
+            'amusement': row['amusement'],
+            'anger': row['anger'],
+            'awe': row['awe'],
+            'contentment': row['contentment'],
+            'disgust': row['disgust'],
+            'excitement': row['excitement'],
+            'fear': row['fear'],
+            'sadness': row['sadness']
         }
     
     return original_dict
@@ -245,18 +230,19 @@ elif menu == "🕷️ Spider Charts":
         for idx, (index, song_row) in enumerate(top_5.iterrows()):
             with cols[idx]:
                 song_full_name = song_row['song_path'].split('/')[-1]
-                # Estrai il nome base senza estensione per il matching
-                song_base_name = song_full_name.rsplit('.', 1)[0]
+                # Converti il path per matchare il formato del CSV (con backslash)
+                # es: "amusement/amusement_19692.mp3" -> "amusement\amusement_19692.mp3"
+                song_path_for_match = song_row['song_path'].replace('/', '\\')
                 # Accorciamo il nome se troppo lungo per non rompere il layout
                 song_name = (song_full_name[:15] + '..') if len(song_full_name) > 17 else song_full_name
                 
                 # Valori degli utenti
                 user_values = [song_row[e] for e in emotions_list]
                 
-                # Cerca i valori originali usando il nome base
+                # Cerca i valori originali usando il path convertito
                 original_values = None
-                if song_base_name in original_emotions:
-                    original_values = [original_emotions[song_base_name][e] for e in emotions_list]
+                if song_path_for_match in original_emotions:
+                    original_values = [original_emotions[song_path_for_match][e] for e in emotions_list]
                 
                 # Crea spider chart con Plotly Graph Objects
                 fig = go.Figure()
