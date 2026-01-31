@@ -230,9 +230,12 @@ elif menu == "🕷️ Spider Charts":
         for idx, (index, song_row) in enumerate(top_5.iterrows()):
             with cols[idx]:
                 song_full_name = song_row['song_path'].split('/')[-1]
-                # Converti il path per matchare il formato del CSV (con backslash)
-                # es: "amusement/amusement_19692.mp3" -> "amusement\amusement_19692.mp3"
-                song_path_for_match = song_row['song_path'].replace('/', '\\')
+                # Converti il path per matchare il formato del CSV
+                # data.json: "songs/amusement/amusement_19692.mp3"
+                # CSV: "amusement\amusement_19692.mp3"
+                # Rimuovi "songs/" e converti "/" in "\"
+                song_path_clean = song_row['song_path'].replace('songs/', '')
+                song_path_for_match = song_path_clean.replace('/', '\\')
                 # Accorciamo il nome se troppo lungo per non rompere il layout
                 song_name = (song_full_name[:15] + '..') if len(song_full_name) > 17 else song_full_name
                 
