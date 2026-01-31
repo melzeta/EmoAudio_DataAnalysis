@@ -59,30 +59,43 @@ df_users, df_responses = load_and_process_data()
 @st.cache_data
 def load_original_emotions():
     """Carica i valori emozionali originali delle canzoni"""
+    # URL di Google Drive (sostituisci con il tuo link quando disponibile)
+    GOOGLE_DRIVE_URL = None  # Esempio: "https://drive.google.com/uc?id=YOUR_FILE_ID"
+    
     try:
+        # Prova prima a caricare il file locale
         df_original = pd.read_csv('original_emotions.csv')
-        
-        # Crea un dizionario per accesso rapido: {nome_file: {emozione: valore}}
-        original_dict = {}
-        for _, row in df_original.iterrows():
-            # Estrai solo il nome del file dall'image_path
-            filename = row['image_path'].split('\\')[-1].replace('.jpg', '.wav')
-            
-            original_dict[filename] = {
-                'amusement': row['score_amusement'],
-                'anger': row['score_anger'],
-                'awe': row['score_awe'],
-                'contentment': row['score_contentment'],
-                'disgust': row['score_disgust'],
-                'excitement': row['score_excitement'],
-                'fear': row['score_fear'],
-                'sadness': row['score_sadness']
-            }
-        
-        return original_dict
     except FileNotFoundError:
-        st.warning("⚠️ File original_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
-        return {}
+        # Se non esiste localmente, prova da Google Drive
+        if GOOGLE_DRIVE_URL:
+            try:
+                df_original = pd.read_csv(GOOGLE_DRIVE_URL)
+                st.info("📥 Dati originali caricati da Google Drive")
+            except Exception as e:
+                st.warning(f"⚠️ Impossibile caricare i dati originali: {e}")
+                return {}
+        else:
+            st.warning("⚠️ File original_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
+            return {}
+    
+    # Crea un dizionario per accesso rapido: {nome_file: {emozione: valore}}
+    original_dict = {}
+    for _, row in df_original.iterrows():
+        # Estrai solo il nome del file dall'image_path
+        filename = row['image_path'].split('\\')[-1].replace('.jpg', '.wav')
+        
+        original_dict[filename] = {
+            'amusement': row['score_amusement'],
+            'anger': row['score_anger'],
+            'awe': row['score_awe'],
+            'contentment': row['score_contentment'],
+            'disgust': row['score_disgust'],
+            'excitement': row['score_excitement'],
+            'fear': row['score_fear'],
+            'sadness': row['score_sadness']
+        }
+    
+    return original_dict
 
 # Carica i dati originali
 original_emotions = load_original_emotions()
