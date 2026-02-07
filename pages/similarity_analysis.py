@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from config.settings import EMOTIONS, EMOTION_COLORS
+from config.settings import EMOTIONS_LIST, EMOTION_COLORS
 from data.loaders import load_original_emotions_by_filename, calculate_similarity_top3
 
 
@@ -32,7 +32,7 @@ def show():
     
     # Aggrega per canzone: calcola medie delle emozioni e conta utenti
     song_aggregates = df_responses.groupby('song_path').agg({
-        **{e: 'mean' for e in EMOTIONS},
+        **{e: 'mean' for e in EMOTIONS_LIST},
         'user_id': 'nunique'
     }).reset_index()
     song_aggregates.rename(columns={'user_id': 'num_users'}, inplace=True)
@@ -49,7 +49,7 @@ def show():
             continue
         
         original_emotions = original_data[filename]
-        user_emotions_avg = {e: song[e] for e in EMOTIONS}
+        user_emotions_avg = {e: song[e] for e in EMOTIONS_LIST}
         
         # Calcola similarity
         similarity, top3 = calculate_similarity_top3(original_emotions, user_emotions_avg)
