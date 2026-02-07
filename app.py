@@ -28,15 +28,15 @@ def main():
         [
             "Panoramica Dataset",
             "🕷️ Spider Charts",
-            "Similarity Analysis"
+            "Similarity Analysis",
         ],
     )
 
     # Routing
     if menu == "Panoramica Dataset":
-        overview.show()
-    elif menu == "Spider Charts":
-        spider_charts.show()
+        render_overview(df_users, df_responses, CHART_LAYOUT)
+    elif menu == "🕷️ Spider Charts":
+        render_spider(df_responses, EMOTIONS_LIST, EMOTION_COLORS, original_emotions)
     elif menu == "Similarity Analysis":
         import pages.similarity_analysis as similarity_analysis
         similarity_analysis.show()
