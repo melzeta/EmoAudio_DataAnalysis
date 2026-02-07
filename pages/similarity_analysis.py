@@ -5,7 +5,7 @@ from config.settings import EMOTIONS_LIST, EMOTION_COLORS
 from data.loaders import load_original_emotions_by_filename, calculate_similarity_top3
 
 
-def show():
+def show(df_responses=None):
     st.header("Analisi Similarity: Input vs Output")
     
     st.markdown("""
@@ -27,8 +27,12 @@ def show():
     
     st.divider()
     
-    # Ottieni df_responses dal session_state
-    df_responses = st.session_state.df_responses
+    # Ottieni df_responses dal session_state se non passato
+    if df_responses is None:
+        df_responses = st.session_state.get("df_responses")
+    if df_responses is None:
+        st.error("Dati delle risposte utenti non disponibili.")
+        return
     
     # Aggrega per canzone: calcola medie delle emozioni e conta utenti
     song_aggregates = df_responses.groupby('song_path').agg({

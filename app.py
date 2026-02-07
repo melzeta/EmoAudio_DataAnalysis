@@ -39,7 +39,7 @@ def main():
         render_spider(df_responses, EMOTIONS_LIST, EMOTION_COLORS, original_emotions)
     elif menu == "Similarity Analysis":
         import pages.similarity_analysis as similarity_analysis
-        similarity_analysis.show()
+        similarity_analysis.show(df_responses)
 
 
 if __name__ == "__main__":
