@@ -156,3 +156,49 @@ def show(df_responses=None):
             **{row['song_name']}**  
             Similarity: `{row['similarity_score']:.3f}` | Users: {row['num_users']} | Top 3: {row['top3_emotions']}
             """)
+
+    st.divider()
+    
+    # Best matches per emozione
+    st.subheader("Top 5 Best Matches per Emozione")
+    
+    st.markdown("""
+    Le canzoni qui sotto sono quelle con il miglior similarity score **per ciascuna emozione specifica**.
+    Mostriamo solo le canzoni dove quella emozione è tra le top 3 del ground truth.
+    """)
+    
+    for emotion in EMOTIONS:
+        st.markdown(f"### {emotion.capitalize()}")
+        
+        # Filtra solo le canzoni dove questa emozione è nelle top 3
+        emotion_matches = []
+        
+        for _, row in df_similarity.iterrows():
+            top3_list = row['top3_emotions'].split(', ')
+            
+            # Se l'emozione corrente è nelle top 3 di questa canzone
+            if emotion in top3_list:
+                emotion_matches.append(row)
+        
+        if len(emotion_matches) == 0:
+            st.info(f"Nessuna canzone ha '{emotion}' tra le top 3 emozioni del ground truth.")
+            continue
+        
+        # Crea DataFrame e ordina per similarity
+        df_emotion = pd.DataFrame(emotion_matches)
+        df_emotion_sorted = df_emotion.sort_values('similarity_score', ascending=False).head(5)
+        
+        # Mostra in colonne per layout compatto
+        cols = st.columns(5)
+        
+        for idx, (_, song) in enumerate(df_emotion_sorted.iterrows()):
+            if idx < 5:  # Massimo 5
+                with cols[idx]:
+                    st.markdown(f"""
+                    **{song['song_name'][:20]}...**  
+                    Similarity: `{song['similarity_score']:.3f}`  
+                    Users: {song['num_users']}  
+                    Top 3: {song['top3_emotions']}
+                    """)
+        
+        st.markdown("---")
