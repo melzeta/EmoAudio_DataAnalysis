@@ -167,7 +167,7 @@ def show(df_responses=None):
     Mostriamo solo le canzoni dove quella emozione è tra le top 3 del ground truth.
     """)
     
-    for emotion in EMOTIONS:
+    for emotion in EMOTIONS_LIST:
         st.markdown(f"### {emotion.capitalize()}")
         
         # Filtra solo le canzoni dove questa emozione è nelle top 3
