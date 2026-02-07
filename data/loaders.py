@@ -67,3 +67,66 @@ def load_original_emotions(csv_path: str = "song_emotions.csv"):
         }
 
     return original_dict
+
+
+# ============================================================================
+# SIMILARITY CALCULATION FUNCTIONS
+# ============================================================================
+
+def load_original_emotions_by_filename(csv_path: str = "song_emotions.csv"):
+    """
+    Load original emotion values using only filename (not full path).
+    Returns dict: {filename: {emotion: value}}
+    """
+    try:
+        df = pd.read_csv(csv_path)
+    except FileNotFoundError:
+        st.warning("⚠️ File song_emotions.csv non trovato.")
+        return {}
+    
+    original_data = {}
+    for _, row in df.iterrows():
+        # Estrai solo il nome del file (ultima parte dopo \ o /)
+        filename = row['filename'].replace('\\', '/').split('/')[-1]
+        
+        emotions = {
+            'amusement': row['amusement'],
+            'anger': row['anger'],
+            'awe': row['awe'],
+            'contentment': row['contentment'],
+            'disgust': row['disgust'],
+            'excitement': row['excitement'],
+            'fear': row['fear'],
+            'sadness': row['sadness']
+        }
+        original_data[filename] = emotions
+    
+    return original_data
+
+
+def calculate_similarity_top3(original_emotions, user_emotions_avg):
+    """
+    Calculate similarity score (inner product) between original and user emotions
+    using only the top 3 emotions from original values.
+    
+    Args:
+        original_emotions: dict {emotion: value} - original values
+        user_emotions_avg: dict {emotion: value} - user averages
+    
+    Returns:
+        (similarity_score: float, top3_emotions: list)
+    """
+    if not original_emotions or not user_emotions_avg:
+        return None, []
+    
+    # Sort original emotions by value (descending) and take top 3
+    sorted_emotions = sorted(original_emotions.items(), key=lambda x: x[1], reverse=True)
+    top3_emotions = [e[0] for e in sorted_emotions[:3]]
+    
+    # Inner product: sum of products for top 3 emotions
+    similarity = sum(
+        original_emotions[emotion] * user_emotions_avg.get(emotion, 0)
+        for emotion in top3_emotions
+    )
+    
+    return similarity, top3_emotions
