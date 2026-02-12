@@ -1,4 +1,5 @@
 import json
+import math
 import pandas as pd
 import streamlit as st
 
@@ -104,29 +105,68 @@ def load_original_emotions_by_filename(csv_path: str = "song_emotions.csv"):
     return original_data
 
 
+def _l2_normalize_vector(vec):
+    if not vec:
+        return {}, 0.0
+
+    norm = math.sqrt(sum(value * value for value in vec.values()))
+    if norm == 0:
+        return {key: 0.0 for key in vec}, 0.0
+
+    return {key: value / norm for key, value in vec.items()}, norm
+
+
 def calculate_similarity_top3(original_emotions, user_emotions_avg):
-    """
-    Calculate similarity score (inner product) between original and user emotions
-    using only the top 3 emotions from original values.
-    
-    Args:
-        original_emotions: dict {emotion: value} - original values
-        user_emotions_avg: dict {emotion: value} - user averages
-    
-    Returns:
-        (similarity_score: float, top3_emotions: list)
-    """
+    """Calculate similarity score using L2-normalized top-3 emotions."""
     if not original_emotions or not user_emotions_avg:
         return None, []
-    
-    # Sort original emotions by value (descending) and take top 3
-    sorted_emotions = sorted(original_emotions.items(), key=lambda x: x[1], reverse=True)
+
+    original_norm, _ = _l2_normalize_vector(original_emotions)
+    user_norm, _ = _l2_normalize_vector(user_emotions_avg)
+
+    sorted_emotions = sorted(original_norm.items(), key=lambda x: x[1], reverse=True)
     top3_emotions = [e[0] for e in sorted_emotions[:3]]
-    
-    # Inner product: sum of products for top 3 emotions
+
+    original_sub_norm, _ = _l2_normalize_vector({e: original_norm[e] for e in top3_emotions})
+    user_sub_norm, _ = _l2_normalize_vector({e: user_norm.get(e, 0.0) for e in top3_emotions})
+
     similarity = sum(
-        original_emotions[emotion] * user_emotions_avg.get(emotion, 0)
+        original_sub_norm.get(emotion, 0.0) * user_sub_norm.get(emotion, 0.0)
         for emotion in top3_emotions
     )
-    
+
     return similarity, top3_emotions
+
+
+def calculate_similarity_top3_with_flag(original_emotions, user_emotions):
+    """Calculate similarity score and flag details for top-3 emotions."""
+    if not original_emotions or not user_emotions:
+        return None, [], False, []
+
+    original_norm, _ = _l2_normalize_vector(original_emotions)
+    user_norm, _ = _l2_normalize_vector(user_emotions)
+
+    sorted_emotions = sorted(original_norm.items(), key=lambda x: x[1], reverse=True)
+    top3_emotions = [e[0] for e in sorted_emotions[:3]]
+
+    original_sub_norm, _ = _l2_normalize_vector({e: original_norm[e] for e in top3_emotions})
+    user_sub_norm, _ = _l2_normalize_vector({e: user_norm.get(e, 0.0) for e in top3_emotions})
+
+    similarity = sum(
+        original_sub_norm.get(emotion, 0.0) * user_sub_norm.get(emotion, 0.0)
+        for emotion in top3_emotions
+    )
+
+    threshold = min((original_norm.get(emotion, 0.0) for emotion in top3_emotions), default=0.0)
+    flag_details = [
+        {
+            "emotion": emotion,
+            "user_value": value,
+            "threshold": threshold,
+        }
+        for emotion, value in user_norm.items()
+        if emotion not in top3_emotions and value > threshold
+    ]
+    flag_details.sort(key=lambda item: item["user_value"], reverse=True)
+
+    return similarity, top3_emotions, len(flag_details) > 0, flag_details

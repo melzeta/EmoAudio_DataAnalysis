@@ -2,16 +2,17 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from config.settings import EMOTIONS_LIST, EMOTION_COLORS
-from data.loaders import load_original_emotions_by_filename, calculate_similarity_top3
+from data.loaders import (
+    load_original_emotions_by_filename,
+    calculate_similarity_top3,
+    calculate_similarity_top3_with_flag,
+)
 
 
 def show(df_responses=None):
     st.header("Analisi Similarity: Input vs Output")
     
     st.markdown("""
-    **Metodo:** Prodotto interno (dot product) tra valori originali e risposte medie utenti,
-    calcolato sulle **top 3 emozioni** dei valori originali.
-    
     **Interpretazione:**
     - Similarity >= 0.6: Buon match
     - Similarity 0.4-0.6: Match medio
@@ -167,38 +168,89 @@ def show(df_responses=None):
     Mostriamo solo le canzoni dove quella emozione è tra le top 3 del ground truth.
     """)
     
+    num_users_by_song = df_responses.groupby("song_path")["user_id"].nunique().to_dict()
+    user_similarity_rows = []
+
+    for _, response in df_responses.iterrows():
+        song_path = response["song_path"]
+        filename = song_path.split("/")[-1]
+
+        if filename not in original_data:
+            continue
+
+        original_emotions = original_data[filename]
+        user_emotions = {e: response[e] for e in EMOTIONS_LIST}
+
+        similarity, top3, flag, flag_details = calculate_similarity_top3_with_flag(
+            original_emotions,
+            user_emotions,
+        )
+
+        if similarity is None:
+            continue
+
+        user_similarity_rows.append({
+            "user_id": response["user_id"],
+            "song_name": filename,
+            "song_path": song_path,
+            "num_users": int(num_users_by_song.get(song_path, 0)),
+            "similarity_score": similarity,
+            "top3_emotions": top3,
+            "flag": flag,
+            "flag_details": flag_details,
+        })
+
+    df_user_similarity = pd.DataFrame(user_similarity_rows)
+
     for emotion in EMOTIONS_LIST:
         st.markdown(f"### {emotion.capitalize()}")
         
         # Filtra solo le canzoni dove questa emozione è nelle top 3
-        emotion_matches = []
-        
-        for _, row in df_similarity.iterrows():
-            top3_list = row['top3_emotions'].split(', ')
-            
-            # Se l'emozione corrente è nelle top 3 di questa canzone
-            if emotion in top3_list:
-                emotion_matches.append(row)
-        
+        if df_user_similarity.empty:
+            st.info("Nessun match disponibile per questa emozione.")
+            continue
+
+        emotion_matches = df_user_similarity[
+            df_user_similarity["top3_emotions"].apply(lambda items: emotion in items)
+        ]
+
         if len(emotion_matches) == 0:
             st.info(f"Nessuna canzone ha '{emotion}' tra le top 3 emozioni del ground truth.")
             continue
         
         # Crea DataFrame e ordina per similarity
-        df_emotion = pd.DataFrame(emotion_matches)
-        df_emotion_sorted = df_emotion.sort_values('similarity_score', ascending=False).head(5)
+        df_emotion_sorted = emotion_matches.sort_values('similarity_score', ascending=False).head(5)
         
         # Mostra in colonne per layout compatto
         cols = st.columns(5)
         
+        flagged_count = 0
+
         for idx, (_, song) in enumerate(df_emotion_sorted.iterrows()):
             if idx < 5:  # Massimo 5
                 with cols[idx]:
+                    top3_display = ", ".join(song["top3_emotions"])
+                    flag_label = "YES" if song["flag"] else "NO"
+                    if song["flag"]:
+                        flagged_count += 1
+                        flag_details = "; ".join(
+                            f"{detail['emotion']}={detail['user_value']:.3f} (threshold {detail['threshold']:.3f})"
+                            for detail in song["flag_details"]
+                        )
+                        flag_extra = f"Outside T: {flag_details}"
+                    else:
+                        flag_extra = "Outside T: -"
+
                     st.markdown(f"""
-                    **{song['song_name'][:20]}...**  
+                    **User: {song['user_id']}**  
+                    num of users: {song['num_users']}  
                     Similarity: `{song['similarity_score']:.3f}`  
-                    Users: {song['num_users']}  
-                    Top 3: {song['top3_emotions']}
+                    T: {top3_display}  
+                    Flag: {flag_label}  
+                    {flag_extra}
                     """)
         
+        st.caption(
+            f"Flagged users: {flagged_count}/{len(df_emotion_sorted)} in top 5 for {emotion}."
+        )
         st.markdown("---")
