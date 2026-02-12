@@ -123,7 +123,7 @@ def render(df_responses, emotions_list, emotion_colors, original_emotions):
     # ========================================================================
 
     st.header("Inter-Rater Agreement Analysis")
-    st.write("Analisi delle canzoni ascoltate da più utenti, confrontando le risposte individuali con i valori emozionali originali")
+    st.write("Analisi delle canzoni ascoltate da pi9 utenti, confrontando le risposte individuali con i valori emozionali originali")
 
     song_user_counts = df_responses.groupby("song_path")["user_id"].nunique().reset_index()
     song_user_counts.rename(columns={"user_id": "num_users"}, inplace=True)
@@ -199,7 +199,7 @@ def render(df_responses, emotions_list, emotion_colors, original_emotions):
             col1, col2 = st.columns(2)
 
             with col1:
-                st.markdown("**Media ± Deviazione Standard per Emozione:**")
+                st.markdown("**Media 1 Deviazione Standard per Emozione:**")
                 stats_rows = []
                 for e in emotions_list:
                     stats_rows.append({

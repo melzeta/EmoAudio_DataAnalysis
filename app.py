@@ -12,8 +12,8 @@ from data.loaders import (
     load_original_emotions,
 )
 
-from pages.overview import render as render_overview
-from pages.spider_charts import render as render_spider
+from sections.overview import render as render_overview
+from sections.spider_charts import render as render_spider
 
 
 def main():
@@ -38,7 +38,7 @@ def main():
     elif menu == "🕷️ Spider Charts":
         render_spider(df_responses, EMOTIONS_LIST, EMOTION_COLORS, original_emotions)
     elif menu == "Similarity Analysis":
-        import pages.similarity_analysis as similarity_analysis
+        import sections.similarity_analysis as similarity_analysis
         similarity_analysis.show(df_responses)
 
 

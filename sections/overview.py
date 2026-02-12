@@ -31,7 +31,7 @@ def render(df_users: pd.DataFrame, df_responses: pd.DataFrame, chart_layout: dic
         st.markdown(f"""
             Su un totale di **{utenti_unici}** utenti registrati, 
             i dati analizzati derivano dai **{utenti_attivi}** utenti che hanno effettivamente 
-            interagito con le canzoni. Non ci sono informazioni di genere o età per gli utenti.
+            interagito con le canzoni. Non ci sono informazioni di genere o et0 per gli utenti.
         """)
 
     with col_right:
