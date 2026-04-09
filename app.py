@@ -14,10 +14,22 @@ from data.loaders import (
 
 from sections.overview import render as render_overview
 from sections.spider_charts import render as render_spider
+from sections.llm_analysis import render as render_llm_analysis
+
+
+def _activate_main_nav():
+    st.session_state["active_nav"] = "main"
+
+
+def _activate_llm_nav():
+    st.session_state["active_nav"] = "llm"
 
 
 def main():
     set_app_config()
+
+    if "active_nav" not in st.session_state:
+        st.session_state["active_nav"] = "main"
 
     df_users, df_responses = load_and_process_data()
     original_emotions = load_original_emotions()
@@ -30,10 +42,26 @@ def main():
             "🕷️ Spider Charts",
             "Similarity Analysis",
         ],
+        key="main_menu",
+        on_change=_activate_main_nav,
     )
+    with st.sidebar.expander("🤖 LLM Analysis", expanded=False):
+        llm_page = st.radio(
+            "LLM Analysis Pages",
+            [
+                "Overview",
+                "Fold Comparison",
+                "Cross-Model Analysis",
+            ],
+            key="llm_analysis_page",
+            label_visibility="collapsed",
+            on_change=_activate_llm_nav,
+        )
 
     # Routing
-    if menu == "Panoramica Dataset":
+    if st.session_state.get("active_nav") == "llm":
+        render_llm_analysis(llm_page)
+    elif menu == "Panoramica Dataset":
         render_overview(df_users, df_responses, CHART_LAYOUT)
     elif menu == "🕷️ Spider Charts":
         render_spider(df_responses, EMOTIONS_LIST, EMOTION_COLORS, original_emotions)

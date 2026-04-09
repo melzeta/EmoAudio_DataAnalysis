@@ -1,3 +1,6 @@
 streamlit
 pandas
 plotly
+openai
+anthropic
+google-generativeai
