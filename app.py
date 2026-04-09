@@ -14,8 +14,6 @@ from data.loaders import (
 
 from sections.overview import render as render_overview
 from sections.spider_charts import render as render_spider
-from sections.fold_review import render as render_fold_review
-from sections.fold_review_summary import render as render_fold_review_summary
 
 
 def main():
@@ -31,8 +29,6 @@ def main():
             "Panoramica Dataset",
             "🕷️ Spider Charts",
             "Similarity Analysis",
-            "Manual Fold Review",
-            "Fold Review Summary",
         ],
     )
 
@@ -44,10 +40,6 @@ def main():
     elif menu == "Similarity Analysis":
         import sections.similarity_analysis as similarity_analysis
         similarity_analysis.show(df_responses)
-    elif menu == "Manual Fold Review":
-        render_fold_review()
-    elif menu == "Fold Review Summary":
-        render_fold_review_summary()
 
 
 if __name__ == "__main__":
