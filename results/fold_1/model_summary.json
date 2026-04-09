@@ -1,0 +1,38 @@
+{
+  "coefficients": {
+    "amusement": {
+      "intercept": 0.36632698653899,
+      "slope": 0.11341526809943808
+    },
+    "anger": {
+      "intercept": 0.19597588417347891,
+      "slope": 0.08414892153568089
+    },
+    "awe": {
+      "intercept": 0.3358391535896623,
+      "slope": 0.039021601621278684
+    },
+    "contentment": {
+      "intercept": 0.28112869961958536,
+      "slope": 0.07642280002702669
+    },
+    "disgust": {
+      "intercept": 0.143604034361886,
+      "slope": 0.06688289127418566
+    },
+    "excitement": {
+      "intercept": 0.3559511846568083,
+      "slope": 0.12788993500947318
+    },
+    "fear": {
+      "intercept": 0.21147273585405088,
+      "slope": 0.13152539203307403
+    },
+    "sadness": {
+      "intercept": 0.1575807740840583,
+      "slope": 0.009376176653149895
+    }
+  },
+  "model_type": "per_emotion_univariate_linear_baseline",
+  "training_row_count": 173
+}

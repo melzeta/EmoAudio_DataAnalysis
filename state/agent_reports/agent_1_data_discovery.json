@@ -1,0 +1,33 @@
+{
+  "agent_id": 1,
+  "agent_name": "Data Discovery Agent",
+  "eligible_rows_after_deduplication": 219,
+  "eligible_rows_before_deduplication": 223,
+  "ineligible_missing_emotion_values": 0,
+  "ineligible_missing_ground_truth": 0,
+  "ineligible_missing_required_emotions": 0,
+  "ineligible_missing_song": 0,
+  "input_files": {
+    "ground_truth": "/mnt/c/Users/mely1/Projects/EmoAudio/data/song_emotion_ground_truth.csv",
+    "user_responses": "/mnt/c/Users/mely1/Projects/EmoAudio/data/user_emotion_responses.json"
+  },
+  "intended_emotion_distribution": {
+    "amusement": 33,
+    "anger": 30,
+    "awe": 25,
+    "contentment": 27,
+    "disgust": 27,
+    "excitement": 25,
+    "fear": 25,
+    "sadness": 27
+  },
+  "raw_response_rows": 223,
+  "registered_users": 52,
+  "timestamp": "2026-04-01T19:08:02.051085+00:00",
+  "top_level_keys": [
+    "count",
+    "songData",
+    "userData"
+  ],
+  "unique_song_count": 212
+}

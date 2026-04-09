@@ -1,0 +1,11 @@
+{
+  "agent_id": 9,
+  "agent_name": "Safety & Anti-Fabrication Agent",
+  "fold_index": 1,
+  "prediction_count_matches_test_count": true,
+  "prediction_sample_ids_match_test_split": true,
+  "results_path": "/mnt/c/Users/mely1/Projects/EmoAudio/results/fold_1/predictions.csv",
+  "source_split_path": "splits/fold_1/test.csv",
+  "status": "passed",
+  "timestamp": "2026-04-01T19:08:25.018145+00:00"
+}

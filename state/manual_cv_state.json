@@ -1,0 +1,70 @@
+{
+  "current_review_fold": 5,
+  "duplicate_rows_removed": 4,
+  "eligible_sample_count": 219,
+  "folds": {
+    "1": {
+      "approved_at": "2026-04-01T19:57:27.951478+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-01T19:08:25.022685+00:00",
+      "fold_index": 1,
+      "results_dir": "results/fold_1",
+      "reviewed": true,
+      "reviewed_at": "2026-04-01T19:57:27.951398+00:00",
+      "status": "completed",
+      "test_count": 46,
+      "train_count": 173
+    },
+    "2": {
+      "approved_at": "2026-04-01T19:58:42.188557+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-01T19:57:28.055140+00:00",
+      "fold_index": 2,
+      "results_dir": "results/fold_2",
+      "reviewed": true,
+      "reviewed_at": "2026-04-01T19:58:42.188546+00:00",
+      "status": "completed",
+      "test_count": 46,
+      "train_count": 173
+    },
+    "3": {
+      "approved_at": "2026-04-01T20:02:57.191542+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-01T19:58:42.236823+00:00",
+      "fold_index": 3,
+      "results_dir": "results/fold_3",
+      "reviewed": true,
+      "reviewed_at": "2026-04-01T20:02:57.191530+00:00",
+      "status": "completed",
+      "test_count": 43,
+      "train_count": 176
+    },
+    "4": {
+      "approved_at": "2026-04-01T20:03:32.847910+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-01T20:02:57.240370+00:00",
+      "fold_index": 4,
+      "results_dir": "results/fold_4",
+      "reviewed": true,
+      "reviewed_at": "2026-04-01T20:03:32.847897+00:00",
+      "status": "completed",
+      "test_count": 42,
+      "train_count": 177
+    },
+    "5": {
+      "approved_to_proceed": false,
+      "completed_at": "2026-04-01T20:03:32.906099+00:00",
+      "fold_index": 5,
+      "results_dir": "results/fold_5",
+      "reviewed": false,
+      "status": "completed",
+      "test_count": 42,
+      "train_count": 177
+    }
+  },
+  "last_completed_fold": 5,
+  "last_reviewed_fold": 4,
+  "prepared": true,
+  "prepared_at": "2026-04-01T19:08:02.110298+00:00",
+  "random_seed": 42
+}
