@@ -1,9 +1,0 @@
-{
-  "agent_id": 9,
-  "agent_name": "Safety & Anti-Fabrication Agent",
-  "duplicate_rows_removed": 4,
-  "eligible_sample_count": 219,
-  "no_synthetic_rows_added": true,
-  "status": "passed",
-  "timestamp": "2026-04-01T19:08:02.112113+00:00"
-}
