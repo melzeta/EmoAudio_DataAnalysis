@@ -9,7 +9,7 @@ import streamlit as st
 # ============================================================================
 
 @st.cache_data
-def load_and_process_data(json_path: str = "data.json"):
+def load_and_process_data(json_path: str = "data/user_emotion_responses.json"):
     """Load and process user emotion response data from JSON file"""
     with open(json_path, "r") as f:
         data = json.load(f)
@@ -43,13 +43,13 @@ def load_and_process_data(json_path: str = "data.json"):
 
 
 @st.cache_data
-def load_original_emotions(csv_path: str = "song_emotions.csv"):
+def load_original_emotions(csv_path: str = "data/song_emotion_ground_truth.csv"):
     """Load original emotion values for songs from CSV file"""
     try:
         df_original = pd.read_csv(csv_path)
     except FileNotFoundError:
         st.warning(
-            "⚠️ File song_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti."
+            "⚠️ File data/song_emotion_ground_truth.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti."
         )
         return {}
 
@@ -74,7 +74,7 @@ def load_original_emotions(csv_path: str = "song_emotions.csv"):
 # SIMILARITY CALCULATION FUNCTIONS
 # ============================================================================
 
-def load_original_emotions_by_filename(csv_path: str = "song_emotions.csv"):
+def load_original_emotions_by_filename(csv_path: str = "data/song_emotion_ground_truth.csv"):
     """
     Load original emotion values using only filename (not full path).
     Returns dict: {filename: {emotion: value}}
@@ -82,7 +82,7 @@ def load_original_emotions_by_filename(csv_path: str = "song_emotions.csv"):
     try:
         df = pd.read_csv(csv_path)
     except FileNotFoundError:
-        st.warning("⚠️ File song_emotions.csv non trovato.")
+        st.warning("⚠️ File data/song_emotion_ground_truth.csv non trovato.")
         return {}
     
     original_data = {}

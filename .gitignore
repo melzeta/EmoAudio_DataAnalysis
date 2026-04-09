@@ -1,1 +1,10 @@
-original_emotions.csv
+__pycache__/
+*.py[cod]
+
+results/
+splits/
+state/
+
+.streamlit/
+.DS_Store
+AGENTS.md

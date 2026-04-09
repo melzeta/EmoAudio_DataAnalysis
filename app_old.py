@@ -28,7 +28,7 @@ st.set_page_config(page_title="Music Emotion Dashboard", layout="wide")
 @st.cache_data
 def load_and_process_data():
     """Load and process user emotion response data from JSON file"""
-    with open('data.json', 'r') as f:
+    with open('data/user_emotion_responses.json', 'r') as f:
         data = json.load(f)
     
     user_rows = []
@@ -62,9 +62,9 @@ def load_and_process_data():
 def load_original_emotions():
     """Load original emotion values for songs from CSV file"""
     try:
-        df_original = pd.read_csv('song_emotions.csv')
+        df_original = pd.read_csv('data/song_emotion_ground_truth.csv')
     except FileNotFoundError:
-        st.warning("⚠️ File song_emotions.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
+        st.warning("⚠️ File data/song_emotion_ground_truth.csv non trovato. Gli spider charts mostreranno solo i dati degli utenti.")
         return {}
     
     original_dict = {}
