@@ -1,4 +1,5 @@
 import json
+import os
 import re
 
 import streamlit as st
@@ -64,13 +65,23 @@ def _mock_response(prompt: str, model_name: str) -> dict:
     return annotate_with_mock(ground_truth, model_name=model_name, song_key=song_key)
 
 
+def _get_api_key(secret_name: str) -> str:
+    try:
+        return st.secrets[secret_name]
+    except Exception:
+        api_key = os.environ.get(secret_name)
+        if api_key:
+            return api_key
+    raise RuntimeError(
+        f"Missing {secret_name}. Provide it via Streamlit secrets or the {secret_name} environment variable."
+    )
+
+
 def call_gpt4(prompt: str) -> dict:
     if USE_MOCK:
         return _mock_response(prompt, "gpt4")
 
-    api_key = st.secrets.get("OPENAI_API_KEY")
-    if not api_key:
-        raise RuntimeError("Missing OPENAI_API_KEY in Streamlit secrets.")
+    api_key = _get_api_key("OPENAI_API_KEY")
 
     try:
         from openai import OpenAI
@@ -94,9 +105,7 @@ def call_claude(prompt: str) -> dict:
     if USE_MOCK:
         return _mock_response(prompt, "claude")
 
-    api_key = st.secrets.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise RuntimeError("Missing ANTHROPIC_API_KEY in Streamlit secrets.")
+    api_key = _get_api_key("ANTHROPIC_API_KEY")
 
     try:
         import anthropic
@@ -122,9 +131,7 @@ def call_gemini(prompt: str) -> dict:
     if USE_MOCK:
         return _mock_response(prompt, "gemini")
 
-    api_key = st.secrets.get("GOOGLE_API_KEY")
-    if not api_key:
-        raise RuntimeError("Missing GOOGLE_API_KEY in Streamlit secrets.")
+    api_key = _get_api_key("GOOGLE_API_KEY")
 
     try:
         import google.generativeai as genai
