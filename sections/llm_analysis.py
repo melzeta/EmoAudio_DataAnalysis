@@ -18,6 +18,7 @@ from evaluation.metrics_llm import ANNOTATORS, EMOTION_COLUMNS, compute_all_fold
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
+USER_RESPONSES_PATH = ROOT_DIR / "data" / "user_emotion_responses.json"
 USER_FOLDS_PATH = ROOT_DIR / "state" / "user_folds.json"
 REPORTS_DIR = ROOT_DIR / "state" / "agent_reports"
 EXPORTS_DIR = ROOT_DIR / "data" / "exports"
@@ -40,8 +41,18 @@ def _render_badge(label: str, color: str) -> None:
 
 
 def _demographics_frame() -> pd.DataFrame:
-    folds = _load_json(USER_FOLDS_PATH, default={})
-    users = folds.get("users", [])
+    raw_data = _load_json(USER_RESPONSES_PATH, default={})
+    users = []
+    for user_id, user_info in raw_data.get("userData", {}).items():
+        demographics = user_info.get("demographics", {})
+        users.append(
+            {
+                "user_id": user_id,
+                "gender": demographics.get("gender", "N/A"),
+                "age_range": demographics.get("age_range", "N/A"),
+                "nationality": demographics.get("nationality", "N/A"),
+            }
+        )
     return pd.DataFrame(users)
 
 
