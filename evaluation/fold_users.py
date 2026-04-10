@@ -11,24 +11,6 @@ N_FOLDS = 5
 SEED = 42
 
 
-def _age_range(age_value) -> str:
-    try:
-        age = int(age_value)
-    except (TypeError, ValueError):
-        return "unknown"
-    if age < 18:
-        return "under_18"
-    if age <= 24:
-        return "18_24"
-    if age <= 34:
-        return "25_34"
-    if age <= 44:
-        return "35_44"
-    if age <= 54:
-        return "45_54"
-    return "55_plus"
-
-
 def build_user_folds() -> dict:
     with USER_RESPONSES_PATH.open("r", encoding="utf-8") as handle:
         raw_data = json.load(handle)
@@ -36,11 +18,13 @@ def build_user_folds() -> dict:
     users = []
     rows_by_stratum = defaultdict(list)
     for user_id, user_info in sorted(raw_data.get("userData", {}).items()):
+        demographics = user_info.get("demographics", {})
         payload = {
             "user_id": user_id,
-            "gender": user_info.get("gender", "N/A"),
-            "age": user_info.get("age", "N/A"),
-            "age_range": _age_range(user_info.get("age", "N/A")),
+            "gender": demographics.get("gender", "N/A"),
+            "age_range": demographics.get("age_range", "N/A"),
+            "nationality": demographics.get("nationality", "N/A"),
+            "music_genres": demographics.get("music_genres", []),
         }
         users.append(payload)
         stratum = f"{payload['gender']}|{payload['age_range']}"

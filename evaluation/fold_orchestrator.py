@@ -41,6 +41,16 @@ def _write_json(path: Path, payload: dict) -> None:
     path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
 
 
+def _write_annotation_csv(path: Path, rows: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fieldnames = ["filename", *EMOTION_COLUMNS]
+    with path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(row)
+
+
 def _create_initial_state(user_folds: dict) -> dict:
     return {
         "prepared": True,
@@ -176,6 +186,56 @@ def _build_song_payloads(test_users: set[str]) -> tuple[list[dict], list[str]]:
     return [song_payloads[key] for key in sorted(song_payloads)], sorted(song_payloads)
 
 
+def _average_song_vectors(user_ids: set[str] | None = None) -> dict:
+    raw_data = _load_user_responses()
+    grouped = {}
+    for user_id, user_info in raw_data.get("userData", {}).items():
+        if user_ids is not None and user_id not in user_ids:
+            continue
+        for response in user_info.get("emotionResponses", []):
+            song_path = response.get("song")
+            emotion_values = response.get("emotionValues")
+            if not song_path or not emotion_values:
+                continue
+            song_key = _normalize_song_key(song_path)
+            bucket = grouped.setdefault(song_key, {emotion: [] for emotion in EMOTION_COLUMNS})
+            for emotion in EMOTION_COLUMNS:
+                bucket[emotion].append(float(emotion_values[emotion]))
+
+    return {
+        song_key: {
+            emotion: sum(values[emotion]) / len(values[emotion])
+            for emotion in EMOTION_COLUMNS
+        }
+        for song_key, values in grouped.items()
+        if all(values[emotion] for emotion in EMOTION_COLUMNS)
+    }
+
+
+def _export_human_baselines(fold_number: int, song_keys: list[str], test_users: set[str]) -> dict:
+    output_dir = ANNOTATIONS_DIR / f"fold_{fold_number}"
+    consensus_rows = _average_song_vectors()
+    test_rows = _average_song_vectors(test_users)
+
+    human_consensus = [
+        {"filename": song_key, **{emotion: consensus_rows[song_key][emotion] for emotion in EMOTION_COLUMNS}}
+        for song_key in song_keys
+        if song_key in consensus_rows
+    ]
+    human_test = [
+        {"filename": song_key, **{emotion: test_rows[song_key][emotion] for emotion in EMOTION_COLUMNS}}
+        for song_key in song_keys
+        if song_key in test_rows
+    ]
+
+    _write_annotation_csv(output_dir / "human_consensus.csv", human_consensus)
+    _write_annotation_csv(output_dir / "human_test.csv", human_test)
+    return {
+        "human_consensus_count": len(human_consensus),
+        "human_test_count": len(human_test),
+    }
+
+
 def run_fold(fold_number: int) -> dict:
     state = _load_state()
     if not state.get("prepared"):
@@ -189,6 +249,7 @@ def run_fold(fold_number: int) -> dict:
     songs, song_keys = _build_song_payloads(test_users)
 
     annotate_songs(songs, fold_number)
+    baseline_counts = _export_human_baselines(fold_number, song_keys, test_users)
 
     summary = {
         "fold": fold_number,
@@ -197,6 +258,7 @@ def run_fold(fold_number: int) -> dict:
         "songs_annotated": song_keys,
         "song_count": len(song_keys),
         "annotation_dir": str(ANNOTATIONS_DIR / f"fold_{fold_number}"),
+        **baseline_counts,
     }
     _write_json(STATE_DIR / f"fold_{fold_number}_summary.json", summary)
 
