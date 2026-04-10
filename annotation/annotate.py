@@ -1,7 +1,8 @@
 import csv
 from pathlib import Path
 
-from annotation.llm_clients import call_claude, call_gemini, call_gpt4
+from agents import supervisor
+from annotation.llm_clients import call_deepseek, call_gemini, call_mistral
 from annotation.prompt_builder import build_prompt
 
 
@@ -17,15 +18,17 @@ EMOTION_ORDER = [
 ]
 
 OUTPUT_MODELS = {
-    "gpt4": call_gpt4,
-    "claude": call_claude,
+    "deepseek": call_deepseek,
     "gemini": call_gemini,
+    "mistral": call_mistral,
 }
 
 
 def _intended_emotion_from_filename(filename: str) -> str:
     parts = filename.replace("\\", "/").split("/")
-    return parts[1] if len(parts) > 1 else "unknown"
+    if len(parts) > 1:
+        return parts[0]
+    return "unknown"
 
 
 def _load_existing_filenames(path: Path) -> set[str]:
@@ -73,3 +76,11 @@ def annotate_songs(songs: list[dict], fold_number: int) -> None:
             _append_row(output_dir / f"{model_name}.csv", row)
             existing_by_model[model_name].add(filename)
             print(f"  - {model_name}: saved")
+
+    try:
+        report = supervisor.run(fold_number)
+    except Exception as exc:
+        raise RuntimeError(f"Annotation supervisor failed for fold {fold_number}: {exc}") from exc
+
+    if report.get("overall") != "pass":
+        raise RuntimeError(f"Annotation supervisor reported failure for fold {fold_number}: {report}")

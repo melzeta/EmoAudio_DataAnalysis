@@ -2,9 +2,12 @@ import json
 import os
 import re
 
-import streamlit as st
-
 from annotation.mock_annotator import annotate_with_mock
+
+try:
+    import streamlit as st
+except ImportError:  # pragma: no cover - optional at CLI runtime
+    st = None
 
 
 USE_MOCK = True
@@ -31,7 +34,7 @@ def _extract_ground_truth_from_prompt(prompt: str) -> dict:
     return values
 
 
-def _extract_intended_emotion(prompt: str) -> str:
+def _extract_song_key_from_prompt(prompt: str) -> str:
     match = re.search(r"primarily evoking ([^.]+)\.", prompt)
     return match.group(1) if match else "unknown"
 
@@ -59,91 +62,65 @@ def _validate_response(payload: dict, provider_name: str) -> dict:
     return validated
 
 
-def _mock_response(prompt: str, model_name: str) -> dict:
-    ground_truth = _extract_ground_truth_from_prompt(prompt)
-    song_key = _extract_intended_emotion(prompt)
-    return annotate_with_mock(ground_truth, model_name=model_name, song_key=song_key)
-
-
 def _get_api_key(secret_name: str) -> str:
-    try:
-        return st.secrets[secret_name]
-    except Exception:
-        api_key = os.environ.get(secret_name)
-        if api_key:
-            return api_key
+    if st is not None:
+        try:
+            return st.secrets[secret_name]
+        except Exception:
+            pass
+
+    api_key = os.environ.get(secret_name)
+    if api_key:
+        return api_key
     raise RuntimeError(
         f"Missing {secret_name}. Provide it via Streamlit secrets or the {secret_name} environment variable."
     )
 
 
-def call_gpt4(prompt: str) -> dict:
-    if USE_MOCK:
-        return _mock_response(prompt, "gpt4")
+def _mock_response(prompt: str, model_name: str) -> dict:
+    ground_truth = _extract_ground_truth_from_prompt(prompt)
+    song_key = _extract_song_key_from_prompt(prompt)
+    return annotate_with_mock(ground_truth, model_name=model_name, song_key=song_key)
 
-    api_key = _get_api_key("OPENAI_API_KEY")
 
+def _call_openrouter(prompt: str, model_name: str) -> dict:
     try:
         from openai import OpenAI
     except ImportError as exc:
-        raise RuntimeError("The 'openai' package is required for GPT-4 calls.") from exc
+        raise RuntimeError("The 'openai' package is required for OpenRouter calls.") from exc
 
-    client = OpenAI(api_key=api_key)
-    response = client.responses.create(
-        model="gpt-4o",
-        input=prompt,
+    client = OpenAI(
+        api_key=_get_api_key("OPENROUTER_API_KEY"),
+        base_url="https://openrouter.ai/api/v1",
     )
-    text = response.output_text
-    try:
-        payload = json.loads(text)
-    except json.JSONDecodeError as exc:
-        raise ValueError(f"OpenAI returned malformed JSON: {text}") from exc
-    return _validate_response(payload, "OpenAI")
-
-
-def call_claude(prompt: str) -> dict:
-    if USE_MOCK:
-        return _mock_response(prompt, "claude")
-
-    api_key = _get_api_key("ANTHROPIC_API_KEY")
-
-    try:
-        import anthropic
-    except ImportError as exc:
-        raise RuntimeError("The 'anthropic' package is required for Claude calls.") from exc
-
-    client = anthropic.Anthropic(api_key=api_key)
-    response = client.messages.create(
-        model="claude-3-5-sonnet-latest",
-        max_tokens=300,
+    response = client.chat.completions.create(
+        model=model_name,
         messages=[{"role": "user", "content": prompt}],
     )
-    text_blocks = [block.text for block in response.content if getattr(block, "type", "") == "text"]
-    text = "".join(text_blocks).strip()
+    content = response.choices[0].message.content if response.choices else ""
+    if not content:
+        raise ValueError(f"OpenRouter returned an empty response for model '{model_name}'.")
+
     try:
-        payload = json.loads(text)
+        payload = json.loads(content)
     except json.JSONDecodeError as exc:
-        raise ValueError(f"Anthropic returned malformed JSON: {text}") from exc
-    return _validate_response(payload, "Anthropic")
+        raise ValueError(f"OpenRouter returned malformed JSON for model '{model_name}': {content}") from exc
+    return _validate_response(payload, model_name)
+
+
+def call_deepseek(prompt: str) -> dict:
+    if USE_MOCK:
+        return _mock_response(prompt, "deepseek")
+    return _call_openrouter(prompt, "deepseek/deepseek-chat:free")
 
 
 def call_gemini(prompt: str) -> dict:
     if USE_MOCK:
         return _mock_response(prompt, "gemini")
+    return _call_openrouter(prompt, "google/gemini-2.0-flash-exp:free")
 
-    api_key = _get_api_key("GOOGLE_API_KEY")
 
-    try:
-        import google.generativeai as genai
-    except ImportError as exc:
-        raise RuntimeError("The 'google-generativeai' package is required for Gemini calls.") from exc
-
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-pro")
-    response = model.generate_content(prompt)
-    text = (response.text or "").strip()
-    try:
-        payload = json.loads(text)
-    except json.JSONDecodeError as exc:
-        raise ValueError(f"Gemini returned malformed JSON: {text}") from exc
-    return _validate_response(payload, "Gemini")
+def call_mistral(prompt: str) -> dict:
+    if USE_MOCK:
+        return _mock_response(prompt, "mistral")
+    return _call_openrouter(prompt, "mistralai/mistral-7b-instruct:free")

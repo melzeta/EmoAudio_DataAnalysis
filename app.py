@@ -52,6 +52,7 @@ def main():
                 "Overview",
                 "Fold Comparison",
                 "Cross-Model Analysis",
+                "Agent Reports",
             ],
             key="llm_analysis_page",
             label_visibility="collapsed",

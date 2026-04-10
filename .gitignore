@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 AGENTS.md
 data/annotations/
+state/agent_reports/
+state/fold_*.json
+state/user_folds.json
