@@ -10,7 +10,7 @@ except ImportError:  # pragma: no cover - optional at CLI runtime
     st = None
 
 
-USE_MOCK = True
+USE_MOCK = False
 
 EMOTION_ORDER = [
     "amusement",
@@ -22,6 +22,10 @@ EMOTION_ORDER = [
     "fear",
     "sadness",
 ]
+
+
+def get_run_mode() -> str:
+    return "mock" if USE_MOCK else "live"
 
 
 def _extract_ground_truth_from_prompt(prompt: str) -> dict:

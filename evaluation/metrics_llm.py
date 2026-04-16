@@ -1,6 +1,7 @@
 import csv
 import math
 from pathlib import Path
+from evaluation.utils import read_json, write_json
 
 from evaluation import fold_orchestrator
 
@@ -13,8 +14,17 @@ except ImportError:  # pragma: no cover - optional dependency fallback
 ROOT_DIR = Path(__file__).resolve().parent.parent
 ANNOTATIONS_DIR = ROOT_DIR / "data" / "annotations"
 GROUND_TRUTH_PATH = ROOT_DIR / "data" / "song_emotion_ground_truth.csv"
+LLM_ANALYSIS_DIR = ROOT_DIR / "state" / "llm_analysis"
 EMOTION_COLUMNS = fold_orchestrator.EMOTION_COLUMNS
 ANNOTATORS = ["human_test", "human_consensus", "deepseek", "gemini", "mistral", "ground_truth"]
+
+
+def fold_metrics_path(fold_number: int) -> Path:
+    return LLM_ANALYSIS_DIR / f"fold_{fold_number}_metrics.json"
+
+
+def aggregate_metrics_path() -> Path:
+    return LLM_ANALYSIS_DIR / "aggregate_metrics.json"
 
 
 def _load_annotation_csv(path: Path) -> dict:
@@ -239,6 +249,23 @@ def compute_fold_metrics(fold_number: int) -> dict:
     }
 
 
+def persist_fold_metrics(fold_number: int) -> dict:
+    metrics = compute_fold_metrics(fold_number)
+    write_json(fold_metrics_path(fold_number), metrics)
+    return metrics
+
+
+def load_saved_fold_metrics(fold_number: int) -> dict | None:
+    return read_json(fold_metrics_path(fold_number), default=None)
+
+
+def load_or_compute_fold_metrics(fold_number: int) -> dict:
+    saved = load_saved_fold_metrics(fold_number)
+    if saved is not None:
+        return saved
+    return persist_fold_metrics(fold_number)
+
+
 def compute_all_folds_metrics() -> dict:
     fold_results = []
     for row in fold_orchestrator.get_fold_status():
@@ -298,3 +325,20 @@ def compute_all_folds_metrics() -> dict:
         "folds": fold_results,
         "aggregate": aggregate,
     }
+
+
+def persist_all_folds_metrics() -> dict:
+    results = compute_all_folds_metrics()
+    write_json(aggregate_metrics_path(), results)
+    return results
+
+
+def load_saved_all_folds_metrics() -> dict | None:
+    return read_json(aggregate_metrics_path(), default=None)
+
+
+def load_or_compute_all_folds_metrics() -> dict:
+    saved = load_saved_all_folds_metrics()
+    if saved is not None:
+        return saved
+    return persist_all_folds_metrics()

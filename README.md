@@ -1,97 +1,110 @@
-# EmoAudio_DataAnalysis
+# EmoAudio
 
-Initial data visualisation plus a manual 5-fold evaluation workflow.
+Streamlit dashboard plus a fold-based LLM analysis workflow for music-emotion annotations.
 
-## Manual 5-Fold Evaluation
+## Data Sources
 
-The fold pipeline only uses evaluated samples from:
+The LLM fold workflow uses only these checked-in files as source data:
 
-- `data/user_emotion_responses.json`: user-rated targets
-- `data/song_emotion_ground_truth.csv`: song-level input vectors
+- `data/user_emotion_responses.json`
+- `data/song_emotion_ground_truth.csv`
 
-The workflow is manual by design:
+Test users are selected from the JSON. Songs are included only if they appear in those users' responses and also have a matching row in the ground-truth CSV.
 
-1. prepare all 5 deterministic folds once
-2. run only Fold 1
-3. review Fold 1 in Streamlit
-4. explicitly approve Fold 2
-5. run Fold 2 manually
-6. repeat until Fold 5
+## Main App
 
-There is no automatic loop that runs all folds.
-
-### 1. Prepare Folds
-
-```bash
-python3 -m evaluation.cli prepare
-```
-
-This creates:
-
-- `splits/eligible_samples.csv`
-- `splits/fold_1/train.csv` ... `splits/fold_5/test.csv`
-- `state/manual_cv_state.json`
-- validation reports under `state/agent_reports/`
-
-### 2. Run Fold 1
-
-```bash
-python3 -m evaluation.cli run-fold --fold 1
-```
-
-This saves Fold 1 outputs in:
-
-- `results/fold_1/predictions.csv`
-- `results/fold_1/test_items.csv`
-- `results/fold_1/model_summary.json`
-- `results/fold_1/metrics_summary.json`
-
-### 3. Review Fold 1
-
-Launch Streamlit:
+Run the app with:
 
 ```bash
 streamlit run app.py
 ```
 
-Open the `Manual Fold Review` section to inspect:
+The sidebar contains:
 
-- the current fold
-- its 20% test split
-- predictions vs ground truth
-- aggregate metrics
+- `Panoramica Dataset`
+- `🕷️ Spider Charts`
+- `Similarity Analysis`
+- `LLM Analysis`
 
-Use the review buttons to:
+## Final LLM Workflow
 
-- mark the fold as reviewed
-- explicitly approve proceeding to the next fold
+The current fold workflow is the `LLM Analysis` flow in the Streamlit app.
 
-### 4. Proceed to Fold 2
+Each completed fold saves:
 
-Only after Fold 1 has been reviewed and approved:
+- annotation CSVs in `data/annotations/fold_N/`
+- a run manifest in `data/annotations/fold_N/run_manifest.json`
+- a fold summary in `state/fold_N_summary.json`
+- agent reports in `state/agent_reports/`
+- persisted fold metrics in `state/llm_analysis/fold_N_metrics.json`
+- persisted aggregate metrics in `state/llm_analysis/aggregate_metrics.json`
 
-```bash
-python3 -m evaluation.cli run-fold --fold 2
-```
+That means the fold outputs and analysis remain available the next time you start Streamlit.
 
-Then repeat the same review-and-approve cycle for Folds 2 to 5.
+## Switching From Mock To Live
 
-### Useful Commands
+Before a real run:
 
-Show current state:
+1. Set `USE_MOCK = False` in `annotation/llm_clients.py`.
+2. Provide `OPENROUTER_API_KEY` through Streamlit secrets or an environment variable.
+3. Remove old mock fold outputs before starting a live run.
 
-```bash
-python3 -m evaluation.cli status
-```
-
-Mark a fold reviewed from the CLI if needed:
-
-```bash
-python3 -m evaluation.cli review --fold 1 --approve-next
-```
-
-Generate validation summary:
+Recommended cleanup targets:
 
 ```bash
-python3 -m evaluation.cli validate
+rm -rf data/annotations/fold_* state/fold_workflow.json state/fold_*_summary.json state/user_folds.json state/llm_analysis state/agent_reports/fold_*_report.json
 ```
+
+The app now blocks re-running a fold if existing annotation CSVs do not have a matching run manifest or if the saved fold was created in a different mode (`mock` vs `live`).
+
+## Running Each Fold
+
+1. Launch `streamlit run app.py`.
+2. Open `LLM Analysis -> Overview`.
+3. Click `Run Next Fold`.
+4. Review the saved fold output in:
+   - `LLM Analysis -> Overview`
+   - `LLM Analysis -> Fold Comparison`
+   - `LLM Analysis -> Cross-Model Analysis`
+   - `LLM Analysis -> Agent Reports`
+5. If the fold is acceptable, click `Approve Fold N`.
+6. Repeat for the next fold.
+
+Folds are intentionally manual. Fold `N+1` stays locked until Fold `N` is completed and approved.
+
+## Per-Fold Checks
+
+Each fold automatically runs the supervisor after annotation generation. The supervisor runs:
+
+- `security_agent`
+- `quality_agent`
+- `consistency_agent`
+
+If these checks fail, the fold run fails.
+
+## Statistical Analysis
+
+Per-fold and aggregate analysis includes:
+
+- MAE
+- RMSE
+- Pearson correlation
+- Spearman correlation
+- cosine similarity
+- top-emotion accuracy
+- Krippendorff alpha
+
+These metrics compare:
+
+- `human_test`
+- `human_consensus`
+- `deepseek`
+- `gemini`
+- `mistral`
+- `ground_truth`
+
+## Important Note About The Prompt
+
+The live LLM prompt does not use audio files. It gives the model the ground-truth 8-emotion song vector and asks it to predict average listener ratings from that information.
+
+If you want an audio-based system instead, the prompting and annotation design would need to change.

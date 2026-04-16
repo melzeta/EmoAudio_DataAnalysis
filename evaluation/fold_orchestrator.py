@@ -1,8 +1,10 @@
 import csv
+import hashlib
 import json
 from pathlib import Path
 
 from annotation.annotate import annotate_songs
+from annotation.llm_clients import get_run_mode
 from evaluation.fold_users import N_FOLDS, USER_FOLDS_PATH, build_user_folds
 from evaluation.utils import utc_now
 
@@ -13,6 +15,7 @@ GROUND_TRUTH_PATH = ROOT_DIR / "data" / "song_emotion_ground_truth.csv"
 STATE_DIR = ROOT_DIR / "state"
 WORKFLOW_STATE_PATH = STATE_DIR / "fold_workflow.json"
 ANNOTATIONS_DIR = ROOT_DIR / "data" / "annotations"
+LLM_ANALYSIS_DIR = STATE_DIR / "llm_analysis"
 EMOTION_COLUMNS = [
     "amusement",
     "anger",
@@ -49,6 +52,168 @@ def _write_annotation_csv(path: Path, rows: list[dict]) -> None:
         writer.writeheader()
         for row in rows:
             writer.writerow(row)
+
+
+def _analysis_metrics_path(fold_number: int) -> Path:
+    return LLM_ANALYSIS_DIR / f"fold_{fold_number}_metrics.json"
+
+
+def _annotation_dir(fold_number: int) -> Path:
+    return ANNOTATIONS_DIR / f"fold_{fold_number}"
+
+
+def _annotation_manifest_path(fold_number: int) -> Path:
+    return _annotation_dir(fold_number) / "run_manifest.json"
+
+
+def _sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        while True:
+            chunk = handle.read(8192)
+            if not chunk:
+                break
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _source_file_metadata() -> dict:
+    return {
+        "user_responses": {
+            "path": str(USER_RESPONSES_PATH),
+            "sha256": _sha256_file(USER_RESPONSES_PATH),
+        },
+        "ground_truth": {
+            "path": str(GROUND_TRUTH_PATH),
+            "sha256": _sha256_file(GROUND_TRUTH_PATH),
+        },
+    }
+
+
+def _load_annotation_manifest(fold_number: int) -> dict | None:
+    path = _annotation_manifest_path(fold_number)
+    if not path.exists():
+        return None
+    return _read_json(path, default={})
+
+
+def _write_annotation_manifest(fold_number: int, payload: dict) -> Path:
+    path = _annotation_manifest_path(fold_number)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
+    return path
+
+
+def _has_existing_annotation_outputs(fold_number: int) -> bool:
+    fold_dir = _annotation_dir(fold_number)
+    if not fold_dir.exists():
+        return False
+    return any(path.suffix.lower() == ".csv" for path in fold_dir.glob("*.csv"))
+
+
+def _assert_annotation_storage_is_compatible(fold_number: int) -> None:
+    manifest = _load_annotation_manifest(fold_number)
+    current_mode = get_run_mode()
+    current_sources = _source_file_metadata()
+
+    if manifest is None:
+        if _has_existing_annotation_outputs(fold_number):
+            raise RuntimeError(
+                f"Fold {fold_number} already has annotation CSVs but no run manifest. "
+                f"Clean data/annotations/fold_{fold_number} before running this fold again."
+            )
+        return
+
+    existing_mode = manifest.get("run_mode")
+    if existing_mode and existing_mode != current_mode:
+        raise RuntimeError(
+            f"Fold {fold_number} already contains {existing_mode} annotations. "
+            f"Current mode is {current_mode}. Clean fold artifacts before re-running."
+        )
+
+    existing_sources = manifest.get("source_files", {})
+    if existing_sources and existing_sources != current_sources:
+        raise RuntimeError(
+            f"Fold {fold_number} was created from different source data. "
+            "Clean the fold artifacts before running it against the current data files."
+        )
+
+
+def _prepare_annotation_run_manifest(fold_number: int, test_users: set[str]) -> None:
+    manifest = _load_annotation_manifest(fold_number) or {}
+    if manifest.get("status") == "completed":
+        return
+
+    _write_annotation_manifest(
+        fold_number,
+        {
+            **manifest,
+            "fold": fold_number,
+            "status": "running",
+            "run_mode": get_run_mode(),
+            "source_files": _source_file_metadata(),
+            "test_users": sorted(test_users),
+            "started_at": manifest.get("started_at") or utc_now(),
+            "updated_at": utc_now(),
+        },
+    )
+
+
+def _persist_fold_artifacts(
+    fold_number: int,
+    song_keys: list[str],
+    test_users: set[str],
+    baseline_counts: dict,
+) -> dict:
+    from evaluation.metrics_llm import aggregate_metrics_path, persist_all_folds_metrics, persist_fold_metrics
+
+    metrics = persist_fold_metrics(fold_number)
+    aggregate = persist_all_folds_metrics()
+    source_files = _source_file_metadata()
+    report_path = STATE_DIR / "agent_reports" / f"fold_{fold_number}_report.json"
+    existing_manifest = _load_annotation_manifest(fold_number) or {}
+    manifest_payload = {
+        **existing_manifest,
+        "fold": fold_number,
+        "status": "completed",
+        "saved_at": utc_now(),
+        "updated_at": utc_now(),
+        "run_mode": get_run_mode(),
+        "source_files": source_files,
+        "test_users": sorted(test_users),
+        "song_count": len(song_keys),
+        "songs_annotated": song_keys,
+        "annotation_files": {
+            annotator: str(_annotation_dir(fold_number) / f"{annotator}.csv")
+            for annotator in ["deepseek", "gemini", "mistral", "human_test", "human_consensus"]
+        },
+        "agent_report_path": str(report_path),
+        "fold_metrics_path": str(_analysis_metrics_path(fold_number)),
+        "aggregate_metrics_path": str(aggregate_metrics_path()),
+        "metric_song_count": metrics["comparisons"]["human_test"]["ground_truth"]["n_songs"],
+        **baseline_counts,
+    }
+    manifest_path = _write_annotation_manifest(fold_number, manifest_payload)
+
+    summary = {
+        "fold": fold_number,
+        "timestamp": utc_now(),
+        "run_mode": get_run_mode(),
+        "test_users": sorted(test_users),
+        "songs_annotated": song_keys,
+        "song_count": len(song_keys),
+        "annotation_dir": str(_annotation_dir(fold_number)),
+        "annotation_manifest_path": str(manifest_path),
+        "agent_report_path": str(report_path),
+        "fold_metrics_path": str(_analysis_metrics_path(fold_number)),
+        "aggregate_metrics_path": str(aggregate_metrics_path()),
+        "source_files": source_files,
+        "metric_song_count": metrics["comparisons"]["human_test"]["ground_truth"]["n_songs"],
+        "aggregate_fold_count": len(aggregate.get("folds", [])),
+        **baseline_counts,
+    }
+    _write_json(STATE_DIR / f"fold_{fold_number}_summary.json", summary)
+    return summary
 
 
 def _create_initial_state(user_folds: dict) -> dict:
@@ -140,6 +305,8 @@ def _load_fold_assignments() -> dict:
 def prepare_folds() -> dict:
     user_folds = build_user_folds()
     state = _create_initial_state(user_folds)
+    state["run_mode"] = get_run_mode()
+    state["source_files"] = _source_file_metadata()
     _save_state(state)
     return user_folds
 
@@ -243,24 +410,16 @@ def run_fold(fold_number: int) -> dict:
         state = _load_state()
 
     _assert_can_run_fold(state, fold_number)
+    _assert_annotation_storage_is_compatible(fold_number)
     fold_assignments = _load_fold_assignments()
     fold_info = fold_assignments["folds"][str(fold_number)]
     test_users = set(fold_info["test_users"])
     songs, song_keys = _build_song_payloads(test_users)
+    _prepare_annotation_run_manifest(fold_number, test_users)
 
     annotate_songs(songs, fold_number)
     baseline_counts = _export_human_baselines(fold_number, song_keys, test_users)
-
-    summary = {
-        "fold": fold_number,
-        "timestamp": utc_now(),
-        "test_users": sorted(test_users),
-        "songs_annotated": song_keys,
-        "song_count": len(song_keys),
-        "annotation_dir": str(ANNOTATIONS_DIR / f"fold_{fold_number}"),
-        **baseline_counts,
-    }
-    _write_json(STATE_DIR / f"fold_{fold_number}_summary.json", summary)
+    summary = _persist_fold_artifacts(fold_number, song_keys, test_users, baseline_counts)
 
     state = _mark_fold_completed(state, fold_number)
     _save_state(state)

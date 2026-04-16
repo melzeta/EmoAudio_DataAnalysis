@@ -14,7 +14,12 @@ from evaluation.export_results import (
     export_per_emotion_csv,
     export_summary_json,
 )
-from evaluation.metrics_llm import ANNOTATORS, EMOTION_COLUMNS, compute_all_folds_metrics, compute_fold_metrics
+from evaluation.metrics_llm import (
+    ANNOTATORS,
+    EMOTION_COLUMNS,
+    load_or_compute_all_folds_metrics,
+    load_or_compute_fold_metrics,
+)
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -126,6 +131,14 @@ def _render_overview() -> None:
         else:
             st.caption("No completed fold is waiting for approval.")
 
+    completed_folds = _completed_folds()
+    if completed_folds:
+        selected_fold = st.selectbox("Saved Fold Artifacts", completed_folds, key="saved_fold_artifacts")
+        summary = _load_json(ROOT_DIR / "state" / f"fold_{selected_fold}_summary.json", default={})
+        if summary:
+            st.subheader("Saved Fold Summary")
+            st.json(summary)
+
 
 def _completed_folds() -> list[int]:
     return [row["fold"] for row in fold_orchestrator.get_fold_status() if row["status"] == "completed"]
@@ -147,7 +160,7 @@ def _render_fold_comparison() -> None:
         return
 
     fold_number = st.selectbox("Select Fold", completed_folds)
-    fold_metrics = compute_fold_metrics(fold_number)
+    fold_metrics = load_or_compute_fold_metrics(fold_number)
     annotators = fold_metrics["annotators"]
     if not annotators.get("human_test"):
         st.warning("Fold data is incomplete for comparison.")
@@ -193,7 +206,7 @@ def _render_cross_model_analysis() -> None:
         st.info("No completed folds available yet.")
         return
 
-    results = compute_all_folds_metrics()
+    results = load_or_compute_all_folds_metrics()
     aggregate_rows = []
     per_emotion_rows = []
     pairwise_rows = []
