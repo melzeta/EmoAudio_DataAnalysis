@@ -1,0 +1,78 @@
+{
+  "agent_report_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\agent_reports\\fold_2_report.json",
+  "aggregate_metrics_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\llm_analysis\\aggregate_metrics.json",
+  "annotation_files": {
+    "deepseek": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\data\\annotations\\fold_2\\deepseek.csv",
+    "gpt_oss": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\data\\annotations\\fold_2\\gpt_oss.csv",
+    "human_consensus": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\data\\annotations\\fold_2\\human_consensus.csv",
+    "human_test": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\data\\annotations\\fold_2\\human_test.csv"
+  },
+  "average_few_shot_examples_per_song": 6.0,
+  "fold": 2,
+  "fold_metrics_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\llm_analysis\\fold_2_metrics.json",
+  "human_consensus_count": 26,
+  "human_test_count": 26,
+  "max_few_shot_examples": 6,
+  "max_same_emotion_examples": 3,
+  "metric_song_count": 26,
+  "prompt_contexts_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\llm_analysis\\prompt_contexts\\fold_2_prompt_contexts.json",
+  "prompt_method": "few_shot_in_context_learning_5k_fold",
+  "run_mode": "live",
+  "saved_at": "2026-04-18T18:24:41.457522+00:00",
+  "song_count": 26,
+  "songs_annotated": [
+    "amusement/amusement_08270.mp3",
+    "amusement/amusement_08275.mp3",
+    "amusement/amusement_08297.mp3",
+    "amusement/amusement_08307.mp3",
+    "amusement/amusement_17657.mp3",
+    "anger/anger_04393.mp3",
+    "anger/anger_04394.mp3",
+    "anger/anger_08261.mp3",
+    "anger/anger_10022.mp3",
+    "awe/awe_09147.mp3",
+    "awe/awe_09153.mp3",
+    "awe/awe_15281.mp3",
+    "contentment/contentment_09999.mp3",
+    "contentment/contentment_10006.mp3",
+    "contentment/contentment_10021.mp3",
+    "disgust/disgust_03239.mp3",
+    "disgust/disgust_07002.mp3",
+    "disgust/disgust_07618.mp3",
+    "disgust/disgust_07687.mp3",
+    "excitement/excitement_07985.mp3",
+    "excitement/excitement_15994.mp3",
+    "fear/fear_09155.mp3",
+    "fear/fear_09164.mp3",
+    "sadness/sadness_03440.mp3",
+    "sadness/sadness_03471.mp3",
+    "sadness/sadness_07966.mp3"
+  ],
+  "source_files": {
+    "ground_truth": {
+      "path": "C:\\Users\\mely1\\Projects\\EmoAudio\\data\\song_emotion_ground_truth.csv",
+      "sha256": "bb2a69d7b9c7d424f97ca09e4b6a39954c4f308f047f1bdcf85a5b2b001ac8d5"
+    },
+    "user_responses": {
+      "path": "C:\\Users\\mely1\\Projects\\EmoAudio\\data\\user_emotion_responses.json",
+      "sha256": "0b3864f922158859f94798d07f0b5855e1a3a9b60cc1a9eaf8fbd2f509967eb7"
+    }
+  },
+  "started_at": "2026-04-18T18:17:37.964880+00:00",
+  "status": "completed",
+  "test_users": [
+    "user_109856",
+    "user_177985",
+    "user_265646",
+    "user_316556",
+    "user_383081",
+    "user_387386",
+    "user_476090",
+    "user_481304",
+    "user_659795",
+    "user_676057",
+    "user_864685"
+  ],
+  "train_song_profile_count": 186,
+  "updated_at": "2026-04-18T18:24:41.457535+00:00"
+}

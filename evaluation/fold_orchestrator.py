@@ -1,6 +1,7 @@
 import csv
 import hashlib
 import json
+import math
 from pathlib import Path
 
 from annotation.annotate import annotate_songs
@@ -16,6 +17,10 @@ STATE_DIR = ROOT_DIR / "state"
 WORKFLOW_STATE_PATH = STATE_DIR / "fold_workflow.json"
 ANNOTATIONS_DIR = ROOT_DIR / "data" / "annotations"
 LLM_ANALYSIS_DIR = STATE_DIR / "llm_analysis"
+PROMPT_CONTEXTS_DIR = LLM_ANALYSIS_DIR / "prompt_contexts"
+PROMPT_METHOD = "few_shot_in_context_learning"
+MAX_FEW_SHOT_EXAMPLES = 6
+MAX_SAME_EMOTION_EXAMPLES = 3
 EMOTION_COLUMNS = [
     "amusement",
     "anger",
@@ -58,6 +63,10 @@ def _analysis_metrics_path(fold_number: int) -> Path:
     return LLM_ANALYSIS_DIR / f"fold_{fold_number}_metrics.json"
 
 
+def _prompt_contexts_path(fold_number: int) -> Path:
+    return PROMPT_CONTEXTS_DIR / f"fold_{fold_number}_prompt_contexts.json"
+
+
 def _annotation_dir(fold_number: int) -> Path:
     return ANNOTATIONS_DIR / f"fold_{fold_number}"
 
@@ -88,6 +97,15 @@ def _source_file_metadata() -> dict:
             "sha256": _sha256_file(GROUND_TRUTH_PATH),
         },
     }
+
+
+def _vector_cosine(left: dict, right: dict) -> float:
+    numerator = sum(float(left[emotion]) * float(right[emotion]) for emotion in EMOTION_COLUMNS)
+    left_norm = math.sqrt(sum(float(left[emotion]) ** 2 for emotion in EMOTION_COLUMNS))
+    right_norm = math.sqrt(sum(float(right[emotion]) ** 2 for emotion in EMOTION_COLUMNS))
+    if left_norm == 0.0 or right_norm == 0.0:
+        return 0.0
+    return numerator / (left_norm * right_norm)
 
 
 def _load_annotation_manifest(fold_number: int) -> dict | None:
@@ -138,6 +156,13 @@ def _assert_annotation_storage_is_compatible(fold_number: int) -> None:
             "Clean the fold artifacts before running it against the current data files."
         )
 
+    existing_prompt_method = manifest.get("prompt_method")
+    if existing_prompt_method and existing_prompt_method != PROMPT_METHOD:
+        raise RuntimeError(
+            f"Fold {fold_number} was created with prompt method '{existing_prompt_method}', "
+            f"but the current workflow expects '{PROMPT_METHOD}'. Clean the fold artifacts before re-running."
+        )
+
 
 def _prepare_annotation_run_manifest(fold_number: int, test_users: set[str]) -> None:
     manifest = _load_annotation_manifest(fold_number) or {}
@@ -151,6 +176,9 @@ def _prepare_annotation_run_manifest(fold_number: int, test_users: set[str]) -> 
             "fold": fold_number,
             "status": "running",
             "run_mode": get_run_mode(),
+            "prompt_method": PROMPT_METHOD,
+            "max_few_shot_examples": MAX_FEW_SHOT_EXAMPLES,
+            "max_same_emotion_examples": MAX_SAME_EMOTION_EXAMPLES,
             "source_files": _source_file_metadata(),
             "test_users": sorted(test_users),
             "started_at": manifest.get("started_at") or utc_now(),
@@ -164,6 +192,9 @@ def _persist_fold_artifacts(
     song_keys: list[str],
     test_users: set[str],
     baseline_counts: dict,
+    train_song_profile_count: int,
+    prompt_context_path: Path,
+    prompt_contexts: dict,
 ) -> dict:
     from evaluation.metrics_llm import aggregate_metrics_path, persist_all_folds_metrics, persist_fold_metrics
 
@@ -179,14 +210,23 @@ def _persist_fold_artifacts(
         "saved_at": utc_now(),
         "updated_at": utc_now(),
         "run_mode": get_run_mode(),
+        "prompt_method": PROMPT_METHOD,
+        "max_few_shot_examples": MAX_FEW_SHOT_EXAMPLES,
+        "max_same_emotion_examples": MAX_SAME_EMOTION_EXAMPLES,
         "source_files": source_files,
         "test_users": sorted(test_users),
+        "train_song_profile_count": train_song_profile_count,
         "song_count": len(song_keys),
         "songs_annotated": song_keys,
         "annotation_files": {
             annotator: str(_annotation_dir(fold_number) / f"{annotator}.csv")
-            for annotator in ["deepseek", "gemini", "mistral", "human_test", "human_consensus"]
+            for annotator in ["deepseek", "gpt_oss", "human_test", "human_consensus"]
         },
+        "prompt_contexts_path": str(prompt_context_path),
+        "average_few_shot_examples_per_song": round(
+            sum(context["few_shot_example_count"] for context in prompt_contexts.values()) / len(prompt_contexts),
+            3,
+        ) if prompt_contexts else 0.0,
         "agent_report_path": str(report_path),
         "fold_metrics_path": str(_analysis_metrics_path(fold_number)),
         "aggregate_metrics_path": str(aggregate_metrics_path()),
@@ -199,11 +239,20 @@ def _persist_fold_artifacts(
         "fold": fold_number,
         "timestamp": utc_now(),
         "run_mode": get_run_mode(),
+        "prompt_method": PROMPT_METHOD,
+        "max_few_shot_examples": MAX_FEW_SHOT_EXAMPLES,
+        "max_same_emotion_examples": MAX_SAME_EMOTION_EXAMPLES,
         "test_users": sorted(test_users),
+        "train_song_profile_count": train_song_profile_count,
         "songs_annotated": song_keys,
         "song_count": len(song_keys),
         "annotation_dir": str(_annotation_dir(fold_number)),
         "annotation_manifest_path": str(manifest_path),
+        "prompt_contexts_path": str(prompt_context_path),
+        "average_few_shot_examples_per_song": round(
+            sum(context["few_shot_example_count"] for context in prompt_contexts.values()) / len(prompt_contexts),
+            3,
+        ) if prompt_contexts else 0.0,
         "agent_report_path": str(report_path),
         "fold_metrics_path": str(_analysis_metrics_path(fold_number)),
         "aggregate_metrics_path": str(aggregate_metrics_path()),
@@ -302,6 +351,112 @@ def _load_fold_assignments() -> dict:
     return _read_json(USER_FOLDS_PATH, default={})
 
 
+def _build_user_song_profiles(user_ids: set[str]) -> dict:
+    raw_data = _load_user_responses()
+    ground_truth_by_key = _load_ground_truth_by_key()
+    grouped = {}
+
+    for user_id, user_info in raw_data.get("userData", {}).items():
+        if user_id not in user_ids:
+            continue
+
+        for response in user_info.get("emotionResponses", []):
+            song_path = response.get("song")
+            emotion_values = response.get("emotionValues")
+            if not song_path or not emotion_values:
+                continue
+
+            song_key = _normalize_song_key(song_path)
+            if song_key not in ground_truth_by_key:
+                continue
+
+            bucket = grouped.setdefault(
+                song_key,
+                {
+                    "filename": song_key,
+                    "intended_emotion": song_key.split("/")[0] if "/" in song_key else "unknown",
+                    "ground_truth_vector": {
+                        emotion: float(ground_truth_by_key[song_key][emotion])
+                        for emotion in EMOTION_COLUMNS
+                    },
+                    "responses": {emotion: [] for emotion in EMOTION_COLUMNS},
+                },
+            )
+
+            for emotion in EMOTION_COLUMNS:
+                bucket["responses"][emotion].append(float(emotion_values[emotion]))
+
+    profiles = {}
+    for song_key, payload in grouped.items():
+        profiles[song_key] = {
+            "filename": payload["filename"],
+            "intended_emotion": payload["intended_emotion"],
+            "ground_truth_vector": payload["ground_truth_vector"],
+            "train_user_average": {
+                emotion: sum(payload["responses"][emotion]) / len(payload["responses"][emotion])
+                for emotion in EMOTION_COLUMNS
+            },
+            "num_ratings": len(next(iter(payload["responses"].values()), [])),
+        }
+
+    return profiles
+
+
+def _select_few_shot_examples(
+    target_song_key: str,
+    intended_emotion: str,
+    target_ground_truth: dict,
+    train_profiles: dict,
+) -> list[dict]:
+    candidates = []
+    for song_key, profile in train_profiles.items():
+        if song_key == target_song_key:
+            continue
+
+        similarity = _vector_cosine(target_ground_truth, profile["ground_truth_vector"])
+        candidates.append(
+            {
+                **profile,
+                "song_key": song_key,
+                "similarity": similarity,
+                "same_emotion": profile["intended_emotion"] == intended_emotion,
+            }
+        )
+
+    candidates.sort(
+        key=lambda item: (
+            1 if item["same_emotion"] else 0,
+            item["similarity"],
+            item["num_ratings"],
+            item["filename"],
+        ),
+        reverse=True,
+    )
+
+    selected = []
+    same_emotion_count = 0
+    for candidate in candidates:
+        if len(selected) >= MAX_FEW_SHOT_EXAMPLES:
+            break
+        if candidate["same_emotion"] and same_emotion_count >= MAX_SAME_EMOTION_EXAMPLES:
+            continue
+
+        selected.append(
+            {
+                "filename": candidate["filename"],
+                "intended_emotion": candidate["intended_emotion"],
+                "ground_truth_vector": candidate["ground_truth_vector"],
+                "train_user_average": candidate["train_user_average"],
+                "num_ratings": candidate["num_ratings"],
+                "similarity": round(candidate["similarity"], 6),
+            }
+        )
+        if candidate["same_emotion"]:
+            same_emotion_count += 1
+
+    return selected
+
+
 def prepare_folds() -> dict:
     user_folds = build_user_folds()
     state = _create_initial_state(user_folds)
@@ -328,7 +483,7 @@ def approve_fold(fold_number: int) -> dict:
     return state
 
 
-def _build_song_payloads(test_users: set[str]) -> tuple[list[dict], list[str]]:
+def _build_song_payloads(test_users: set[str], train_profiles: dict) -> tuple[list[dict], list[str], dict]:
     raw_data = _load_user_responses()
     ground_truth_by_key = _load_ground_truth_by_key()
     song_payloads = {}
@@ -344,13 +499,32 @@ def _build_song_payloads(test_users: set[str]) -> tuple[list[dict], list[str]]:
             if song_key not in ground_truth_by_key:
                 continue
             if song_key not in song_payloads:
+                ground_truth_vector = {
+                    emotion: ground_truth_by_key[song_key][emotion]
+                    for emotion in EMOTION_COLUMNS
+                }
                 song_payloads[song_key] = {
                     "filename": ground_truth_by_key[song_key]["filename"],
                     "intended_emotion": song_key.split("/")[0] if "/" in song_key else "unknown",
-                    **{emotion: ground_truth_by_key[song_key][emotion] for emotion in EMOTION_COLUMNS},
+                    "few_shot_examples": _select_few_shot_examples(
+                        song_key,
+                        song_key.split("/")[0] if "/" in song_key else "unknown",
+                        ground_truth_vector,
+                        train_profiles,
+                    ),
+                    **ground_truth_vector,
                 }
 
-    return [song_payloads[key] for key in sorted(song_payloads)], sorted(song_payloads)
+    prompt_contexts = {
+        key: {
+            "filename": song_payloads[key]["filename"],
+            "intended_emotion": song_payloads[key]["intended_emotion"],
+            "few_shot_example_count": len(song_payloads[key]["few_shot_examples"]),
+            "few_shot_examples": song_payloads[key]["few_shot_examples"],
+        }
+        for key in sorted(song_payloads)
+    }
+    return [song_payloads[key] for key in sorted(song_payloads)], sorted(song_payloads), prompt_contexts
 
 
 def _average_song_vectors(user_ids: set[str] | None = None) -> dict:
@@ -403,6 +577,13 @@ def _export_human_baselines(fold_number: int, song_keys: list[str], test_users: 
     }
 
 
+def _write_prompt_contexts(fold_number: int, payload: dict) -> Path:
+    path = _prompt_contexts_path(fold_number)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
+    return path
+
+
 def run_fold(fold_number: int) -> dict:
     state = _load_state()
     if not state.get("prepared"):
@@ -414,12 +595,33 @@ def run_fold(fold_number: int) -> dict:
     fold_assignments = _load_fold_assignments()
     fold_info = fold_assignments["folds"][str(fold_number)]
     test_users = set(fold_info["test_users"])
-    songs, song_keys = _build_song_payloads(test_users)
+    train_users = set(fold_info["train_users"])
+    train_profiles = _build_user_song_profiles(train_users)
+    songs, song_keys, prompt_contexts = _build_song_payloads(test_users, train_profiles)
     _prepare_annotation_run_manifest(fold_number, test_users)
+    prompt_context_path = _write_prompt_contexts(
+        fold_number,
+        {
+            "fold": fold_number,
+            "prompt_method": PROMPT_METHOD,
+            "max_few_shot_examples": MAX_FEW_SHOT_EXAMPLES,
+            "max_same_emotion_examples": MAX_SAME_EMOTION_EXAMPLES,
+            "train_song_profile_count": len(train_profiles),
+            "contexts": prompt_contexts,
+        },
+    )
 
     annotate_songs(songs, fold_number)
     baseline_counts = _export_human_baselines(fold_number, song_keys, test_users)
-    summary = _persist_fold_artifacts(fold_number, song_keys, test_users, baseline_counts)
+    summary = _persist_fold_artifacts(
+        fold_number,
+        song_keys,
+        test_users,
+        baseline_counts,
+        len(train_profiles),
+        prompt_context_path,
+        prompt_contexts,
+    )
 
     state = _mark_fold_completed(state, fold_number)
     _save_state(state)

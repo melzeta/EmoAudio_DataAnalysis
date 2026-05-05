@@ -16,7 +16,7 @@ ANNOTATIONS_DIR = ROOT_DIR / "data" / "annotations"
 GROUND_TRUTH_PATH = ROOT_DIR / "data" / "song_emotion_ground_truth.csv"
 LLM_ANALYSIS_DIR = ROOT_DIR / "state" / "llm_analysis"
 EMOTION_COLUMNS = fold_orchestrator.EMOTION_COLUMNS
-ANNOTATORS = ["human_test", "human_consensus", "deepseek", "gemini", "mistral", "ground_truth"]
+ANNOTATORS = ["human_test", "human_consensus", "deepseek", "gpt_oss", "ground_truth"]
 
 
 def fold_metrics_path(fold_number: int) -> Path:
@@ -212,7 +212,7 @@ def _load_fold_annotators(fold_number: int) -> dict:
     fold_dir = ANNOTATIONS_DIR / f"fold_{fold_number}"
     annotators = {
         annotator: _load_annotation_csv(fold_dir / f"{annotator}.csv")
-        for annotator in ["human_test", "human_consensus", "deepseek", "gemini", "mistral"]
+        for annotator in ["human_test", "human_consensus", "deepseek", "gpt_oss"]
     }
     ground_truth = _load_ground_truth()
     shared_keys = None

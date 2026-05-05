@@ -1,33 +1,34 @@
 import json
-from datetime import datetime
+import math
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
 import streamlit as st
 
 from annotation.llm_clients import USE_MOCK
 from evaluation import fold_orchestrator
-from evaluation.export_results import (
-    export_fold_metrics_csv,
-    export_per_emotion_csv,
-    export_summary_json,
-)
-from evaluation.metrics_llm import (
-    ANNOTATORS,
-    EMOTION_COLUMNS,
-    load_or_compute_all_folds_metrics,
-    load_or_compute_fold_metrics,
-)
+from evaluation.metrics_llm import EMOTION_COLUMNS, load_or_compute_fold_metrics
 
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-USER_RESPONSES_PATH = ROOT_DIR / "data" / "user_emotion_responses.json"
-USER_FOLDS_PATH = ROOT_DIR / "state" / "user_folds.json"
 REPORTS_DIR = ROOT_DIR / "state" / "agent_reports"
-EXPORTS_DIR = ROOT_DIR / "data" / "exports"
-DISPLAY_ANNOTATORS = ["deepseek", "gemini", "mistral", "human_test", "human_consensus"]
+DISPLAY_ANNOTATORS = ["deepseek", "gpt_oss"]
+LINE_SOURCES = ["held_out_users", "deepseek", "gpt_oss", "human_consensus"]
+SOURCE_LABELS = {
+    "held_out_users": "Held-out Users",
+    "deepseek": "DeepSeek Chat",
+    "gpt_oss": "GPT-4o Mini",
+    "human_consensus": "All-User Consensus",
+    "ground_truth": "Musicologist Vector",
+}
+SOURCE_COLORS = {
+    "held_out_users": "#111827",
+    "deepseek": "#2563eb",
+    "gpt_oss": "#059669",
+    "human_consensus": "#7c3aed",
+    "ground_truth": "#f59e0b",
+}
 
 
 def _load_json(path: Path, default):
@@ -45,56 +46,139 @@ def _render_badge(label: str, color: str) -> None:
     )
 
 
-def _demographics_frame() -> pd.DataFrame:
-    raw_data = _load_json(USER_RESPONSES_PATH, default={})
-    users = []
-    for user_id, user_info in raw_data.get("userData", {}).items():
-        demographics = user_info.get("demographics", {})
-        users.append(
+def _completed_folds() -> list[int]:
+    return [row["fold"] for row in fold_orchestrator.get_fold_status() if row["status"] == "completed"]
+
+
+def _fold_summary(fold_number: int) -> dict:
+    return _load_json(ROOT_DIR / "state" / f"fold_{fold_number}_summary.json", default={})
+
+
+def _prompt_contexts(fold_number: int) -> dict:
+    path = ROOT_DIR / "state" / "llm_analysis" / "prompt_contexts" / f"fold_{fold_number}_prompt_contexts.json"
+    return _load_json(path, default={})
+
+
+def _raw_output_dir(fold_number: int) -> Path:
+    return ROOT_DIR / "data" / "raw_outputs" / f"fold_{fold_number}"
+
+
+def _report_status(report: dict) -> str:
+    return report.get("overall") or report.get("status") or "unknown"
+
+
+def _vector_cosine(left: dict, right: dict) -> float:
+    numerator = sum(float(left[emotion]) * float(right[emotion]) for emotion in EMOTION_COLUMNS)
+    left_norm = math.sqrt(sum(float(left[emotion]) ** 2 for emotion in EMOTION_COLUMNS))
+    right_norm = math.sqrt(sum(float(right[emotion]) ** 2 for emotion in EMOTION_COLUMNS))
+    if left_norm == 0.0 or right_norm == 0.0:
+        return 0.0
+    return numerator / (left_norm * right_norm)
+
+
+def _mean_vector(rows: dict) -> dict:
+    if not rows:
+        return {emotion: 0.0 for emotion in EMOTION_COLUMNS}
+    return {
+        emotion: sum(row[emotion] for row in rows.values()) / len(rows)
+        for emotion in EMOTION_COLUMNS
+    }
+
+
+def _line_projection_frame(fold_metrics: dict) -> pd.DataFrame:
+    annotators = fold_metrics.get("annotators", {})
+    held_out_rows = annotators.get("human_test", {})
+    if not held_out_rows:
+        return pd.DataFrame()
+
+    reference_axis = _mean_vector(held_out_rows)
+    ordered_song_keys = sorted(
+        held_out_rows,
+        key=lambda song_key: _vector_cosine(held_out_rows[song_key], reference_axis),
+        reverse=True,
+    )
+
+    source_to_rows = {
+        "held_out_users": held_out_rows,
+        "deepseek": annotators.get("deepseek", {}),
+        "gpt_oss": annotators.get("gpt_oss", {}),
+        "human_consensus": annotators.get("human_consensus", {}),
+    }
+
+    line_rows = []
+    for song_index, song_key in enumerate(ordered_song_keys, start=1):
+        for source in LINE_SOURCES:
+            source_rows = source_to_rows.get(source, {})
+            if song_key not in source_rows:
+                continue
+            line_rows.append(
+                {
+                    "song_index": song_index,
+                    "song_key": song_key,
+                    "song_name": song_key.split("/")[-1],
+                    "source": source,
+                    "source_label": SOURCE_LABELS[source],
+                    "projection_score": _vector_cosine(source_rows[song_key], reference_axis),
+                }
+            )
+
+    return pd.DataFrame(line_rows)
+
+
+def _projection_chart(fold_metrics: dict, fold_number: int):
+    df_line = _line_projection_frame(fold_metrics)
+    if df_line.empty:
+        return None
+
+    fig = px.line(
+        df_line,
+        x="song_index",
+        y="projection_score",
+        color="source_label",
+        hover_data={"song_name": True, "song_index": True, "projection_score": ":.3f", "source_label": False},
+        color_discrete_map={SOURCE_LABELS[key]: SOURCE_COLORS[key] for key in SOURCE_COLORS},
+        markers=True,
+        title=f"Fold {fold_number}: 1D Projection Against Held-out User Axis",
+    )
+    fig.update_layout(
+        xaxis_title="Song Order Within Held-out Fold",
+        yaxis_title="1D Projection Score",
+        legend_title="Vector Source",
+        height=430,
+        margin=dict(l=30, r=30, t=60, b=30),
+    )
+    return fig
+
+
+def _fold_metric_rows(fold_metrics: dict) -> pd.DataFrame:
+    rows = []
+    for annotator in DISPLAY_ANNOTATORS + ["human_consensus", "ground_truth"]:
+        metrics = fold_metrics["comparisons"]["human_test"][annotator]
+        rows.append(
             {
-                "user_id": user_id,
-                "gender": demographics.get("gender", "N/A"),
-                "age_range": demographics.get("age_range", "N/A"),
-                "nationality": demographics.get("nationality", "N/A"),
+                "Vector Source": SOURCE_LABELS.get(annotator, annotator),
+                "MAE vs Held-out Users": metrics["mae"]["overall"],
+                "RMSE vs Held-out Users": metrics["rmse"]["overall"],
+                "Cosine vs Held-out Users": metrics["cosine_similarity"]["mean_per_song"],
+                "Top Emotion Accuracy": metrics["top_emotion_accuracy"],
+                "Krippendorff Alpha": metrics["krippendorff_alpha"],
             }
         )
-    return pd.DataFrame(users)
-
-
-def _demographic_chart(df: pd.DataFrame, column: str, title: str):
-    if df.empty or column not in df.columns:
-        st.info(f"No data for {column}.")
-        return
-    counts = df[column].fillna("N/A").astype(str).value_counts().reset_index()
-    counts.columns = [column, "count"]
-    fig = px.bar(counts, x=column, y="count", title=title)
-    fig.update_layout(height=280, margin=dict(l=20, r=20, t=40, b=20))
-    st.plotly_chart(fig, use_container_width=True)
+    return pd.DataFrame(rows)
 
 
 def _render_overview() -> None:
-    st.subheader("Fold Status")
-    st.dataframe(pd.DataFrame(fold_orchestrator.get_fold_status()), hide_index=True, use_container_width=True)
-
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("**Active Models**")
-        st.write(", ".join(["deepseek", "gemini", "mistral"]))
-    with col2:
-        st.markdown("**Execution Mode**")
-        _render_badge("MOCK" if USE_MOCK else "LIVE", "#d97706" if USE_MOCK else "#15803d")
-
-    df_users = _demographics_frame()
-    st.subheader("Demographics Summary")
-    demographics_cols = st.columns(3)
-    with demographics_cols[0]:
-        _demographic_chart(df_users, "gender", "Gender Distribution")
-    with demographics_cols[1]:
-        _demographic_chart(df_users, "age_range", "Age Range Distribution")
-    with demographics_cols[2]:
-        _demographic_chart(df_users, "nationality", "Nationality Distribution")
+    st.subheader("Fold Workflow")
+    st.caption(
+        "Method: 5-fold few-shot in-context learning. "
+        "For each fold, the 80% train users become prompt examples and the 20% held-out users form the test target."
+    )
 
     state = fold_orchestrator._load_state()
+    status_rows = pd.DataFrame(fold_orchestrator.get_fold_status())
+    st.dataframe(status_rows, hide_index=True, use_container_width=True)
+
+    completed_folds = _completed_folds()
     pending_approval = None
     if state.get("prepared"):
         for fold_index in range(1, fold_orchestrator.N_FOLDS + 1):
@@ -103,8 +187,18 @@ def _render_overview() -> None:
                 pending_approval = fold_index
                 break
 
+    headline = st.columns(4)
+    with headline[0]:
+        st.metric("Mode", "MOCK" if USE_MOCK else "LIVE")
+    with headline[1]:
+        st.metric("Completed Folds", len(completed_folds))
+    with headline[2]:
+        st.metric("Total Folds", fold_orchestrator.N_FOLDS)
+    with headline[3]:
+        next_fold = fold_orchestrator.get_next_runnable_fold()
+        st.metric("Next Runnable Fold", next_fold or "-")
+
     controls = st.columns(2)
-    next_fold = fold_orchestrator.get_next_runnable_fold()
     with controls[0]:
         if st.button("Run Next Fold", use_container_width=True):
             try:
@@ -118,7 +212,6 @@ def _render_overview() -> None:
                 st.rerun()
             except Exception as exc:
                 st.error(str(exc))
-
     with controls[1]:
         if pending_approval:
             if st.button(f"Approve Fold {pending_approval}", use_container_width=True):
@@ -131,160 +224,80 @@ def _render_overview() -> None:
         else:
             st.caption("No completed fold is waiting for approval.")
 
-    completed_folds = _completed_folds()
     if completed_folds:
-        selected_fold = st.selectbox("Saved Fold Artifacts", completed_folds, key="saved_fold_artifacts")
-        summary = _load_json(ROOT_DIR / "state" / f"fold_{selected_fold}_summary.json", default={})
-        if summary:
-            st.subheader("Saved Fold Summary")
-            st.json(summary)
+        st.subheader("Saved Fold Outputs")
+        for fold_number in completed_folds:
+            summary = _fold_summary(fold_number)
+            report = _load_json(REPORTS_DIR / f"fold_{fold_number}_report.json", default={})
+            fold_title = f"Fold {fold_number}: held-out user slice"
+            with st.container():
+                st.markdown(f"### {fold_title}")
+                meta = st.columns(5)
+                with meta[0]:
+                    st.metric("Held-out Users", len(summary.get("test_users", [])))
+                with meta[1]:
+                    st.metric("Songs", summary.get("song_count", 0))
+                with meta[2]:
+                    st.metric("Train Song Profiles", summary.get("train_song_profile_count", 0))
+                with meta[3]:
+                    st.metric("Avg Few-shot Examples", summary.get("average_few_shot_examples_per_song", 0.0))
+                with meta[4]:
+                    _render_badge(_report_status(report).upper(), "#15803d" if _report_status(report) == "pass" else "#b91c1c")
+                st.caption(
+                    "Output saved to disk. "
+                    f"Prompt method: {summary.get('prompt_method', 'unknown')}."
+                )
 
 
-def _completed_folds() -> list[int]:
-    return [row["fold"] for row in fold_orchestrator.get_fold_status() if row["status"] == "completed"]
-
-
-def _mean_vector(rows: dict) -> dict:
-    if not rows:
-        return {emotion: 0.0 for emotion in EMOTION_COLUMNS}
-    return {
-        emotion: sum(row[emotion] for row in rows.values()) / len(rows)
-        for emotion in EMOTION_COLUMNS
-    }
-
-
-def _render_fold_comparison() -> None:
+def _render_fold_review() -> None:
     completed_folds = _completed_folds()
     if not completed_folds:
         st.info("No completed folds available yet.")
         return
 
-    fold_number = st.selectbox("Select Fold", completed_folds)
-    fold_metrics = load_or_compute_fold_metrics(fold_number)
-    annotators = fold_metrics["annotators"]
-    if not annotators.get("human_test"):
-        st.warning("Fold data is incomplete for comparison.")
-        return
-
-    fig = go.Figure()
-    for annotator in DISPLAY_ANNOTATORS:
-        vector = _mean_vector(annotators.get(annotator, {}))
-        fig.add_trace(
-            go.Scatterpolar(
-                r=[vector[emotion] for emotion in EMOTION_COLUMNS],
-                theta=EMOTION_COLUMNS,
-                fill="toself",
-                name=annotator,
-                opacity=0.45,
-            )
-        )
-    fig.update_layout(height=520, margin=dict(l=30, r=30, t=40, b=30), showlegend=True)
-    st.plotly_chart(fig, use_container_width=True)
-
-    metric_rows = []
-    for annotator in DISPLAY_ANNOTATORS:
-        metrics = fold_metrics["comparisons"]["human_test"][annotator]
-        metric_rows.append(
-            {
-                "annotator": annotator,
-                "mae_vs_human_test": metrics["mae"]["overall"],
-                "rmse_vs_human_test": metrics["rmse"]["overall"],
-                "pearson_vs_human_test": metrics["pearson"]["overall"],
-                "spearman_vs_human_test": metrics["spearman"]["overall"],
-                "cosine_vs_human_test": metrics["cosine_similarity"]["mean_per_song"],
-                "top_emotion_accuracy": metrics["top_emotion_accuracy"],
-                "krippendorff_alpha": metrics["krippendorff_alpha"],
-            }
-        )
-    st.subheader("Metrics vs Human Test Average")
-    st.dataframe(pd.DataFrame(metric_rows), hide_index=True, use_container_width=True)
-
-
-def _render_cross_model_analysis() -> None:
-    completed_folds = _completed_folds()
-    if not completed_folds:
-        st.info("No completed folds available yet.")
-        return
-
-    results = load_or_compute_all_folds_metrics()
-    aggregate_rows = []
-    per_emotion_rows = []
-    pairwise_rows = []
-
-    for annotator in DISPLAY_ANNOTATORS + ["ground_truth"]:
-        metrics = results["aggregate"].get("human_test", {}).get(annotator, {})
-        aggregate_rows.append({"annotator": annotator, **metrics})
-
-    for fold_result in results["folds"]:
-        fold_number = fold_result["fold"]
-        for annotator in ["deepseek", "gemini", "mistral"]:
-            metrics = fold_result["comparisons"]["human_test"][annotator]
-            for emotion in EMOTION_COLUMNS:
-                per_emotion_rows.append(
-                    {
-                        "fold": fold_number,
-                        "annotator": annotator,
-                        "emotion": emotion,
-                        "mae": metrics["mae"]["per_emotion"][emotion],
-                    }
-                )
-
-        for left in DISPLAY_ANNOTATORS:
-            for right in DISPLAY_ANNOTATORS:
-                pairwise_rows.append(
-                    {
-                        "left": left,
-                        "right": right,
-                        "cosine": fold_result["comparisons"][left][right]["cosine_similarity"]["mean_per_song"],
-                    }
-                )
-
-    st.subheader("Aggregate Metrics vs Human Test")
-    st.dataframe(pd.DataFrame(aggregate_rows), hide_index=True, use_container_width=True)
-
-    bar_fig = px.bar(
-        pd.DataFrame(per_emotion_rows),
-        x="emotion",
-        y="mae",
-        color="annotator",
-        barmode="group",
-        title="MAE per Emotion per Annotator",
+    st.subheader("Per-Fold Review")
+    st.caption(
+        "The line graph compresses each 8-emotion vector into one scalar by measuring its cosine projection "
+        "against the mean held-out user vector for that fold. The black line is the held-out user target."
     )
-    st.plotly_chart(bar_fig, use_container_width=True)
 
-    heatmap_df = pd.DataFrame(pairwise_rows).groupby(["left", "right"], as_index=False)["cosine"].mean()
-    heatmap_pivot = heatmap_df.pivot(index="left", columns="right", values="cosine")
-    heatmap_fig = px.imshow(
-        heatmap_pivot,
-        text_auto=".3f",
-        color_continuous_scale="Blues",
-        title="Pairwise Cosine Similarity Heatmap",
-    )
-    st.plotly_chart(heatmap_fig, use_container_width=True)
+    for fold_number in completed_folds:
+        summary = _fold_summary(fold_number)
+        prompt_contexts = _prompt_contexts(fold_number)
+        fold_metrics = load_or_compute_fold_metrics(fold_number)
+        annotators = fold_metrics.get("annotators", {})
+        if not annotators.get("human_test"):
+            st.warning(f"Fold {fold_number} has no saved held-out user vectors yet.")
+            continue
 
-    st.subheader("Export Results")
-    if st.button("Export Metrics", use_container_width=True):
-        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-        fold_csv = export_fold_metrics_csv(EXPORTS_DIR / f"fold_metrics_{timestamp}.csv")
-        emotion_csv = export_per_emotion_csv(EXPORTS_DIR / f"per_emotion_{timestamp}.csv")
-        summary_json = export_summary_json(EXPORTS_DIR / f"summary_{timestamp}.json")
-        st.session_state["llm_exports"] = [fold_csv, emotion_csv, summary_json]
-        st.success("Export complete.")
+        st.markdown(f"### Fold {fold_number}: first held-out user slice")
+        summary_cols = st.columns(4)
+        with summary_cols[0]:
+            st.metric("Held-out Users", len(summary.get("test_users", [])))
+        with summary_cols[1]:
+            st.metric("Songs", summary.get("song_count", 0))
+        with summary_cols[2]:
+            st.metric("Prompt Examples / Song", summary.get("average_few_shot_examples_per_song", 0.0))
+        with summary_cols[3]:
+            st.metric("Train Song Profiles", summary.get("train_song_profile_count", 0))
 
-    export_paths = st.session_state.get("llm_exports", [])
-    for path in export_paths:
-        with path.open("rb") as handle:
-            st.download_button(
-                label=f"Download {path.name}",
-                data=handle.read(),
-                file_name=path.name,
-                mime="application/octet-stream",
-                key=f"download_{path.name}",
-            )
+        figure = _projection_chart(fold_metrics, fold_number)
+        if figure is not None:
+            st.plotly_chart(figure, use_container_width=True)
 
+        st.dataframe(_fold_metric_rows(fold_metrics), hide_index=True, use_container_width=True)
 
-def _report_status(report: dict) -> str:
-    return report.get("overall") or report.get("status") or "unknown"
+        if prompt_contexts:
+            example_counts = [
+                context["few_shot_example_count"]
+                for context in prompt_contexts.get("contexts", {}).values()
+            ]
+            if example_counts:
+                st.caption(
+                    f"Saved prompt contexts: {len(example_counts)} target songs, "
+                    f"min {min(example_counts)}, max {max(example_counts)}, avg {sum(example_counts)/len(example_counts):.2f} few-shot examples."
+                )
+        st.divider()
 
 
 def _render_agent_reports() -> None:
@@ -300,15 +313,64 @@ def _render_agent_reports() -> None:
     st.json(report)
 
 
+def _comparison_table_frame(fold_number: int, song_index: int) -> pd.DataFrame:
+    rows_by_emotion = {emotion: {"Emotion": emotion} for emotion in EMOTION_COLUMNS}
+    for model_name in DISPLAY_ANNOTATORS:
+        raw_path = _raw_output_dir(fold_number) / f"{model_name}_{song_index:03d}.json"
+        raw_payload = _load_json(raw_path, default={})
+        parsed_payload = raw_payload.get("parsed_payload", {})
+        confidence = parsed_payload.get("confidence", {})
+        for emotion in EMOTION_COLUMNS:
+            rows_by_emotion[emotion][f"{SOURCE_LABELS[model_name]} Score"] = parsed_payload.get(emotion)
+            rows_by_emotion[emotion][f"{SOURCE_LABELS[model_name]} Confidence"] = (
+                confidence.get(emotion) if isinstance(confidence, dict) else "N/A"
+            )
+
+    if not rows_by_emotion:
+        return pd.DataFrame()
+    return pd.DataFrame([rows_by_emotion[emotion] for emotion in EMOTION_COLUMNS])
+
+
+def _render_model_comparison() -> None:
+    completed_folds = _completed_folds()
+    if not completed_folds:
+        st.info("No completed folds available yet.")
+        return
+
+    st.subheader("Model Comparison")
+    st.caption(
+        "Comparison table for one saved target song. "
+        "Each model shows per-emotion score and per-emotion confidence from the saved raw JSON output."
+    )
+
+    fold_number = st.selectbox("Select Fold", completed_folds, key="comparison_fold")
+    summary = _fold_summary(fold_number)
+    songs = summary.get("songs_annotated", [])
+    if not songs:
+        st.info("No saved songs for this fold yet.")
+        return
+
+    selected_song = st.selectbox("Select Song", songs, key="comparison_song")
+    song_index = songs.index(selected_song) + 1
+
+    st.caption(f"Raw JSON files are loaded from `data/raw_outputs/fold_{fold_number}` for song index {song_index}.")
+    table = _comparison_table_frame(fold_number, song_index)
+    if table.empty:
+        st.warning("No raw model outputs found for this fold/song.")
+        return
+
+    st.dataframe(table, hide_index=True, use_container_width=True)
+
+
 def render(page_name: str):
     st.header("LLM Analysis")
 
     if page_name == "Overview":
         _render_overview()
-    elif page_name == "Fold Comparison":
-        _render_fold_comparison()
-    elif page_name == "Cross-Model Analysis":
-        _render_cross_model_analysis()
+    elif page_name == "Fold Review":
+        _render_fold_review()
+    elif page_name == "Model Comparison":
+        _render_model_comparison()
     elif page_name == "Agent Reports":
         _render_agent_reports()
     else:

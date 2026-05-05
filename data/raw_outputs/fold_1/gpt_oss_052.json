@@ -1,0 +1,26 @@
+{
+  "parsed_payload": {
+    "amusement": 0.35,
+    "anger": 0.45,
+    "awe": 0.1,
+    "confidence": {
+      "amusement": 0.7,
+      "anger": 0.6,
+      "awe": 0.5,
+      "contentment": 0.8,
+      "disgust": 0.9,
+      "excitement": 0.85,
+      "fear": 0.9,
+      "sadness": 0.6
+    },
+    "contentment": 0.55,
+    "disgust": 0.0,
+    "excitement": 0.75,
+    "fear": 0.8,
+    "sadness": 0.15
+  },
+  "provider_name": "gpt_oss",
+  "raw_content": "{\n  \"amusement\": 0.35,\n  \"anger\": 0.45,\n  \"awe\": 0.1,\n  \"contentment\": 0.55,\n  \"disgust\": 0.0,\n  \"excitement\": 0.75,\n  \"fear\": 0.8,\n  \"sadness\": 0.15,\n  \"confidence\": {\n    \"amusement\": 0.7,\n    \"anger\": 0.6,\n    \"awe\": 0.5,\n    \"contentment\": 0.8,\n    \"disgust\": 0.9,\n    \"excitement\": 0.85,\n    \"fear\": 0.9,\n    \"sadness\": 0.6\n  }\n}",
+  "requested_model": "openai/gpt-4o-mini",
+  "resolved_model": "openai/gpt-4o-mini"
+}

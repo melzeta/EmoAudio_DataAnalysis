@@ -1,0 +1,125 @@
+{
+  "eligible_song_count": 7,
+  "eligible_songs": [
+    "amusement/amusement_17644.mp3",
+    "amusement/amusement_17647.mp3",
+    "amusement/amusement_19692.mp3",
+    "anger/anger_10025.mp3",
+    "anger/anger_10052.mp3",
+    "contentment/contentment_09996.mp3",
+    "disgust/disgust_02554.mp3"
+  ],
+  "eligible_users": [
+    "user_149689",
+    "user_230868",
+    "user_275551",
+    "user_275551",
+    "user_417724",
+    "user_493263",
+    "user_493263",
+    "user_609277",
+    "user_664044",
+    "user_664044",
+    "user_664044",
+    "user_876459",
+    "user_876459",
+    "user_953094"
+  ],
+  "folds": {
+    "1": {
+      "fold_index": 1,
+      "test_count": 4,
+      "test_songs": [
+        "contentment/contentment_09996.mp3",
+        "disgust/disgust_02554.mp3"
+      ],
+      "test_users": [
+        "user_275551",
+        "user_493263",
+        "user_664044",
+        "user_876459"
+      ],
+      "train_count": 9,
+      "train_songs": [
+        "amusement/amusement_17644.mp3",
+        "amusement/amusement_17647.mp3",
+        "amusement/amusement_19692.mp3",
+        "anger/anger_10025.mp3",
+        "anger/anger_10052.mp3"
+      ],
+      "train_users": [
+        "user_149689",
+        "user_230868",
+        "user_275551",
+        "user_417724",
+        "user_493263",
+        "user_609277",
+        "user_664044",
+        "user_876459",
+        "user_953094"
+      ]
+    },
+    "2": {
+      "fold_index": 2,
+      "test_count": 4,
+      "test_songs": [
+        "amusement/amusement_17647.mp3",
+        "amusement/amusement_19692.mp3"
+      ],
+      "test_users": [
+        "user_149689",
+        "user_230868",
+        "user_609277",
+        "user_953094"
+      ],
+      "train_count": 5,
+      "train_songs": [
+        "amusement/amusement_17644.mp3",
+        "anger/anger_10025.mp3",
+        "anger/anger_10052.mp3",
+        "contentment/contentment_09996.mp3",
+        "disgust/disgust_02554.mp3"
+      ],
+      "train_users": [
+        "user_275551",
+        "user_417724",
+        "user_493263",
+        "user_664044",
+        "user_876459"
+      ]
+    },
+    "3": {
+      "fold_index": 3,
+      "test_count": 4,
+      "test_songs": [
+        "amusement/amusement_17644.mp3",
+        "contentment/contentment_09996.mp3"
+      ],
+      "test_users": [
+        "user_417724",
+        "user_493263",
+        "user_664044",
+        "user_876459"
+      ],
+      "train_count": 8,
+      "train_songs": [
+        "amusement/amusement_17647.mp3",
+        "amusement/amusement_19692.mp3",
+        "anger/anger_10025.mp3",
+        "anger/anger_10052.mp3",
+        "disgust/disgust_02554.mp3"
+      ],
+      "train_users": [
+        "user_149689",
+        "user_230868",
+        "user_275551",
+        "user_493263",
+        "user_609277",
+        "user_664044",
+        "user_876459",
+        "user_953094"
+      ]
+    }
+  },
+  "n_folds": 3
+}

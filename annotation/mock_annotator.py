@@ -16,7 +16,7 @@ EMOTION_ORDER = [
 MODEL_SEEDS = {
     "deepseek": 111,
     "gemini": 222,
-    "mistral": 333,
+    "gpt_oss": 333,
 }
 MODEL_BIASES = {
     "deepseek": {
@@ -39,7 +39,7 @@ MODEL_BIASES = {
         "fear": 0.03,
         "sadness": -0.015,
     },
-    "mistral": {
+    "gpt_oss": {
         "amusement": -0.03,
         "anger": 0.015,
         "awe": -0.02,
@@ -71,7 +71,7 @@ MODEL_SCALES = {
         "fear": 1.18,
         "sadness": 0.9,
     },
-    "mistral": {
+    "gpt_oss": {
         "amusement": 0.86,
         "anger": 1.08,
         "awe": 0.9,

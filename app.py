@@ -15,6 +15,10 @@ from data.loaders import (
 from sections.overview import render as render_overview
 from sections.spider_charts import render as render_spider
 from sections.llm_analysis import render as render_llm_analysis
+from sections.llm_analysis_multiuser import render as render_llm_analysis_multiuser
+from sections.llm_analysis_demographics import render as render_llm_analysis_demographics
+from sections.llm_analysis_5k import render as render_llm_analysis_5k
+from sections.llm_analysis_per_emotion import render as render_llm_analysis_per_emotion
 
 
 def _activate_main_nav():
@@ -49,10 +53,10 @@ def main():
         llm_page = st.radio(
             "LLM Analysis Pages",
             [
-                "Overview",
-                "Fold Comparison",
-                "Cross-Model Analysis",
-                "Agent Reports",
+                "Analysis > 2 Users",
+                "Analysis by Demographics",
+                "Analysis 5 k fold",
+                "Per-emotion Analysis",
             ],
             key="llm_analysis_page",
             label_visibility="collapsed",
@@ -61,7 +65,14 @@ def main():
 
     # Routing
     if st.session_state.get("active_nav") == "llm":
-        render_llm_analysis(llm_page)
+        if llm_page == "Analysis > 2 Users":
+            render_llm_analysis_multiuser("Overview")
+        elif llm_page == "Analysis by Demographics":
+            render_llm_analysis_demographics()
+        elif llm_page == "Analysis 5 k fold":
+            render_llm_analysis_5k("Overview")
+        elif llm_page == "Per-emotion Analysis":
+            render_llm_analysis_per_emotion()
     elif menu == "Panoramica Dataset":
         render_overview(df_users, df_responses, CHART_LAYOUT)
     elif menu == "🕷️ Spider Charts":

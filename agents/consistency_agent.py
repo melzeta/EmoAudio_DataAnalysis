@@ -15,7 +15,8 @@ EMOTION_COLUMNS = [
     "fear",
     "sadness",
 ]
-MODEL_NAMES = ["deepseek", "gemini", "mistral"]
+MODEL_NAMES = ["deepseek", "gpt_oss"]
+MIN_ROWS_FOR_VARIANCE_CHECKS = 3
 
 
 def _load_rows(path: Path) -> list[dict]:
@@ -44,9 +45,9 @@ def _cosine_similarity(xs: list[float], ys: list[float]) -> float:
     return numerator / (x_norm * y_norm)
 
 
-def run(fold_number) -> dict:
+def run(fold_number, annotations_dir: Path | None = None) -> dict:
     issues = []
-    fold_dir = ANNOTATIONS_DIR / f"fold_{fold_number}"
+    fold_dir = (annotations_dir or ANNOTATIONS_DIR) / f"fold_{fold_number}"
     model_rows = {}
     for model_name in MODEL_NAMES:
         path = fold_dir / f"{model_name}.csv"
@@ -57,17 +58,19 @@ def run(fold_number) -> dict:
 
     for model_name, rows in model_rows.items():
         values = _flatten_values(rows)
-        if _stddev(values) < 0.02:
+        if len(rows) >= MIN_ROWS_FOR_VARIANCE_CHECKS and _stddev(values) < 0.02:
             issues.append(f"Overall standard deviation too low for {model_name} in fold {fold_number}")
 
         for emotion in EMOTION_COLUMNS:
             column_values = [float(row[emotion]) for row in rows]
-            if _stddev(column_values) == 0.0:
+            if len(rows) >= MIN_ROWS_FOR_VARIANCE_CHECKS and _stddev(column_values) == 0.0:
                 issues.append(f"Zero variance detected for {model_name} column {emotion} in fold {fold_number}")
 
     for left_index, left_model in enumerate(MODEL_NAMES):
         for right_model in MODEL_NAMES[left_index + 1:]:
             if left_model not in model_rows or right_model not in model_rows:
+                continue
+            if min(len(model_rows[left_model]), len(model_rows[right_model])) < MIN_ROWS_FOR_VARIANCE_CHECKS:
                 continue
             left_values = _flatten_values(model_rows[left_model])
             right_values = _flatten_values(model_rows[right_model])

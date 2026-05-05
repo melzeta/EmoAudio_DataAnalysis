@@ -1,0 +1,26 @@
+{
+  "parsed_payload": {
+    "amusement": 0.35,
+    "anger": 0.65,
+    "awe": 0.75,
+    "confidence": {
+      "amusement": 0.7,
+      "anger": 0.8,
+      "awe": 0.85,
+      "contentment": 0.6,
+      "disgust": 0.75,
+      "excitement": 0.8,
+      "fear": 0.85,
+      "sadness": 0.7
+    },
+    "contentment": 0.25,
+    "disgust": 0.55,
+    "excitement": 0.78,
+    "fear": 0.78,
+    "sadness": 0.6
+  },
+  "provider_name": "gemini",
+  "raw_content": "```json\n{\n  \"amusement\": 0.35,\n  \"anger\": 0.65,\n  \"awe\": 0.75,\n  \"contentment\": 0.25,\n  \"disgust\": 0.55,\n  \"excitement\": 0.78,\n  \"fear\": 0.78,\n  \"sadness\": 0.60,\n  \"confidence\": {\n    \"amusement\": 0.7,\n    \"anger\": 0.8,\n    \"awe\": 0.85,\n    \"contentment\": 0.6,\n    \"disgust\": 0.75,\n    \"excitement\": 0.8,\n    \"fear\": 0.85,\n    \"sadness\": 0.7\n  }\n}\n```",
+  "requested_model": "google/gemma-3-12b-it:free",
+  "resolved_model": "google/gemma-3-12b-it:free"
+}

@@ -1,0 +1,26 @@
+{
+  "parsed_payload": {
+    "amusement": 0.47,
+    "anger": 0.16,
+    "awe": 0.42,
+    "confidence": {
+      "amusement": 0.8,
+      "anger": 0.7,
+      "awe": 0.9,
+      "contentment": 0.8,
+      "disgust": 0.6,
+      "excitement": 0.7,
+      "fear": 0.7,
+      "sadness": 0.6
+    },
+    "contentment": 0.52,
+    "disgust": 0.06,
+    "excitement": 0.36,
+    "fear": 0.1,
+    "sadness": 0.07
+  },
+  "provider_name": "deepseek",
+  "raw_content": "```json\n{\n  \"amusement\": 0.47,\n  \"anger\": 0.16,\n  \"awe\": 0.42,\n  \"contentment\": 0.52,\n  \"disgust\": 0.06,\n  \"excitement\": 0.36,\n  \"fear\": 0.10,\n  \"sadness\": 0.07,\n  \"confidence\": {\n    \"amusement\": 0.8,\n    \"anger\": 0.7,\n    \"awe\": 0.9,\n    \"contentment\": 0.8,\n    \"disgust\": 0.6,\n    \"excitement\": 0.7,\n    \"fear\": 0.7,\n    \"sadness\": 0.6\n  }\n}\n```",
+  "requested_model": "deepseek/deepseek-chat",
+  "resolved_model": "deepseek/deepseek-chat-v3"
+}

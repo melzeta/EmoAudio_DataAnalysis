@@ -1,0 +1,5177 @@
+{
+  "annotators": {
+    "deepseek": {
+      "amusement/amusement_02936.mp3": {
+        "amusement": 0.45,
+        "anger": 0.12,
+        "awe": 0.32,
+        "contentment": 0.46,
+        "disgust": 0.15,
+        "excitement": 0.65,
+        "fear": 0.42,
+        "sadness": 0.18
+      },
+      "amusement/amusement_02945.mp3": {
+        "amusement": 0.45,
+        "anger": 0.0,
+        "awe": 0.35,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.6,
+        "fear": 0.5,
+        "sadness": 0.0
+      },
+      "amusement/amusement_08239.mp3": {
+        "amusement": 0.39,
+        "anger": 0.12,
+        "awe": 0.24,
+        "contentment": 0.21,
+        "disgust": 0.35,
+        "excitement": 0.32,
+        "fear": 0.38,
+        "sadness": 0.28
+      },
+      "amusement/amusement_08272.mp3": {
+        "amusement": 0.42,
+        "anger": 0.29,
+        "awe": 0.25,
+        "contentment": 0.15,
+        "disgust": 0.24,
+        "excitement": 0.51,
+        "fear": 0.35,
+        "sadness": 0.27
+      },
+      "amusement/amusement_08284.mp3": {
+        "amusement": 0.38,
+        "anger": 0.22,
+        "awe": 0.31,
+        "contentment": 0.38,
+        "disgust": 0.19,
+        "excitement": 0.53,
+        "fear": 0.34,
+        "sadness": 0.21
+      },
+      "amusement/amusement_08310.mp3": {
+        "amusement": 0.25,
+        "anger": 0.35,
+        "awe": 0.2,
+        "contentment": 0.45,
+        "disgust": 0.2,
+        "excitement": 0.6,
+        "fear": 0.3,
+        "sadness": 0.1
+      },
+      "amusement/amusement_08311.mp3": {
+        "amusement": 0.23,
+        "anger": 0.72,
+        "awe": 0.96,
+        "contentment": 0.15,
+        "disgust": 0.62,
+        "excitement": 0.57,
+        "fear": 0.73,
+        "sadness": 0.69
+      },
+      "amusement/amusement_08336.mp3": {
+        "amusement": 0.27,
+        "anger": 0.0,
+        "awe": 0.41,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.24,
+        "fear": 0.42,
+        "sadness": 0.0
+      },
+      "amusement/amusement_17647.mp3": {
+        "amusement": 0.56,
+        "anger": 0.25,
+        "awe": 0.45,
+        "contentment": 0.35,
+        "disgust": 0.12,
+        "excitement": 0.48,
+        "fear": 0.22,
+        "sadness": 0.18
+      },
+      "amusement/amusement_17660.mp3": {
+        "amusement": 0.52,
+        "anger": 0.35,
+        "awe": 0.37,
+        "contentment": 0.34,
+        "disgust": 0.04,
+        "excitement": 0.67,
+        "fear": 0.52,
+        "sadness": 0.26
+      },
+      "anger/anger_02004.mp3": {
+        "amusement": 0.32,
+        "anger": 0.47,
+        "awe": 0.42,
+        "contentment": 0.33,
+        "disgust": 0.29,
+        "excitement": 0.34,
+        "fear": 0.45,
+        "sadness": 0.25
+      },
+      "anger/anger_02009.mp3": {
+        "amusement": 0.45,
+        "anger": 0.32,
+        "awe": 0.38,
+        "contentment": 0.22,
+        "disgust": 0.22,
+        "excitement": 0.59,
+        "fear": 0.28,
+        "sadness": 0.21
+      },
+      "anger/anger_02010.mp3": {
+        "amusement": 0.15,
+        "anger": 0.08,
+        "awe": 0.3,
+        "contentment": 0.12,
+        "disgust": 0.23,
+        "excitement": 0.35,
+        "fear": 0.4,
+        "sadness": 0.28
+      },
+      "anger/anger_04341.mp3": {
+        "amusement": 0.18,
+        "anger": 0.12,
+        "awe": 0.38,
+        "contentment": 0.15,
+        "disgust": 0.22,
+        "excitement": 0.35,
+        "fear": 0.21,
+        "sadness": 0.24
+      },
+      "anger/anger_04345.mp3": {
+        "amusement": 0.35,
+        "anger": 0.56,
+        "awe": 0.48,
+        "contentment": 0.22,
+        "disgust": 0.57,
+        "excitement": 0.32,
+        "fear": 0.3,
+        "sadness": 0.34
+      },
+      "anger/anger_04353.mp3": {
+        "amusement": 0.42,
+        "anger": 0.17,
+        "awe": 0.0,
+        "contentment": 0.45,
+        "disgust": 0.0,
+        "excitement": 0.67,
+        "fear": 0.0,
+        "sadness": 0.18
+      },
+      "anger/anger_04355.mp3": {
+        "amusement": 0.42,
+        "anger": 0.42,
+        "awe": 0.26,
+        "contentment": 0.45,
+        "disgust": 0.34,
+        "excitement": 0.49,
+        "fear": 0.21,
+        "sadness": 0.36
+      },
+      "anger/anger_08253.mp3": {
+        "amusement": 0.45,
+        "anger": 0.48,
+        "awe": 0.28,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.63,
+        "fear": 0.2,
+        "sadness": 0.0
+      },
+      "anger/anger_10052.mp3": {
+        "amusement": 0.1,
+        "anger": 0.32,
+        "awe": 0.38,
+        "contentment": 0.03,
+        "disgust": 0.24,
+        "excitement": 0.26,
+        "fear": 0.35,
+        "sadness": 0.12
+      },
+      "awe/awe_09115.mp3": {
+        "amusement": 0.35,
+        "anger": 0.12,
+        "awe": 0.3,
+        "contentment": 0.37,
+        "disgust": 0.06,
+        "excitement": 0.35,
+        "fear": 0.14,
+        "sadness": 0.02
+      },
+      "awe/awe_09117.mp3": {
+        "amusement": 0.47,
+        "anger": 0.07,
+        "awe": 0.33,
+        "contentment": 0.51,
+        "disgust": 0.12,
+        "excitement": 0.29,
+        "fear": 0.3,
+        "sadness": 0.2
+      },
+      "awe/awe_09139.mp3": {
+        "amusement": 0.36,
+        "anger": 0.18,
+        "awe": 0.32,
+        "contentment": 0.21,
+        "disgust": 0.41,
+        "excitement": 0.24,
+        "fear": 0.29,
+        "sadness": 0.15
+      },
+      "awe/awe_09141.mp3": {
+        "amusement": 0.44,
+        "anger": 0.16,
+        "awe": 0.6,
+        "contentment": 0.47,
+        "disgust": 0.07,
+        "excitement": 0.3,
+        "fear": 0.28,
+        "sadness": 0.13
+      },
+      "awe/awe_09142.mp3": {
+        "amusement": 0.43,
+        "anger": 0.15,
+        "awe": 0.68,
+        "contentment": 0.45,
+        "disgust": 0.1,
+        "excitement": 0.31,
+        "fear": 0.29,
+        "sadness": 0.16
+      },
+      "awe/awe_09143.mp3": {
+        "amusement": 0.43,
+        "anger": 0.0,
+        "awe": 0.47,
+        "contentment": 0.32,
+        "disgust": 0.08,
+        "excitement": 0.31,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09162.mp3": {
+        "amusement": 0.43,
+        "anger": 0.15,
+        "awe": 0.55,
+        "contentment": 0.45,
+        "disgust": 0.05,
+        "excitement": 0.35,
+        "fear": 0.22,
+        "sadness": 0.07
+      },
+      "awe/awe_09163.mp3": {
+        "amusement": 0.62,
+        "anger": 0.12,
+        "awe": 0.63,
+        "contentment": 0.47,
+        "disgust": 0.09,
+        "excitement": 0.44,
+        "fear": 0.3,
+        "sadness": 0.21
+      },
+      "awe/awe_09166.mp3": {
+        "amusement": 0.45,
+        "anger": 0.17,
+        "awe": 0.56,
+        "contentment": 0.39,
+        "disgust": 0.08,
+        "excitement": 0.42,
+        "fear": 0.25,
+        "sadness": 0.29
+      },
+      "awe/awe_09167.mp3": {
+        "amusement": 0.45,
+        "anger": 0.18,
+        "awe": 0.15,
+        "contentment": 0.43,
+        "disgust": 0.17,
+        "excitement": 0.41,
+        "fear": 0.22,
+        "sadness": 0.12
+      },
+      "contentment/contentment_08263.mp3": {
+        "amusement": 0.32,
+        "anger": 0.38,
+        "awe": 0.52,
+        "contentment": 0.19,
+        "disgust": 0.28,
+        "excitement": 0.28,
+        "fear": 0.18,
+        "sadness": 0.28
+      },
+      "contentment/contentment_09956.mp3": {
+        "amusement": 0.43,
+        "anger": 0.29,
+        "awe": 0.47,
+        "contentment": 0.36,
+        "disgust": 0.36,
+        "excitement": 0.22,
+        "fear": 0.26,
+        "sadness": 0.31
+      },
+      "contentment/contentment_09996.mp3": {
+        "amusement": 0.37,
+        "anger": 0.06,
+        "awe": 0.33,
+        "contentment": 0.45,
+        "disgust": 0.03,
+        "excitement": 0.41,
+        "fear": 0.18,
+        "sadness": 0.24
+      },
+      "contentment/contentment_09997.mp3": {
+        "amusement": 0.45,
+        "anger": 0.15,
+        "awe": 0.38,
+        "contentment": 0.52,
+        "disgust": 0.18,
+        "excitement": 0.42,
+        "fear": 0.18,
+        "sadness": 0.12
+      },
+      "contentment/contentment_10002.mp3": {
+        "amusement": 0.38,
+        "anger": 0.0,
+        "awe": 0.42,
+        "contentment": 0.38,
+        "disgust": 0.0,
+        "excitement": 0.42,
+        "fear": 0.21,
+        "sadness": 0.16
+      },
+      "contentment/contentment_10003.mp3": {
+        "amusement": 0.26,
+        "anger": 0.12,
+        "awe": 0.25,
+        "contentment": 0.25,
+        "disgust": 0.03,
+        "excitement": 0.22,
+        "fear": 0.24,
+        "sadness": 0.07
+      },
+      "contentment/contentment_10017.mp3": {
+        "amusement": 0.44,
+        "anger": 0.15,
+        "awe": 0.42,
+        "contentment": 0.35,
+        "disgust": 0.17,
+        "excitement": 0.42,
+        "fear": 0.28,
+        "sadness": 0.26
+      },
+      "contentment/contentment_10029.mp3": {
+        "amusement": 0.56,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.6,
+        "disgust": 0.0,
+        "excitement": 0.5,
+        "fear": 0.02,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10032.mp3": {
+        "amusement": 0.45,
+        "anger": 0.16,
+        "awe": 0.28,
+        "contentment": 0.55,
+        "disgust": 0.1,
+        "excitement": 0.35,
+        "fear": 0.25,
+        "sadness": 0.2
+      },
+      "contentment/contentment_10110.mp3": {
+        "amusement": 0.48,
+        "anger": 0.23,
+        "awe": 0.35,
+        "contentment": 0.42,
+        "disgust": 0.2,
+        "excitement": 0.4,
+        "fear": 0.22,
+        "sadness": 0.15
+      },
+      "disgust/disgust_00534.mp3": {
+        "amusement": 0.29,
+        "anger": 0.36,
+        "awe": 0.28,
+        "contentment": 0.23,
+        "disgust": 0.27,
+        "excitement": 0.31,
+        "fear": 0.41,
+        "sadness": 0.23
+      },
+      "disgust/disgust_02051.mp3": {
+        "amusement": 0.49,
+        "anger": 0.35,
+        "awe": 0.44,
+        "contentment": 0.23,
+        "disgust": 0.36,
+        "excitement": 0.37,
+        "fear": 0.28,
+        "sadness": 0.22
+      },
+      "disgust/disgust_02058.mp3": {
+        "amusement": 0.23,
+        "anger": 0.71,
+        "awe": 0.42,
+        "contentment": 0.29,
+        "disgust": 0.89,
+        "excitement": 0.23,
+        "fear": 0.52,
+        "sadness": 0.34
+      },
+      "disgust/disgust_02553.mp3": {
+        "amusement": 0.16,
+        "anger": 0.35,
+        "awe": 0.41,
+        "contentment": 0.18,
+        "disgust": 0.42,
+        "excitement": 0.21,
+        "fear": 0.42,
+        "sadness": 0.33
+      },
+      "disgust/disgust_03228.mp3": {
+        "amusement": 0.48,
+        "anger": 0.35,
+        "awe": 0.25,
+        "contentment": 0.26,
+        "disgust": 0.09,
+        "excitement": 0.23,
+        "fear": 0.25,
+        "sadness": 0.23
+      },
+      "disgust/disgust_04038.mp3": {
+        "amusement": 0.22,
+        "anger": 0.73,
+        "awe": 0.27,
+        "contentment": 0.31,
+        "disgust": 0.93,
+        "excitement": 0.22,
+        "fear": 0.14,
+        "sadness": 0.38
+      },
+      "disgust/disgust_08857.mp3": {
+        "amusement": 0.47,
+        "anger": 0.48,
+        "awe": 0.41,
+        "contentment": 0.18,
+        "disgust": 0.62,
+        "excitement": 0.36,
+        "fear": 0.21,
+        "sadness": 0.33
+      },
+      "disgust/disgust_08884.mp3": {
+        "amusement": 0.28,
+        "anger": 0.54,
+        "awe": 0.43,
+        "contentment": 0.18,
+        "disgust": 0.89,
+        "excitement": 0.49,
+        "fear": 0.72,
+        "sadness": 0.26
+      },
+      "disgust/disgust_10797.mp3": {
+        "amusement": 0.45,
+        "anger": 0.49,
+        "awe": 0.54,
+        "contentment": 0.3,
+        "disgust": 0.35,
+        "excitement": 0.53,
+        "fear": 0.26,
+        "sadness": 0.41
+      },
+      "excitement/excitement_07977.mp3": {
+        "amusement": 0.45,
+        "anger": 0.27,
+        "awe": 0.31,
+        "contentment": 0.52,
+        "disgust": 0.14,
+        "excitement": 0.62,
+        "fear": 0.28,
+        "sadness": 0.22
+      },
+      "excitement/excitement_07981.mp3": {
+        "amusement": 0.45,
+        "anger": 0.25,
+        "awe": 0.42,
+        "contentment": 0.48,
+        "disgust": 0.12,
+        "excitement": 0.68,
+        "fear": 0.15,
+        "sadness": 0.08
+      },
+      "excitement/excitement_07982.mp3": {
+        "amusement": 0.46,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.35,
+        "disgust": 0.0,
+        "excitement": 0.24,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08003.mp3": {
+        "amusement": 0.6,
+        "anger": 0.3,
+        "awe": 0.4,
+        "contentment": 0.35,
+        "disgust": 0.0,
+        "excitement": 0.65,
+        "fear": 0.5,
+        "sadness": 0.1
+      },
+      "excitement/excitement_08004.mp3": {
+        "amusement": 0.48,
+        "anger": 0.05,
+        "awe": 0.24,
+        "contentment": 0.45,
+        "disgust": 0.0,
+        "excitement": 0.5,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08008.mp3": {
+        "amusement": 0.54,
+        "anger": 0.07,
+        "awe": 0.23,
+        "contentment": 0.38,
+        "disgust": 0.0,
+        "excitement": 0.73,
+        "fear": 0.12,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08023.mp3": {
+        "amusement": 0.4,
+        "anger": 0.45,
+        "awe": 0.37,
+        "contentment": 0.32,
+        "disgust": 0.12,
+        "excitement": 0.63,
+        "fear": 0.38,
+        "sadness": 0.15
+      },
+      "excitement/excitement_08027.mp3": {
+        "amusement": 0.56,
+        "anger": 0.13,
+        "awe": 0.49,
+        "contentment": 0.54,
+        "disgust": 0.04,
+        "excitement": 0.52,
+        "fear": 0.21,
+        "sadness": 0.08
+      },
+      "excitement/excitement_16001.mp3": {
+        "amusement": 0.43,
+        "anger": 0.13,
+        "awe": 0.28,
+        "contentment": 0.43,
+        "disgust": 0.02,
+        "excitement": 0.62,
+        "fear": 0.13,
+        "sadness": 0.06
+      },
+      "excitement/excitement_16006.mp3": {
+        "amusement": 0.63,
+        "anger": 0.18,
+        "awe": 0.54,
+        "contentment": 0.32,
+        "disgust": 0.29,
+        "excitement": 0.62,
+        "fear": 0.21,
+        "sadness": 0.18
+      },
+      "fear/fear_03287.mp3": {
+        "amusement": 0.35,
+        "anger": 0.62,
+        "awe": 0.53,
+        "contentment": 0.2,
+        "disgust": 0.54,
+        "excitement": 0.45,
+        "fear": 0.67,
+        "sadness": 0.57
+      },
+      "fear/fear_03297.mp3": {
+        "amusement": 0.35,
+        "anger": 0.3,
+        "awe": 0.45,
+        "contentment": 0.2,
+        "disgust": 0.25,
+        "excitement": 0.4,
+        "fear": 0.5,
+        "sadness": 0.15
+      },
+      "fear/fear_03314.mp3": {
+        "amusement": 0.36,
+        "anger": 0.35,
+        "awe": 0.32,
+        "contentment": 0.25,
+        "disgust": 0.31,
+        "excitement": 0.43,
+        "fear": 0.31,
+        "sadness": 0.16
+      },
+      "fear/fear_09148.mp3": {
+        "amusement": 0.65,
+        "anger": 0.12,
+        "awe": 0.2,
+        "contentment": 0.52,
+        "disgust": 0.1,
+        "excitement": 0.67,
+        "fear": 0.08,
+        "sadness": 0.05
+      },
+      "fear/fear_09151.mp3": {
+        "amusement": 0.75,
+        "anger": 0.28,
+        "awe": 0.35,
+        "contentment": 0.51,
+        "disgust": 0.13,
+        "excitement": 0.59,
+        "fear": 0.19,
+        "sadness": 0.14
+      },
+      "fear/fear_09171.mp3": {
+        "amusement": 0.3,
+        "anger": 0.35,
+        "awe": 0.3,
+        "contentment": 0.1,
+        "disgust": 0.3,
+        "excitement": 0.4,
+        "fear": 0.45,
+        "sadness": 0.2
+      },
+      "fear/fear_09191.mp3": {
+        "amusement": 0.41,
+        "anger": 0.42,
+        "awe": 0.43,
+        "contentment": 0.39,
+        "disgust": 0.23,
+        "excitement": 0.38,
+        "fear": 0.47,
+        "sadness": 0.29
+      },
+      "fear/fear_09247.mp3": {
+        "amusement": 0.43,
+        "anger": 0.34,
+        "awe": 0.27,
+        "contentment": 0.48,
+        "disgust": 0.25,
+        "excitement": 0.55,
+        "fear": 0.14,
+        "sadness": 0.13
+      },
+      "fear/fear_09249.mp3": {
+        "amusement": 0.15,
+        "anger": 0.42,
+        "awe": 0.37,
+        "contentment": 0.18,
+        "disgust": 0.28,
+        "excitement": 0.21,
+        "fear": 0.55,
+        "sadness": 0.44
+      },
+      "fear/fear_14992.mp3": {
+        "amusement": 0.51,
+        "anger": 0.32,
+        "awe": 0.45,
+        "contentment": 0.52,
+        "disgust": 0.22,
+        "excitement": 0.51,
+        "fear": 0.33,
+        "sadness": 0.21
+      },
+      "sadness/sadness_03448.mp3": {
+        "amusement": 0.45,
+        "anger": 0.2,
+        "awe": 0.34,
+        "contentment": 0.62,
+        "disgust": 0.12,
+        "excitement": 0.42,
+        "fear": 0.05,
+        "sadness": 0.31
+      },
+      "sadness/sadness_03452.mp3": {
+        "amusement": 0.65,
+        "anger": 0.21,
+        "awe": 0.38,
+        "contentment": 0.6,
+        "disgust": 0.12,
+        "excitement": 0.44,
+        "fear": 0.15,
+        "sadness": 0.22
+      },
+      "sadness/sadness_03454.mp3": {
+        "amusement": 0.47,
+        "anger": 0.23,
+        "awe": 0.3,
+        "contentment": 0.45,
+        "disgust": 0.23,
+        "excitement": 0.37,
+        "fear": 0.29,
+        "sadness": 0.32
+      },
+      "sadness/sadness_03477.mp3": {
+        "amusement": 0.52,
+        "anger": 0.28,
+        "awe": 0.47,
+        "contentment": 0.32,
+        "disgust": 0.25,
+        "excitement": 0.41,
+        "fear": 0.32,
+        "sadness": 0.47
+      },
+      "sadness/sadness_07947.mp3": {
+        "amusement": 0.2,
+        "anger": 0.25,
+        "awe": 0.3,
+        "contentment": 0.1,
+        "disgust": 0.35,
+        "excitement": 0.2,
+        "fear": 0.25,
+        "sadness": 0.7
+      },
+      "sadness/sadness_07964.mp3": {
+        "amusement": 0.45,
+        "anger": 0.25,
+        "awe": 0.5,
+        "contentment": 0.35,
+        "disgust": 0.2,
+        "excitement": 0.4,
+        "fear": 0.25,
+        "sadness": 0.45
+      },
+      "sadness/sadness_07965.mp3": {
+        "amusement": 0.02,
+        "anger": 0.17,
+        "awe": 0.22,
+        "contentment": 0.06,
+        "disgust": 0.4,
+        "excitement": 0.04,
+        "fear": 0.08,
+        "sadness": 0.62
+      },
+      "sadness/sadness_07973.mp3": {
+        "amusement": 0.02,
+        "anger": 0.35,
+        "awe": 0.55,
+        "contentment": 0.05,
+        "disgust": 0.3,
+        "excitement": 0.2,
+        "fear": 0.45,
+        "sadness": 0.6
+      },
+      "sadness/sadness_07975.mp3": {
+        "amusement": 0.56,
+        "anger": 0.21,
+        "awe": 0.48,
+        "contentment": 0.41,
+        "disgust": 0.15,
+        "excitement": 0.31,
+        "fear": 0.26,
+        "sadness": 0.53
+      },
+      "sadness/sadness_07977.mp3": {
+        "amusement": 0.33,
+        "anger": 0.27,
+        "awe": 0.42,
+        "contentment": 0.42,
+        "disgust": 0.18,
+        "excitement": 0.38,
+        "fear": 0.23,
+        "sadness": 0.18
+      }
+    },
+    "gpt_oss": {
+      "amusement/amusement_02936.mp3": {
+        "amusement": 0.25,
+        "anger": 0.1,
+        "awe": 0.5,
+        "contentment": 0.75,
+        "disgust": 0.4,
+        "excitement": 0.65,
+        "fear": 0.6,
+        "sadness": 0.3
+      },
+      "amusement/amusement_02945.mp3": {
+        "amusement": 0.65,
+        "anger": 0.1,
+        "awe": 0.4,
+        "contentment": 0.5,
+        "disgust": 0.0,
+        "excitement": 0.7,
+        "fear": 0.5,
+        "sadness": 0.1
+      },
+      "amusement/amusement_08239.mp3": {
+        "amusement": 0.25,
+        "anger": 0.1,
+        "awe": 0.1,
+        "contentment": 0.3,
+        "disgust": 0.8,
+        "excitement": 0.6,
+        "fear": 0.7,
+        "sadness": 0.6
+      },
+      "amusement/amusement_08272.mp3": {
+        "amusement": 0.65,
+        "anger": 0.55,
+        "awe": 0.35,
+        "contentment": 0.1,
+        "disgust": 0.05,
+        "excitement": 0.85,
+        "fear": 0.75,
+        "sadness": 0.2
+      },
+      "amusement/amusement_08284.mp3": {
+        "amusement": 0.35,
+        "anger": 0.25,
+        "awe": 0.02,
+        "contentment": 0.4,
+        "disgust": 0.15,
+        "excitement": 0.65,
+        "fear": 0.6,
+        "sadness": 0.1
+      },
+      "amusement/amusement_08310.mp3": {
+        "amusement": 0.35,
+        "anger": 0.25,
+        "awe": 0.05,
+        "contentment": 0.55,
+        "disgust": 0.3,
+        "excitement": 0.8,
+        "fear": 0.4,
+        "sadness": 0.2
+      },
+      "amusement/amusement_08311.mp3": {
+        "amusement": 0.25,
+        "anger": 0.35,
+        "awe": 0.45,
+        "contentment": 0.1,
+        "disgust": 0.02,
+        "excitement": 0.6,
+        "fear": 0.5,
+        "sadness": 0.2
+      },
+      "amusement/amusement_08336.mp3": {
+        "amusement": 0.25,
+        "anger": 0.1,
+        "awe": 0.3,
+        "contentment": 0.0,
+        "disgust": 0.5,
+        "excitement": 0.1,
+        "fear": 0.4,
+        "sadness": 0.2
+      },
+      "amusement/amusement_17647.mp3": {
+        "amusement": 0.55,
+        "anger": 0.25,
+        "awe": 0.45,
+        "contentment": 0.1,
+        "disgust": 0.15,
+        "excitement": 0.65,
+        "fear": 0.35,
+        "sadness": 0.2
+      },
+      "amusement/amusement_17660.mp3": {
+        "amusement": 0.22,
+        "anger": 0.35,
+        "awe": 0.35,
+        "contentment": 0.15,
+        "disgust": 0.0,
+        "excitement": 0.65,
+        "fear": 0.6,
+        "sadness": 0.2
+      },
+      "anger/anger_02004.mp3": {
+        "amusement": 0.25,
+        "anger": 0.75,
+        "awe": 0.3,
+        "contentment": 0.4,
+        "disgust": 0.5,
+        "excitement": 0.5,
+        "fear": 0.6,
+        "sadness": 0.1
+      },
+      "anger/anger_02009.mp3": {
+        "amusement": 0.75,
+        "anger": 0.95,
+        "awe": 0.75,
+        "contentment": 0.1,
+        "disgust": 0.5,
+        "excitement": 0.85,
+        "fear": 0.65,
+        "sadness": 0.6
+      },
+      "anger/anger_02010.mp3": {
+        "amusement": 0.25,
+        "anger": 0.85,
+        "awe": 0.75,
+        "contentment": 0.05,
+        "disgust": 0.45,
+        "excitement": 0.65,
+        "fear": 0.55,
+        "sadness": 0.6
+      },
+      "anger/anger_04341.mp3": {
+        "amusement": 0.45,
+        "anger": 0.75,
+        "awe": 0.65,
+        "contentment": 0.1,
+        "disgust": 0.55,
+        "excitement": 0.5,
+        "fear": 0.6,
+        "sadness": 0.7
+      },
+      "anger/anger_04345.mp3": {
+        "amusement": 0.45,
+        "anger": 0.75,
+        "awe": 0.65,
+        "contentment": 0.1,
+        "disgust": 0.85,
+        "excitement": 0.2,
+        "fear": 0.3,
+        "sadness": 0.7
+      },
+      "anger/anger_04353.mp3": {
+        "amusement": 0.45,
+        "anger": 0.25,
+        "awe": 0.2,
+        "contentment": 0.35,
+        "disgust": 0.0,
+        "excitement": 0.75,
+        "fear": 0.3,
+        "sadness": 0.4
+      },
+      "anger/anger_04355.mp3": {
+        "amusement": 0.45,
+        "anger": 0.55,
+        "awe": 0.1,
+        "contentment": 0.3,
+        "disgust": 0.25,
+        "excitement": 0.5,
+        "fear": 0.0,
+        "sadness": 0.6
+      },
+      "anger/anger_08253.mp3": {
+        "amusement": 0.65,
+        "anger": 0.85,
+        "awe": 0.55,
+        "contentment": 0.1,
+        "disgust": 0.35,
+        "excitement": 0.8,
+        "fear": 0.6,
+        "sadness": 0.4
+      },
+      "anger/anger_10052.mp3": {
+        "amusement": 0.1,
+        "anger": 0.6,
+        "awe": 0.5,
+        "contentment": 0.0,
+        "disgust": 0.1,
+        "excitement": 0.2,
+        "fear": 0.1,
+        "sadness": 0.7
+      },
+      "awe/awe_09115.mp3": {
+        "amusement": 0.4,
+        "anger": 0.1,
+        "awe": 0.75,
+        "contentment": 0.55,
+        "disgust": 0.1,
+        "excitement": 0.4,
+        "fear": 0.3,
+        "sadness": 0.0
+      },
+      "awe/awe_09117.mp3": {
+        "amusement": 0.48,
+        "anger": 0.2,
+        "awe": 0.5,
+        "contentment": 0.66,
+        "disgust": 0.0,
+        "excitement": 0.28,
+        "fear": 0.34,
+        "sadness": 0.13
+      },
+      "awe/awe_09139.mp3": {
+        "amusement": 0.35,
+        "anger": 0.25,
+        "awe": 0.5,
+        "contentment": 0.1,
+        "disgust": 0.2,
+        "excitement": 0.15,
+        "fear": 0.05,
+        "sadness": 0.3
+      },
+      "awe/awe_09141.mp3": {
+        "amusement": 0.45,
+        "anger": 0.2,
+        "awe": 0.7,
+        "contentment": 0.6,
+        "disgust": 0.05,
+        "excitement": 0.4,
+        "fear": 0.15,
+        "sadness": 0.2
+      },
+      "awe/awe_09142.mp3": {
+        "amusement": 0.45,
+        "anger": 0.1,
+        "awe": 0.7,
+        "contentment": 0.5,
+        "disgust": 0.05,
+        "excitement": 0.4,
+        "fear": 0.2,
+        "sadness": 0.2
+      },
+      "awe/awe_09143.mp3": {
+        "amusement": 0.42,
+        "anger": 0.15,
+        "awe": 0.85,
+        "contentment": 0.25,
+        "disgust": 0.1,
+        "excitement": 0.35,
+        "fear": 0.05,
+        "sadness": 0.0
+      },
+      "awe/awe_09162.mp3": {
+        "amusement": 0.45,
+        "anger": 0.15,
+        "awe": 0.75,
+        "contentment": 0.6,
+        "disgust": 0.0,
+        "excitement": 0.5,
+        "fear": 0.25,
+        "sadness": 0.1
+      },
+      "awe/awe_09163.mp3": {
+        "amusement": 0.5,
+        "anger": 0.2,
+        "awe": 0.9,
+        "contentment": 0.6,
+        "disgust": 0.0,
+        "excitement": 0.5,
+        "fear": 0.1,
+        "sadness": 0.2
+      },
+      "awe/awe_09166.mp3": {
+        "amusement": 0.45,
+        "anger": 0.25,
+        "awe": 1.0,
+        "contentment": 0.6,
+        "disgust": 0.0,
+        "excitement": 0.54,
+        "fear": 0.17,
+        "sadness": 0.13
+      },
+      "awe/awe_09167.mp3": {
+        "amusement": 0.5,
+        "anger": 0.3,
+        "awe": 0.6,
+        "contentment": 0.6,
+        "disgust": 0.2,
+        "excitement": 0.5,
+        "fear": 0.4,
+        "sadness": 0.0
+      },
+      "contentment/contentment_08263.mp3": {
+        "amusement": 0.2,
+        "anger": 0.3,
+        "awe": 0.75,
+        "contentment": 0.4,
+        "disgust": 0.5,
+        "excitement": 0.4,
+        "fear": 0.1,
+        "sadness": 0.2
+      },
+      "contentment/contentment_09956.mp3": {
+        "amusement": 0.4,
+        "anger": 0.0,
+        "awe": 0.5,
+        "contentment": 0.7,
+        "disgust": 0.1,
+        "excitement": 0.2,
+        "fear": 0.0,
+        "sadness": 0.1
+      },
+      "contentment/contentment_09996.mp3": {
+        "amusement": 0.35,
+        "anger": 0.0,
+        "awe": 0.4,
+        "contentment": 0.5,
+        "disgust": 0.1,
+        "excitement": 0.45,
+        "fear": 0.2,
+        "sadness": 0.25
+      },
+      "contentment/contentment_09997.mp3": {
+        "amusement": 0.45,
+        "anger": 0.0,
+        "awe": 0.3,
+        "contentment": 0.75,
+        "disgust": 0.35,
+        "excitement": 0.5,
+        "fear": 0.25,
+        "sadness": 0.2
+      },
+      "contentment/contentment_10002.mp3": {
+        "amusement": 0.35,
+        "anger": 0.0,
+        "awe": 0.45,
+        "contentment": 0.65,
+        "disgust": 0.3,
+        "excitement": 0.55,
+        "fear": 0.4,
+        "sadness": 0.5
+      },
+      "contentment/contentment_10003.mp3": {
+        "amusement": 0.15,
+        "anger": 0.0,
+        "awe": 0.01,
+        "contentment": 0.5,
+        "disgust": 0.6,
+        "excitement": 0.37,
+        "fear": 0.1,
+        "sadness": 0.36
+      },
+      "contentment/contentment_10017.mp3": {
+        "amusement": 0.45,
+        "anger": 0.05,
+        "awe": 0.55,
+        "contentment": 0.75,
+        "disgust": 0.45,
+        "excitement": 0.5,
+        "fear": 0.0,
+        "sadness": 0.1
+      },
+      "contentment/contentment_10029.mp3": {
+        "amusement": 0.55,
+        "anger": 0.1,
+        "awe": 0.5,
+        "contentment": 0.8,
+        "disgust": 0.05,
+        "excitement": 0.7,
+        "fear": 0.0,
+        "sadness": 0.6
+      },
+      "contentment/contentment_10032.mp3": {
+        "amusement": 0.55,
+        "anger": 0.0,
+        "awe": 0.35,
+        "contentment": 0.85,
+        "disgust": 0.02,
+        "excitement": 0.25,
+        "fear": 0.25,
+        "sadness": 0.05
+      },
+      "contentment/contentment_10110.mp3": {
+        "amusement": 0.45,
+        "anger": 0.0,
+        "awe": 0.35,
+        "contentment": 0.75,
+        "disgust": 0.2,
+        "excitement": 0.3,
+        "fear": 0.5,
+        "sadness": 0.4
+      },
+      "disgust/disgust_00534.mp3": {
+        "amusement": 0.25,
+        "anger": 0.55,
+        "awe": 0.1,
+        "contentment": 0.2,
+        "disgust": 0.45,
+        "excitement": 0.5,
+        "fear": 0.7,
+        "sadness": 0.3
+      },
+      "disgust/disgust_02051.mp3": {
+        "amusement": 0.55,
+        "anger": 0.65,
+        "awe": 0.5,
+        "contentment": 0.25,
+        "disgust": 0.75,
+        "excitement": 0.1,
+        "fear": 0.5,
+        "sadness": 0.7
+      },
+      "disgust/disgust_02058.mp3": {
+        "amusement": 0.1,
+        "anger": 0.6,
+        "awe": 0.0,
+        "contentment": 0.5,
+        "disgust": 1.0,
+        "excitement": 0.05,
+        "fear": 0.3,
+        "sadness": 0.25
+      },
+      "disgust/disgust_02553.mp3": {
+        "amusement": 0.15,
+        "anger": 0.25,
+        "awe": 0.45,
+        "contentment": 0.75,
+        "disgust": 0.85,
+        "excitement": 0.1,
+        "fear": 0.5,
+        "sadness": 0.4
+      },
+      "disgust/disgust_03228.mp3": {
+        "amusement": 0.05,
+        "anger": 0.45,
+        "awe": 0.15,
+        "contentment": 0.75,
+        "disgust": 0.95,
+        "excitement": 0.65,
+        "fear": 0.1,
+        "sadness": 0.3
+      },
+      "disgust/disgust_04038.mp3": {
+        "amusement": 0.1,
+        "anger": 0.7,
+        "awe": 0.1,
+        "contentment": 0.5,
+        "disgust": 1.0,
+        "excitement": 0.1,
+        "fear": 0.0,
+        "sadness": 0.5
+      },
+      "disgust/disgust_08857.mp3": {
+        "amusement": 0.5,
+        "anger": 0.7,
+        "awe": 0.4,
+        "contentment": 0.1,
+        "disgust": 0.65,
+        "excitement": 0.1,
+        "fear": 0.2,
+        "sadness": 0.75
+      },
+      "disgust/disgust_08884.mp3": {
+        "amusement": 0.1,
+        "anger": 0.7,
+        "awe": 0.1,
+        "contentment": 0.4,
+        "disgust": 1.0,
+        "excitement": 0.3,
+        "fear": 0.2,
+        "sadness": 0.4
+      },
+      "disgust/disgust_10797.mp3": {
+        "amusement": 0.5,
+        "anger": 0.6,
+        "awe": 0.4,
+        "contentment": 0.5,
+        "disgust": 0.3,
+        "excitement": 0.4,
+        "fear": 0.0,
+        "sadness": 0.7
+      },
+      "excitement/excitement_07977.mp3": {
+        "amusement": 0.45,
+        "anger": 0.1,
+        "awe": 0.2,
+        "contentment": 0.55,
+        "disgust": 0.3,
+        "excitement": 0.85,
+        "fear": 0.15,
+        "sadness": 0.25
+      },
+      "excitement/excitement_07981.mp3": {
+        "amusement": 0.45,
+        "anger": 0.15,
+        "awe": 0.55,
+        "contentment": 0.6,
+        "disgust": 0.2,
+        "excitement": 0.75,
+        "fear": 0.1,
+        "sadness": 0.05
+      },
+      "excitement/excitement_07982.mp3": {
+        "amusement": 0.45,
+        "anger": 0.35,
+        "awe": 0.0,
+        "contentment": 0.55,
+        "disgust": 0.15,
+        "excitement": 0.85,
+        "fear": 0.5,
+        "sadness": 0.4
+      },
+      "excitement/excitement_08003.mp3": {
+        "amusement": 0.35,
+        "anger": 0.45,
+        "awe": 0.1,
+        "contentment": 0.55,
+        "disgust": 0.0,
+        "excitement": 0.75,
+        "fear": 0.8,
+        "sadness": 0.15
+      },
+      "excitement/excitement_08004.mp3": {
+        "amusement": 0.65,
+        "anger": 0.15,
+        "awe": 0.45,
+        "contentment": 0.75,
+        "disgust": 0.01,
+        "excitement": 0.85,
+        "fear": 0.25,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08008.mp3": {
+        "amusement": 0.45,
+        "anger": 0.05,
+        "awe": 0.25,
+        "contentment": 0.55,
+        "disgust": 0.0,
+        "excitement": 0.75,
+        "fear": 0.2,
+        "sadness": 0.1
+      },
+      "excitement/excitement_08023.mp3": {
+        "amusement": 0.55,
+        "anger": 0.25,
+        "awe": 0.55,
+        "contentment": 0.45,
+        "disgust": 0.0,
+        "excitement": 0.75,
+        "fear": 0.5,
+        "sadness": 0.05
+      },
+      "excitement/excitement_08027.mp3": {
+        "amusement": 0.45,
+        "anger": 0.15,
+        "awe": 0.35,
+        "contentment": 0.65,
+        "disgust": 0.1,
+        "excitement": 0.75,
+        "fear": 0.4,
+        "sadness": 0.0
+      },
+      "excitement/excitement_16001.mp3": {
+        "amusement": 0.35,
+        "anger": 0.0,
+        "awe": 0.3,
+        "contentment": 0.55,
+        "disgust": 0.25,
+        "excitement": 0.85,
+        "fear": 0.1,
+        "sadness": 0.02
+      },
+      "excitement/excitement_16006.mp3": {
+        "amusement": 0.65,
+        "anger": 0.4,
+        "awe": 0.7,
+        "contentment": 0.2,
+        "disgust": 0.3,
+        "excitement": 0.75,
+        "fear": 0.3,
+        "sadness": 0.1
+      },
+      "fear/fear_03287.mp3": {
+        "amusement": 0.4,
+        "anger": 0.85,
+        "awe": 0.5,
+        "contentment": 0.1,
+        "disgust": 0.7,
+        "excitement": 0.5,
+        "fear": 0.75,
+        "sadness": 0.65
+      },
+      "fear/fear_03297.mp3": {
+        "amusement": 0.55,
+        "anger": 0.45,
+        "awe": 0.4,
+        "contentment": 0.1,
+        "disgust": 0.3,
+        "excitement": 0.5,
+        "fear": 0.7,
+        "sadness": 0.05
+      },
+      "fear/fear_03314.mp3": {
+        "amusement": 0.25,
+        "anger": 0.65,
+        "awe": 0.1,
+        "contentment": 0.05,
+        "disgust": 0.55,
+        "excitement": 0.75,
+        "fear": 0.9,
+        "sadness": 0.0
+      },
+      "fear/fear_09148.mp3": {
+        "amusement": 0.75,
+        "anger": 0.3,
+        "awe": 0.0,
+        "contentment": 0.7,
+        "disgust": 0.4,
+        "excitement": 0.6,
+        "fear": 1.0,
+        "sadness": 0.1
+      },
+      "fear/fear_09151.mp3": {
+        "amusement": 0.65,
+        "anger": 0.5,
+        "awe": 0.35,
+        "contentment": 0.7,
+        "disgust": 0.75,
+        "excitement": 0.45,
+        "fear": 0.9,
+        "sadness": 0.1
+      },
+      "fear/fear_09171.mp3": {
+        "amusement": 0.25,
+        "anger": 0.45,
+        "awe": 0.25,
+        "contentment": 0.05,
+        "disgust": 0.55,
+        "excitement": 0.4,
+        "fear": 0.9,
+        "sadness": 0.1
+      },
+      "fear/fear_09191.mp3": {
+        "amusement": 0.45,
+        "anger": 0.25,
+        "awe": 0.85,
+        "contentment": 0.55,
+        "disgust": 0.1,
+        "excitement": 0.6,
+        "fear": 1.0,
+        "sadness": 0.1
+      },
+      "fear/fear_09247.mp3": {
+        "amusement": 0.5,
+        "anger": 0.7,
+        "awe": 0.1,
+        "contentment": 0.6,
+        "disgust": 0.5,
+        "excitement": 0.8,
+        "fear": 0.9,
+        "sadness": 0.2
+      },
+      "fear/fear_09249.mp3": {
+        "amusement": 0.1,
+        "anger": 0.5,
+        "awe": 0.4,
+        "contentment": 0.1,
+        "disgust": 0.3,
+        "excitement": 0.1,
+        "fear": 0.8,
+        "sadness": 0.6
+      },
+      "fear/fear_14992.mp3": {
+        "amusement": 0.65,
+        "anger": 0.1,
+        "awe": 0.35,
+        "contentment": 0.25,
+        "disgust": 0.3,
+        "excitement": 0.55,
+        "fear": 0.9,
+        "sadness": 0.05
+      },
+      "sadness/sadness_03448.mp3": {
+        "amusement": 0.65,
+        "anger": 0.25,
+        "awe": 0.5,
+        "contentment": 0.6,
+        "disgust": 0.2,
+        "excitement": 0.25,
+        "fear": 0.0,
+        "sadness": 0.9
+      },
+      "sadness/sadness_03452.mp3": {
+        "amusement": 0.55,
+        "anger": 0.1,
+        "awe": 0.75,
+        "contentment": 0.8,
+        "disgust": 0.05,
+        "excitement": 0.3,
+        "fear": 0.3,
+        "sadness": 0.95
+      },
+      "sadness/sadness_03454.mp3": {
+        "amusement": 0.55,
+        "anger": 0.35,
+        "awe": 0.1,
+        "contentment": 0.65,
+        "disgust": 0.5,
+        "excitement": 0.45,
+        "fear": 0.4,
+        "sadness": 0.75
+      },
+      "sadness/sadness_03477.mp3": {
+        "amusement": 0.25,
+        "anger": 0.25,
+        "awe": 0.35,
+        "contentment": 0.45,
+        "disgust": 0.2,
+        "excitement": 0.05,
+        "fear": 0.3,
+        "sadness": 0.6
+      },
+      "sadness/sadness_07947.mp3": {
+        "amusement": 0.1,
+        "anger": 0.7,
+        "awe": 0.3,
+        "contentment": 0.0,
+        "disgust": 0.8,
+        "excitement": 0.1,
+        "fear": 0.2,
+        "sadness": 0.9
+      },
+      "sadness/sadness_07964.mp3": {
+        "amusement": 0.25,
+        "anger": 0.3,
+        "awe": 0.35,
+        "contentment": 0.4,
+        "disgust": 0.2,
+        "excitement": 0.05,
+        "fear": 0.25,
+        "sadness": 0.6
+      },
+      "sadness/sadness_07965.mp3": {
+        "amusement": 0.1,
+        "anger": 0.5,
+        "awe": 0.4,
+        "contentment": 0.0,
+        "disgust": 0.5,
+        "excitement": 0.2,
+        "fear": 0.3,
+        "sadness": 0.7
+      },
+      "sadness/sadness_07973.mp3": {
+        "amusement": 0.1,
+        "anger": 0.7,
+        "awe": 0.9,
+        "contentment": 0.0,
+        "disgust": 0.02,
+        "excitement": 0.3,
+        "fear": 0.25,
+        "sadness": 0.8
+      },
+      "sadness/sadness_07975.mp3": {
+        "amusement": 0.45,
+        "anger": 0.35,
+        "awe": 0.65,
+        "contentment": 0.55,
+        "disgust": 0.25,
+        "excitement": 0.1,
+        "fear": 0.5,
+        "sadness": 0.9
+      },
+      "sadness/sadness_07977.mp3": {
+        "amusement": 0.35,
+        "anger": 0.25,
+        "awe": 0.45,
+        "contentment": 0.65,
+        "disgust": 0.4,
+        "excitement": 0.1,
+        "fear": 0.05,
+        "sadness": 0.3
+      }
+    },
+    "ground_truth": {
+      "amusement/amusement_02936.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.3179,
+        "contentment": 0.9868,
+        "disgust": 0.4371,
+        "excitement": 0.702,
+        "fear": 0.7152,
+        "sadness": 0.4106
+      },
+      "amusement/amusement_02945.mp3": {
+        "amusement": 1.0,
+        "anger": 0.2609,
+        "awe": 0.2222,
+        "contentment": 0.5314,
+        "disgust": 0.0,
+        "excitement": 0.6667,
+        "fear": 0.4541,
+        "sadness": 0.0966
+      },
+      "amusement/amusement_08239.mp3": {
+        "amusement": 1.0,
+        "anger": 0.163,
+        "awe": 0.0,
+        "contentment": 0.2935,
+        "disgust": 0.9783,
+        "excitement": 0.663,
+        "fear": 0.7283,
+        "sadness": 0.7283
+      },
+      "amusement/amusement_08272.mp3": {
+        "amusement": 1.0,
+        "anger": 0.5279,
+        "awe": 0.3299,
+        "contentment": 0.0,
+        "disgust": 0.1015,
+        "excitement": 0.9695,
+        "fear": 0.802,
+        "sadness": 0.1574
+      },
+      "amusement/amusement_08284.mp3": {
+        "amusement": 1.0,
+        "anger": 0.1953,
+        "awe": 0.0,
+        "contentment": 0.4556,
+        "disgust": 0.3018,
+        "excitement": 0.7456,
+        "fear": 0.7574,
+        "sadness": 0.0355
+      },
+      "amusement/amusement_08310.mp3": {
+        "amusement": 1.0,
+        "anger": 0.2955,
+        "awe": 0.0,
+        "contentment": 0.7576,
+        "disgust": 0.4394,
+        "excitement": 0.8636,
+        "fear": 0.5076,
+        "sadness": 0.4697
+      },
+      "amusement/amusement_08311.mp3": {
+        "amusement": 1.0,
+        "anger": 0.3081,
+        "awe": 0.4108,
+        "contentment": 0.0486,
+        "disgust": 0.0,
+        "excitement": 0.6432,
+        "fear": 0.5459,
+        "sadness": 0.1946
+      },
+      "amusement/amusement_08336.mp3": {
+        "amusement": 1.0,
+        "anger": 0.3284,
+        "awe": 0.1716,
+        "contentment": 0.0,
+        "disgust": 0.791,
+        "excitement": 0.0746,
+        "fear": 0.6493,
+        "sadness": 0.5299
+      },
+      "amusement/amusement_17647.mp3": {
+        "amusement": 1.0,
+        "anger": 0.5949,
+        "awe": 0.6329,
+        "contentment": 0.0,
+        "disgust": 0.2532,
+        "excitement": 0.7911,
+        "fear": 0.6709,
+        "sadness": 0.3354
+      },
+      "amusement/amusement_17660.mp3": {
+        "amusement": 1.0,
+        "anger": 0.4242,
+        "awe": 0.2684,
+        "contentment": 0.1732,
+        "disgust": 0.0,
+        "excitement": 0.7835,
+        "fear": 0.684,
+        "sadness": 0.1818
+      },
+      "anger/anger_02004.mp3": {
+        "amusement": 0.4455,
+        "anger": 1.0,
+        "awe": 0.0594,
+        "contentment": 0.2772,
+        "disgust": 0.4059,
+        "excitement": 0.4059,
+        "fear": 0.7228,
+        "sadness": 0.0
+      },
+      "anger/anger_02009.mp3": {
+        "amusement": 0.8624,
+        "anger": 1.0,
+        "awe": 0.836,
+        "contentment": 0.0,
+        "disgust": 0.6085,
+        "excitement": 0.9206,
+        "fear": 0.6614,
+        "sadness": 0.7672
+      },
+      "anger/anger_02010.mp3": {
+        "amusement": 0.7273,
+        "anger": 1.0,
+        "awe": 0.9899,
+        "contentment": 0.0,
+        "disgust": 0.6212,
+        "excitement": 0.7626,
+        "fear": 0.6818,
+        "sadness": 0.8434
+      },
+      "anger/anger_04341.mp3": {
+        "amusement": 0.7621,
+        "anger": 1.0,
+        "awe": 0.7298,
+        "contentment": 0.0,
+        "disgust": 0.6492,
+        "excitement": 0.5282,
+        "fear": 0.625,
+        "sadness": 0.8589
+      },
+      "anger/anger_04345.mp3": {
+        "amusement": 0.4962,
+        "anger": 1.0,
+        "awe": 0.6794,
+        "contentment": 0.0,
+        "disgust": 1.0,
+        "excitement": 0.1298,
+        "fear": 0.2901,
+        "sadness": 0.7328
+      },
+      "anger/anger_04353.mp3": {
+        "amusement": 0.4833,
+        "anger": 1.0,
+        "awe": 0.15,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.9833,
+        "fear": 0.2583,
+        "sadness": 0.5
+      },
+      "anger/anger_04355.mp3": {
+        "amusement": 0.5643,
+        "anger": 1.0,
+        "awe": 0.1429,
+        "contentment": 0.2071,
+        "disgust": 0.2571,
+        "excitement": 0.5429,
+        "fear": 0.0,
+        "sadness": 0.8
+      },
+      "anger/anger_08253.mp3": {
+        "amusement": 0.8596,
+        "anger": 1.0,
+        "awe": 0.6596,
+        "contentment": 0.0,
+        "disgust": 0.4468,
+        "excitement": 0.8894,
+        "fear": 0.6383,
+        "sadness": 0.6298
+      },
+      "anger/anger_10052.mp3": {
+        "amusement": 0.3958,
+        "anger": 1.0,
+        "awe": 0.5625,
+        "contentment": 0.0,
+        "disgust": 0.0486,
+        "excitement": 0.2014,
+        "fear": 0.1042,
+        "sadness": 0.7222
+      },
+      "awe/awe_09115.mp3": {
+        "amusement": 0.476,
+        "anger": 0.149,
+        "awe": 1.0,
+        "contentment": 0.625,
+        "disgust": 0.25,
+        "excitement": 0.4135,
+        "fear": 0.3221,
+        "sadness": 0.0
+      },
+      "awe/awe_09117.mp3": {
+        "amusement": 0.5079,
+        "anger": 0.2795,
+        "awe": 1.0,
+        "contentment": 0.7795,
+        "disgust": 0.0,
+        "excitement": 0.3465,
+        "fear": 0.1457,
+        "sadness": 0.4449
+      },
+      "awe/awe_09139.mp3": {
+        "amusement": 0.3566,
+        "anger": 0.3256,
+        "awe": 1.0,
+        "contentment": 0.0,
+        "disgust": 0.1279,
+        "excitement": 0.1512,
+        "fear": 0.0271,
+        "sadness": 0.2713
+      },
+      "awe/awe_09141.mp3": {
+        "amusement": 0.5,
+        "anger": 0.2677,
+        "awe": 1.0,
+        "contentment": 0.8838,
+        "disgust": 0.0,
+        "excitement": 0.3737,
+        "fear": 0.1566,
+        "sadness": 0.2424
+      },
+      "awe/awe_09142.mp3": {
+        "amusement": 0.3846,
+        "anger": 0.2788,
+        "awe": 1.0,
+        "contentment": 0.6635,
+        "disgust": 0.0,
+        "excitement": 0.3526,
+        "fear": 0.234,
+        "sadness": 0.234
+      },
+      "awe/awe_09143.mp3": {
+        "amusement": 0.4556,
+        "anger": 0.2899,
+        "awe": 1.0,
+        "contentment": 0.2308,
+        "disgust": 0.2012,
+        "excitement": 0.3314,
+        "fear": 0.0592,
+        "sadness": 0.0
+      },
+      "awe/awe_09162.mp3": {
+        "amusement": 0.5446,
+        "anger": 0.203,
+        "awe": 1.0,
+        "contentment": 0.7772,
+        "disgust": 0.0,
+        "excitement": 0.5347,
+        "fear": 0.3317,
+        "sadness": 0.1535
+      },
+      "awe/awe_09163.mp3": {
+        "amusement": 0.5441,
+        "anger": 0.3218,
+        "awe": 1.0,
+        "contentment": 0.7663,
+        "disgust": 0.0,
+        "excitement": 0.4943,
+        "fear": 0.0077,
+        "sadness": 0.1762
+      },
+      "awe/awe_09166.mp3": {
+        "amusement": 0.4484,
+        "anger": 0.2596,
+        "awe": 1.0,
+        "contentment": 0.5959,
+        "disgust": 0.0,
+        "excitement": 0.5369,
+        "fear": 0.1711,
+        "sadness": 0.1268
+      },
+      "awe/awe_09167.mp3": {
+        "amusement": 0.6078,
+        "anger": 0.3595,
+        "awe": 1.0,
+        "contentment": 0.634,
+        "disgust": 0.4052,
+        "excitement": 0.5752,
+        "fear": 0.549,
+        "sadness": 0.0
+      },
+      "contentment/contentment_08263.mp3": {
+        "amusement": 0.0291,
+        "anger": 0.1456,
+        "awe": 0.8835,
+        "contentment": 1.0,
+        "disgust": 0.5825,
+        "excitement": 0.301,
+        "fear": 0.0,
+        "sadness": 0.1359
+      },
+      "contentment/contentment_09956.mp3": {
+        "amusement": 0.302,
+        "anger": 0.0,
+        "awe": 0.6122,
+        "contentment": 1.0,
+        "disgust": 0.0857,
+        "excitement": 0.1796,
+        "fear": 0.0,
+        "sadness": 0.0735
+      },
+      "contentment/contentment_09996.mp3": {
+        "amusement": 0.2711,
+        "anger": 0.0,
+        "awe": 0.3778,
+        "contentment": 1.0,
+        "disgust": 0.1644,
+        "excitement": 0.4489,
+        "fear": 0.1956,
+        "sadness": 0.2
+      },
+      "contentment/contentment_09997.mp3": {
+        "amusement": 0.4209,
+        "anger": 0.0,
+        "awe": 0.2158,
+        "contentment": 1.0,
+        "disgust": 0.4065,
+        "excitement": 0.4065,
+        "fear": 0.2518,
+        "sadness": 0.2806
+      },
+      "contentment/contentment_10002.mp3": {
+        "amusement": 0.3846,
+        "anger": 0.0,
+        "awe": 0.4066,
+        "contentment": 1.0,
+        "disgust": 0.4451,
+        "excitement": 0.5714,
+        "fear": 0.4725,
+        "sadness": 0.5
+      },
+      "contentment/contentment_10003.mp3": {
+        "amusement": 0.1493,
+        "anger": 0.0,
+        "awe": 0.0149,
+        "contentment": 1.0,
+        "disgust": 0.6045,
+        "excitement": 0.3731,
+        "fear": 0.1045,
+        "sadness": 0.3657
+      },
+      "contentment/contentment_10017.mp3": {
+        "amusement": 0.4115,
+        "anger": 0.0619,
+        "awe": 0.5973,
+        "contentment": 1.0,
+        "disgust": 0.4912,
+        "excitement": 0.469,
+        "fear": 0.0,
+        "sadness": 0.0708
+      },
+      "contentment/contentment_10029.mp3": {
+        "amusement": 0.6514,
+        "anger": 0.1743,
+        "awe": 0.5688,
+        "contentment": 1.0,
+        "disgust": 0.0459,
+        "excitement": 0.7706,
+        "fear": 0.0,
+        "sadness": 0.6147
+      },
+      "contentment/contentment_10032.mp3": {
+        "amusement": 0.5963,
+        "anger": 0.0,
+        "awe": 0.3478,
+        "contentment": 1.0,
+        "disgust": 0.0186,
+        "excitement": 0.2484,
+        "fear": 0.2671,
+        "sadness": 0.0497
+      },
+      "contentment/contentment_10110.mp3": {
+        "amusement": 0.7361,
+        "anger": 0.0,
+        "awe": 0.4236,
+        "contentment": 1.0,
+        "disgust": 0.3472,
+        "excitement": 0.1944,
+        "fear": 0.5764,
+        "sadness": 0.4792
+      },
+      "disgust/disgust_00534.mp3": {
+        "amusement": 0.3419,
+        "anger": 0.7949,
+        "awe": 0.0,
+        "contentment": 0.188,
+        "disgust": 1.0,
+        "excitement": 0.5385,
+        "fear": 0.812,
+        "sadness": 0.3419
+      },
+      "disgust/disgust_02051.mp3": {
+        "amusement": 0.7863,
+        "anger": 0.8803,
+        "awe": 0.5897,
+        "contentment": 0.3162,
+        "disgust": 1.0,
+        "excitement": 0.0,
+        "fear": 0.5641,
+        "sadness": 0.8376
+      },
+      "disgust/disgust_02058.mp3": {
+        "amusement": 0.0881,
+        "anger": 0.6289,
+        "awe": 0.0,
+        "contentment": 0.5157,
+        "disgust": 1.0,
+        "excitement": 0.044,
+        "fear": 0.3333,
+        "sadness": 0.2704
+      },
+      "disgust/disgust_02553.mp3": {
+        "amusement": 0.2419,
+        "anger": 0.1613,
+        "awe": 0.4839,
+        "contentment": 0.9839,
+        "disgust": 1.0,
+        "excitement": 0.0,
+        "fear": 0.4516,
+        "sadness": 0.5806
+      },
+      "disgust/disgust_03228.mp3": {
+        "amusement": 0.0,
+        "anger": 0.4731,
+        "awe": 0.1183,
+        "contentment": 0.8602,
+        "disgust": 1.0,
+        "excitement": 0.7527,
+        "fear": 0.086,
+        "sadness": 0.2903
+      },
+      "disgust/disgust_04038.mp3": {
+        "amusement": 0.1868,
+        "anger": 0.6484,
+        "awe": 0.033,
+        "contentment": 0.5275,
+        "disgust": 1.0,
+        "excitement": 0.1429,
+        "fear": 0.0,
+        "sadness": 0.5714
+      },
+      "disgust/disgust_08857.mp3": {
+        "amusement": 0.6239,
+        "anger": 0.9725,
+        "awe": 0.3578,
+        "contentment": 0.0734,
+        "disgust": 1.0,
+        "excitement": 0.0,
+        "fear": 0.1651,
+        "sadness": 0.7982
+      },
+      "disgust/disgust_08884.mp3": {
+        "amusement": 0.2149,
+        "anger": 0.6612,
+        "awe": 0.0,
+        "contentment": 0.5455,
+        "disgust": 1.0,
+        "excitement": 0.3058,
+        "fear": 0.1901,
+        "sadness": 0.3802
+      },
+      "disgust/disgust_10797.mp3": {
+        "amusement": 0.5838,
+        "anger": 0.8092,
+        "awe": 0.4451,
+        "contentment": 0.6069,
+        "disgust": 1.0,
+        "excitement": 0.3179,
+        "fear": 0.0,
+        "sadness": 0.896
+      },
+      "excitement/excitement_07977.mp3": {
+        "amusement": 0.5029,
+        "anger": 0.0,
+        "awe": 0.1287,
+        "contentment": 0.5965,
+        "disgust": 0.2749,
+        "excitement": 1.0,
+        "fear": 0.1462,
+        "sadness": 0.2573
+      },
+      "excitement/excitement_07981.mp3": {
+        "amusement": 0.52,
+        "anger": 0.24,
+        "awe": 0.6,
+        "contentment": 0.67,
+        "disgust": 0.235,
+        "excitement": 1.0,
+        "fear": 0.15,
+        "sadness": 0.0
+      },
+      "excitement/excitement_07982.mp3": {
+        "amusement": 0.467,
+        "anger": 0.4533,
+        "awe": 0.0,
+        "contentment": 0.6036,
+        "disgust": 0.1845,
+        "excitement": 1.0,
+        "fear": 0.4897,
+        "sadness": 0.4487
+      },
+      "excitement/excitement_08003.mp3": {
+        "amusement": 0.3613,
+        "anger": 0.4706,
+        "awe": 0.084,
+        "contentment": 0.5462,
+        "disgust": 0.0,
+        "excitement": 1.0,
+        "fear": 0.7899,
+        "sadness": 0.1597
+      },
+      "excitement/excitement_08004.mp3": {
+        "amusement": 0.9358,
+        "anger": 0.3048,
+        "awe": 0.5989,
+        "contentment": 0.893,
+        "disgust": 0.0428,
+        "excitement": 1.0,
+        "fear": 0.4064,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08008.mp3": {
+        "amusement": 0.5754,
+        "anger": 0.0726,
+        "awe": 0.3575,
+        "contentment": 0.6369,
+        "disgust": 0.0,
+        "excitement": 1.0,
+        "fear": 0.2961,
+        "sadness": 0.1508
+      },
+      "excitement/excitement_08023.mp3": {
+        "amusement": 0.6948,
+        "anger": 0.2691,
+        "awe": 0.6305,
+        "contentment": 0.4578,
+        "disgust": 0.0,
+        "excitement": 1.0,
+        "fear": 0.5823,
+        "sadness": 0.0683
+      },
+      "excitement/excitement_08027.mp3": {
+        "amusement": 0.4783,
+        "anger": 0.2319,
+        "awe": 0.401,
+        "contentment": 0.7585,
+        "disgust": 0.2464,
+        "excitement": 1.0,
+        "fear": 0.4493,
+        "sadness": 0.0
+      },
+      "excitement/excitement_16001.mp3": {
+        "amusement": 0.3939,
+        "anger": 0.0,
+        "awe": 0.329,
+        "contentment": 0.6104,
+        "disgust": 0.2597,
+        "excitement": 1.0,
+        "fear": 0.1385,
+        "sadness": 0.0303
+      },
+      "excitement/excitement_16006.mp3": {
+        "amusement": 0.7697,
+        "anger": 0.5592,
+        "awe": 0.8487,
+        "contentment": 0.0,
+        "disgust": 0.5395,
+        "excitement": 1.0,
+        "fear": 0.4803,
+        "sadness": 0.1974
+      },
+      "fear/fear_03287.mp3": {
+        "amusement": 0.6364,
+        "anger": 0.9886,
+        "awe": 0.3409,
+        "contentment": 0.0,
+        "disgust": 0.875,
+        "excitement": 0.4432,
+        "fear": 1.0,
+        "sadness": 0.6591
+      },
+      "fear/fear_03297.mp3": {
+        "amusement": 0.8762,
+        "anger": 0.6762,
+        "awe": 0.2,
+        "contentment": 0.0857,
+        "disgust": 0.7143,
+        "excitement": 0.2857,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_03314.mp3": {
+        "amusement": 0.3178,
+        "anger": 0.8598,
+        "awe": 0.0093,
+        "contentment": 0.0093,
+        "disgust": 0.7664,
+        "excitement": 0.9065,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_09148.mp3": {
+        "amusement": 0.9808,
+        "anger": 0.3558,
+        "awe": 0.0,
+        "contentment": 0.8462,
+        "disgust": 0.5385,
+        "excitement": 0.625,
+        "fear": 1.0,
+        "sadness": 0.1538
+      },
+      "fear/fear_09151.mp3": {
+        "amusement": 0.7005,
+        "anger": 0.5134,
+        "awe": 0.3797,
+        "contentment": 0.754,
+        "disgust": 0.7861,
+        "excitement": 0.4545,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_09171.mp3": {
+        "amusement": 0.2388,
+        "anger": 0.4328,
+        "awe": 0.2537,
+        "contentment": 0.0,
+        "disgust": 0.5522,
+        "excitement": 0.4179,
+        "fear": 1.0,
+        "sadness": 0.0896
+      },
+      "fear/fear_09191.mp3": {
+        "amusement": 0.447,
+        "anger": 0.1212,
+        "awe": 0.9848,
+        "contentment": 0.6061,
+        "disgust": 0.1591,
+        "excitement": 0.6288,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_09247.mp3": {
+        "amusement": 0.7818,
+        "anger": 0.7545,
+        "awe": 0.0,
+        "contentment": 0.8727,
+        "disgust": 0.6364,
+        "excitement": 0.7727,
+        "fear": 1.0,
+        "sadness": 0.1273
+      },
+      "fear/fear_09249.mp3": {
+        "amusement": 0.266,
+        "anger": 0.5213,
+        "awe": 0.3511,
+        "contentment": 0.0957,
+        "disgust": 0.2766,
+        "excitement": 0.0,
+        "fear": 1.0,
+        "sadness": 0.6383
+      },
+      "fear/fear_14992.mp3": {
+        "amusement": 0.8456,
+        "anger": 0.0735,
+        "awe": 0.4044,
+        "contentment": 0.2059,
+        "disgust": 0.3603,
+        "excitement": 0.6029,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "sadness/sadness_03448.mp3": {
+        "amusement": 0.8492,
+        "anger": 0.2381,
+        "awe": 0.5317,
+        "contentment": 0.5079,
+        "disgust": 0.1984,
+        "excitement": 0.2381,
+        "fear": 0.0,
+        "sadness": 1.0
+      },
+      "sadness/sadness_03452.mp3": {
+        "amusement": 0.4,
+        "anger": 0.0,
+        "awe": 0.8333,
+        "contentment": 0.875,
+        "disgust": 0.0583,
+        "excitement": 0.275,
+        "fear": 0.325,
+        "sadness": 1.0
+      },
+      "sadness/sadness_03454.mp3": {
+        "amusement": 0.6705,
+        "anger": 0.3237,
+        "awe": 0.0,
+        "contentment": 0.5954,
+        "disgust": 0.5838,
+        "excitement": 0.5145,
+        "fear": 0.4913,
+        "sadness": 1.0
+      },
+      "sadness/sadness_03477.mp3": {
+        "amusement": 0.3803,
+        "anger": 0.3474,
+        "awe": 0.3709,
+        "contentment": 0.5587,
+        "disgust": 0.2911,
+        "excitement": 0.0,
+        "fear": 0.385,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07947.mp3": {
+        "amusement": 0.0744,
+        "anger": 0.7769,
+        "awe": 0.2893,
+        "contentment": 0.0,
+        "disgust": 0.7851,
+        "excitement": 0.1488,
+        "fear": 0.2479,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07964.mp3": {
+        "amusement": 0.1737,
+        "anger": 0.3552,
+        "awe": 0.305,
+        "contentment": 0.3552,
+        "disgust": 0.2471,
+        "excitement": 0.0,
+        "fear": 0.2934,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07965.mp3": {
+        "amusement": 0.5043,
+        "anger": 0.765,
+        "awe": 0.6538,
+        "contentment": 0.0,
+        "disgust": 0.5342,
+        "excitement": 0.359,
+        "fear": 0.5085,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07973.mp3": {
+        "amusement": 0.8305,
+        "anger": 0.9068,
+        "awe": 1.0,
+        "contentment": 0.0,
+        "disgust": 0.0169,
+        "excitement": 0.3898,
+        "fear": 0.2542,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07975.mp3": {
+        "amusement": 0.3056,
+        "anger": 0.3849,
+        "awe": 0.6389,
+        "contentment": 0.5357,
+        "disgust": 0.2381,
+        "excitement": 0.0,
+        "fear": 0.4603,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07977.mp3": {
+        "amusement": 0.4438,
+        "anger": 0.2663,
+        "awe": 0.5089,
+        "contentment": 0.7988,
+        "disgust": 0.497,
+        "excitement": 0.0,
+        "fear": 0.0473,
+        "sadness": 1.0
+      }
+    },
+    "human_consensus": {
+      "amusement/amusement_02936.mp3": {
+        "amusement": 0.42,
+        "anger": 0.0,
+        "awe": 0.04,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.11,
+        "fear": 0.12,
+        "sadness": 0.0
+      },
+      "amusement/amusement_02945.mp3": {
+        "amusement": 0.39,
+        "anger": 0.03,
+        "awe": 0.13,
+        "contentment": 0.39,
+        "disgust": 0.0,
+        "excitement": 0.33,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_08239.mp3": {
+        "amusement": 0.43,
+        "anger": 0.33,
+        "awe": 0.44,
+        "contentment": 0.41,
+        "disgust": 0.65,
+        "excitement": 0.4,
+        "fear": 0.24,
+        "sadness": 0.16
+      },
+      "amusement/amusement_08272.mp3": {
+        "amusement": 0.71,
+        "anger": 0.0,
+        "awe": 0.45,
+        "contentment": 0.41,
+        "disgust": 0.0,
+        "excitement": 0.16,
+        "fear": 0.29,
+        "sadness": 0.87
+      },
+      "amusement/amusement_08284.mp3": {
+        "amusement": 0.23,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.23,
+        "disgust": 0.0,
+        "excitement": 0.11,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_08310.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.47,
+        "contentment": 0.55,
+        "disgust": 0.0,
+        "excitement": 1.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_08311.mp3": {
+        "amusement": 0.74,
+        "anger": 0.15,
+        "awe": 0.71,
+        "contentment": 0.36,
+        "disgust": 0.0,
+        "excitement": 0.42,
+        "fear": 0.46,
+        "sadness": 0.04
+      },
+      "amusement/amusement_08336.mp3": {
+        "amusement": 0.49,
+        "anger": 0.48,
+        "awe": 0.28,
+        "contentment": 0.23,
+        "disgust": 0.18,
+        "excitement": 0.59,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_17647.mp3": {
+        "amusement": 0.44,
+        "anger": 0.205,
+        "awe": 0.255,
+        "contentment": 0.33999999999999997,
+        "disgust": 0.29,
+        "excitement": 0.4,
+        "fear": 0.285,
+        "sadness": 0.245
+      },
+      "amusement/amusement_17660.mp3": {
+        "amusement": 0.0,
+        "anger": 1.0,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 1.0,
+        "excitement": 0.0,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "anger/anger_02004.mp3": {
+        "amusement": 0.31,
+        "anger": 0.0,
+        "awe": 0.18,
+        "contentment": 0.15,
+        "disgust": 0.0,
+        "excitement": 0.69,
+        "fear": 0.13,
+        "sadness": 0.0
+      },
+      "anger/anger_02009.mp3": {
+        "amusement": 0.43,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.33,
+        "disgust": 0.0,
+        "excitement": 0.36,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_02010.mp3": {
+        "amusement": 0.51,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.28,
+        "disgust": 0.0,
+        "excitement": 0.35,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_04341.mp3": {
+        "amusement": 0.71,
+        "anger": 0.03,
+        "awe": 0.22,
+        "contentment": 0.02,
+        "disgust": 0.01,
+        "excitement": 0.57,
+        "fear": 0.01,
+        "sadness": 0.03
+      },
+      "anger/anger_04345.mp3": {
+        "amusement": 0.65,
+        "anger": 0.0,
+        "awe": 0.16,
+        "contentment": 0.35,
+        "disgust": 0.0,
+        "excitement": 0.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_04353.mp3": {
+        "amusement": 0.99,
+        "anger": 0.58,
+        "awe": 0.72,
+        "contentment": 0.47,
+        "disgust": 0.02,
+        "excitement": 0.97,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "anger/anger_04355.mp3": {
+        "amusement": 0.86,
+        "anger": 0.08,
+        "awe": 0.41,
+        "contentment": 0.47,
+        "disgust": 0.0,
+        "excitement": 0.94,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_08253.mp3": {
+        "amusement": 0.35,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.4,
+        "disgust": 0.08,
+        "excitement": 0.02,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_10052.mp3": {
+        "amusement": 0.63,
+        "anger": 0.415,
+        "awe": 0.41500000000000004,
+        "contentment": 0.45499999999999996,
+        "disgust": 0.085,
+        "excitement": 0.295,
+        "fear": 0.355,
+        "sadness": 0.3
+      },
+      "awe/awe_09115.mp3": {
+        "amusement": 0.56,
+        "anger": 0.41,
+        "awe": 0.58,
+        "contentment": 0.42,
+        "disgust": 0.0,
+        "excitement": 0.56,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09117.mp3": {
+        "amusement": 0.26,
+        "anger": 0.38,
+        "awe": 0.55,
+        "contentment": 0.04,
+        "disgust": 0.0,
+        "excitement": 0.64,
+        "fear": 0.26,
+        "sadness": 0.0
+      },
+      "awe/awe_09139.mp3": {
+        "amusement": 0.41,
+        "anger": 0.0,
+        "awe": 0.1,
+        "contentment": 0.39,
+        "disgust": 0.17,
+        "excitement": 0.39,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09141.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 1.0,
+        "contentment": 0.54,
+        "disgust": 0.0,
+        "excitement": 0.77,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09142.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.63,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.65,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09143.mp3": {
+        "amusement": 1.0,
+        "anger": 0.57,
+        "awe": 0.76,
+        "contentment": 0.9,
+        "disgust": 0.0,
+        "excitement": 0.32,
+        "fear": 0.3,
+        "sadness": 0.01
+      },
+      "awe/awe_09162.mp3": {
+        "amusement": 0.38,
+        "anger": 0.1,
+        "awe": 0.64,
+        "contentment": 0.1,
+        "disgust": 0.64,
+        "excitement": 0.81,
+        "fear": 0.84,
+        "sadness": 0.13
+      },
+      "awe/awe_09163.mp3": {
+        "amusement": 0.54,
+        "anger": 0.0,
+        "awe": 0.25,
+        "contentment": 0.62,
+        "disgust": 0.0,
+        "excitement": 0.65,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09166.mp3": {
+        "amusement": 0.39,
+        "anger": 0.0,
+        "awe": 0.37,
+        "contentment": 0.38,
+        "disgust": 0.0,
+        "excitement": 0.07,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09167.mp3": {
+        "amusement": 0.49,
+        "anger": 0.25,
+        "awe": 0.73,
+        "contentment": 0.48,
+        "disgust": 0.02,
+        "excitement": 0.73,
+        "fear": 0.01,
+        "sadness": 0.0
+      },
+      "contentment/contentment_08263.mp3": {
+        "amusement": 0.38,
+        "anger": 0.37,
+        "awe": 0.38,
+        "contentment": 0.36,
+        "disgust": 0.37,
+        "excitement": 0.4,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_09956.mp3": {
+        "amusement": 0.4,
+        "anger": 0.16,
+        "awe": 0.4,
+        "contentment": 0.36,
+        "disgust": 0.0,
+        "excitement": 0.36,
+        "fear": 0.07,
+        "sadness": 0.0
+      },
+      "contentment/contentment_09996.mp3": {
+        "amusement": 0.49,
+        "anger": 0.215,
+        "awe": 0.31,
+        "contentment": 0.185,
+        "disgust": 0.23,
+        "excitement": 0.255,
+        "fear": 0.22,
+        "sadness": 0.225
+      },
+      "contentment/contentment_09997.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.47,
+        "contentment": 1.0,
+        "disgust": 0.0,
+        "excitement": 0.64,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10002.mp3": {
+        "amusement": 0.89,
+        "anger": 0.74,
+        "awe": 0.78,
+        "contentment": 0.69,
+        "disgust": 0.65,
+        "excitement": 0.49,
+        "fear": 0.56,
+        "sadness": 0.59
+      },
+      "contentment/contentment_10003.mp3": {
+        "amusement": 0.58,
+        "anger": 0.16,
+        "awe": 0.35,
+        "contentment": 0.37,
+        "disgust": 0.06,
+        "excitement": 0.6,
+        "fear": 0.02,
+        "sadness": 0.15
+      },
+      "contentment/contentment_10017.mp3": {
+        "amusement": 0.41,
+        "anger": 0.0,
+        "awe": 0.12,
+        "contentment": 0.0,
+        "disgust": 0.47,
+        "excitement": 0.0,
+        "fear": 0.46,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10029.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.73,
+        "disgust": 0.0,
+        "excitement": 0.85,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10032.mp3": {
+        "amusement": 0.25,
+        "anger": 0.01,
+        "awe": 0.04,
+        "contentment": 0.59,
+        "disgust": 0.0,
+        "excitement": 0.2,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10110.mp3": {
+        "amusement": 0.67,
+        "anger": 0.21,
+        "awe": 0.49,
+        "contentment": 0.48,
+        "disgust": 0.0,
+        "excitement": 0.73,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "disgust/disgust_00534.mp3": {
+        "amusement": 0.53,
+        "anger": 0.39,
+        "awe": 0.39,
+        "contentment": 0.28,
+        "disgust": 0.0,
+        "excitement": 0.44,
+        "fear": 0.61,
+        "sadness": 0.0
+      },
+      "disgust/disgust_02051.mp3": {
+        "amusement": 0.13,
+        "anger": 0.0,
+        "awe": 0.06,
+        "contentment": 0.09,
+        "disgust": 0.3,
+        "excitement": 0.04,
+        "fear": 0.0,
+        "sadness": 0.13
+      },
+      "disgust/disgust_02058.mp3": {
+        "amusement": 0.13,
+        "anger": 0.15,
+        "awe": 0.46,
+        "contentment": 0.02,
+        "disgust": 0.0,
+        "excitement": 0.73,
+        "fear": 0.53,
+        "sadness": 0.0
+      },
+      "disgust/disgust_02553.mp3": {
+        "amusement": 0.21,
+        "anger": 0.4,
+        "awe": 0.32,
+        "contentment": 0.41,
+        "disgust": 0.68,
+        "excitement": 0.38,
+        "fear": 0.18,
+        "sadness": 0.23
+      },
+      "disgust/disgust_03228.mp3": {
+        "amusement": 1.0,
+        "anger": 1.0,
+        "awe": 0.18,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 1.0,
+        "fear": 0.53,
+        "sadness": 0.0
+      },
+      "disgust/disgust_04038.mp3": {
+        "amusement": 0.13,
+        "anger": 0.0,
+        "awe": 0.41,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.0,
+        "fear": 0.56,
+        "sadness": 0.0
+      },
+      "disgust/disgust_08857.mp3": {
+        "amusement": 0.55,
+        "anger": 0.67,
+        "awe": 0.7,
+        "contentment": 0.64,
+        "disgust": 0.0,
+        "excitement": 0.75,
+        "fear": 0.03,
+        "sadness": 0.0
+      },
+      "disgust/disgust_08884.mp3": {
+        "amusement": 0.16,
+        "anger": 0.14,
+        "awe": 0.1,
+        "contentment": 0.0,
+        "disgust": 0.09,
+        "excitement": 0.09,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "disgust/disgust_10797.mp3": {
+        "amusement": 0.49,
+        "anger": 0.22,
+        "awe": 0.74,
+        "contentment": 0.48,
+        "disgust": 0.0,
+        "excitement": 0.73,
+        "fear": 0.03,
+        "sadness": 0.01
+      },
+      "excitement/excitement_07977.mp3": {
+        "amusement": 0.06,
+        "anger": 0.0,
+        "awe": 0.31,
+        "contentment": 0.07,
+        "disgust": 0.0,
+        "excitement": 0.36,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "excitement/excitement_07981.mp3": {
+        "amusement": 0.62,
+        "anger": 0.02,
+        "awe": 0.62,
+        "contentment": 0.02,
+        "disgust": 0.02,
+        "excitement": 0.6,
+        "fear": 0.02,
+        "sadness": 0.05
+      },
+      "excitement/excitement_07982.mp3": {
+        "amusement": 0.0,
+        "anger": 0.34,
+        "awe": 0.53,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.79,
+        "fear": 0.67,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08003.mp3": {
+        "amusement": 0.37,
+        "anger": 0.08,
+        "awe": 0.75,
+        "contentment": 0.55,
+        "disgust": 0.02,
+        "excitement": 0.04,
+        "fear": 0.26,
+        "sadness": 0.47
+      },
+      "excitement/excitement_08004.mp3": {
+        "amusement": 0.18,
+        "anger": 0.19,
+        "awe": 0.15,
+        "contentment": 0.93,
+        "disgust": 0.0,
+        "excitement": 0.32,
+        "fear": 0.0,
+        "sadness": 0.01
+      },
+      "excitement/excitement_08008.mp3": {
+        "amusement": 0.63,
+        "anger": 0.0,
+        "awe": 0.16,
+        "contentment": 0.46,
+        "disgust": 0.22,
+        "excitement": 0.36,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08023.mp3": {
+        "amusement": 0.51,
+        "anger": 0.47,
+        "awe": 0.73,
+        "contentment": 0.48,
+        "disgust": 0.02,
+        "excitement": 0.25,
+        "fear": 0.0,
+        "sadness": 0.01
+      },
+      "excitement/excitement_08027.mp3": {
+        "amusement": 0.7,
+        "anger": 0.01,
+        "awe": 0.71,
+        "contentment": 0.73,
+        "disgust": 0.02,
+        "excitement": 0.51,
+        "fear": 0.02,
+        "sadness": 0.01
+      },
+      "excitement/excitement_16001.mp3": {
+        "amusement": 0.3,
+        "anger": 0.15,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.29,
+        "fear": 0.34,
+        "sadness": 0.0
+      },
+      "excitement/excitement_16006.mp3": {
+        "amusement": 0.85,
+        "anger": 0.0,
+        "awe": 0.34,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.64,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_03287.mp3": {
+        "amusement": 0.25,
+        "anger": 1.0,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.15,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_03297.mp3": {
+        "amusement": 0.09,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 0.35,
+        "excitement": 0.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_03314.mp3": {
+        "amusement": 0.55,
+        "anger": 0.27,
+        "awe": 0.05,
+        "contentment": 0.59,
+        "disgust": 0.0,
+        "excitement": 0.6,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_09148.mp3": {
+        "amusement": 0.72,
+        "anger": 0.01,
+        "awe": 0.5,
+        "contentment": 0.49,
+        "disgust": 0.01,
+        "excitement": 0.48,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "fear/fear_09151.mp3": {
+        "amusement": 0.16,
+        "anger": 0.16,
+        "awe": 0.34,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.31,
+        "fear": 0.39,
+        "sadness": 0.16
+      },
+      "fear/fear_09171.mp3": {
+        "amusement": 0.59,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.44,
+        "disgust": 0.0,
+        "excitement": 0.03,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_09191.mp3": {
+        "amusement": 0.51,
+        "anger": 0.01,
+        "awe": 0.36,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.16,
+        "fear": 0.09,
+        "sadness": 0.12
+      },
+      "fear/fear_09247.mp3": {
+        "amusement": 0.32,
+        "anger": 0.86,
+        "awe": 0.65,
+        "contentment": 0.1,
+        "disgust": 0.09,
+        "excitement": 0.13,
+        "fear": 0.53,
+        "sadness": 0.78
+      },
+      "fear/fear_09249.mp3": {
+        "amusement": 0.67,
+        "anger": 0.24,
+        "awe": 0.12,
+        "contentment": 0.63,
+        "disgust": 0.0,
+        "excitement": 0.12,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_14992.mp3": {
+        "amusement": 0.23,
+        "anger": 0.23,
+        "awe": 0.25,
+        "contentment": 0.24,
+        "disgust": 0.02,
+        "excitement": 0.0,
+        "fear": 0.72,
+        "sadness": 0.02
+      },
+      "sadness/sadness_03448.mp3": {
+        "amusement": 0.27,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.06,
+        "disgust": 0.07,
+        "excitement": 0.45,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "sadness/sadness_03452.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.53,
+        "contentment": 0.34,
+        "disgust": 0.0,
+        "excitement": 0.24,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "sadness/sadness_03454.mp3": {
+        "amusement": 0.72,
+        "anger": 0.02,
+        "awe": 0.7,
+        "contentment": 0.49,
+        "disgust": 0.02,
+        "excitement": 0.57,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "sadness/sadness_03477.mp3": {
+        "amusement": 0.94,
+        "anger": 0.02,
+        "awe": 0.53,
+        "contentment": 0.42,
+        "disgust": 0.05,
+        "excitement": 0.31,
+        "fear": 0.03,
+        "sadness": 0.11
+      },
+      "sadness/sadness_07947.mp3": {
+        "amusement": 0.2,
+        "anger": 0.91,
+        "awe": 0.64,
+        "contentment": 0.74,
+        "disgust": 0.06,
+        "excitement": 0.77,
+        "fear": 0.7,
+        "sadness": 0.07
+      },
+      "sadness/sadness_07964.mp3": {
+        "amusement": 0.23,
+        "anger": 0.01,
+        "awe": 0.01,
+        "contentment": 0.01,
+        "disgust": 0.01,
+        "excitement": 0.24,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "sadness/sadness_07965.mp3": {
+        "amusement": 0.0,
+        "anger": 0.0,
+        "awe": 0.32,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.0,
+        "fear": 0.29,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07973.mp3": {
+        "amusement": 0.32,
+        "anger": 0.0,
+        "awe": 0.1,
+        "contentment": 0.32,
+        "disgust": 0.0,
+        "excitement": 0.06,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "sadness/sadness_07975.mp3": {
+        "amusement": 0.23,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.32,
+        "disgust": 0.0,
+        "excitement": 0.55,
+        "fear": 0.05,
+        "sadness": 0.0
+      },
+      "sadness/sadness_07977.mp3": {
+        "amusement": 0.15,
+        "anger": 0.0,
+        "awe": 0.07,
+        "contentment": 0.0,
+        "disgust": 0.43,
+        "excitement": 0.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      }
+    },
+    "human_test": {
+      "amusement/amusement_02936.mp3": {
+        "amusement": 0.42,
+        "anger": 0.0,
+        "awe": 0.04,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.11,
+        "fear": 0.12,
+        "sadness": 0.0
+      },
+      "amusement/amusement_02945.mp3": {
+        "amusement": 0.39,
+        "anger": 0.03,
+        "awe": 0.13,
+        "contentment": 0.39,
+        "disgust": 0.0,
+        "excitement": 0.33,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_08239.mp3": {
+        "amusement": 0.43,
+        "anger": 0.33,
+        "awe": 0.44,
+        "contentment": 0.41,
+        "disgust": 0.65,
+        "excitement": 0.4,
+        "fear": 0.24,
+        "sadness": 0.16
+      },
+      "amusement/amusement_08272.mp3": {
+        "amusement": 0.71,
+        "anger": 0.0,
+        "awe": 0.45,
+        "contentment": 0.41,
+        "disgust": 0.0,
+        "excitement": 0.16,
+        "fear": 0.29,
+        "sadness": 0.87
+      },
+      "amusement/amusement_08284.mp3": {
+        "amusement": 0.23,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.23,
+        "disgust": 0.0,
+        "excitement": 0.11,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_08310.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.47,
+        "contentment": 0.55,
+        "disgust": 0.0,
+        "excitement": 1.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_08311.mp3": {
+        "amusement": 0.74,
+        "anger": 0.15,
+        "awe": 0.71,
+        "contentment": 0.36,
+        "disgust": 0.0,
+        "excitement": 0.42,
+        "fear": 0.46,
+        "sadness": 0.04
+      },
+      "amusement/amusement_08336.mp3": {
+        "amusement": 0.49,
+        "anger": 0.48,
+        "awe": 0.28,
+        "contentment": 0.23,
+        "disgust": 0.18,
+        "excitement": 0.59,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_17647.mp3": {
+        "amusement": 0.37,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.42,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "amusement/amusement_17660.mp3": {
+        "amusement": 0.0,
+        "anger": 1.0,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 1.0,
+        "excitement": 0.0,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "anger/anger_02004.mp3": {
+        "amusement": 0.31,
+        "anger": 0.0,
+        "awe": 0.18,
+        "contentment": 0.15,
+        "disgust": 0.0,
+        "excitement": 0.69,
+        "fear": 0.13,
+        "sadness": 0.0
+      },
+      "anger/anger_02009.mp3": {
+        "amusement": 0.43,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.33,
+        "disgust": 0.0,
+        "excitement": 0.36,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_02010.mp3": {
+        "amusement": 0.51,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.28,
+        "disgust": 0.0,
+        "excitement": 0.35,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_04341.mp3": {
+        "amusement": 0.71,
+        "anger": 0.03,
+        "awe": 0.22,
+        "contentment": 0.02,
+        "disgust": 0.01,
+        "excitement": 0.57,
+        "fear": 0.01,
+        "sadness": 0.03
+      },
+      "anger/anger_04345.mp3": {
+        "amusement": 0.65,
+        "anger": 0.0,
+        "awe": 0.16,
+        "contentment": 0.35,
+        "disgust": 0.0,
+        "excitement": 0.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_04353.mp3": {
+        "amusement": 0.99,
+        "anger": 0.58,
+        "awe": 0.72,
+        "contentment": 0.47,
+        "disgust": 0.02,
+        "excitement": 0.97,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "anger/anger_04355.mp3": {
+        "amusement": 0.86,
+        "anger": 0.08,
+        "awe": 0.41,
+        "contentment": 0.47,
+        "disgust": 0.0,
+        "excitement": 0.94,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_08253.mp3": {
+        "amusement": 0.35,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.4,
+        "disgust": 0.08,
+        "excitement": 0.02,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "anger/anger_10052.mp3": {
+        "amusement": 0.39,
+        "anger": 0.0,
+        "awe": 0.17,
+        "contentment": 0.08,
+        "disgust": 0.0,
+        "excitement": 0.09,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09115.mp3": {
+        "amusement": 0.56,
+        "anger": 0.41,
+        "awe": 0.58,
+        "contentment": 0.42,
+        "disgust": 0.0,
+        "excitement": 0.56,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09117.mp3": {
+        "amusement": 0.26,
+        "anger": 0.38,
+        "awe": 0.55,
+        "contentment": 0.04,
+        "disgust": 0.0,
+        "excitement": 0.64,
+        "fear": 0.26,
+        "sadness": 0.0
+      },
+      "awe/awe_09139.mp3": {
+        "amusement": 0.41,
+        "anger": 0.0,
+        "awe": 0.1,
+        "contentment": 0.39,
+        "disgust": 0.17,
+        "excitement": 0.39,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09141.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 1.0,
+        "contentment": 0.54,
+        "disgust": 0.0,
+        "excitement": 0.77,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09142.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.63,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.65,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09143.mp3": {
+        "amusement": 1.0,
+        "anger": 0.57,
+        "awe": 0.76,
+        "contentment": 0.9,
+        "disgust": 0.0,
+        "excitement": 0.32,
+        "fear": 0.3,
+        "sadness": 0.01
+      },
+      "awe/awe_09162.mp3": {
+        "amusement": 0.38,
+        "anger": 0.1,
+        "awe": 0.64,
+        "contentment": 0.1,
+        "disgust": 0.64,
+        "excitement": 0.81,
+        "fear": 0.84,
+        "sadness": 0.13
+      },
+      "awe/awe_09163.mp3": {
+        "amusement": 0.54,
+        "anger": 0.0,
+        "awe": 0.25,
+        "contentment": 0.62,
+        "disgust": 0.0,
+        "excitement": 0.65,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09166.mp3": {
+        "amusement": 0.39,
+        "anger": 0.0,
+        "awe": 0.37,
+        "contentment": 0.38,
+        "disgust": 0.0,
+        "excitement": 0.07,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "awe/awe_09167.mp3": {
+        "amusement": 0.49,
+        "anger": 0.25,
+        "awe": 0.73,
+        "contentment": 0.48,
+        "disgust": 0.02,
+        "excitement": 0.73,
+        "fear": 0.01,
+        "sadness": 0.0
+      },
+      "contentment/contentment_08263.mp3": {
+        "amusement": 0.38,
+        "anger": 0.37,
+        "awe": 0.38,
+        "contentment": 0.36,
+        "disgust": 0.37,
+        "excitement": 0.4,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_09956.mp3": {
+        "amusement": 0.4,
+        "anger": 0.16,
+        "awe": 0.4,
+        "contentment": 0.36,
+        "disgust": 0.0,
+        "excitement": 0.36,
+        "fear": 0.07,
+        "sadness": 0.0
+      },
+      "contentment/contentment_09996.mp3": {
+        "amusement": 0.49,
+        "anger": 0.0,
+        "awe": 0.3,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_09997.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.47,
+        "contentment": 1.0,
+        "disgust": 0.0,
+        "excitement": 0.64,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10002.mp3": {
+        "amusement": 0.89,
+        "anger": 0.74,
+        "awe": 0.78,
+        "contentment": 0.69,
+        "disgust": 0.65,
+        "excitement": 0.49,
+        "fear": 0.56,
+        "sadness": 0.59
+      },
+      "contentment/contentment_10003.mp3": {
+        "amusement": 0.58,
+        "anger": 0.16,
+        "awe": 0.35,
+        "contentment": 0.37,
+        "disgust": 0.06,
+        "excitement": 0.6,
+        "fear": 0.02,
+        "sadness": 0.15
+      },
+      "contentment/contentment_10017.mp3": {
+        "amusement": 0.41,
+        "anger": 0.0,
+        "awe": 0.12,
+        "contentment": 0.0,
+        "disgust": 0.47,
+        "excitement": 0.0,
+        "fear": 0.46,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10029.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.73,
+        "disgust": 0.0,
+        "excitement": 0.85,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10032.mp3": {
+        "amusement": 0.25,
+        "anger": 0.01,
+        "awe": 0.04,
+        "contentment": 0.59,
+        "disgust": 0.0,
+        "excitement": 0.2,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "contentment/contentment_10110.mp3": {
+        "amusement": 0.67,
+        "anger": 0.21,
+        "awe": 0.49,
+        "contentment": 0.48,
+        "disgust": 0.0,
+        "excitement": 0.73,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "disgust/disgust_00534.mp3": {
+        "amusement": 0.53,
+        "anger": 0.39,
+        "awe": 0.39,
+        "contentment": 0.28,
+        "disgust": 0.0,
+        "excitement": 0.44,
+        "fear": 0.61,
+        "sadness": 0.0
+      },
+      "disgust/disgust_02051.mp3": {
+        "amusement": 0.13,
+        "anger": 0.0,
+        "awe": 0.06,
+        "contentment": 0.09,
+        "disgust": 0.3,
+        "excitement": 0.04,
+        "fear": 0.0,
+        "sadness": 0.13
+      },
+      "disgust/disgust_02058.mp3": {
+        "amusement": 0.13,
+        "anger": 0.15,
+        "awe": 0.46,
+        "contentment": 0.02,
+        "disgust": 0.0,
+        "excitement": 0.73,
+        "fear": 0.53,
+        "sadness": 0.0
+      },
+      "disgust/disgust_02553.mp3": {
+        "amusement": 0.21,
+        "anger": 0.4,
+        "awe": 0.32,
+        "contentment": 0.41,
+        "disgust": 0.68,
+        "excitement": 0.38,
+        "fear": 0.18,
+        "sadness": 0.23
+      },
+      "disgust/disgust_03228.mp3": {
+        "amusement": 1.0,
+        "anger": 1.0,
+        "awe": 0.18,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 1.0,
+        "fear": 0.53,
+        "sadness": 0.0
+      },
+      "disgust/disgust_04038.mp3": {
+        "amusement": 0.13,
+        "anger": 0.0,
+        "awe": 0.41,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.0,
+        "fear": 0.56,
+        "sadness": 0.0
+      },
+      "disgust/disgust_08857.mp3": {
+        "amusement": 0.55,
+        "anger": 0.67,
+        "awe": 0.7,
+        "contentment": 0.64,
+        "disgust": 0.0,
+        "excitement": 0.75,
+        "fear": 0.03,
+        "sadness": 0.0
+      },
+      "disgust/disgust_08884.mp3": {
+        "amusement": 0.16,
+        "anger": 0.14,
+        "awe": 0.1,
+        "contentment": 0.0,
+        "disgust": 0.09,
+        "excitement": 0.09,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "disgust/disgust_10797.mp3": {
+        "amusement": 0.49,
+        "anger": 0.22,
+        "awe": 0.74,
+        "contentment": 0.48,
+        "disgust": 0.0,
+        "excitement": 0.73,
+        "fear": 0.03,
+        "sadness": 0.01
+      },
+      "excitement/excitement_07977.mp3": {
+        "amusement": 0.06,
+        "anger": 0.0,
+        "awe": 0.31,
+        "contentment": 0.07,
+        "disgust": 0.0,
+        "excitement": 0.36,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "excitement/excitement_07981.mp3": {
+        "amusement": 0.62,
+        "anger": 0.02,
+        "awe": 0.62,
+        "contentment": 0.02,
+        "disgust": 0.02,
+        "excitement": 0.6,
+        "fear": 0.02,
+        "sadness": 0.05
+      },
+      "excitement/excitement_07982.mp3": {
+        "amusement": 0.0,
+        "anger": 0.34,
+        "awe": 0.53,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.79,
+        "fear": 0.67,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08003.mp3": {
+        "amusement": 0.37,
+        "anger": 0.08,
+        "awe": 0.75,
+        "contentment": 0.55,
+        "disgust": 0.02,
+        "excitement": 0.04,
+        "fear": 0.26,
+        "sadness": 0.47
+      },
+      "excitement/excitement_08004.mp3": {
+        "amusement": 0.18,
+        "anger": 0.19,
+        "awe": 0.15,
+        "contentment": 0.93,
+        "disgust": 0.0,
+        "excitement": 0.32,
+        "fear": 0.0,
+        "sadness": 0.01
+      },
+      "excitement/excitement_08008.mp3": {
+        "amusement": 0.63,
+        "anger": 0.0,
+        "awe": 0.16,
+        "contentment": 0.46,
+        "disgust": 0.22,
+        "excitement": 0.36,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "excitement/excitement_08023.mp3": {
+        "amusement": 0.51,
+        "anger": 0.47,
+        "awe": 0.73,
+        "contentment": 0.48,
+        "disgust": 0.02,
+        "excitement": 0.25,
+        "fear": 0.0,
+        "sadness": 0.01
+      },
+      "excitement/excitement_08027.mp3": {
+        "amusement": 0.7,
+        "anger": 0.01,
+        "awe": 0.71,
+        "contentment": 0.73,
+        "disgust": 0.02,
+        "excitement": 0.51,
+        "fear": 0.02,
+        "sadness": 0.01
+      },
+      "excitement/excitement_16001.mp3": {
+        "amusement": 0.3,
+        "anger": 0.15,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.29,
+        "fear": 0.34,
+        "sadness": 0.0
+      },
+      "excitement/excitement_16006.mp3": {
+        "amusement": 0.85,
+        "anger": 0.0,
+        "awe": 0.34,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.64,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_03287.mp3": {
+        "amusement": 0.25,
+        "anger": 1.0,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.15,
+        "fear": 1.0,
+        "sadness": 0.0
+      },
+      "fear/fear_03297.mp3": {
+        "amusement": 0.09,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.0,
+        "disgust": 0.35,
+        "excitement": 0.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_03314.mp3": {
+        "amusement": 0.55,
+        "anger": 0.27,
+        "awe": 0.05,
+        "contentment": 0.59,
+        "disgust": 0.0,
+        "excitement": 0.6,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_09148.mp3": {
+        "amusement": 0.72,
+        "anger": 0.01,
+        "awe": 0.5,
+        "contentment": 0.49,
+        "disgust": 0.01,
+        "excitement": 0.48,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "fear/fear_09151.mp3": {
+        "amusement": 0.16,
+        "anger": 0.16,
+        "awe": 0.34,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.31,
+        "fear": 0.39,
+        "sadness": 0.16
+      },
+      "fear/fear_09171.mp3": {
+        "amusement": 0.59,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.44,
+        "disgust": 0.0,
+        "excitement": 0.03,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_09191.mp3": {
+        "amusement": 0.51,
+        "anger": 0.01,
+        "awe": 0.36,
+        "contentment": 0.3,
+        "disgust": 0.0,
+        "excitement": 0.16,
+        "fear": 0.09,
+        "sadness": 0.12
+      },
+      "fear/fear_09247.mp3": {
+        "amusement": 0.32,
+        "anger": 0.86,
+        "awe": 0.65,
+        "contentment": 0.1,
+        "disgust": 0.09,
+        "excitement": 0.13,
+        "fear": 0.53,
+        "sadness": 0.78
+      },
+      "fear/fear_09249.mp3": {
+        "amusement": 0.67,
+        "anger": 0.24,
+        "awe": 0.12,
+        "contentment": 0.63,
+        "disgust": 0.0,
+        "excitement": 0.12,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "fear/fear_14992.mp3": {
+        "amusement": 0.23,
+        "anger": 0.23,
+        "awe": 0.25,
+        "contentment": 0.24,
+        "disgust": 0.02,
+        "excitement": 0.0,
+        "fear": 0.72,
+        "sadness": 0.02
+      },
+      "sadness/sadness_03448.mp3": {
+        "amusement": 0.27,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.06,
+        "disgust": 0.07,
+        "excitement": 0.45,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "sadness/sadness_03452.mp3": {
+        "amusement": 1.0,
+        "anger": 0.0,
+        "awe": 0.53,
+        "contentment": 0.34,
+        "disgust": 0.0,
+        "excitement": 0.24,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "sadness/sadness_03454.mp3": {
+        "amusement": 0.72,
+        "anger": 0.02,
+        "awe": 0.7,
+        "contentment": 0.49,
+        "disgust": 0.02,
+        "excitement": 0.57,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "sadness/sadness_03477.mp3": {
+        "amusement": 0.94,
+        "anger": 0.02,
+        "awe": 0.53,
+        "contentment": 0.42,
+        "disgust": 0.05,
+        "excitement": 0.31,
+        "fear": 0.03,
+        "sadness": 0.11
+      },
+      "sadness/sadness_07947.mp3": {
+        "amusement": 0.2,
+        "anger": 0.91,
+        "awe": 0.64,
+        "contentment": 0.74,
+        "disgust": 0.06,
+        "excitement": 0.77,
+        "fear": 0.7,
+        "sadness": 0.07
+      },
+      "sadness/sadness_07964.mp3": {
+        "amusement": 0.23,
+        "anger": 0.01,
+        "awe": 0.01,
+        "contentment": 0.01,
+        "disgust": 0.01,
+        "excitement": 0.24,
+        "fear": 0.01,
+        "sadness": 0.01
+      },
+      "sadness/sadness_07965.mp3": {
+        "amusement": 0.0,
+        "anger": 0.0,
+        "awe": 0.32,
+        "contentment": 0.0,
+        "disgust": 0.0,
+        "excitement": 0.0,
+        "fear": 0.29,
+        "sadness": 1.0
+      },
+      "sadness/sadness_07973.mp3": {
+        "amusement": 0.32,
+        "anger": 0.0,
+        "awe": 0.1,
+        "contentment": 0.32,
+        "disgust": 0.0,
+        "excitement": 0.06,
+        "fear": 0.0,
+        "sadness": 0.0
+      },
+      "sadness/sadness_07975.mp3": {
+        "amusement": 0.23,
+        "anger": 0.0,
+        "awe": 0.0,
+        "contentment": 0.32,
+        "disgust": 0.0,
+        "excitement": 0.55,
+        "fear": 0.05,
+        "sadness": 0.0
+      },
+      "sadness/sadness_07977.mp3": {
+        "amusement": 0.15,
+        "anger": 0.0,
+        "awe": 0.07,
+        "contentment": 0.0,
+        "disgust": 0.43,
+        "excitement": 0.0,
+        "fear": 0.0,
+        "sadness": 0.0
+      }
+    }
+  },
+  "comparisons": {
+    "deepseek": {
+      "deepseek": {
+        "cosine_similarity": {
+          "mean_per_song": 1.0
+        },
+        "krippendorff_alpha": 1.0,
+        "mae": {
+          "overall": 0.0,
+          "per_emotion": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "rmse": {
+          "overall": 0.0
+        },
+        "spearman": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "top_emotion_accuracy": 1.0
+      },
+      "gpt_oss": {
+        "cosine_similarity": {
+          "mean_per_song": 0.9084721515478194
+        },
+        "krippendorff_alpha": 0.5219661766109144,
+        "mae": {
+          "overall": 0.1629967948717949,
+          "per_emotion": {
+            "amusement": 0.0921794871794872,
+            "anger": 0.16448717948717947,
+            "awe": 0.1723076923076923,
+            "contentment": 0.15666666666666668,
+            "disgust": 0.1741025641025641,
+            "excitement": 0.15051282051282053,
+            "fear": 0.21012820512820513,
+            "sadness": 0.1835897435897436
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.6023294942121765,
+          "per_emotion": {
+            "amusement": 0.690496611613655,
+            "anger": 0.6058383709252826,
+            "awe": 0.489164652221917,
+            "contentment": 0.7743414081920893,
+            "disgust": 0.6380246394748518,
+            "excitement": 0.6922365701917721,
+            "fear": 0.38004229189229655,
+            "sadness": 0.568452108743752
+          }
+        },
+        "rmse": {
+          "overall": 0.21772902766323898
+        },
+        "spearman": {
+          "overall": 0.6214969903229597,
+          "per_emotion": {
+            "amusement": 0.6527536526095425,
+            "anger": 0.6394884613239038,
+            "awe": 0.5315573216412844,
+            "contentment": 0.7646594097399472,
+            "disgust": 0.569720716545314,
+            "excitement": 0.69800118389011,
+            "fear": 0.41347309963107653,
+            "sadness": 0.559347793783404
+          }
+        },
+        "top_emotion_accuracy": 0.47435897435897434
+      },
+      "ground_truth": {
+        "cosine_similarity": {
+          "mean_per_song": 0.8682507633558311
+        },
+        "krippendorff_alpha": 0.31401997834263484,
+        "mae": {
+          "overall": 0.2532628205128205,
+          "per_emotion": {
+            "amusement": 0.23987564102564102,
+            "anger": 0.26239615384615383,
+            "awe": 0.2591961538461538,
+            "contentment": 0.2646653846153846,
+            "disgust": 0.25477692307692307,
+            "excitement": 0.21154358974358972,
+            "fear": 0.26500384615384615,
+            "sadness": 0.2686448717948718
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.4987095860865829,
+          "per_emotion": {
+            "amusement": 0.19551238269240706,
+            "anger": 0.4603757200248468,
+            "awe": 0.38065634982772145,
+            "contentment": 0.658062359093649,
+            "disgust": 0.5800046836240387,
+            "excitement": 0.6721033388106799,
+            "fear": 0.3818060799960437,
+            "sadness": 0.5224059032564641
+          }
+        },
+        "rmse": {
+          "overall": 0.32251131345689615
+        },
+        "spearman": {
+          "overall": 0.5135787751354143,
+          "per_emotion": {
+            "amusement": 0.24770272048060965,
+            "anger": 0.47170962133111016,
+            "awe": 0.4484962950185079,
+            "contentment": 0.6509345903574503,
+            "disgust": 0.5490475802429743,
+            "excitement": 0.6773990323998978,
+            "fear": 0.39213806917530003,
+            "sadness": 0.48797911659170856
+          }
+        },
+        "top_emotion_accuracy": 0.41025641025641024
+      },
+      "human_consensus": {
+        "cosine_similarity": {
+          "mean_per_song": 0.722182274144113
+        },
+        "krippendorff_alpha": 0.20457687112589762,
+        "mae": {
+          "overall": 0.2477403846153846,
+          "per_emotion": {
+            "amusement": 0.24358974358974358,
+            "anger": 0.2510897435897436,
+            "awe": 0.2441025641025641,
+            "contentment": 0.23217948717948717,
+            "disgust": 0.23711538461538462,
+            "excitement": 0.2812820512820513,
+            "fear": 0.26987179487179486,
+            "sadness": 0.22269230769230772
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.24620303367477792,
+          "per_emotion": {
+            "amusement": 0.15977173237573408,
+            "anger": 0.094709306142504,
+            "awe": 0.12023805239155841,
+            "contentment": 0.08138769925052963,
+            "disgust": -0.08906736072948176,
+            "excitement": -0.06541616390080819,
+            "fear": 0.1278232679047295,
+            "sadness": 0.1116448623811654
+          }
+        },
+        "rmse": {
+          "overall": 0.3038026887931519
+        },
+        "spearman": {
+          "overall": 0.2738907849679225,
+          "per_emotion": {
+            "amusement": 0.09491103060789627,
+            "anger": 0.06121555207817226,
+            "awe": 0.06565904297766842,
+            "contentment": 0.10211437559644389,
+            "disgust": -0.11613778826350139,
+            "excitement": -0.10753021981641299,
+            "fear": 0.003794237295107354,
+            "sadness": 0.021014726990954524
+          }
+        },
+        "top_emotion_accuracy": 0.16666666666666666
+      },
+      "human_test": {
+        "cosine_similarity": {
+          "mean_per_song": 0.7117475496593189
+        },
+        "krippendorff_alpha": 0.208799385720441,
+        "mae": {
+          "overall": 0.2503205128205128,
+          "per_emotion": {
+            "amusement": 0.24141025641025643,
+            "anger": 0.2553846153846154,
+            "awe": 0.24974358974358976,
+            "contentment": 0.23025641025641028,
+            "disgust": 0.2353846153846154,
+            "excitement": 0.286025641025641,
+            "fear": 0.2780769230769231,
+            "sadness": 0.22628205128205126
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.2569616164140574,
+          "per_emotion": {
+            "amusement": 0.1797882663959901,
+            "anger": 0.10008812609001629,
+            "awe": 0.11186022692360345,
+            "contentment": 0.1126095259046459,
+            "disgust": -0.06684385219296211,
+            "excitement": -0.053275716764735394,
+            "fear": 0.13240960351754036,
+            "sadness": 0.13030815515826666
+          }
+        },
+        "rmse": {
+          "overall": 0.3052148255632248
+        },
+        "spearman": {
+          "overall": 0.28811795308511756,
+          "per_emotion": {
+            "amusement": 0.10578304077544272,
+            "anger": 0.07335765336193618,
+            "awe": 0.053321733649094503,
+            "contentment": 0.11822640149569764,
+            "disgust": -0.08963832827541311,
+            "excitement": -0.09352003958123485,
+            "fear": 0.014990403956040734,
+            "sadness": 0.048808232583046174
+          }
+        },
+        "top_emotion_accuracy": 0.15384615384615385
+      }
+    },
+    "gpt_oss": {
+      "deepseek": {
+        "cosine_similarity": {
+          "mean_per_song": 0.9084721515478194
+        },
+        "krippendorff_alpha": 0.5219661766109144,
+        "mae": {
+          "overall": 0.1629967948717949,
+          "per_emotion": {
+            "amusement": 0.0921794871794872,
+            "anger": 0.16448717948717947,
+            "awe": 0.1723076923076923,
+            "contentment": 0.15666666666666668,
+            "disgust": 0.1741025641025641,
+            "excitement": 0.15051282051282053,
+            "fear": 0.21012820512820513,
+            "sadness": 0.1835897435897436
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.6023294942121765,
+          "per_emotion": {
+            "amusement": 0.690496611613655,
+            "anger": 0.6058383709252826,
+            "awe": 0.489164652221917,
+            "contentment": 0.7743414081920893,
+            "disgust": 0.6380246394748518,
+            "excitement": 0.6922365701917721,
+            "fear": 0.38004229189229655,
+            "sadness": 0.568452108743752
+          }
+        },
+        "rmse": {
+          "overall": 0.21772902766323898
+        },
+        "spearman": {
+          "overall": 0.6214969903229597,
+          "per_emotion": {
+            "amusement": 0.6527536526095425,
+            "anger": 0.6394884613239038,
+            "awe": 0.5315573216412844,
+            "contentment": 0.7646594097399472,
+            "disgust": 0.569720716545314,
+            "excitement": 0.69800118389011,
+            "fear": 0.41347309963107653,
+            "sadness": 0.559347793783404
+          }
+        },
+        "top_emotion_accuracy": 0.47435897435897434
+      },
+      "gpt_oss": {
+        "cosine_similarity": {
+          "mean_per_song": 1.0
+        },
+        "krippendorff_alpha": 1.0,
+        "mae": {
+          "overall": 0.0,
+          "per_emotion": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "rmse": {
+          "overall": 0.0
+        },
+        "spearman": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "top_emotion_accuracy": 1.0
+      },
+      "ground_truth": {
+        "cosine_similarity": {
+          "mean_per_song": 0.9710844546096027
+        },
+        "krippendorff_alpha": 0.8437550971649044,
+        "mae": {
+          "overall": 0.1064724358974359,
+          "per_emotion": {
+            "amusement": 0.1904525641025641,
+            "anger": 0.11067820512820514,
+            "awe": 0.1027474358974359,
+            "contentment": 0.11367307692307693,
+            "disgust": 0.0918974358974359,
+            "excitement": 0.08094102564102564,
+            "fear": 0.06760128205128205,
+            "sadness": 0.09378846153846154
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.9017900864683437,
+          "per_emotion": {
+            "amusement": 0.5340312249375961,
+            "anger": 0.9148553160072135,
+            "awe": 0.9311859255939016,
+            "contentment": 0.9403717719991279,
+            "disgust": 0.927080038550175,
+            "excitement": 0.9701204182081893,
+            "fear": 0.9676721503863619,
+            "sadness": 0.9345485715959593
+          }
+        },
+        "rmse": {
+          "overall": 0.16716587186967535
+        },
+        "spearman": {
+          "overall": 0.9125912550998573,
+          "per_emotion": {
+            "amusement": 0.5452556742349772,
+            "anger": 0.9134287562060152,
+            "awe": 0.936003105523308,
+            "contentment": 0.903540428063913,
+            "disgust": 0.9513490130827325,
+            "excitement": 0.97033924882107,
+            "fear": 0.9685191940560757,
+            "sadness": 0.9449270862628998
+          }
+        },
+        "top_emotion_accuracy": 0.7051282051282052
+      },
+      "human_consensus": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6574469272960816
+        },
+        "krippendorff_alpha": 0.08622402946523688,
+        "mae": {
+          "overall": 0.30107371794871796,
+          "per_emotion": {
+            "amusement": 0.25884615384615384,
+            "anger": 0.30262820512820515,
+            "awe": 0.3114102564102564,
+            "contentment": 0.28910256410256413,
+            "disgust": 0.2948076923076923,
+            "excitement": 0.3030769230769231,
+            "fear": 0.3383333333333333,
+            "sadness": 0.31038461538461537
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.14162482913982277,
+          "per_emotion": {
+            "amusement": 0.10943884959102142,
+            "anger": 0.12431073428188497,
+            "awe": -0.02511089101621006,
+            "contentment": 0.061923026895809384,
+            "disgust": 0.07172440792891707,
+            "excitement": 0.09555882057165402,
+            "fear": 0.1403190779593141,
+            "sadness": 0.07215196044912058
+          }
+        },
+        "rmse": {
+          "overall": 0.37913901702511343
+        },
+        "spearman": {
+          "overall": 0.14603388296528927,
+          "per_emotion": {
+            "amusement": 0.09755066938161039,
+            "anger": -3.269686470624375e-05,
+            "awe": -0.05733615443612861,
+            "contentment": 0.08487212604007824,
+            "disgust": 0.0816512021620826,
+            "excitement": 0.0741026002335416,
+            "fear": 0.12806919880566248,
+            "sadness": 0.0527159071876743
+          }
+        },
+        "top_emotion_accuracy": 0.16666666666666666
+      },
+      "human_test": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6462016195427548
+        },
+        "krippendorff_alpha": 0.08856021293935978,
+        "mae": {
+          "overall": 0.30399038461538463,
+          "per_emotion": {
+            "amusement": 0.25666666666666665,
+            "anger": 0.3078205128205128,
+            "awe": 0.317948717948718,
+            "contentment": 0.28615384615384615,
+            "disgust": 0.2956410256410256,
+            "excitement": 0.30628205128205127,
+            "fear": 0.3423076923076923,
+            "sadness": 0.3191025641025641
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.15107387506545167,
+          "per_emotion": {
+            "amusement": 0.12528544415783086,
+            "anger": 0.12130894689588645,
+            "awe": -0.030482438649602376,
+            "contentment": 0.09200132745064318,
+            "disgust": 0.0996354995820318,
+            "excitement": 0.10570239115177234,
+            "fear": 0.16526353850767628,
+            "sadness": 0.058263213793423925
+          }
+        },
+        "rmse": {
+          "overall": 0.3813738239440977
+        },
+        "spearman": {
+          "overall": 0.1580451131654483,
+          "per_emotion": {
+            "amusement": 0.1096443318501605,
+            "anger": 0.003527431738681571,
+            "awe": -0.06585435430359059,
+            "contentment": 0.11087175196576422,
+            "disgust": 0.13401230451247229,
+            "excitement": 0.0864044441410204,
+            "fear": 0.17183418573409676,
+            "sadness": 0.015890023924250516
+          }
+        },
+        "top_emotion_accuracy": 0.1794871794871795
+      }
+    },
+    "ground_truth": {
+      "deepseek": {
+        "cosine_similarity": {
+          "mean_per_song": 0.8682507633558311
+        },
+        "krippendorff_alpha": 0.31401997834263484,
+        "mae": {
+          "overall": 0.2532628205128205,
+          "per_emotion": {
+            "amusement": 0.23987564102564102,
+            "anger": 0.26239615384615383,
+            "awe": 0.2591961538461538,
+            "contentment": 0.2646653846153846,
+            "disgust": 0.25477692307692307,
+            "excitement": 0.21154358974358972,
+            "fear": 0.26500384615384615,
+            "sadness": 0.2686448717948718
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.4987095860865829,
+          "per_emotion": {
+            "amusement": 0.19551238269240706,
+            "anger": 0.4603757200248468,
+            "awe": 0.38065634982772145,
+            "contentment": 0.658062359093649,
+            "disgust": 0.5800046836240387,
+            "excitement": 0.6721033388106799,
+            "fear": 0.3818060799960437,
+            "sadness": 0.5224059032564641
+          }
+        },
+        "rmse": {
+          "overall": 0.32251131345689615
+        },
+        "spearman": {
+          "overall": 0.5135787751354143,
+          "per_emotion": {
+            "amusement": 0.24770272048060965,
+            "anger": 0.47170962133111016,
+            "awe": 0.4484962950185079,
+            "contentment": 0.6509345903574503,
+            "disgust": 0.5490475802429743,
+            "excitement": 0.6773990323998978,
+            "fear": 0.39213806917530003,
+            "sadness": 0.48797911659170856
+          }
+        },
+        "top_emotion_accuracy": 0.41025641025641024
+      },
+      "gpt_oss": {
+        "cosine_similarity": {
+          "mean_per_song": 0.9710844546096027
+        },
+        "krippendorff_alpha": 0.8437550971649044,
+        "mae": {
+          "overall": 0.1064724358974359,
+          "per_emotion": {
+            "amusement": 0.1904525641025641,
+            "anger": 0.11067820512820514,
+            "awe": 0.1027474358974359,
+            "contentment": 0.11367307692307693,
+            "disgust": 0.0918974358974359,
+            "excitement": 0.08094102564102564,
+            "fear": 0.06760128205128205,
+            "sadness": 0.09378846153846154
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.9017900864683437,
+          "per_emotion": {
+            "amusement": 0.5340312249375961,
+            "anger": 0.9148553160072135,
+            "awe": 0.9311859255939016,
+            "contentment": 0.9403717719991279,
+            "disgust": 0.927080038550175,
+            "excitement": 0.9701204182081893,
+            "fear": 0.9676721503863619,
+            "sadness": 0.9345485715959593
+          }
+        },
+        "rmse": {
+          "overall": 0.16716587186967535
+        },
+        "spearman": {
+          "overall": 0.9125912550998573,
+          "per_emotion": {
+            "amusement": 0.5452556742349772,
+            "anger": 0.9134287562060152,
+            "awe": 0.936003105523308,
+            "contentment": 0.903540428063913,
+            "disgust": 0.9513490130827325,
+            "excitement": 0.97033924882107,
+            "fear": 0.9685191940560757,
+            "sadness": 0.9449270862628998
+          }
+        },
+        "top_emotion_accuracy": 0.7051282051282052
+      },
+      "ground_truth": {
+        "cosine_similarity": {
+          "mean_per_song": 1.0
+        },
+        "krippendorff_alpha": 1.0,
+        "mae": {
+          "overall": 0.0,
+          "per_emotion": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "rmse": {
+          "overall": 0.0
+        },
+        "spearman": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "top_emotion_accuracy": 1.0
+      },
+      "human_consensus": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6413801710493215
+        },
+        "krippendorff_alpha": 0.04402366774065336,
+        "mae": {
+          "overall": 0.3602794871794872,
+          "per_emotion": {
+            "amusement": 0.32161923076923077,
+            "anger": 0.36178076923076924,
+            "awe": 0.3631602564102564,
+            "contentment": 0.37001153846153845,
+            "disgust": 0.36692051282051286,
+            "excitement": 0.3460897435897436,
+            "fear": 0.3714782051282051,
+            "sadness": 0.381175641025641
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.14973003233888407,
+          "per_emotion": {
+            "amusement": -0.03606746136520164,
+            "anger": 0.15978950812736079,
+            "awe": 0.067580175993752,
+            "contentment": 0.09483655295106412,
+            "disgust": 0.08789860459010068,
+            "excitement": 0.10245685622653421,
+            "fear": 0.1752196584482241,
+            "sadness": 0.04520325013691875
+          }
+        },
+        "rmse": {
+          "overall": 0.45194188650981587
+        },
+        "spearman": {
+          "overall": 0.1399958452661078,
+          "per_emotion": {
+            "amusement": -0.006011503746857772,
+            "anger": 0.05871003390416759,
+            "awe": 0.04113295509723274,
+            "contentment": 0.13005058249828677,
+            "disgust": 0.08523561674770803,
+            "excitement": 0.09458563048405341,
+            "fear": 0.13435364424871857,
+            "sadness": 0.014444261797708021
+          }
+        },
+        "top_emotion_accuracy": 0.20512820512820512
+      },
+      "human_test": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6294748416433917
+        },
+        "krippendorff_alpha": 0.03920022816273094,
+        "mae": {
+          "overall": 0.3637032051282051,
+          "per_emotion": {
+            "amusement": 0.31958846153846154,
+            "anger": 0.3669730769230769,
+            "awe": 0.36969871794871795,
+            "contentment": 0.3670628205128205,
+            "disgust": 0.3711179487179487,
+            "excitement": 0.3493307692307692,
+            "fear": 0.3754474358974359,
+            "sadness": 0.39040641025641026
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.15208718170623134,
+          "per_emotion": {
+            "amusement": -0.03450441616280983,
+            "anger": 0.13346714477914964,
+            "awe": 0.05668383918565148,
+            "contentment": 0.10870161518711166,
+            "disgust": 0.11312890017121444,
+            "excitement": 0.1122516330849041,
+            "fear": 0.18950751160265836,
+            "sadness": 0.03918907252156471
+          }
+        },
+        "rmse": {
+          "overall": 0.4560992559542838
+        },
+        "spearman": {
+          "overall": 0.14113921842999058,
+          "per_emotion": {
+            "amusement": -0.005935601719424742,
+            "anger": 0.02348216064526014,
+            "awe": 0.02602485577045264,
+            "contentment": 0.13646996336804268,
+            "disgust": 0.13412093794194066,
+            "excitement": 0.10395696016224254,
+            "fear": 0.15737596218525593,
+            "sadness": -0.008338099023464742
+          }
+        },
+        "top_emotion_accuracy": 0.19230769230769232
+      }
+    },
+    "human_consensus": {
+      "deepseek": {
+        "cosine_similarity": {
+          "mean_per_song": 0.722182274144113
+        },
+        "krippendorff_alpha": 0.20457687112589762,
+        "mae": {
+          "overall": 0.2477403846153846,
+          "per_emotion": {
+            "amusement": 0.24358974358974358,
+            "anger": 0.2510897435897436,
+            "awe": 0.2441025641025641,
+            "contentment": 0.23217948717948717,
+            "disgust": 0.23711538461538462,
+            "excitement": 0.2812820512820513,
+            "fear": 0.26987179487179486,
+            "sadness": 0.22269230769230772
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.24620303367477792,
+          "per_emotion": {
+            "amusement": 0.15977173237573408,
+            "anger": 0.094709306142504,
+            "awe": 0.12023805239155841,
+            "contentment": 0.08138769925052963,
+            "disgust": -0.08906736072948176,
+            "excitement": -0.06541616390080819,
+            "fear": 0.1278232679047295,
+            "sadness": 0.1116448623811654
+          }
+        },
+        "rmse": {
+          "overall": 0.3038026887931519
+        },
+        "spearman": {
+          "overall": 0.2738907849679225,
+          "per_emotion": {
+            "amusement": 0.09491103060789627,
+            "anger": 0.06121555207817226,
+            "awe": 0.06565904297766842,
+            "contentment": 0.10211437559644389,
+            "disgust": -0.11613778826350139,
+            "excitement": -0.10753021981641299,
+            "fear": 0.003794237295107354,
+            "sadness": 0.021014726990954524
+          }
+        },
+        "top_emotion_accuracy": 0.16666666666666666
+      },
+      "gpt_oss": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6574469272960816
+        },
+        "krippendorff_alpha": 0.08622402946523688,
+        "mae": {
+          "overall": 0.30107371794871796,
+          "per_emotion": {
+            "amusement": 0.25884615384615384,
+            "anger": 0.30262820512820515,
+            "awe": 0.3114102564102564,
+            "contentment": 0.28910256410256413,
+            "disgust": 0.2948076923076923,
+            "excitement": 0.3030769230769231,
+            "fear": 0.3383333333333333,
+            "sadness": 0.31038461538461537
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.14162482913982277,
+          "per_emotion": {
+            "amusement": 0.10943884959102142,
+            "anger": 0.12431073428188497,
+            "awe": -0.02511089101621006,
+            "contentment": 0.061923026895809384,
+            "disgust": 0.07172440792891707,
+            "excitement": 0.09555882057165402,
+            "fear": 0.1403190779593141,
+            "sadness": 0.07215196044912058
+          }
+        },
+        "rmse": {
+          "overall": 0.37913901702511343
+        },
+        "spearman": {
+          "overall": 0.14603388296528927,
+          "per_emotion": {
+            "amusement": 0.09755066938161039,
+            "anger": -3.269686470624375e-05,
+            "awe": -0.05733615443612861,
+            "contentment": 0.08487212604007824,
+            "disgust": 0.0816512021620826,
+            "excitement": 0.0741026002335416,
+            "fear": 0.12806919880566248,
+            "sadness": 0.0527159071876743
+          }
+        },
+        "top_emotion_accuracy": 0.16666666666666666
+      },
+      "ground_truth": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6413801710493215
+        },
+        "krippendorff_alpha": 0.04402366774065336,
+        "mae": {
+          "overall": 0.3602794871794872,
+          "per_emotion": {
+            "amusement": 0.32161923076923077,
+            "anger": 0.36178076923076924,
+            "awe": 0.3631602564102564,
+            "contentment": 0.37001153846153845,
+            "disgust": 0.36692051282051286,
+            "excitement": 0.3460897435897436,
+            "fear": 0.3714782051282051,
+            "sadness": 0.381175641025641
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.14973003233888407,
+          "per_emotion": {
+            "amusement": -0.03606746136520164,
+            "anger": 0.15978950812736079,
+            "awe": 0.067580175993752,
+            "contentment": 0.09483655295106412,
+            "disgust": 0.08789860459010068,
+            "excitement": 0.10245685622653421,
+            "fear": 0.1752196584482241,
+            "sadness": 0.04520325013691875
+          }
+        },
+        "rmse": {
+          "overall": 0.45194188650981587
+        },
+        "spearman": {
+          "overall": 0.1399958452661078,
+          "per_emotion": {
+            "amusement": -0.006011503746857772,
+            "anger": 0.05871003390416759,
+            "awe": 0.04113295509723274,
+            "contentment": 0.13005058249828677,
+            "disgust": 0.08523561674770803,
+            "excitement": 0.09458563048405341,
+            "fear": 0.13435364424871857,
+            "sadness": 0.014444261797708021
+          }
+        },
+        "top_emotion_accuracy": 0.20512820512820512
+      },
+      "human_consensus": {
+        "cosine_similarity": {
+          "mean_per_song": 1.0
+        },
+        "krippendorff_alpha": 1.0,
+        "mae": {
+          "overall": 0.0,
+          "per_emotion": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "rmse": {
+          "overall": 0.0
+        },
+        "spearman": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "top_emotion_accuracy": 1.0
+      },
+      "human_test": {
+        "cosine_similarity": {
+          "mean_per_song": 0.9904357364056463
+        },
+        "krippendorff_alpha": 0.9873662884779998,
+        "mae": {
+          "overall": 0.007964743589743589,
+          "per_emotion": {
+            "amusement": 0.0039743589743589745,
+            "anger": 0.010705128205128204,
+            "awe": 0.006538461538461539,
+            "contentment": 0.007692307692307691,
+            "disgust": 0.007756410256410256,
+            "excitement": 0.006153846153846154,
+            "fear": 0.011025641025641025,
+            "sadness": 0.009871794871794872
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.9877510182558127,
+          "per_emotion": {
+            "amusement": 0.9950778522133451,
+            "anger": 0.9778933682135272,
+            "awe": 0.988779581697759,
+            "contentment": 0.9830010444736385,
+            "disgust": 0.977117082488429,
+            "excitement": 0.9918466264334815,
+            "fear": 0.9791726645758033,
+            "sadness": 0.9660266828926526
+          }
+        },
+        "rmse": {
+          "overall": 0.04621143575860628
+        },
+        "spearman": {
+          "overall": 0.972543336332117,
+          "per_emotion": {
+            "amusement": 0.9916085600811916,
+            "anger": 0.9273318620137508,
+            "awe": 0.9856540726912313,
+            "contentment": 0.9827087990696017,
+            "disgust": 0.91462474431777,
+            "excitement": 0.9911510273920997,
+            "fear": 0.9343292096182758,
+            "sadness": 0.8886375235014183
+          }
+        },
+        "top_emotion_accuracy": 0.9871794871794872
+      }
+    },
+    "human_test": {
+      "deepseek": {
+        "cosine_similarity": {
+          "mean_per_song": 0.7117475496593189
+        },
+        "krippendorff_alpha": 0.208799385720441,
+        "mae": {
+          "overall": 0.2503205128205128,
+          "per_emotion": {
+            "amusement": 0.24141025641025643,
+            "anger": 0.2553846153846154,
+            "awe": 0.24974358974358976,
+            "contentment": 0.23025641025641028,
+            "disgust": 0.2353846153846154,
+            "excitement": 0.286025641025641,
+            "fear": 0.2780769230769231,
+            "sadness": 0.22628205128205126
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.2569616164140574,
+          "per_emotion": {
+            "amusement": 0.1797882663959901,
+            "anger": 0.10008812609001629,
+            "awe": 0.11186022692360345,
+            "contentment": 0.1126095259046459,
+            "disgust": -0.06684385219296211,
+            "excitement": -0.053275716764735394,
+            "fear": 0.13240960351754036,
+            "sadness": 0.13030815515826666
+          }
+        },
+        "rmse": {
+          "overall": 0.3052148255632248
+        },
+        "spearman": {
+          "overall": 0.28811795308511756,
+          "per_emotion": {
+            "amusement": 0.10578304077544272,
+            "anger": 0.07335765336193618,
+            "awe": 0.053321733649094503,
+            "contentment": 0.11822640149569764,
+            "disgust": -0.08963832827541311,
+            "excitement": -0.09352003958123485,
+            "fear": 0.014990403956040734,
+            "sadness": 0.048808232583046174
+          }
+        },
+        "top_emotion_accuracy": 0.15384615384615385
+      },
+      "gpt_oss": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6462016195427548
+        },
+        "krippendorff_alpha": 0.08856021293935978,
+        "mae": {
+          "overall": 0.30399038461538463,
+          "per_emotion": {
+            "amusement": 0.25666666666666665,
+            "anger": 0.3078205128205128,
+            "awe": 0.317948717948718,
+            "contentment": 0.28615384615384615,
+            "disgust": 0.2956410256410256,
+            "excitement": 0.30628205128205127,
+            "fear": 0.3423076923076923,
+            "sadness": 0.3191025641025641
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.15107387506545167,
+          "per_emotion": {
+            "amusement": 0.12528544415783086,
+            "anger": 0.12130894689588645,
+            "awe": -0.030482438649602376,
+            "contentment": 0.09200132745064318,
+            "disgust": 0.0996354995820318,
+            "excitement": 0.10570239115177234,
+            "fear": 0.16526353850767628,
+            "sadness": 0.058263213793423925
+          }
+        },
+        "rmse": {
+          "overall": 0.3813738239440977
+        },
+        "spearman": {
+          "overall": 0.1580451131654483,
+          "per_emotion": {
+            "amusement": 0.1096443318501605,
+            "anger": 0.003527431738681571,
+            "awe": -0.06585435430359059,
+            "contentment": 0.11087175196576422,
+            "disgust": 0.13401230451247229,
+            "excitement": 0.0864044441410204,
+            "fear": 0.17183418573409676,
+            "sadness": 0.015890023924250516
+          }
+        },
+        "top_emotion_accuracy": 0.1794871794871795
+      },
+      "ground_truth": {
+        "cosine_similarity": {
+          "mean_per_song": 0.6294748416433917
+        },
+        "krippendorff_alpha": 0.03920022816273094,
+        "mae": {
+          "overall": 0.3637032051282051,
+          "per_emotion": {
+            "amusement": 0.31958846153846154,
+            "anger": 0.3669730769230769,
+            "awe": 0.36969871794871795,
+            "contentment": 0.3670628205128205,
+            "disgust": 0.3711179487179487,
+            "excitement": 0.3493307692307692,
+            "fear": 0.3754474358974359,
+            "sadness": 0.39040641025641026
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.15208718170623134,
+          "per_emotion": {
+            "amusement": -0.03450441616280983,
+            "anger": 0.13346714477914964,
+            "awe": 0.05668383918565148,
+            "contentment": 0.10870161518711166,
+            "disgust": 0.11312890017121444,
+            "excitement": 0.1122516330849041,
+            "fear": 0.18950751160265836,
+            "sadness": 0.03918907252156471
+          }
+        },
+        "rmse": {
+          "overall": 0.4560992559542838
+        },
+        "spearman": {
+          "overall": 0.14113921842999058,
+          "per_emotion": {
+            "amusement": -0.005935601719424742,
+            "anger": 0.02348216064526014,
+            "awe": 0.02602485577045264,
+            "contentment": 0.13646996336804268,
+            "disgust": 0.13412093794194066,
+            "excitement": 0.10395696016224254,
+            "fear": 0.15737596218525593,
+            "sadness": -0.008338099023464742
+          }
+        },
+        "top_emotion_accuracy": 0.19230769230769232
+      },
+      "human_consensus": {
+        "cosine_similarity": {
+          "mean_per_song": 0.9904357364056463
+        },
+        "krippendorff_alpha": 0.9873662884779998,
+        "mae": {
+          "overall": 0.007964743589743589,
+          "per_emotion": {
+            "amusement": 0.0039743589743589745,
+            "anger": 0.010705128205128204,
+            "awe": 0.006538461538461539,
+            "contentment": 0.007692307692307691,
+            "disgust": 0.007756410256410256,
+            "excitement": 0.006153846153846154,
+            "fear": 0.011025641025641025,
+            "sadness": 0.009871794871794872
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 0.9877510182558127,
+          "per_emotion": {
+            "amusement": 0.9950778522133451,
+            "anger": 0.9778933682135272,
+            "awe": 0.988779581697759,
+            "contentment": 0.9830010444736385,
+            "disgust": 0.977117082488429,
+            "excitement": 0.9918466264334815,
+            "fear": 0.9791726645758033,
+            "sadness": 0.9660266828926526
+          }
+        },
+        "rmse": {
+          "overall": 0.04621143575860628
+        },
+        "spearman": {
+          "overall": 0.972543336332117,
+          "per_emotion": {
+            "amusement": 0.9916085600811916,
+            "anger": 0.9273318620137508,
+            "awe": 0.9856540726912313,
+            "contentment": 0.9827087990696017,
+            "disgust": 0.91462474431777,
+            "excitement": 0.9911510273920997,
+            "fear": 0.9343292096182758,
+            "sadness": 0.8886375235014183
+          }
+        },
+        "top_emotion_accuracy": 0.9871794871794872
+      },
+      "human_test": {
+        "cosine_similarity": {
+          "mean_per_song": 1.0
+        },
+        "krippendorff_alpha": 1.0,
+        "mae": {
+          "overall": 0.0,
+          "per_emotion": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        "n_songs": 78,
+        "pearson": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "rmse": {
+          "overall": 0.0
+        },
+        "spearman": {
+          "overall": 1.0,
+          "per_emotion": {
+            "amusement": 1.0,
+            "anger": 1.0,
+            "awe": 1.0,
+            "contentment": 1.0,
+            "disgust": 1.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        "top_emotion_accuracy": 1.0
+      }
+    }
+  },
+  "fold": 1
+}

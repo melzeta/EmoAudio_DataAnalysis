@@ -1,0 +1,49 @@
+{
+  "agent_report_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis\\state\\agent_reports\\fold_1_report.json",
+  "aggregate_fold_count": 0,
+  "aggregate_metrics_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis\\state\\llm_analysis\\aggregate_metrics.json",
+  "annotation_dir": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis\\data\\annotations\\fold_1",
+  "annotation_manifest_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis\\data\\annotations\\fold_1\\run_manifest.json",
+  "average_few_shot_examples_per_song": 5.0,
+  "eligible_song_count": 7,
+  "fold": 1,
+  "fold_metrics_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis\\state\\llm_analysis\\fold_1_metrics.json",
+  "human_consensus_count": 2,
+  "human_test_count": 2,
+  "max_few_shot_examples": 6,
+  "max_same_emotion_examples": 3,
+  "metric_song_count": 2,
+  "min_unique_users_per_song": 2,
+  "prompt_contexts_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis\\state\\llm_analysis\\prompt_contexts\\fold_1_prompt_contexts.json",
+  "prompt_method": "few_shot_in_context_learning_multiuser_leave_two_songs_out",
+  "run_mode": "live",
+  "song_count": 2,
+  "songs_annotated": [
+    "contentment/contentment_09996.mp3",
+    "disgust/disgust_02554.mp3"
+  ],
+  "source_files": {
+    "ground_truth": {
+      "path": "C:\\Users\\mely1\\Projects\\EmoAudio\\data\\song_emotion_ground_truth.csv",
+      "sha256": "bb2a69d7b9c7d424f97ca09e4b6a39954c4f308f047f1bdcf85a5b2b001ac8d5"
+    },
+    "user_responses": {
+      "path": "C:\\Users\\mely1\\Projects\\EmoAudio\\data\\user_emotion_responses.json",
+      "sha256": "0b3864f922158859f94798d07f0b5855e1a3a9b60cc1a9eaf8fbd2f509967eb7"
+    }
+  },
+  "test_song_count": 2,
+  "test_songs": [
+    "contentment/contentment_09996.mp3",
+    "disgust/disgust_02554.mp3"
+  ],
+  "test_songs_per_fold": 2,
+  "test_users": [
+    "user_275551",
+    "user_493263",
+    "user_664044",
+    "user_876459"
+  ],
+  "timestamp": "2026-04-18T17:30:48.391021+00:00",
+  "train_song_profile_count": 5
+}

@@ -1,0 +1,60 @@
+{
+  "current_review_fold": 3,
+  "eligible_song_count": 7,
+  "folds": {
+    "1": {
+      "approved_at": "2026-04-18T17:30:51.664132+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-18T17:30:48.391608+00:00",
+      "fold_index": 1,
+      "reviewed": true,
+      "reviewed_at": "2026-04-18T17:30:51.664121+00:00",
+      "status": "completed",
+      "summary_path": "/mnt/c/Users/mely1/Projects/EmoAudio/llm analysis/state/fold_1_summary.json",
+      "test_count": 4,
+      "train_count": 9
+    },
+    "2": {
+      "approved_at": "2026-04-18T17:32:12.210180+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-18T17:31:35.736377+00:00",
+      "fold_index": 2,
+      "reviewed": true,
+      "reviewed_at": "2026-04-18T17:32:12.210168+00:00",
+      "status": "completed",
+      "summary_path": "/mnt/c/Users/mely1/Projects/EmoAudio/llm analysis/state/fold_2_summary.json",
+      "test_count": 4,
+      "train_count": 5
+    },
+    "3": {
+      "approved_at": "2026-04-18T17:32:41.112189+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-18T17:32:37.613794+00:00",
+      "fold_index": 3,
+      "reviewed": true,
+      "reviewed_at": "2026-04-18T17:32:41.112177+00:00",
+      "status": "completed",
+      "summary_path": "/mnt/c/Users/mely1/Projects/EmoAudio/llm analysis/state/fold_3_summary.json",
+      "test_count": 4,
+      "train_count": 8
+    }
+  },
+  "last_completed_fold": 3,
+  "last_reviewed_fold": 3,
+  "min_unique_users_per_song": 2,
+  "prepared": true,
+  "prepared_at": "2026-04-18T17:26:44.637351+00:00",
+  "prompt_method": "few_shot_in_context_learning_multiuser_leave_two_songs_out",
+  "run_mode": "live",
+  "source_files": {
+    "ground_truth": {
+      "path": "/mnt/c/Users/mely1/Projects/EmoAudio/data/song_emotion_ground_truth.csv",
+      "sha256": "bb2a69d7b9c7d424f97ca09e4b6a39954c4f308f047f1bdcf85a5b2b001ac8d5"
+    },
+    "user_responses": {
+      "path": "/mnt/c/Users/mely1/Projects/EmoAudio/data/user_emotion_responses.json",
+      "sha256": "0b3864f922158859f94798d07f0b5855e1a3a9b60cc1a9eaf8fbd2f509967eb7"
+    }
+  },
+  "test_songs_per_fold": 2
+}

@@ -17,7 +17,7 @@ EMOTION_COLUMNS = [
     "fear",
     "sadness",
 ]
-MODEL_NAMES = ["deepseek", "gemini", "mistral"]
+MODEL_NAMES = ["deepseek", "gpt_oss"]
 
 
 def _load_expected_song_count(fold_number: int) -> tuple[int | None, list[str]]:
@@ -47,7 +47,7 @@ def _load_expected_song_count(fold_number: int) -> tuple[int | None, list[str]]:
     return len(expected_songs), []
 
 
-def _check_csv(path: Path, expected_rows: int) -> list[str]:
+def _check_csv(path: Path, expected_rows: int, expected_filenames: list[str] | None = None) -> list[str]:
     issues = []
     if not path.exists():
         return [f"Missing annotation file: {path.relative_to(ROOT_DIR)}"]
@@ -65,6 +65,14 @@ def _check_csv(path: Path, expected_rows: int) -> list[str]:
         issues.append(
             f"Row count mismatch in {path.relative_to(ROOT_DIR)}: expected {expected_rows}, found {len(rows)}"
         )
+
+    if expected_filenames is not None:
+        actual_filenames = [row.get("filename") for row in rows]
+        if sorted(actual_filenames) != sorted(expected_filenames):
+            issues.append(
+                f"Filename mismatch in {path.relative_to(ROOT_DIR)}: "
+                f"expected {sorted(expected_filenames)}, found {sorted(actual_filenames)}"
+            )
 
     for row_index, row in enumerate(rows, start=1):
         for emotion in EMOTION_COLUMNS:
@@ -85,14 +93,37 @@ def _check_csv(path: Path, expected_rows: int) -> list[str]:
     return issues
 
 
-def run(fold_number) -> dict:
-    expected_rows, issues = _load_expected_song_count(fold_number)
+def run(
+    fold_number,
+    annotations_dir: Path | None = None,
+    user_folds_path: Path | None = None,
+    user_responses_path: Path | None = None,
+    expected_filenames: list[str] | None = None,
+) -> dict:
+    global USER_FOLDS_PATH, USER_RESPONSES_PATH
+    annotations_dir = annotations_dir or ANNOTATIONS_DIR
+    original_user_folds_path = USER_FOLDS_PATH
+    original_user_responses_path = USER_RESPONSES_PATH
+    if user_folds_path is not None:
+        USER_FOLDS_PATH = user_folds_path
+    if user_responses_path is not None:
+        USER_RESPONSES_PATH = user_responses_path
+
+    if expected_filenames is not None:
+        expected_rows, issues = len(expected_filenames), []
+    else:
+        expected_rows, issues = _load_expected_song_count(fold_number)
     if expected_rows is None:
+        USER_FOLDS_PATH = original_user_folds_path
+        USER_RESPONSES_PATH = original_user_responses_path
         return {"agent": "quality", "status": "fail", "issues": issues, "fold": fold_number}
 
-    fold_dir = ANNOTATIONS_DIR / f"fold_{fold_number}"
+    fold_dir = annotations_dir / f"fold_{fold_number}"
     for model_name in MODEL_NAMES:
-        issues.extend(_check_csv(fold_dir / f"{model_name}.csv", expected_rows))
+        issues.extend(_check_csv(fold_dir / f"{model_name}.csv", expected_rows, expected_filenames))
+
+    USER_FOLDS_PATH = original_user_folds_path
+    USER_RESPONSES_PATH = original_user_responses_path
 
     return {
         "agent": "quality",

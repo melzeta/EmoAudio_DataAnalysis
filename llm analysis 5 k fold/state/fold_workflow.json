@@ -1,0 +1,76 @@
+{
+  "current_review_fold": 4,
+  "folds": {
+    "1": {
+      "approved_at": "2026-04-18T18:17:36.077313+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-18T18:15:45.024112+00:00",
+      "fold_index": 1,
+      "reviewed": true,
+      "reviewed_at": "2026-04-18T18:17:36.077301+00:00",
+      "status": "completed",
+      "summary_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\fold_1_summary.json",
+      "test_count": 11,
+      "train_count": 41
+    },
+    "2": {
+      "approved_at": "2026-04-18T18:42:46.631877+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-18T18:24:41.459871+00:00",
+      "fold_index": 2,
+      "reviewed": true,
+      "reviewed_at": "2026-04-18T18:42:46.631865+00:00",
+      "status": "completed",
+      "summary_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\fold_2_summary.json",
+      "test_count": 11,
+      "train_count": 41
+    },
+    "3": {
+      "approved_at": "2026-04-18T23:55:10.292806+00:00",
+      "approved_to_proceed": true,
+      "completed_at": "2026-04-18T18:56:53.984201+00:00",
+      "fold_index": 3,
+      "reviewed": true,
+      "reviewed_at": "2026-04-18T23:55:10.292795+00:00",
+      "status": "completed",
+      "summary_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\fold_3_summary.json",
+      "test_count": 11,
+      "train_count": 41
+    },
+    "4": {
+      "approved_to_proceed": false,
+      "completed_at": "2026-04-19T00:13:07.405865+00:00",
+      "fold_index": 4,
+      "reviewed": false,
+      "status": "completed",
+      "summary_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\fold_4_summary.json",
+      "test_count": 11,
+      "train_count": 41
+    },
+    "5": {
+      "approved_to_proceed": false,
+      "fold_index": 5,
+      "reviewed": false,
+      "status": "pending",
+      "summary_path": "C:\\Users\\mely1\\Projects\\EmoAudio\\llm analysis 5 k fold\\state\\fold_5_summary.json",
+      "test_count": 8,
+      "train_count": 44
+    }
+  },
+  "last_completed_fold": 4,
+  "last_reviewed_fold": 3,
+  "prepared": true,
+  "prepared_at": "2026-04-18T18:02:16.305528+00:00",
+  "run_mode": "live",
+  "source_files": {
+    "ground_truth": {
+      "path": "C:\\Users\\mely1\\Projects\\EmoAudio\\data\\song_emotion_ground_truth.csv",
+      "sha256": "bb2a69d7b9c7d424f97ca09e4b6a39954c4f308f047f1bdcf85a5b2b001ac8d5"
+    },
+    "user_responses": {
+      "path": "C:\\Users\\mely1\\Projects\\EmoAudio\\data\\user_emotion_responses.json",
+      "sha256": "0b3864f922158859f94798d07f0b5855e1a3a9b60cc1a9eaf8fbd2f509967eb7"
+    }
+  },
+  "user_count": 52
+}

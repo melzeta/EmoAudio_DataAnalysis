@@ -1,0 +1,6366 @@
+{
+  "contexts": {
+    "amusement/amusement_02946.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_08310.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.2955,
+            "awe": 0.0,
+            "contentment": 0.7576,
+            "disgust": 0.4394,
+            "excitement": 0.8636,
+            "fear": 0.5076,
+            "sadness": 0.4697
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.971127,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.47,
+            "contentment": 0.55,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08284.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.1953,
+            "awe": 0.0,
+            "contentment": 0.4556,
+            "disgust": 0.3018,
+            "excitement": 0.7456,
+            "fear": 0.7574,
+            "sadness": 0.0355
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.965877,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.23,
+            "disgust": 0.0,
+            "excitement": 0.11,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_18892.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.508,
+            "awe": 0.0,
+            "contentment": 0.384,
+            "disgust": 0.476,
+            "excitement": 0.48,
+            "fear": 0.688,
+            "sadness": 0.516
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.958698,
+          "train_user_average": {
+            "amusement": 0.48,
+            "anger": 0.25,
+            "awe": 0.25,
+            "contentment": 0.49,
+            "disgust": 0.05,
+            "excitement": 0.49,
+            "fear": 0.01,
+            "sadness": 0.02
+          }
+        },
+        {
+          "filename": "fear/fear_09170.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8523,
+            "anger": 0.3221,
+            "awe": 0.0,
+            "contentment": 0.7785,
+            "disgust": 0.349,
+            "excitement": 0.557,
+            "fear": 1.0,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.974699,
+          "train_user_average": {
+            "amusement": 0.54,
+            "anger": 0.0,
+            "awe": 0.38,
+            "contentment": 0.45,
+            "disgust": 0.0,
+            "excitement": 0.84,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09148.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.9808,
+            "anger": 0.3558,
+            "awe": 0.0,
+            "contentment": 0.8462,
+            "disgust": 0.5385,
+            "excitement": 0.625,
+            "fear": 1.0,
+            "sadness": 0.1538
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.971051,
+          "train_user_average": {
+            "amusement": 0.72,
+            "anger": 0.01,
+            "awe": 0.5,
+            "contentment": 0.49,
+            "disgust": 0.01,
+            "excitement": 0.48,
+            "fear": 0.01,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "fear/fear_09247.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7818,
+            "anger": 0.7545,
+            "awe": 0.0,
+            "contentment": 0.8727,
+            "disgust": 0.6364,
+            "excitement": 0.7727,
+            "fear": 1.0,
+            "sadness": 0.1273
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.916717,
+          "train_user_average": {
+            "amusement": 0.32,
+            "anger": 0.86,
+            "awe": 0.65,
+            "contentment": 0.1,
+            "disgust": 0.09,
+            "excitement": 0.13,
+            "fear": 0.53,
+            "sadness": 0.78
+          }
+        }
+      ],
+      "filename": "amusement/amusement_02946.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_08270.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_08311.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3081,
+            "awe": 0.4108,
+            "contentment": 0.0486,
+            "disgust": 0.0,
+            "excitement": 0.6432,
+            "fear": 0.5459,
+            "sadness": 0.1946
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.969136,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.15,
+            "awe": 0.71,
+            "contentment": 0.36,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.46,
+            "sadness": 0.04
+          }
+        },
+        {
+          "filename": "amusement/amusement_08339.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.2919,
+            "awe": 0.0,
+            "contentment": 0.0383,
+            "disgust": 0.0766,
+            "excitement": 0.689,
+            "fear": 0.6746,
+            "sadness": 0.2249
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.964641,
+          "train_user_average": {
+            "amusement": 0.46,
+            "anger": 0.18,
+            "awe": 0.34,
+            "contentment": 0.33,
+            "disgust": 0.13,
+            "excitement": 0.35,
+            "fear": 0.21,
+            "sadness": 0.11
+          }
+        },
+        {
+          "filename": "amusement/amusement_17660.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.4242,
+            "awe": 0.2684,
+            "contentment": 0.1732,
+            "disgust": 0.0,
+            "excitement": 0.7835,
+            "fear": 0.684,
+            "sadness": 0.1818
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.953755,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 1.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_14992.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8456,
+            "anger": 0.0735,
+            "awe": 0.4044,
+            "contentment": 0.2059,
+            "disgust": 0.3603,
+            "excitement": 0.6029,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.890246,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.23,
+            "awe": 0.25,
+            "contentment": 0.24,
+            "disgust": 0.02,
+            "excitement": 0.0,
+            "fear": 0.72,
+            "sadness": 0.02
+          }
+        },
+        {
+          "filename": "excitement/excitement_08031.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8706,
+            "anger": 0.0597,
+            "awe": 0.1592,
+            "contentment": 0.6965,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.4378,
+            "sadness": 0.1294
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.838053,
+          "train_user_average": {
+            "amusement": 0.58,
+            "anger": 0.32,
+            "awe": 0.38,
+            "contentment": 0.35,
+            "disgust": 0.0,
+            "excitement": 0.46,
+            "fear": 0.56,
+            "sadness": 0.65
+          }
+        },
+        {
+          "filename": "excitement/excitement_08023.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6948,
+            "anger": 0.2691,
+            "awe": 0.6305,
+            "contentment": 0.4578,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5823,
+            "sadness": 0.0683
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.829484,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.47,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.25,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        }
+      ],
+      "filename": "amusement/amusement_08270.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_08296.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_18892.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.508,
+            "awe": 0.0,
+            "contentment": 0.384,
+            "disgust": 0.476,
+            "excitement": 0.48,
+            "fear": 0.688,
+            "sadness": 0.516
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.975051,
+          "train_user_average": {
+            "amusement": 0.48,
+            "anger": 0.25,
+            "awe": 0.25,
+            "contentment": 0.49,
+            "disgust": 0.05,
+            "excitement": 0.49,
+            "fear": 0.01,
+            "sadness": 0.02
+          }
+        },
+        {
+          "filename": "amusement/amusement_08239.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.163,
+            "awe": 0.0,
+            "contentment": 0.2935,
+            "disgust": 0.9783,
+            "excitement": 0.663,
+            "fear": 0.7283,
+            "sadness": 0.7283
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.934874,
+          "train_user_average": {
+            "amusement": 0.43,
+            "anger": 0.33,
+            "awe": 0.44,
+            "contentment": 0.41,
+            "disgust": 0.65,
+            "excitement": 0.4,
+            "fear": 0.24,
+            "sadness": 0.16
+          }
+        },
+        {
+          "filename": "amusement/amusement_17642.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.604,
+            "awe": 0.4497,
+            "contentment": 0.0,
+            "disgust": 0.7517,
+            "excitement": 0.4899,
+            "fear": 0.906,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.924181,
+          "train_user_average": {
+            "amusement": 0.66,
+            "anger": 0.0,
+            "awe": 0.72,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.65,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09170.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8523,
+            "anger": 0.3221,
+            "awe": 0.0,
+            "contentment": 0.7785,
+            "disgust": 0.349,
+            "excitement": 0.557,
+            "fear": 1.0,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.960393,
+          "train_user_average": {
+            "amusement": 0.54,
+            "anger": 0.0,
+            "awe": 0.38,
+            "contentment": 0.45,
+            "disgust": 0.0,
+            "excitement": 0.84,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09148.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.9808,
+            "anger": 0.3558,
+            "awe": 0.0,
+            "contentment": 0.8462,
+            "disgust": 0.5385,
+            "excitement": 0.625,
+            "fear": 1.0,
+            "sadness": 0.1538
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.953145,
+          "train_user_average": {
+            "amusement": 0.72,
+            "anger": 0.01,
+            "awe": 0.5,
+            "contentment": 0.49,
+            "disgust": 0.01,
+            "excitement": 0.48,
+            "fear": 0.01,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "fear/fear_03283.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5101,
+            "anger": 0.6309,
+            "awe": 0.0,
+            "contentment": 0.5772,
+            "disgust": 0.4899,
+            "excitement": 0.3691,
+            "fear": 1.0,
+            "sadness": 0.4362
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.937453,
+          "train_user_average": {
+            "amusement": 0.82,
+            "anger": 0.51,
+            "awe": 0.41,
+            "contentment": 0.5,
+            "disgust": 0.31,
+            "excitement": 0.57,
+            "fear": 0.24,
+            "sadness": 0.27
+          }
+        }
+      ],
+      "filename": "amusement/amusement_08296.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_08297.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5279,
+            "awe": 0.3299,
+            "contentment": 0.0,
+            "disgust": 0.1015,
+            "excitement": 0.9695,
+            "fear": 0.802,
+            "sadness": 0.1574
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 4,
+          "similarity": 0.995257,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "sadness": 0.87
+          }
+        },
+        {
+          "filename": "amusement/amusement_17660.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.4242,
+            "awe": 0.2684,
+            "contentment": 0.1732,
+            "disgust": 0.0,
+            "excitement": 0.7835,
+            "fear": 0.684,
+            "sadness": 0.1818
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.994285,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 1.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08311.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3081,
+            "awe": 0.4108,
+            "contentment": 0.0486,
+            "disgust": 0.0,
+            "excitement": 0.6432,
+            "fear": 0.5459,
+            "sadness": 0.1946
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.980689,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.15,
+            "awe": 0.71,
+            "contentment": 0.36,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.46,
+            "sadness": 0.04
+          }
+        },
+        {
+          "filename": "excitement/excitement_08023.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6948,
+            "anger": 0.2691,
+            "awe": 0.6305,
+            "contentment": 0.4578,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5823,
+            "sadness": 0.0683
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.928765,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.47,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.25,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "fear/fear_14992.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8456,
+            "anger": 0.0735,
+            "awe": 0.4044,
+            "contentment": 0.2059,
+            "disgust": 0.3603,
+            "excitement": 0.6029,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.90733,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.23,
+            "awe": 0.25,
+            "contentment": 0.24,
+            "disgust": 0.02,
+            "excitement": 0.0,
+            "fear": 0.72,
+            "sadness": 0.02
+          }
+        },
+        {
+          "filename": "anger/anger_02002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5616,
+            "anger": 1.0,
+            "awe": 0.3904,
+            "contentment": 0.0,
+            "disgust": 0.2534,
+            "excitement": 0.7671,
+            "fear": 0.6781,
+            "sadness": 0.2877
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.900093,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.49,
+            "awe": 0.51,
+            "contentment": 0.73,
+            "disgust": 0.25,
+            "excitement": 0.74,
+            "fear": 0.24,
+            "sadness": 0.01
+          }
+        }
+      ],
+      "filename": "amusement/amusement_08297.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_08307.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_18892.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.508,
+            "awe": 0.0,
+            "contentment": 0.384,
+            "disgust": 0.476,
+            "excitement": 0.48,
+            "fear": 0.688,
+            "sadness": 0.516
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.902178,
+          "train_user_average": {
+            "amusement": 0.48,
+            "anger": 0.25,
+            "awe": 0.25,
+            "contentment": 0.49,
+            "disgust": 0.05,
+            "excitement": 0.49,
+            "fear": 0.01,
+            "sadness": 0.02
+          }
+        },
+        {
+          "filename": "amusement/amusement_08335.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3529,
+            "awe": 0.2206,
+            "contentment": 0.1373,
+            "disgust": 0.0,
+            "excitement": 0.5784,
+            "fear": 0.7108,
+            "sadness": 0.3235
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.893906,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.29,
+            "awe": 0.34,
+            "contentment": 0.83,
+            "disgust": 0.04,
+            "excitement": 0.79,
+            "fear": 0.19,
+            "sadness": 0.33
+          }
+        },
+        {
+          "filename": "amusement/amusement_02938.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.8667,
+            "awe": 0.0,
+            "contentment": 0.5714,
+            "disgust": 0.2857,
+            "excitement": 0.5619,
+            "fear": 0.7619,
+            "sadness": 0.6857
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.890484,
+          "train_user_average": {
+            "amusement": 0.46,
+            "anger": 0.41,
+            "awe": 0.18,
+            "contentment": 0.22,
+            "disgust": 0.45,
+            "excitement": 0.68,
+            "fear": 0.4,
+            "sadness": 0.15
+          }
+        },
+        {
+          "filename": "fear/fear_09170.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8523,
+            "anger": 0.3221,
+            "awe": 0.0,
+            "contentment": 0.7785,
+            "disgust": 0.349,
+            "excitement": 0.557,
+            "fear": 1.0,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.855011,
+          "train_user_average": {
+            "amusement": 0.54,
+            "anger": 0.0,
+            "awe": 0.38,
+            "contentment": 0.45,
+            "disgust": 0.0,
+            "excitement": 0.84,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_03454.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6705,
+            "anger": 0.3237,
+            "awe": 0.0,
+            "contentment": 0.5954,
+            "disgust": 0.5838,
+            "excitement": 0.5145,
+            "fear": 0.4913,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.842328,
+          "train_user_average": {
+            "amusement": 0.72,
+            "anger": 0.02,
+            "awe": 0.7,
+            "contentment": 0.49,
+            "disgust": 0.02,
+            "excitement": 0.57,
+            "fear": 0.01,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "sadness/sadness_07972.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.62,
+            "anger": 0.44,
+            "awe": 0.18,
+            "contentment": 0.0,
+            "disgust": 0.15,
+            "excitement": 0.12,
+            "fear": 0.13,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.838663,
+          "train_user_average": {
+            "amusement": 0.18,
+            "anger": 0.65,
+            "awe": 0.29,
+            "contentment": 0.39,
+            "disgust": 0.86,
+            "excitement": 0.83,
+            "fear": 0.76,
+            "sadness": 0.68
+          }
+        }
+      ],
+      "filename": "amusement/amusement_08307.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_08316.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_17642.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.604,
+            "awe": 0.4497,
+            "contentment": 0.0,
+            "disgust": 0.7517,
+            "excitement": 0.4899,
+            "fear": 0.906,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.96069,
+          "train_user_average": {
+            "amusement": 0.66,
+            "anger": 0.0,
+            "awe": 0.72,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.65,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08336.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3284,
+            "awe": 0.1716,
+            "contentment": 0.0,
+            "disgust": 0.791,
+            "excitement": 0.0746,
+            "fear": 0.6493,
+            "sadness": 0.5299
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.957876,
+          "train_user_average": {
+            "amusement": 0.49,
+            "anger": 0.48,
+            "awe": 0.28,
+            "contentment": 0.23,
+            "disgust": 0.18,
+            "excitement": 0.59,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08239.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.163,
+            "awe": 0.0,
+            "contentment": 0.2935,
+            "disgust": 0.9783,
+            "excitement": 0.663,
+            "fear": 0.7283,
+            "sadness": 0.7283
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.953972,
+          "train_user_average": {
+            "amusement": 0.43,
+            "anger": 0.33,
+            "awe": 0.44,
+            "contentment": 0.41,
+            "disgust": 0.65,
+            "excitement": 0.4,
+            "fear": 0.24,
+            "sadness": 0.16
+          }
+        },
+        {
+          "filename": "fear/fear_14992.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8456,
+            "anger": 0.0735,
+            "awe": 0.4044,
+            "contentment": 0.2059,
+            "disgust": 0.3603,
+            "excitement": 0.6029,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.898314,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.23,
+            "awe": 0.25,
+            "contentment": 0.24,
+            "disgust": 0.02,
+            "excitement": 0.0,
+            "fear": 0.72,
+            "sadness": 0.02
+          }
+        },
+        {
+          "filename": "fear/fear_03297.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8762,
+            "anger": 0.6762,
+            "awe": 0.2,
+            "contentment": 0.0857,
+            "disgust": 0.7143,
+            "excitement": 0.2857,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.895048,
+          "train_user_average": {
+            "amusement": 0.09,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.35,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_10795.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7731,
+            "anger": 0.9664,
+            "awe": 0.2269,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.6134,
+            "fear": 0.7563,
+            "sadness": 0.8487
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.880561,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.27,
+            "awe": 0.49,
+            "contentment": 0.25,
+            "disgust": 0.24,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "amusement/amusement_08316.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_17644.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_08335.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3529,
+            "awe": 0.2206,
+            "contentment": 0.1373,
+            "disgust": 0.0,
+            "excitement": 0.5784,
+            "fear": 0.7108,
+            "sadness": 0.3235
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.984129,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.29,
+            "awe": 0.34,
+            "contentment": 0.83,
+            "disgust": 0.04,
+            "excitement": 0.79,
+            "fear": 0.19,
+            "sadness": 0.33
+          }
+        },
+        {
+          "filename": "amusement/amusement_17660.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.4242,
+            "awe": 0.2684,
+            "contentment": 0.1732,
+            "disgust": 0.0,
+            "excitement": 0.7835,
+            "fear": 0.684,
+            "sadness": 0.1818
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.980047,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 1.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08311.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3081,
+            "awe": 0.4108,
+            "contentment": 0.0486,
+            "disgust": 0.0,
+            "excitement": 0.6432,
+            "fear": 0.5459,
+            "sadness": 0.1946
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.972676,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.15,
+            "awe": 0.71,
+            "contentment": 0.36,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.46,
+            "sadness": 0.04
+          }
+        },
+        {
+          "filename": "excitement/excitement_07984.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7941,
+            "anger": 0.7157,
+            "awe": 0.902,
+            "contentment": 0.6618,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5637,
+            "sadness": 0.4314
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.922693,
+          "train_user_average": {
+            "amusement": 0.68,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.43,
+            "disgust": 0.2,
+            "excitement": 0.48,
+            "fear": 0.08,
+            "sadness": 0.09
+          }
+        },
+        {
+          "filename": "anger/anger_08253.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8596,
+            "anger": 1.0,
+            "awe": 0.6596,
+            "contentment": 0.0,
+            "disgust": 0.4468,
+            "excitement": 0.8894,
+            "fear": 0.6383,
+            "sadness": 0.6298
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.919747,
+          "train_user_average": {
+            "amusement": 0.35,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.4,
+            "disgust": 0.08,
+            "excitement": 0.02,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_15999.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7773,
+            "anger": 0.5859,
+            "awe": 0.8867,
+            "contentment": 0.8008,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.6016,
+            "sadness": 0.418
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.908931,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.46,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "amusement/amusement_17644.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_17647.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_08311.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3081,
+            "awe": 0.4108,
+            "contentment": 0.0486,
+            "disgust": 0.0,
+            "excitement": 0.6432,
+            "fear": 0.5459,
+            "sadness": 0.1946
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.968203,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.15,
+            "awe": 0.71,
+            "contentment": 0.36,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.46,
+            "sadness": 0.04
+          }
+        },
+        {
+          "filename": "amusement/amusement_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5279,
+            "awe": 0.3299,
+            "contentment": 0.0,
+            "disgust": 0.1015,
+            "excitement": 0.9695,
+            "fear": 0.802,
+            "sadness": 0.1574
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 4,
+          "similarity": 0.966736,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "sadness": 0.87
+          }
+        },
+        {
+          "filename": "amusement/amusement_17644.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5502,
+            "awe": 0.4061,
+            "contentment": 0.2489,
+            "disgust": 0.0,
+            "excitement": 0.655,
+            "fear": 0.6943,
+            "sadness": 0.3974
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.96646,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.44,
+            "awe": 1.0,
+            "contentment": 0.68,
+            "disgust": 0.56,
+            "excitement": 0.21,
+            "fear": 1.0,
+            "sadness": 0.85
+          }
+        },
+        {
+          "filename": "anger/anger_08253.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8596,
+            "anger": 1.0,
+            "awe": 0.6596,
+            "contentment": 0.0,
+            "disgust": 0.4468,
+            "excitement": 0.8894,
+            "fear": 0.6383,
+            "sadness": 0.6298
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.963411,
+          "train_user_average": {
+            "amusement": 0.35,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.4,
+            "disgust": 0.08,
+            "excitement": 0.02,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_16006.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7697,
+            "anger": 0.5592,
+            "awe": 0.8487,
+            "contentment": 0.0,
+            "disgust": 0.5395,
+            "excitement": 1.0,
+            "fear": 0.4803,
+            "sadness": 0.1974
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.954888,
+          "train_user_average": {
+            "amusement": 0.85,
+            "anger": 0.0,
+            "awe": 0.34,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.64,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_02009.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8624,
+            "anger": 1.0,
+            "awe": 0.836,
+            "contentment": 0.0,
+            "disgust": 0.6085,
+            "excitement": 0.9206,
+            "fear": 0.6614,
+            "sadness": 0.7672
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.950946,
+          "train_user_average": {
+            "amusement": 0.43,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.33,
+            "disgust": 0.0,
+            "excitement": 0.36,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "amusement/amusement_17647.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_17657.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_17647.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5949,
+            "awe": 0.6329,
+            "contentment": 0.0,
+            "disgust": 0.2532,
+            "excitement": 0.7911,
+            "fear": 0.6709,
+            "sadness": 0.3354
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.990689,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5279,
+            "awe": 0.3299,
+            "contentment": 0.0,
+            "disgust": 0.1015,
+            "excitement": 0.9695,
+            "fear": 0.802,
+            "sadness": 0.1574
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 4,
+          "similarity": 0.981329,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "sadness": 0.87
+          }
+        },
+        {
+          "filename": "amusement/amusement_08311.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.3081,
+            "awe": 0.4108,
+            "contentment": 0.0486,
+            "disgust": 0.0,
+            "excitement": 0.6432,
+            "fear": 0.5459,
+            "sadness": 0.1946
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.968358,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.15,
+            "awe": 0.71,
+            "contentment": 0.36,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.46,
+            "sadness": 0.04
+          }
+        },
+        {
+          "filename": "excitement/excitement_16006.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7697,
+            "anger": 0.5592,
+            "awe": 0.8487,
+            "contentment": 0.0,
+            "disgust": 0.5395,
+            "excitement": 1.0,
+            "fear": 0.4803,
+            "sadness": 0.1974
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.963113,
+          "train_user_average": {
+            "amusement": 0.85,
+            "anger": 0.0,
+            "awe": 0.34,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.64,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_08253.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8596,
+            "anger": 1.0,
+            "awe": 0.6596,
+            "contentment": 0.0,
+            "disgust": 0.4468,
+            "excitement": 0.8894,
+            "fear": 0.6383,
+            "sadness": 0.6298
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.938159,
+          "train_user_average": {
+            "amusement": 0.35,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.4,
+            "disgust": 0.08,
+            "excitement": 0.02,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_01988.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8025,
+            "anger": 1.0,
+            "awe": 0.5556,
+            "contentment": 0.0,
+            "disgust": 0.3457,
+            "excitement": 0.9259,
+            "fear": 0.3889,
+            "sadness": 0.5123
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.926164,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.24,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "amusement/amusement_17657.mp3",
+      "intended_emotion": "amusement"
+    },
+    "amusement/amusement_17661.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "amusement/amusement_17660.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.4242,
+            "awe": 0.2684,
+            "contentment": 0.1732,
+            "disgust": 0.0,
+            "excitement": 0.7835,
+            "fear": 0.684,
+            "sadness": 0.1818
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.989512,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 1.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_17644.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5502,
+            "awe": 0.4061,
+            "contentment": 0.2489,
+            "disgust": 0.0,
+            "excitement": 0.655,
+            "fear": 0.6943,
+            "sadness": 0.3974
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.979173,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.44,
+            "awe": 1.0,
+            "contentment": 0.68,
+            "disgust": 0.56,
+            "excitement": 0.21,
+            "fear": 1.0,
+            "sadness": 0.85
+          }
+        },
+        {
+          "filename": "amusement/amusement_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5279,
+            "awe": 0.3299,
+            "contentment": 0.0,
+            "disgust": 0.1015,
+            "excitement": 0.9695,
+            "fear": 0.802,
+            "sadness": 0.1574
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 4,
+          "similarity": 0.978001,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "sadness": 0.87
+          }
+        },
+        {
+          "filename": "excitement/excitement_08023.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6948,
+            "anger": 0.2691,
+            "awe": 0.6305,
+            "contentment": 0.4578,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5823,
+            "sadness": 0.0683
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.952912,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.47,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.25,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "excitement/excitement_07984.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7941,
+            "anger": 0.7157,
+            "awe": 0.902,
+            "contentment": 0.6618,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5637,
+            "sadness": 0.4314
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.936098,
+          "train_user_average": {
+            "amusement": 0.68,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.43,
+            "disgust": 0.2,
+            "excitement": 0.48,
+            "fear": 0.08,
+            "sadness": 0.09
+          }
+        },
+        {
+          "filename": "excitement/excitement_15999.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7773,
+            "anger": 0.5859,
+            "awe": 0.8867,
+            "contentment": 0.8008,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.6016,
+            "sadness": 0.418
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.924871,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.46,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "amusement/amusement_17661.mp3",
+      "intended_emotion": "amusement"
+    },
+    "anger/anger_02012.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "anger/anger_01988.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8025,
+            "anger": 1.0,
+            "awe": 0.5556,
+            "contentment": 0.0,
+            "disgust": 0.3457,
+            "excitement": 0.9259,
+            "fear": 0.3889,
+            "sadness": 0.5123
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.978717,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.24,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_02002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5616,
+            "anger": 1.0,
+            "awe": 0.3904,
+            "contentment": 0.0,
+            "disgust": 0.2534,
+            "excitement": 0.7671,
+            "fear": 0.6781,
+            "sadness": 0.2877
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.977594,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.49,
+            "awe": 0.51,
+            "contentment": 0.73,
+            "disgust": 0.25,
+            "excitement": 0.74,
+            "fear": 0.24,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "anger/anger_09078.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4925,
+            "anger": 1.0,
+            "awe": 0.597,
+            "contentment": 0.0,
+            "disgust": 0.3396,
+            "excitement": 0.5672,
+            "fear": 0.4291,
+            "sadness": 0.2799
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.972065,
+          "train_user_average": {
+            "amusement": 0.2,
+            "anger": 0.19,
+            "awe": 0.6,
+            "contentment": 0.2,
+            "disgust": 0.42,
+            "excitement": 0.22,
+            "fear": 0.45,
+            "sadness": 0.47
+          }
+        },
+        {
+          "filename": "amusement/amusement_17647.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5949,
+            "awe": 0.6329,
+            "contentment": 0.0,
+            "disgust": 0.2532,
+            "excitement": 0.7911,
+            "fear": 0.6709,
+            "sadness": 0.3354
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.905555,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_16006.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7697,
+            "anger": 0.5592,
+            "awe": 0.8487,
+            "contentment": 0.0,
+            "disgust": 0.5395,
+            "excitement": 1.0,
+            "fear": 0.4803,
+            "sadness": 0.1974
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.899296,
+          "train_user_average": {
+            "amusement": 0.85,
+            "anger": 0.0,
+            "awe": 0.34,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.64,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5279,
+            "awe": 0.3299,
+            "contentment": 0.0,
+            "disgust": 0.1015,
+            "excitement": 0.9695,
+            "fear": 0.802,
+            "sadness": 0.1574
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 4,
+          "similarity": 0.87845,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "sadness": 0.87
+          }
+        }
+      ],
+      "filename": "anger/anger_02012.mp3",
+      "intended_emotion": "anger"
+    },
+    "anger/anger_04393.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "anger/anger_01989.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6554,
+            "anger": 1.0,
+            "awe": 0.5541,
+            "contentment": 0.2973,
+            "disgust": 0.1824,
+            "excitement": 0.8986,
+            "fear": 0.0,
+            "sadness": 0.6149
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.963818,
+          "train_user_average": {
+            "amusement": 0.42,
+            "anger": 0.17,
+            "awe": 0.0,
+            "contentment": 0.45,
+            "disgust": 0.0,
+            "excitement": 0.67,
+            "fear": 0.0,
+            "sadness": 0.18
+          }
+        },
+        {
+          "filename": "anger/anger_01997.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3158,
+            "anger": 1.0,
+            "awe": 0.5564,
+            "contentment": 0.0,
+            "disgust": 0.0526,
+            "excitement": 0.3835,
+            "fear": 0.188,
+            "sadness": 0.1805
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.947362,
+          "train_user_average": {
+            "amusement": 0.3,
+            "anger": 0.2,
+            "awe": 0.06,
+            "contentment": 0.03,
+            "disgust": 0.14,
+            "excitement": 0.43,
+            "fear": 0.23,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_04337.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7673,
+            "anger": 1.0,
+            "awe": 0.9059,
+            "contentment": 0.6584,
+            "disgust": 0.0,
+            "excitement": 0.8911,
+            "fear": 0.0891,
+            "sadness": 0.7673
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.94686,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.25,
+            "awe": 0.46,
+            "contentment": 0.49,
+            "disgust": 0.03,
+            "excitement": 0.73,
+            "fear": 0.01,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "excitement/excitement_07984.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7941,
+            "anger": 0.7157,
+            "awe": 0.902,
+            "contentment": 0.6618,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5637,
+            "sadness": 0.4314
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.926511,
+          "train_user_average": {
+            "amusement": 0.68,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.43,
+            "disgust": 0.2,
+            "excitement": 0.48,
+            "fear": 0.08,
+            "sadness": 0.09
+          }
+        },
+        {
+          "filename": "amusement/amusement_08275.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5821,
+            "awe": 0.7985,
+            "contentment": 0.2761,
+            "disgust": 0.1119,
+            "excitement": 0.7985,
+            "fear": 0.4179,
+            "sadness": 0.0
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.904369,
+          "train_user_average": {
+            "amusement": 0.06,
+            "anger": 0.02,
+            "awe": 0.02,
+            "contentment": 0.03,
+            "disgust": 0.15,
+            "excitement": 0.04,
+            "fear": 0.08,
+            "sadness": 0.12
+          }
+        },
+        {
+          "filename": "excitement/excitement_15999.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7773,
+            "anger": 0.5859,
+            "awe": 0.8867,
+            "contentment": 0.8008,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.6016,
+            "sadness": 0.418
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.889153,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.46,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "anger/anger_04393.mp3",
+      "intended_emotion": "anger"
+    },
+    "anger/anger_04394.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "anger/anger_01988.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8025,
+            "anger": 1.0,
+            "awe": 0.5556,
+            "contentment": 0.0,
+            "disgust": 0.3457,
+            "excitement": 0.9259,
+            "fear": 0.3889,
+            "sadness": 0.5123
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.937652,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.24,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_04355.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5643,
+            "anger": 1.0,
+            "awe": 0.1429,
+            "contentment": 0.2071,
+            "disgust": 0.2571,
+            "excitement": 0.5429,
+            "fear": 0.0,
+            "sadness": 0.8
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.933173,
+          "train_user_average": {
+            "amusement": 0.86,
+            "anger": 0.08,
+            "awe": 0.41,
+            "contentment": 0.47,
+            "disgust": 0.0,
+            "excitement": 0.94,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_08253.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8596,
+            "anger": 1.0,
+            "awe": 0.6596,
+            "contentment": 0.0,
+            "disgust": 0.4468,
+            "excitement": 0.8894,
+            "fear": 0.6383,
+            "sadness": 0.6298
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.915237,
+          "train_user_average": {
+            "amusement": 0.35,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.4,
+            "disgust": 0.08,
+            "excitement": 0.02,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_10795.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7731,
+            "anger": 0.9664,
+            "awe": 0.2269,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.6134,
+            "fear": 0.7563,
+            "sadness": 0.8487
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.921203,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.27,
+            "awe": 0.49,
+            "contentment": 0.25,
+            "disgust": 0.24,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_02529.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6063,
+            "anger": 0.7717,
+            "awe": 0.2598,
+            "contentment": 0.126,
+            "disgust": 1.0,
+            "excitement": 0.2205,
+            "fear": 0.0,
+            "sadness": 0.8976
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.882669,
+          "train_user_average": {
+            "amusement": 0.6,
+            "anger": 0.41,
+            "awe": 0.51,
+            "contentment": 0.17,
+            "disgust": 0.62,
+            "excitement": 0.45,
+            "fear": 0.21,
+            "sadness": 0.64
+          }
+        },
+        {
+          "filename": "excitement/excitement_08022.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.1868,
+            "anger": 0.4396,
+            "awe": 0.0,
+            "contentment": 0.0879,
+            "disgust": 0.1538,
+            "excitement": 1.0,
+            "fear": 0.1429,
+            "sadness": 0.5385
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.858576,
+          "train_user_average": {
+            "amusement": 0.22,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.44,
+            "fear": 0.4,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "anger/anger_04394.mp3",
+      "intended_emotion": "anger"
+    },
+    "anger/anger_08259.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "anger/anger_08253.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8596,
+            "anger": 1.0,
+            "awe": 0.6596,
+            "contentment": 0.0,
+            "disgust": 0.4468,
+            "excitement": 0.8894,
+            "fear": 0.6383,
+            "sadness": 0.6298
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.991529,
+          "train_user_average": {
+            "amusement": 0.35,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.4,
+            "disgust": 0.08,
+            "excitement": 0.02,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_01988.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8025,
+            "anger": 1.0,
+            "awe": 0.5556,
+            "contentment": 0.0,
+            "disgust": 0.3457,
+            "excitement": 0.9259,
+            "fear": 0.3889,
+            "sadness": 0.5123
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.989078,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.24,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_02002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5616,
+            "anger": 1.0,
+            "awe": 0.3904,
+            "contentment": 0.0,
+            "disgust": 0.2534,
+            "excitement": 0.7671,
+            "fear": 0.6781,
+            "sadness": 0.2877
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.988015,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.49,
+            "awe": 0.51,
+            "contentment": 0.73,
+            "disgust": 0.25,
+            "excitement": 0.74,
+            "fear": 0.24,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "amusement/amusement_17647.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5949,
+            "awe": 0.6329,
+            "contentment": 0.0,
+            "disgust": 0.2532,
+            "excitement": 0.7911,
+            "fear": 0.6709,
+            "sadness": 0.3354
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.96112,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_16006.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7697,
+            "anger": 0.5592,
+            "awe": 0.8487,
+            "contentment": 0.0,
+            "disgust": 0.5395,
+            "excitement": 1.0,
+            "fear": 0.4803,
+            "sadness": 0.1974
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.942448,
+          "train_user_average": {
+            "amusement": 0.85,
+            "anger": 0.0,
+            "awe": 0.34,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.64,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09183.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7352,
+            "anger": 0.8037,
+            "awe": 0.8219,
+            "contentment": 0.0,
+            "disgust": 0.4703,
+            "excitement": 0.5205,
+            "fear": 1.0,
+            "sadness": 0.6119
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.935938,
+          "train_user_average": {
+            "amusement": 0.45,
+            "anger": 0.33,
+            "awe": 0.5,
+            "contentment": 0.5,
+            "disgust": 0.3,
+            "excitement": 0.71,
+            "fear": 0.67,
+            "sadness": 0.66
+          }
+        }
+      ],
+      "filename": "anger/anger_08259.mp3",
+      "intended_emotion": "anger"
+    },
+    "awe/awe_09145.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "awe/awe_09168.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6842,
+            "anger": 0.391,
+            "awe": 1.0,
+            "contentment": 0.2857,
+            "disgust": 0.0,
+            "excitement": 0.5639,
+            "fear": 0.1429,
+            "sadness": 0.2782
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.980804,
+          "train_user_average": {
+            "amusement": 0.66,
+            "anger": 0.0,
+            "awe": 0.22,
+            "contentment": 0.56,
+            "disgust": 0.0,
+            "excitement": 0.75,
+            "fear": 0.09,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "awe/awe_09154.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3993,
+            "anger": 0.2158,
+            "awe": 1.0,
+            "contentment": 0.5072,
+            "disgust": 0.0,
+            "excitement": 0.4137,
+            "fear": 0.0144,
+            "sadness": 0.1367
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.978611,
+          "train_user_average": {
+            "amusement": 0.94,
+            "anger": 0.06,
+            "awe": 0.9,
+            "contentment": 0.9,
+            "disgust": 0.09,
+            "excitement": 0.97,
+            "fear": 0.82,
+            "sadness": 0.94
+          }
+        },
+        {
+          "filename": "awe/awe_09166.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4484,
+            "anger": 0.2596,
+            "awe": 1.0,
+            "contentment": 0.5959,
+            "disgust": 0.0,
+            "excitement": 0.5369,
+            "fear": 0.1711,
+            "sadness": 0.1268
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.975578,
+          "train_user_average": {
+            "amusement": 0.39,
+            "anger": 0.0,
+            "awe": 0.37,
+            "contentment": 0.38,
+            "disgust": 0.0,
+            "excitement": 0.07,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.497,
+            "anger": 1.0,
+            "awe": 0.9701,
+            "contentment": 0.7066,
+            "disgust": 0.1018,
+            "excitement": 0.6886,
+            "fear": 0.0,
+            "sadness": 0.521
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.913055,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.61,
+            "disgust": 0.0,
+            "excitement": 0.67,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_09995.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5487,
+            "anger": 0.2821,
+            "awe": 0.9179,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.7795,
+            "fear": 0.1282,
+            "sadness": 0.2923
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.908284,
+          "train_user_average": {
+            "amusement": 0.18,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.31,
+            "fear": 0.28,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_07984.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7941,
+            "anger": 0.7157,
+            "awe": 0.902,
+            "contentment": 0.6618,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5637,
+            "sadness": 0.4314
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.907654,
+          "train_user_average": {
+            "amusement": 0.68,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.43,
+            "disgust": 0.2,
+            "excitement": 0.48,
+            "fear": 0.08,
+            "sadness": 0.09
+          }
+        }
+      ],
+      "filename": "awe/awe_09145.mp3",
+      "intended_emotion": "awe"
+    },
+    "awe/awe_09152.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "awe/awe_09168.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6842,
+            "anger": 0.391,
+            "awe": 1.0,
+            "contentment": 0.2857,
+            "disgust": 0.0,
+            "excitement": 0.5639,
+            "fear": 0.1429,
+            "sadness": 0.2782
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.960869,
+          "train_user_average": {
+            "amusement": 0.66,
+            "anger": 0.0,
+            "awe": 0.22,
+            "contentment": 0.56,
+            "disgust": 0.0,
+            "excitement": 0.75,
+            "fear": 0.09,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "awe/awe_14548.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3024,
+            "anger": 0.161,
+            "awe": 1.0,
+            "contentment": 0.3707,
+            "disgust": 0.0,
+            "excitement": 0.439,
+            "fear": 0.2732,
+            "sadness": 0.0293
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.95446,
+          "train_user_average": {
+            "amusement": 0.4,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.33,
+            "disgust": 0.39,
+            "excitement": 0.36,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "awe/awe_09165.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.351,
+            "anger": 0.2122,
+            "awe": 1.0,
+            "contentment": 0.0735,
+            "disgust": 0.1959,
+            "excitement": 0.2735,
+            "fear": 0.2163,
+            "sadness": 0.0
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.948142,
+          "train_user_average": {
+            "amusement": 0.41,
+            "anger": 0.0,
+            "awe": 0.31,
+            "contentment": 0.14,
+            "disgust": 0.09,
+            "excitement": 0.11,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_19692.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.4969,
+            "awe": 0.9755,
+            "contentment": 0.319,
+            "disgust": 0.0,
+            "excitement": 0.5828,
+            "fear": 0.6748,
+            "sadness": 0.1288
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 2,
+          "similarity": 0.903302,
+          "train_user_average": {
+            "amusement": 0.355,
+            "anger": 0.505,
+            "awe": 0.48,
+            "contentment": 0.35,
+            "disgust": 0.41500000000000004,
+            "excitement": 0.46499999999999997,
+            "fear": 0.475,
+            "sadness": 0.465
+          }
+        },
+        {
+          "filename": "excitement/excitement_07984.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7941,
+            "anger": 0.7157,
+            "awe": 0.902,
+            "contentment": 0.6618,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5637,
+            "sadness": 0.4314
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.858078,
+          "train_user_average": {
+            "amusement": 0.68,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.43,
+            "disgust": 0.2,
+            "excitement": 0.48,
+            "fear": 0.08,
+            "sadness": 0.09
+          }
+        },
+        {
+          "filename": "excitement/excitement_08007.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5,
+            "anger": 0.2313,
+            "awe": 0.9437,
+            "contentment": 0.6937,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.6625,
+            "sadness": 0.1938
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.854291,
+          "train_user_average": {
+            "amusement": 0.45,
+            "anger": 0.17,
+            "awe": 0.0,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.43,
+            "sadness": 0.11
+          }
+        }
+      ],
+      "filename": "awe/awe_09152.mp3",
+      "intended_emotion": "awe"
+    },
+    "awe/awe_09153.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "awe/awe_09166.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4484,
+            "anger": 0.2596,
+            "awe": 1.0,
+            "contentment": 0.5959,
+            "disgust": 0.0,
+            "excitement": 0.5369,
+            "fear": 0.1711,
+            "sadness": 0.1268
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.997784,
+          "train_user_average": {
+            "amusement": 0.39,
+            "anger": 0.0,
+            "awe": 0.37,
+            "contentment": 0.38,
+            "disgust": 0.0,
+            "excitement": 0.07,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "awe/awe_09154.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3993,
+            "anger": 0.2158,
+            "awe": 1.0,
+            "contentment": 0.5072,
+            "disgust": 0.0,
+            "excitement": 0.4137,
+            "fear": 0.0144,
+            "sadness": 0.1367
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.993614,
+          "train_user_average": {
+            "amusement": 0.94,
+            "anger": 0.06,
+            "awe": 0.9,
+            "contentment": 0.9,
+            "disgust": 0.09,
+            "excitement": 0.97,
+            "fear": 0.82,
+            "sadness": 0.94
+          }
+        },
+        {
+          "filename": "awe/awe_09150.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3612,
+            "anger": 0.2599,
+            "awe": 1.0,
+            "contentment": 0.5154,
+            "disgust": 0.0,
+            "excitement": 0.4714,
+            "fear": 0.2203,
+            "sadness": 0.0441
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.99282,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.02,
+            "awe": 0.25,
+            "contentment": 0.49,
+            "disgust": 0.01,
+            "excitement": 0.51,
+            "fear": 0.02,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_09995.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5487,
+            "anger": 0.2821,
+            "awe": 0.9179,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.7795,
+            "fear": 0.1282,
+            "sadness": 0.2923
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.952864,
+          "train_user_average": {
+            "amusement": 0.18,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.31,
+            "fear": 0.28,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_09986.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4371,
+            "anger": 0.2934,
+            "awe": 0.994,
+            "contentment": 1.0,
+            "disgust": 0.2994,
+            "excitement": 0.515,
+            "fear": 0.0,
+            "sadness": 0.1677
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.941057,
+          "train_user_average": {
+            "amusement": 0.46,
+            "anger": 0.22,
+            "awe": 0.45,
+            "contentment": 0.15,
+            "disgust": 0.16,
+            "excitement": 0.43,
+            "fear": 0.15,
+            "sadness": 0.21
+          }
+        },
+        {
+          "filename": "excitement/excitement_08007.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5,
+            "anger": 0.2313,
+            "awe": 0.9437,
+            "contentment": 0.6937,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.6625,
+            "sadness": 0.1938
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.916571,
+          "train_user_average": {
+            "amusement": 0.45,
+            "anger": 0.17,
+            "awe": 0.0,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.43,
+            "sadness": 0.11
+          }
+        }
+      ],
+      "filename": "awe/awe_09153.mp3",
+      "intended_emotion": "awe"
+    },
+    "awe/awe_15281.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "awe/awe_09144.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4179,
+            "anger": 0.2277,
+            "awe": 1.0,
+            "contentment": 0.8098,
+            "disgust": 0.0,
+            "excitement": 0.4611,
+            "fear": 0.1124,
+            "sadness": 0.1729
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.99296,
+          "train_user_average": {
+            "amusement": 0.44,
+            "anger": 0.0,
+            "awe": 0.5,
+            "contentment": 0.44,
+            "disgust": 0.07,
+            "excitement": 0.49,
+            "fear": 0.49,
+            "sadness": 0.13
+          }
+        },
+        {
+          "filename": "awe/awe_09142.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3846,
+            "anger": 0.2788,
+            "awe": 1.0,
+            "contentment": 0.6635,
+            "disgust": 0.0,
+            "excitement": 0.3526,
+            "fear": 0.234,
+            "sadness": 0.234
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.991703,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.63,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.65,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "awe/awe_09141.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5,
+            "anger": 0.2677,
+            "awe": 1.0,
+            "contentment": 0.8838,
+            "disgust": 0.0,
+            "excitement": 0.3737,
+            "fear": 0.1566,
+            "sadness": 0.2424
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.991364,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 1.0,
+            "contentment": 0.54,
+            "disgust": 0.0,
+            "excitement": 0.77,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_09986.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4371,
+            "anger": 0.2934,
+            "awe": 0.994,
+            "contentment": 1.0,
+            "disgust": 0.2994,
+            "excitement": 0.515,
+            "fear": 0.0,
+            "sadness": 0.1677
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.965001,
+          "train_user_average": {
+            "amusement": 0.46,
+            "anger": 0.22,
+            "awe": 0.45,
+            "contentment": 0.15,
+            "disgust": 0.16,
+            "excitement": 0.43,
+            "fear": 0.15,
+            "sadness": 0.21
+          }
+        },
+        {
+          "filename": "contentment/contentment_09995.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5487,
+            "anger": 0.2821,
+            "awe": 0.9179,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.7795,
+            "fear": 0.1282,
+            "sadness": 0.2923
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.954019,
+          "train_user_average": {
+            "amusement": 0.18,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.31,
+            "fear": 0.28,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_09968.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4415,
+            "anger": 0.0,
+            "awe": 0.8883,
+            "contentment": 1.0,
+            "disgust": 0.0957,
+            "excitement": 0.2287,
+            "fear": 0.1596,
+            "sadness": 0.4415
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.935103,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.16,
+            "awe": 0.61,
+            "contentment": 0.66,
+            "disgust": 0.58,
+            "excitement": 0.0,
+            "fear": 0.28,
+            "sadness": 0.46
+          }
+        }
+      ],
+      "filename": "awe/awe_15281.mp3",
+      "intended_emotion": "awe"
+    },
+    "contentment/contentment_09999.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "contentment/contentment_09996.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.2711,
+            "anger": 0.0,
+            "awe": 0.3778,
+            "contentment": 1.0,
+            "disgust": 0.1644,
+            "excitement": 0.4489,
+            "fear": 0.1956,
+            "sadness": 0.2
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 2,
+          "similarity": 0.976497,
+          "train_user_average": {
+            "amusement": 0.49,
+            "anger": 0.215,
+            "awe": 0.31,
+            "contentment": 0.185,
+            "disgust": 0.23,
+            "excitement": 0.255,
+            "fear": 0.22,
+            "sadness": 0.225
+          }
+        },
+        {
+          "filename": "contentment/contentment_10001.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3273,
+            "anger": 0.1583,
+            "awe": 0.482,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.5827,
+            "fear": 0.2554,
+            "sadness": 0.0576
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.964181,
+          "train_user_average": {
+            "amusement": 0.15,
+            "anger": 0.04,
+            "awe": 0.4,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.02,
+            "fear": 0.02,
+            "sadness": 0.37
+          }
+        },
+        {
+          "filename": "contentment/contentment_10002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3846,
+            "anger": 0.0,
+            "awe": 0.4066,
+            "contentment": 1.0,
+            "disgust": 0.4451,
+            "excitement": 0.5714,
+            "fear": 0.4725,
+            "sadness": 0.5
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.95324,
+          "train_user_average": {
+            "amusement": 0.89,
+            "anger": 0.74,
+            "awe": 0.78,
+            "contentment": 0.69,
+            "disgust": 0.65,
+            "excitement": 0.49,
+            "fear": 0.56,
+            "sadness": 0.59
+          }
+        },
+        {
+          "filename": "excitement/excitement_08037.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6582,
+            "anger": 0.0,
+            "awe": 0.6835,
+            "contentment": 0.8165,
+            "disgust": 0.3101,
+            "excitement": 1.0,
+            "fear": 0.2975,
+            "sadness": 0.0443
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.951254,
+          "train_user_average": {
+            "amusement": 0.47,
+            "anger": 0.25,
+            "awe": 0.24,
+            "contentment": 0.46,
+            "disgust": 0.02,
+            "excitement": 0.48,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "excitement/excitement_08027.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4783,
+            "anger": 0.2319,
+            "awe": 0.401,
+            "contentment": 0.7585,
+            "disgust": 0.2464,
+            "excitement": 1.0,
+            "fear": 0.4493,
+            "sadness": 0.0
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.930235,
+          "train_user_average": {
+            "amusement": 0.7,
+            "anger": 0.01,
+            "awe": 0.71,
+            "contentment": 0.73,
+            "disgust": 0.02,
+            "excitement": 0.51,
+            "fear": 0.02,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "excitement/excitement_16004.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5376,
+            "anger": 0.1452,
+            "awe": 0.3495,
+            "contentment": 0.8602,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.1398,
+            "sadness": 0.1129
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.918509,
+          "train_user_average": {
+            "amusement": 0.29,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.66,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "contentment/contentment_09999.mp3",
+      "intended_emotion": "contentment"
+    },
+    "contentment/contentment_10004.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "contentment/contentment_10002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3846,
+            "anger": 0.0,
+            "awe": 0.4066,
+            "contentment": 1.0,
+            "disgust": 0.4451,
+            "excitement": 0.5714,
+            "fear": 0.4725,
+            "sadness": 0.5
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.976522,
+          "train_user_average": {
+            "amusement": 0.89,
+            "anger": 0.74,
+            "awe": 0.78,
+            "contentment": 0.69,
+            "disgust": 0.65,
+            "excitement": 0.49,
+            "fear": 0.56,
+            "sadness": 0.59
+          }
+        },
+        {
+          "filename": "contentment/contentment_09997.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4209,
+            "anger": 0.0,
+            "awe": 0.2158,
+            "contentment": 1.0,
+            "disgust": 0.4065,
+            "excitement": 0.4065,
+            "fear": 0.2518,
+            "sadness": 0.2806
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.940756,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.47,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.64,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_10033.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4179,
+            "anger": 0.0,
+            "awe": 0.2724,
+            "contentment": 1.0,
+            "disgust": 0.6493,
+            "excitement": 0.2239,
+            "fear": 0.2351,
+            "sadness": 0.1903
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.930898,
+          "train_user_average": {
+            "amusement": 0.26,
+            "anger": 0.47,
+            "awe": 0.25,
+            "contentment": 0.25,
+            "disgust": 0.01,
+            "excitement": 0.22,
+            "fear": 0.24,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_04041.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5745,
+            "anger": 0.0,
+            "awe": 0.4362,
+            "contentment": 0.766,
+            "disgust": 1.0,
+            "excitement": 0.6809,
+            "fear": 0.7872,
+            "sadness": 0.9681
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.956426,
+          "train_user_average": {
+            "amusement": 0.18,
+            "anger": 0.42,
+            "awe": 0.46,
+            "contentment": 0.19,
+            "disgust": 0.63,
+            "excitement": 0.47,
+            "fear": 0.46,
+            "sadness": 0.44
+          }
+        },
+        {
+          "filename": "amusement/amusement_02936.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.3179,
+            "contentment": 0.9868,
+            "disgust": 0.4371,
+            "excitement": 0.702,
+            "fear": 0.7152,
+            "sadness": 0.4106
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.928546,
+          "train_user_average": {
+            "amusement": 0.42,
+            "anger": 0.0,
+            "awe": 0.04,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.11,
+            "fear": 0.12,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_02553.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.2419,
+            "anger": 0.1613,
+            "awe": 0.4839,
+            "contentment": 0.9839,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 0.4516,
+            "sadness": 0.5806
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.898835,
+          "train_user_average": {
+            "amusement": 0.21,
+            "anger": 0.4,
+            "awe": 0.32,
+            "contentment": 0.41,
+            "disgust": 0.68,
+            "excitement": 0.38,
+            "fear": 0.18,
+            "sadness": 0.23
+          }
+        }
+      ],
+      "filename": "contentment/contentment_10004.mp3",
+      "intended_emotion": "contentment"
+    },
+    "contentment/contentment_10006.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "contentment/contentment_10001.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3273,
+            "anger": 0.1583,
+            "awe": 0.482,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.5827,
+            "fear": 0.2554,
+            "sadness": 0.0576
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.951319,
+          "train_user_average": {
+            "amusement": 0.15,
+            "anger": 0.04,
+            "awe": 0.4,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.02,
+            "fear": 0.02,
+            "sadness": 0.37
+          }
+        },
+        {
+          "filename": "contentment/contentment_09992.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6402,
+            "anger": 0.2762,
+            "awe": 0.7238,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.5941,
+            "fear": 0.4644,
+            "sadness": 0.3724
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.944121,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.44,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_10002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3846,
+            "anger": 0.0,
+            "awe": 0.4066,
+            "contentment": 1.0,
+            "disgust": 0.4451,
+            "excitement": 0.5714,
+            "fear": 0.4725,
+            "sadness": 0.5
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.939996,
+          "train_user_average": {
+            "amusement": 0.89,
+            "anger": 0.74,
+            "awe": 0.78,
+            "contentment": 0.69,
+            "disgust": 0.65,
+            "excitement": 0.49,
+            "fear": 0.56,
+            "sadness": 0.59
+          }
+        },
+        {
+          "filename": "excitement/excitement_08037.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6582,
+            "anger": 0.0,
+            "awe": 0.6835,
+            "contentment": 0.8165,
+            "disgust": 0.3101,
+            "excitement": 1.0,
+            "fear": 0.2975,
+            "sadness": 0.0443
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.956562,
+          "train_user_average": {
+            "amusement": 0.47,
+            "anger": 0.25,
+            "awe": 0.24,
+            "contentment": 0.46,
+            "disgust": 0.02,
+            "excitement": 0.48,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "excitement/excitement_08007.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5,
+            "anger": 0.2313,
+            "awe": 0.9437,
+            "contentment": 0.6937,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.6625,
+            "sadness": 0.1938
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.952509,
+          "train_user_average": {
+            "amusement": 0.45,
+            "anger": 0.17,
+            "awe": 0.0,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.43,
+            "sadness": 0.11
+          }
+        },
+        {
+          "filename": "excitement/excitement_08027.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4783,
+            "anger": 0.2319,
+            "awe": 0.401,
+            "contentment": 0.7585,
+            "disgust": 0.2464,
+            "excitement": 1.0,
+            "fear": 0.4493,
+            "sadness": 0.0
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.945078,
+          "train_user_average": {
+            "amusement": 0.7,
+            "anger": 0.01,
+            "awe": 0.71,
+            "contentment": 0.73,
+            "disgust": 0.02,
+            "excitement": 0.51,
+            "fear": 0.02,
+            "sadness": 0.01
+          }
+        }
+      ],
+      "filename": "contentment/contentment_10006.mp3",
+      "intended_emotion": "contentment"
+    },
+    "contentment/contentment_10007.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "contentment/contentment_10002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3846,
+            "anger": 0.0,
+            "awe": 0.4066,
+            "contentment": 1.0,
+            "disgust": 0.4451,
+            "excitement": 0.5714,
+            "fear": 0.4725,
+            "sadness": 0.5
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.964119,
+          "train_user_average": {
+            "amusement": 0.89,
+            "anger": 0.74,
+            "awe": 0.78,
+            "contentment": 0.69,
+            "disgust": 0.65,
+            "excitement": 0.49,
+            "fear": 0.56,
+            "sadness": 0.59
+          }
+        },
+        {
+          "filename": "contentment/contentment_10017.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4115,
+            "anger": 0.0619,
+            "awe": 0.5973,
+            "contentment": 1.0,
+            "disgust": 0.4912,
+            "excitement": 0.469,
+            "fear": 0.0,
+            "sadness": 0.0708
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.946902,
+          "train_user_average": {
+            "amusement": 0.41,
+            "anger": 0.0,
+            "awe": 0.12,
+            "contentment": 0.0,
+            "disgust": 0.47,
+            "excitement": 0.0,
+            "fear": 0.46,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "contentment/contentment_09997.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4209,
+            "anger": 0.0,
+            "awe": 0.2158,
+            "contentment": 1.0,
+            "disgust": 0.4065,
+            "excitement": 0.4065,
+            "fear": 0.2518,
+            "sadness": 0.2806
+          },
+          "intended_emotion": "contentment",
+          "num_ratings": 1,
+          "similarity": 0.946708,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.47,
+            "contentment": 1.0,
+            "disgust": 0.0,
+            "excitement": 0.64,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_02943.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.6446,
+            "contentment": 0.7934,
+            "disgust": 0.4215,
+            "excitement": 0.8099,
+            "fear": 0.0165,
+            "sadness": 0.2975
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.950738,
+          "train_user_average": {
+            "amusement": 0.5,
+            "anger": 0.55,
+            "awe": 0.5,
+            "contentment": 0.54,
+            "disgust": 0.06,
+            "excitement": 0.25,
+            "fear": 0.23,
+            "sadness": 0.24
+          }
+        },
+        {
+          "filename": "excitement/excitement_08037.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6582,
+            "anger": 0.0,
+            "awe": 0.6835,
+            "contentment": 0.8165,
+            "disgust": 0.3101,
+            "excitement": 1.0,
+            "fear": 0.2975,
+            "sadness": 0.0443
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.930552,
+          "train_user_average": {
+            "amusement": 0.47,
+            "anger": 0.25,
+            "awe": 0.24,
+            "contentment": 0.46,
+            "disgust": 0.02,
+            "excitement": 0.48,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "sadness/sadness_07963.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.89,
+            "anger": 0.38,
+            "awe": 0.99,
+            "contentment": 0.8,
+            "disgust": 0.53,
+            "excitement": 0.55,
+            "fear": 0.0,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.919925,
+          "train_user_average": {
+            "amusement": 0.73,
+            "anger": 0.49,
+            "awe": 0.96,
+            "contentment": 0.48,
+            "disgust": 0.24,
+            "excitement": 0.74,
+            "fear": 0.25,
+            "sadness": 0.49
+          }
+        }
+      ],
+      "filename": "contentment/contentment_10007.mp3",
+      "intended_emotion": "contentment"
+    },
+    "disgust/disgust_03239.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "disgust/disgust_02058.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.0881,
+            "anger": 0.6289,
+            "awe": 0.0,
+            "contentment": 0.5157,
+            "disgust": 1.0,
+            "excitement": 0.044,
+            "fear": 0.3333,
+            "sadness": 0.2704
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.973463,
+          "train_user_average": {
+            "amusement": 0.13,
+            "anger": 0.15,
+            "awe": 0.46,
+            "contentment": 0.02,
+            "disgust": 0.0,
+            "excitement": 0.73,
+            "fear": 0.53,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_04038.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.1868,
+            "anger": 0.6484,
+            "awe": 0.033,
+            "contentment": 0.5275,
+            "disgust": 1.0,
+            "excitement": 0.1429,
+            "fear": 0.0,
+            "sadness": 0.5714
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.95751,
+          "train_user_average": {
+            "amusement": 0.13,
+            "anger": 0.0,
+            "awe": 0.41,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.56,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_08884.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.2149,
+            "anger": 0.6612,
+            "awe": 0.0,
+            "contentment": 0.5455,
+            "disgust": 1.0,
+            "excitement": 0.3058,
+            "fear": 0.1901,
+            "sadness": 0.3802
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.957414,
+          "train_user_average": {
+            "amusement": 0.16,
+            "anger": 0.14,
+            "awe": 0.1,
+            "contentment": 0.0,
+            "disgust": 0.09,
+            "excitement": 0.09,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_07947.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.0744,
+            "anger": 0.7769,
+            "awe": 0.2893,
+            "contentment": 0.0,
+            "disgust": 0.7851,
+            "excitement": 0.1488,
+            "fear": 0.2479,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 2,
+          "similarity": 0.869419,
+          "train_user_average": {
+            "amusement": 0.2,
+            "anger": 0.91,
+            "awe": 0.64,
+            "contentment": 0.74,
+            "disgust": 0.06,
+            "excitement": 0.77,
+            "fear": 0.7,
+            "sadness": 0.07
+          }
+        },
+        {
+          "filename": "sadness/sadness_03451.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4437,
+            "anger": 0.6127,
+            "awe": 0.3134,
+            "contentment": 0.257,
+            "disgust": 0.4859,
+            "excitement": 0.0,
+            "fear": 0.493,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.849569,
+          "train_user_average": {
+            "amusement": 0.02,
+            "anger": 0.17,
+            "awe": 0.22,
+            "contentment": 0.41,
+            "disgust": 0.01,
+            "excitement": 0.04,
+            "fear": 0.08,
+            "sadness": 0.26
+          }
+        },
+        {
+          "filename": "anger/anger_04345.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4962,
+            "anger": 1.0,
+            "awe": 0.6794,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.1298,
+            "fear": 0.2901,
+            "sadness": 0.7328
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.839095,
+          "train_user_average": {
+            "amusement": 0.65,
+            "anger": 0.0,
+            "awe": 0.16,
+            "contentment": 0.35,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "disgust/disgust_03239.mp3",
+      "intended_emotion": "disgust"
+    },
+    "disgust/disgust_03956.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "disgust/disgust_04038.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.1868,
+            "anger": 0.6484,
+            "awe": 0.033,
+            "contentment": 0.5275,
+            "disgust": 1.0,
+            "excitement": 0.1429,
+            "fear": 0.0,
+            "sadness": 0.5714
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.957936,
+          "train_user_average": {
+            "amusement": 0.13,
+            "anger": 0.0,
+            "awe": 0.41,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.56,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_10797.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5838,
+            "anger": 0.8092,
+            "awe": 0.4451,
+            "contentment": 0.6069,
+            "disgust": 1.0,
+            "excitement": 0.3179,
+            "fear": 0.0,
+            "sadness": 0.896
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.951749,
+          "train_user_average": {
+            "amusement": 0.49,
+            "anger": 0.22,
+            "awe": 0.74,
+            "contentment": 0.48,
+            "disgust": 0.0,
+            "excitement": 0.73,
+            "fear": 0.03,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "disgust/disgust_06466.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.0,
+            "anger": 0.8198,
+            "awe": 0.018,
+            "contentment": 0.4144,
+            "disgust": 1.0,
+            "excitement": 0.3604,
+            "fear": 0.0541,
+            "sadness": 0.4775
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.951555,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 1.0,
+            "awe": 0.43,
+            "contentment": 0.37,
+            "disgust": 0.89,
+            "excitement": 0.49,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        {
+          "filename": "anger/anger_10022.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3122,
+            "anger": 1.0,
+            "awe": 0.6203,
+            "contentment": 0.2236,
+            "disgust": 0.4473,
+            "excitement": 0.5274,
+            "fear": 0.0,
+            "sadness": 0.4262
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.85389,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.23,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_07947.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.0744,
+            "anger": 0.7769,
+            "awe": 0.2893,
+            "contentment": 0.0,
+            "disgust": 0.7851,
+            "excitement": 0.1488,
+            "fear": 0.2479,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 2,
+          "similarity": 0.83298,
+          "train_user_average": {
+            "amusement": 0.2,
+            "anger": 0.91,
+            "awe": 0.64,
+            "contentment": 0.74,
+            "disgust": 0.06,
+            "excitement": 0.77,
+            "fear": 0.7,
+            "sadness": 0.07
+          }
+        },
+        {
+          "filename": "sadness/sadness_07977.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4438,
+            "anger": 0.2663,
+            "awe": 0.5089,
+            "contentment": 0.7988,
+            "disgust": 0.497,
+            "excitement": 0.0,
+            "fear": 0.0473,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.827904,
+          "train_user_average": {
+            "amusement": 0.15,
+            "anger": 0.0,
+            "awe": 0.07,
+            "contentment": 0.0,
+            "disgust": 0.43,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "disgust/disgust_03956.mp3",
+      "intended_emotion": "disgust"
+    },
+    "disgust/disgust_07002.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "disgust/disgust_04104.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6552,
+            "anger": 0.2371,
+            "awe": 0.0,
+            "contentment": 0.4526,
+            "disgust": 1.0,
+            "excitement": 0.5517,
+            "fear": 0.2414,
+            "sadness": 0.5259
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.964452,
+          "train_user_average": {
+            "amusement": 0.61,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.48,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_10795.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7731,
+            "anger": 0.9664,
+            "awe": 0.2269,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.6134,
+            "fear": 0.7563,
+            "sadness": 0.8487
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.937856,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.27,
+            "awe": 0.49,
+            "contentment": 0.25,
+            "disgust": 0.24,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_00534.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3419,
+            "anger": 0.7949,
+            "awe": 0.0,
+            "contentment": 0.188,
+            "disgust": 1.0,
+            "excitement": 0.5385,
+            "fear": 0.812,
+            "sadness": 0.3419
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.931259,
+          "train_user_average": {
+            "amusement": 0.53,
+            "anger": 0.39,
+            "awe": 0.39,
+            "contentment": 0.28,
+            "disgust": 0.0,
+            "excitement": 0.44,
+            "fear": 0.61,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08239.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.163,
+            "awe": 0.0,
+            "contentment": 0.2935,
+            "disgust": 0.9783,
+            "excitement": 0.663,
+            "fear": 0.7283,
+            "sadness": 0.7283
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.927495,
+          "train_user_average": {
+            "amusement": 0.43,
+            "anger": 0.33,
+            "awe": 0.44,
+            "contentment": 0.41,
+            "disgust": 0.65,
+            "excitement": 0.4,
+            "fear": 0.24,
+            "sadness": 0.16
+          }
+        },
+        {
+          "filename": "fear/fear_03287.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6364,
+            "anger": 0.9886,
+            "awe": 0.3409,
+            "contentment": 0.0,
+            "disgust": 0.875,
+            "excitement": 0.4432,
+            "fear": 1.0,
+            "sadness": 0.6591
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.885369,
+          "train_user_average": {
+            "amusement": 0.25,
+            "anger": 1.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.15,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_03454.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6705,
+            "anger": 0.3237,
+            "awe": 0.0,
+            "contentment": 0.5954,
+            "disgust": 0.5838,
+            "excitement": 0.5145,
+            "fear": 0.4913,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.870667,
+          "train_user_average": {
+            "amusement": 0.72,
+            "anger": 0.02,
+            "awe": 0.7,
+            "contentment": 0.49,
+            "disgust": 0.02,
+            "excitement": 0.57,
+            "fear": 0.01,
+            "sadness": 0.01
+          }
+        }
+      ],
+      "filename": "disgust/disgust_07002.mp3",
+      "intended_emotion": "disgust"
+    },
+    "disgust/disgust_09313.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "disgust/disgust_00534.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3419,
+            "anger": 0.7949,
+            "awe": 0.0,
+            "contentment": 0.188,
+            "disgust": 1.0,
+            "excitement": 0.5385,
+            "fear": 0.812,
+            "sadness": 0.3419
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.926428,
+          "train_user_average": {
+            "amusement": 0.53,
+            "anger": 0.39,
+            "awe": 0.39,
+            "contentment": 0.28,
+            "disgust": 0.0,
+            "excitement": 0.44,
+            "fear": 0.61,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_10795.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7731,
+            "anger": 0.9664,
+            "awe": 0.2269,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.6134,
+            "fear": 0.7563,
+            "sadness": 0.8487
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.882187,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.27,
+            "awe": 0.49,
+            "contentment": 0.25,
+            "disgust": 0.24,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_02051.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7863,
+            "anger": 0.8803,
+            "awe": 0.5897,
+            "contentment": 0.3162,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 0.5641,
+            "sadness": 0.8376
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.867637,
+          "train_user_average": {
+            "amusement": 0.13,
+            "anger": 0.0,
+            "awe": 0.06,
+            "contentment": 0.09,
+            "disgust": 0.3,
+            "excitement": 0.04,
+            "fear": 0.0,
+            "sadness": 0.13
+          }
+        },
+        {
+          "filename": "fear/fear_03297.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8762,
+            "anger": 0.6762,
+            "awe": 0.2,
+            "contentment": 0.0857,
+            "disgust": 0.7143,
+            "excitement": 0.2857,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.968305,
+          "train_user_average": {
+            "amusement": 0.09,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.35,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_03308.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7891,
+            "anger": 0.8503,
+            "awe": 0.6463,
+            "contentment": 0.0,
+            "disgust": 0.8503,
+            "excitement": 0.4422,
+            "fear": 1.0,
+            "sadness": 0.1156
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.965209,
+          "train_user_average": {
+            "amusement": 0.5,
+            "anger": 0.49,
+            "awe": 0.51,
+            "contentment": 0.25,
+            "disgust": 0.26,
+            "excitement": 0.51,
+            "fear": 0.5,
+            "sadness": 0.24
+          }
+        },
+        {
+          "filename": "anger/anger_08261.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7543,
+            "anger": 1.0,
+            "awe": 0.2901,
+            "contentment": 0.0,
+            "disgust": 0.7679,
+            "excitement": 0.0922,
+            "fear": 0.6655,
+            "sadness": 0.3891
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.952855,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.73,
+            "awe": 0.69,
+            "contentment": 0.0,
+            "disgust": 0.12,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        }
+      ],
+      "filename": "disgust/disgust_09313.mp3",
+      "intended_emotion": "disgust"
+    },
+    "excitement/excitement_07985.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "excitement/excitement_08023.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6948,
+            "anger": 0.2691,
+            "awe": 0.6305,
+            "contentment": 0.4578,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5823,
+            "sadness": 0.0683
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.972552,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.47,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.25,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "excitement/excitement_07980.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.498,
+            "anger": 0.3563,
+            "awe": 0.4777,
+            "contentment": 0.668,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.3725,
+            "sadness": 0.2146
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.966326,
+          "train_user_average": {
+            "amusement": 0.46,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.35,
+            "disgust": 0.0,
+            "excitement": 0.24,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_08003.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3613,
+            "anger": 0.4706,
+            "awe": 0.084,
+            "contentment": 0.5462,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.7899,
+            "sadness": 0.1597
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.958721,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.08,
+            "awe": 0.75,
+            "contentment": 0.55,
+            "disgust": 0.02,
+            "excitement": 0.04,
+            "fear": 0.26,
+            "sadness": 0.47
+          }
+        },
+        {
+          "filename": "amusement/amusement_17660.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.4242,
+            "awe": 0.2684,
+            "contentment": 0.1732,
+            "disgust": 0.0,
+            "excitement": 0.7835,
+            "fear": 0.684,
+            "sadness": 0.1818
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.914286,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 1.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08275.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5821,
+            "awe": 0.7985,
+            "contentment": 0.2761,
+            "disgust": 0.1119,
+            "excitement": 0.7985,
+            "fear": 0.4179,
+            "sadness": 0.0
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.909809,
+          "train_user_average": {
+            "amusement": 0.06,
+            "anger": 0.02,
+            "awe": 0.02,
+            "contentment": 0.03,
+            "disgust": 0.15,
+            "excitement": 0.04,
+            "fear": 0.08,
+            "sadness": 0.12
+          }
+        },
+        {
+          "filename": "amusement/amusement_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5279,
+            "awe": 0.3299,
+            "contentment": 0.0,
+            "disgust": 0.1015,
+            "excitement": 0.9695,
+            "fear": 0.802,
+            "sadness": 0.1574
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 4,
+          "similarity": 0.907134,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "sadness": 0.87
+          }
+        }
+      ],
+      "filename": "excitement/excitement_07985.mp3",
+      "intended_emotion": "excitement"
+    },
+    "excitement/excitement_08024.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "excitement/excitement_16006.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7697,
+            "anger": 0.5592,
+            "awe": 0.8487,
+            "contentment": 0.0,
+            "disgust": 0.5395,
+            "excitement": 1.0,
+            "fear": 0.4803,
+            "sadness": 0.1974
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.969999,
+          "train_user_average": {
+            "amusement": 0.85,
+            "anger": 0.0,
+            "awe": 0.34,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.64,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_07984.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7941,
+            "anger": 0.7157,
+            "awe": 0.902,
+            "contentment": 0.6618,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5637,
+            "sadness": 0.4314
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.85041,
+          "train_user_average": {
+            "amusement": 0.68,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.43,
+            "disgust": 0.2,
+            "excitement": 0.48,
+            "fear": 0.08,
+            "sadness": 0.09
+          }
+        },
+        {
+          "filename": "excitement/excitement_08023.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6948,
+            "anger": 0.2691,
+            "awe": 0.6305,
+            "contentment": 0.4578,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5823,
+            "sadness": 0.0683
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.845419,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.47,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.25,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "anger/anger_01988.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8025,
+            "anger": 1.0,
+            "awe": 0.5556,
+            "contentment": 0.0,
+            "disgust": 0.3457,
+            "excitement": 0.9259,
+            "fear": 0.3889,
+            "sadness": 0.5123
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.958459,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.24,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_08253.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8596,
+            "anger": 1.0,
+            "awe": 0.6596,
+            "contentment": 0.0,
+            "disgust": 0.4468,
+            "excitement": 0.8894,
+            "fear": 0.6383,
+            "sadness": 0.6298
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.94895,
+          "train_user_average": {
+            "amusement": 0.35,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.4,
+            "disgust": 0.08,
+            "excitement": 0.02,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_17647.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5949,
+            "awe": 0.6329,
+            "contentment": 0.0,
+            "disgust": 0.2532,
+            "excitement": 0.7911,
+            "fear": 0.6709,
+            "sadness": 0.3354
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.945598,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "excitement/excitement_08024.mp3",
+      "intended_emotion": "excitement"
+    },
+    "excitement/excitement_09961.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "excitement/excitement_08022.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.1868,
+            "anger": 0.4396,
+            "awe": 0.0,
+            "contentment": 0.0879,
+            "disgust": 0.1538,
+            "excitement": 1.0,
+            "fear": 0.1429,
+            "sadness": 0.5385
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.970255,
+          "train_user_average": {
+            "amusement": 0.22,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.44,
+            "fear": 0.4,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_07982.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.467,
+            "anger": 0.4533,
+            "awe": 0.0,
+            "contentment": 0.6036,
+            "disgust": 0.1845,
+            "excitement": 1.0,
+            "fear": 0.4897,
+            "sadness": 0.4487
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.936862,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.34,
+            "awe": 0.53,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.79,
+            "fear": 0.67,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "excitement/excitement_08003.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3613,
+            "anger": 0.4706,
+            "awe": 0.084,
+            "contentment": 0.5462,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.7899,
+            "sadness": 0.1597
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.864675,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.08,
+            "awe": 0.75,
+            "contentment": 0.55,
+            "disgust": 0.02,
+            "excitement": 0.04,
+            "fear": 0.26,
+            "sadness": 0.47
+          }
+        },
+        {
+          "filename": "anger/anger_04353.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4833,
+            "anger": 1.0,
+            "awe": 0.15,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.9833,
+            "fear": 0.2583,
+            "sadness": 0.5
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.934352,
+          "train_user_average": {
+            "amusement": 0.99,
+            "anger": 0.58,
+            "awe": 0.72,
+            "contentment": 0.47,
+            "disgust": 0.02,
+            "excitement": 0.97,
+            "fear": 0.01,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "sadness/sadness_03442.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3964,
+            "anger": 0.5225,
+            "awe": 0.0,
+            "contentment": 0.3333,
+            "disgust": 0.1802,
+            "excitement": 0.5315,
+            "fear": 0.3874,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.913465,
+          "train_user_average": {
+            "amusement": 0.47,
+            "anger": 0.47,
+            "awe": 0.4,
+            "contentment": 0.85,
+            "disgust": 0.06,
+            "excitement": 0.46,
+            "fear": 0.54,
+            "sadness": 0.43
+          }
+        },
+        {
+          "filename": "anger/anger_01988.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8025,
+            "anger": 1.0,
+            "awe": 0.5556,
+            "contentment": 0.0,
+            "disgust": 0.3457,
+            "excitement": 0.9259,
+            "fear": 0.3889,
+            "sadness": 0.5123
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.868147,
+          "train_user_average": {
+            "amusement": 0.81,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.24,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "excitement/excitement_09961.mp3",
+      "intended_emotion": "excitement"
+    },
+    "excitement/excitement_15994.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "excitement/excitement_08023.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6948,
+            "anger": 0.2691,
+            "awe": 0.6305,
+            "contentment": 0.4578,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.5823,
+            "sadness": 0.0683
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.955773,
+          "train_user_average": {
+            "amusement": 0.51,
+            "anger": 0.47,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.25,
+            "fear": 0.0,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "excitement/excitement_08003.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3613,
+            "anger": 0.4706,
+            "awe": 0.084,
+            "contentment": 0.5462,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.7899,
+            "sadness": 0.1597
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.954592,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.08,
+            "awe": 0.75,
+            "contentment": 0.55,
+            "disgust": 0.02,
+            "excitement": 0.04,
+            "fear": 0.26,
+            "sadness": 0.47
+          }
+        },
+        {
+          "filename": "excitement/excitement_07980.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.498,
+            "anger": 0.3563,
+            "awe": 0.4777,
+            "contentment": 0.668,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.3725,
+            "sadness": 0.2146
+          },
+          "intended_emotion": "excitement",
+          "num_ratings": 1,
+          "similarity": 0.93522,
+          "train_user_average": {
+            "amusement": 0.46,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.35,
+            "disgust": 0.0,
+            "excitement": 0.24,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_17660.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.4242,
+            "awe": 0.2684,
+            "contentment": 0.1732,
+            "disgust": 0.0,
+            "excitement": 0.7835,
+            "fear": 0.684,
+            "sadness": 0.1818
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.946631,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 1.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_08272.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5279,
+            "awe": 0.3299,
+            "contentment": 0.0,
+            "disgust": 0.1015,
+            "excitement": 0.9695,
+            "fear": 0.802,
+            "sadness": 0.1574
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 4,
+          "similarity": 0.943307,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.0,
+            "awe": 0.45,
+            "contentment": 0.41,
+            "disgust": 0.0,
+            "excitement": 0.16,
+            "fear": 0.29,
+            "sadness": 0.87
+          }
+        },
+        {
+          "filename": "amusement/amusement_02945.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.2609,
+            "awe": 0.2222,
+            "contentment": 0.5314,
+            "disgust": 0.0,
+            "excitement": 0.6667,
+            "fear": 0.4541,
+            "sadness": 0.0966
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.929956,
+          "train_user_average": {
+            "amusement": 0.39,
+            "anger": 0.03,
+            "awe": 0.13,
+            "contentment": 0.39,
+            "disgust": 0.0,
+            "excitement": 0.33,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "excitement/excitement_15994.mp3",
+      "intended_emotion": "excitement"
+    },
+    "fear/fear_09155.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "fear/fear_09208.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8808,
+            "anger": 0.8497,
+            "awe": 0.6995,
+            "contentment": 0.0,
+            "disgust": 0.8549,
+            "excitement": 0.7409,
+            "fear": 1.0,
+            "sadness": 0.1036
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.971749,
+          "train_user_average": {
+            "amusement": 0.72,
+            "anger": 0.48,
+            "awe": 0.24,
+            "contentment": 0.5,
+            "disgust": 0.25,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "fear/fear_09248.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3786,
+            "anger": 0.6643,
+            "awe": 0.1929,
+            "contentment": 0.2286,
+            "disgust": 0.4429,
+            "excitement": 0.5429,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.968077,
+          "train_user_average": {
+            "amusement": 0.16,
+            "anger": 0.58,
+            "awe": 0.19,
+            "contentment": 0.01,
+            "disgust": 0.63,
+            "excitement": 0.42,
+            "fear": 0.19,
+            "sadness": 0.42
+          }
+        },
+        {
+          "filename": "fear/fear_03314.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3178,
+            "anger": 0.8598,
+            "awe": 0.0093,
+            "contentment": 0.0093,
+            "disgust": 0.7664,
+            "excitement": 0.9065,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.966209,
+          "train_user_average": {
+            "amusement": 0.55,
+            "anger": 0.27,
+            "awe": 0.05,
+            "contentment": 0.59,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_02002.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5616,
+            "anger": 1.0,
+            "awe": 0.3904,
+            "contentment": 0.0,
+            "disgust": 0.2534,
+            "excitement": 0.7671,
+            "fear": 0.6781,
+            "sadness": 0.2877
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.936073,
+          "train_user_average": {
+            "amusement": 0.74,
+            "anger": 0.49,
+            "awe": 0.51,
+            "contentment": 0.73,
+            "disgust": 0.25,
+            "excitement": 0.74,
+            "fear": 0.24,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "anger/anger_02004.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4455,
+            "anger": 1.0,
+            "awe": 0.0594,
+            "contentment": 0.2772,
+            "disgust": 0.4059,
+            "excitement": 0.4059,
+            "fear": 0.7228,
+            "sadness": 0.0
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.933525,
+          "train_user_average": {
+            "amusement": 0.31,
+            "anger": 0.0,
+            "awe": 0.18,
+            "contentment": 0.15,
+            "disgust": 0.0,
+            "excitement": 0.69,
+            "fear": 0.13,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_17642.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.604,
+            "awe": 0.4497,
+            "contentment": 0.0,
+            "disgust": 0.7517,
+            "excitement": 0.4899,
+            "fear": 0.906,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.924171,
+          "train_user_average": {
+            "amusement": 0.66,
+            "anger": 0.0,
+            "awe": 0.72,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.65,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "fear/fear_09155.mp3",
+      "intended_emotion": "fear"
+    },
+    "fear/fear_09164.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "fear/fear_09208.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8808,
+            "anger": 0.8497,
+            "awe": 0.6995,
+            "contentment": 0.0,
+            "disgust": 0.8549,
+            "excitement": 0.7409,
+            "fear": 1.0,
+            "sadness": 0.1036
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.96234,
+          "train_user_average": {
+            "amusement": 0.72,
+            "anger": 0.48,
+            "awe": 0.24,
+            "contentment": 0.5,
+            "disgust": 0.25,
+            "excitement": 0.5,
+            "fear": 0.25,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "fear/fear_14992.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8456,
+            "anger": 0.0735,
+            "awe": 0.4044,
+            "contentment": 0.2059,
+            "disgust": 0.3603,
+            "excitement": 0.6029,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.953666,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.23,
+            "awe": 0.25,
+            "contentment": 0.24,
+            "disgust": 0.02,
+            "excitement": 0.0,
+            "fear": 0.72,
+            "sadness": 0.02
+          }
+        },
+        {
+          "filename": "fear/fear_03308.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7891,
+            "anger": 0.8503,
+            "awe": 0.6463,
+            "contentment": 0.0,
+            "disgust": 0.8503,
+            "excitement": 0.4422,
+            "fear": 1.0,
+            "sadness": 0.1156
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.940316,
+          "train_user_average": {
+            "amusement": 0.5,
+            "anger": 0.49,
+            "awe": 0.51,
+            "contentment": 0.25,
+            "disgust": 0.26,
+            "excitement": 0.51,
+            "fear": 0.5,
+            "sadness": 0.24
+          }
+        },
+        {
+          "filename": "amusement/amusement_17647.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5949,
+            "awe": 0.6329,
+            "contentment": 0.0,
+            "disgust": 0.2532,
+            "excitement": 0.7911,
+            "fear": 0.6709,
+            "sadness": 0.3354
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.928228,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "awe/awe_09167.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6078,
+            "anger": 0.3595,
+            "awe": 1.0,
+            "contentment": 0.634,
+            "disgust": 0.4052,
+            "excitement": 0.5752,
+            "fear": 0.549,
+            "sadness": 0.0
+          },
+          "intended_emotion": "awe",
+          "num_ratings": 1,
+          "similarity": 0.924939,
+          "train_user_average": {
+            "amusement": 0.49,
+            "anger": 0.25,
+            "awe": 0.73,
+            "contentment": 0.48,
+            "disgust": 0.02,
+            "excitement": 0.73,
+            "fear": 0.01,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_17642.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.604,
+            "awe": 0.4497,
+            "contentment": 0.0,
+            "disgust": 0.7517,
+            "excitement": 0.4899,
+            "fear": 0.906,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.922309,
+          "train_user_average": {
+            "amusement": 0.66,
+            "anger": 0.0,
+            "awe": 0.72,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.65,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "fear/fear_09164.mp3",
+      "intended_emotion": "fear"
+    },
+    "fear/fear_09177.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "fear/fear_03297.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8762,
+            "anger": 0.6762,
+            "awe": 0.2,
+            "contentment": 0.0857,
+            "disgust": 0.7143,
+            "excitement": 0.2857,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.992071,
+          "train_user_average": {
+            "amusement": 0.09,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.35,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09245.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7344,
+            "anger": 0.4219,
+            "awe": 0.0391,
+            "contentment": 0.5391,
+            "disgust": 0.3047,
+            "excitement": 0.0625,
+            "fear": 1.0,
+            "sadness": 0.0
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.928971,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.61,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_03308.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7891,
+            "anger": 0.8503,
+            "awe": 0.6463,
+            "contentment": 0.0,
+            "disgust": 0.8503,
+            "excitement": 0.4422,
+            "fear": 1.0,
+            "sadness": 0.1156
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.923396,
+          "train_user_average": {
+            "amusement": 0.5,
+            "anger": 0.49,
+            "awe": 0.51,
+            "contentment": 0.25,
+            "disgust": 0.26,
+            "excitement": 0.51,
+            "fear": 0.5,
+            "sadness": 0.24
+          }
+        },
+        {
+          "filename": "amusement/amusement_17642.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.604,
+            "awe": 0.4497,
+            "contentment": 0.0,
+            "disgust": 0.7517,
+            "excitement": 0.4899,
+            "fear": 0.906,
+            "sadness": 0.4631
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.918429,
+          "train_user_average": {
+            "amusement": 0.66,
+            "anger": 0.0,
+            "awe": 0.72,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 0.65,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_08261.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7543,
+            "anger": 1.0,
+            "awe": 0.2901,
+            "contentment": 0.0,
+            "disgust": 0.7679,
+            "excitement": 0.0922,
+            "fear": 0.6655,
+            "sadness": 0.3891
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.90687,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.73,
+            "awe": 0.69,
+            "contentment": 0.0,
+            "disgust": 0.12,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 1.0
+          }
+        },
+        {
+          "filename": "anger/anger_02004.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4455,
+            "anger": 1.0,
+            "awe": 0.0594,
+            "contentment": 0.2772,
+            "disgust": 0.4059,
+            "excitement": 0.4059,
+            "fear": 0.7228,
+            "sadness": 0.0
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.904327,
+          "train_user_average": {
+            "amusement": 0.31,
+            "anger": 0.0,
+            "awe": 0.18,
+            "contentment": 0.15,
+            "disgust": 0.0,
+            "excitement": 0.69,
+            "fear": 0.13,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "fear/fear_09177.mp3",
+      "intended_emotion": "fear"
+    },
+    "fear/fear_09206.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "fear/fear_09183.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7352,
+            "anger": 0.8037,
+            "awe": 0.8219,
+            "contentment": 0.0,
+            "disgust": 0.4703,
+            "excitement": 0.5205,
+            "fear": 1.0,
+            "sadness": 0.6119
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.971925,
+          "train_user_average": {
+            "amusement": 0.45,
+            "anger": 0.33,
+            "awe": 0.5,
+            "contentment": 0.5,
+            "disgust": 0.3,
+            "excitement": 0.71,
+            "fear": 0.67,
+            "sadness": 0.66
+          }
+        },
+        {
+          "filename": "fear/fear_09001.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5882,
+            "anger": 0.6833,
+            "awe": 0.7511,
+            "contentment": 0.0,
+            "disgust": 0.4299,
+            "excitement": 0.5113,
+            "fear": 1.0,
+            "sadness": 0.8235
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.970043,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.48,
+            "fear": 0.71,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09195.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5,
+            "anger": 0.6736,
+            "awe": 0.4375,
+            "contentment": 0.0,
+            "disgust": 0.3542,
+            "excitement": 0.3611,
+            "fear": 1.0,
+            "sadness": 0.5972
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.951882,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.89,
+            "awe": 0.61,
+            "contentment": 0.15,
+            "disgust": 0.64,
+            "excitement": 0.45,
+            "fear": 0.69,
+            "sadness": 0.65
+          }
+        },
+        {
+          "filename": "sadness/sadness_03457.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6587,
+            "anger": 0.8942,
+            "awe": 0.9663,
+            "contentment": 0.0,
+            "disgust": 0.3317,
+            "excitement": 0.5577,
+            "fear": 0.851,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.969226,
+          "train_user_average": {
+            "amusement": 0.04,
+            "anger": 0.46,
+            "awe": 0.45,
+            "contentment": 0.06,
+            "disgust": 0.45,
+            "excitement": 0.16,
+            "fear": 0.16,
+            "sadness": 0.62
+          }
+        },
+        {
+          "filename": "anger/anger_08270.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6573,
+            "anger": 1.0,
+            "awe": 0.7762,
+            "contentment": 0.0,
+            "disgust": 0.3357,
+            "excitement": 0.5734,
+            "fear": 0.7133,
+            "sadness": 0.5734
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.96438,
+          "train_user_average": {
+            "amusement": 0.03,
+            "anger": 0.05,
+            "awe": 0.05,
+            "contentment": 0.1,
+            "disgust": 0.01,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "amusement/amusement_17647.mp3",
+          "ground_truth_vector": {
+            "amusement": 1.0,
+            "anger": 0.5949,
+            "awe": 0.6329,
+            "contentment": 0.0,
+            "disgust": 0.2532,
+            "excitement": 0.7911,
+            "fear": 0.6709,
+            "sadness": 0.3354
+          },
+          "intended_emotion": "amusement",
+          "num_ratings": 1,
+          "similarity": 0.953204,
+          "train_user_average": {
+            "amusement": 0.37,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.3,
+            "disgust": 0.0,
+            "excitement": 0.42,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        }
+      ],
+      "filename": "fear/fear_09206.mp3",
+      "intended_emotion": "fear"
+    },
+    "sadness/sadness_03440.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "sadness/sadness_07975.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3056,
+            "anger": 0.3849,
+            "awe": 0.6389,
+            "contentment": 0.5357,
+            "disgust": 0.2381,
+            "excitement": 0.0,
+            "fear": 0.4603,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.972825,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.32,
+            "disgust": 0.0,
+            "excitement": 0.55,
+            "fear": 0.05,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_03477.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3803,
+            "anger": 0.3474,
+            "awe": 0.3709,
+            "contentment": 0.5587,
+            "disgust": 0.2911,
+            "excitement": 0.0,
+            "fear": 0.385,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.943814,
+          "train_user_average": {
+            "amusement": 0.94,
+            "anger": 0.02,
+            "awe": 0.53,
+            "contentment": 0.42,
+            "disgust": 0.05,
+            "excitement": 0.31,
+            "fear": 0.03,
+            "sadness": 0.11
+          }
+        },
+        {
+          "filename": "sadness/sadness_03474.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4167,
+            "anger": 0.3611,
+            "awe": 0.8056,
+            "contentment": 0.1389,
+            "disgust": 0.0,
+            "excitement": 0.3194,
+            "fear": 0.2014,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.932867,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.39,
+            "fear": 0.59,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09001.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5882,
+            "anger": 0.6833,
+            "awe": 0.7511,
+            "contentment": 0.0,
+            "disgust": 0.4299,
+            "excitement": 0.5113,
+            "fear": 1.0,
+            "sadness": 0.8235
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.838631,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.48,
+            "fear": 0.71,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09249.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.266,
+            "anger": 0.5213,
+            "awe": 0.3511,
+            "contentment": 0.0957,
+            "disgust": 0.2766,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.6383
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.824013,
+          "train_user_average": {
+            "amusement": 0.67,
+            "anger": 0.24,
+            "awe": 0.12,
+            "contentment": 0.63,
+            "disgust": 0.0,
+            "excitement": 0.12,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "fear/fear_09173.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.2439,
+            "anger": 0.3415,
+            "awe": 0.3984,
+            "contentment": 0.2439,
+            "disgust": 0.0,
+            "excitement": 0.4065,
+            "fear": 1.0,
+            "sadness": 0.5447
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.822785,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.74,
+            "awe": 0.37,
+            "contentment": 0.31,
+            "disgust": 0.47,
+            "excitement": 0.83,
+            "fear": 0.85,
+            "sadness": 0.97
+          }
+        }
+      ],
+      "filename": "sadness/sadness_03440.mp3",
+      "intended_emotion": "sadness"
+    },
+    "sadness/sadness_03471.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "sadness/sadness_03445.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.6218,
+            "anger": 0.2949,
+            "awe": 0.609,
+            "contentment": 0.3397,
+            "disgust": 0.2244,
+            "excitement": 0.2756,
+            "fear": 0.0,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.976121,
+          "train_user_average": {
+            "amusement": 0.09,
+            "anger": 1.0,
+            "awe": 0.82,
+            "contentment": 0.18,
+            "disgust": 0.55,
+            "excitement": 0.03,
+            "fear": 0.66,
+            "sadness": 0.38
+          }
+        },
+        {
+          "filename": "sadness/sadness_06469.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7656,
+            "anger": 0.4141,
+            "awe": 0.6719,
+            "contentment": 0.5156,
+            "disgust": 0.3047,
+            "excitement": 0.0,
+            "fear": 0.0859,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.962811,
+          "train_user_average": {
+            "amusement": 0.48,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.89,
+            "disgust": 0.0,
+            "excitement": 0.6,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_03448.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.8492,
+            "anger": 0.2381,
+            "awe": 0.5317,
+            "contentment": 0.5079,
+            "disgust": 0.1984,
+            "excitement": 0.2381,
+            "fear": 0.0,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.957639,
+          "train_user_average": {
+            "amusement": 0.27,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.06,
+            "disgust": 0.07,
+            "excitement": 0.45,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "anger/anger_04355.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5643,
+            "anger": 1.0,
+            "awe": 0.1429,
+            "contentment": 0.2071,
+            "disgust": 0.2571,
+            "excitement": 0.5429,
+            "fear": 0.0,
+            "sadness": 0.8
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.892709,
+          "train_user_average": {
+            "amusement": 0.86,
+            "anger": 0.08,
+            "awe": 0.41,
+            "contentment": 0.47,
+            "disgust": 0.0,
+            "excitement": 0.94,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_10797.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5838,
+            "anger": 0.8092,
+            "awe": 0.4451,
+            "contentment": 0.6069,
+            "disgust": 1.0,
+            "excitement": 0.3179,
+            "fear": 0.0,
+            "sadness": 0.896
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.881569,
+          "train_user_average": {
+            "amusement": 0.49,
+            "anger": 0.22,
+            "awe": 0.74,
+            "contentment": 0.48,
+            "disgust": 0.0,
+            "excitement": 0.73,
+            "fear": 0.03,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "disgust/disgust_02554.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5481,
+            "anger": 0.6741,
+            "awe": 0.3333,
+            "contentment": 0.2741,
+            "disgust": 1.0,
+            "excitement": 0.1185,
+            "fear": 0.0,
+            "sadness": 0.9333
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 2,
+          "similarity": 0.876972,
+          "train_user_average": {
+            "amusement": 0.44,
+            "anger": 0.5,
+            "awe": 0.5,
+            "contentment": 0.09,
+            "disgust": 0.25,
+            "excitement": 0.69,
+            "fear": 0.505,
+            "sadness": 0.17
+          }
+        }
+      ],
+      "filename": "sadness/sadness_03471.mp3",
+      "intended_emotion": "sadness"
+    },
+    "sadness/sadness_07945.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "sadness/sadness_03451.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4437,
+            "anger": 0.6127,
+            "awe": 0.3134,
+            "contentment": 0.257,
+            "disgust": 0.4859,
+            "excitement": 0.0,
+            "fear": 0.493,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.952166,
+          "train_user_average": {
+            "amusement": 0.02,
+            "anger": 0.17,
+            "awe": 0.22,
+            "contentment": 0.41,
+            "disgust": 0.01,
+            "excitement": 0.04,
+            "fear": 0.08,
+            "sadness": 0.26
+          }
+        },
+        {
+          "filename": "sadness/sadness_03477.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3803,
+            "anger": 0.3474,
+            "awe": 0.3709,
+            "contentment": 0.5587,
+            "disgust": 0.2911,
+            "excitement": 0.0,
+            "fear": 0.385,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.929396,
+          "train_user_average": {
+            "amusement": 0.94,
+            "anger": 0.02,
+            "awe": 0.53,
+            "contentment": 0.42,
+            "disgust": 0.05,
+            "excitement": 0.31,
+            "fear": 0.03,
+            "sadness": 0.11
+          }
+        },
+        {
+          "filename": "sadness/sadness_07975.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.3056,
+            "anger": 0.3849,
+            "awe": 0.6389,
+            "contentment": 0.5357,
+            "disgust": 0.2381,
+            "excitement": 0.0,
+            "fear": 0.4603,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.914523,
+          "train_user_average": {
+            "amusement": 0.23,
+            "anger": 0.0,
+            "awe": 0.0,
+            "contentment": 0.32,
+            "disgust": 0.0,
+            "excitement": 0.55,
+            "fear": 0.05,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_02051.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7863,
+            "anger": 0.8803,
+            "awe": 0.5897,
+            "contentment": 0.3162,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 0.5641,
+            "sadness": 0.8376
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.939342,
+          "train_user_average": {
+            "amusement": 0.13,
+            "anger": 0.0,
+            "awe": 0.06,
+            "contentment": 0.09,
+            "disgust": 0.3,
+            "excitement": 0.04,
+            "fear": 0.0,
+            "sadness": 0.13
+          }
+        },
+        {
+          "filename": "fear/fear_09249.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.266,
+            "anger": 0.5213,
+            "awe": 0.3511,
+            "contentment": 0.0957,
+            "disgust": 0.2766,
+            "excitement": 0.0,
+            "fear": 1.0,
+            "sadness": 0.6383
+          },
+          "intended_emotion": "fear",
+          "num_ratings": 1,
+          "similarity": 0.90368,
+          "train_user_average": {
+            "amusement": 0.67,
+            "anger": 0.24,
+            "awe": 0.12,
+            "contentment": 0.63,
+            "disgust": 0.0,
+            "excitement": 0.12,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_04041.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5745,
+            "anger": 0.0,
+            "awe": 0.4362,
+            "contentment": 0.766,
+            "disgust": 1.0,
+            "excitement": 0.6809,
+            "fear": 0.7872,
+            "sadness": 0.9681
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.900533,
+          "train_user_average": {
+            "amusement": 0.18,
+            "anger": 0.42,
+            "awe": 0.46,
+            "contentment": 0.19,
+            "disgust": 0.63,
+            "excitement": 0.47,
+            "fear": 0.46,
+            "sadness": 0.44
+          }
+        }
+      ],
+      "filename": "sadness/sadness_07945.mp3",
+      "intended_emotion": "sadness"
+    },
+    "sadness/sadness_07966.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "sadness/sadness_07944.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.748,
+            "anger": 0.252,
+            "awe": 0.5691,
+            "contentment": 0.561,
+            "disgust": 0.5854,
+            "excitement": 0.1545,
+            "fear": 0.0,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.951858,
+          "train_user_average": {
+            "amusement": 0.21,
+            "anger": 0.0,
+            "awe": 0.24,
+            "contentment": 0.46,
+            "disgust": 0.0,
+            "excitement": 0.68,
+            "fear": 0.21,
+            "sadness": 0.22
+          }
+        },
+        {
+          "filename": "sadness/sadness_07977.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4438,
+            "anger": 0.2663,
+            "awe": 0.5089,
+            "contentment": 0.7988,
+            "disgust": 0.497,
+            "excitement": 0.0,
+            "fear": 0.0473,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.951013,
+          "train_user_average": {
+            "amusement": 0.15,
+            "anger": 0.0,
+            "awe": 0.07,
+            "contentment": 0.0,
+            "disgust": 0.43,
+            "excitement": 0.0,
+            "fear": 0.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_03392.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.2818,
+            "anger": 0.4033,
+            "awe": 0.3481,
+            "contentment": 0.2652,
+            "disgust": 0.3536,
+            "excitement": 0.0,
+            "fear": 0.1768,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.932938,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.59,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_10797.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5838,
+            "anger": 0.8092,
+            "awe": 0.4451,
+            "contentment": 0.6069,
+            "disgust": 1.0,
+            "excitement": 0.3179,
+            "fear": 0.0,
+            "sadness": 0.896
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.904557,
+          "train_user_average": {
+            "amusement": 0.49,
+            "anger": 0.22,
+            "awe": 0.74,
+            "contentment": 0.48,
+            "disgust": 0.0,
+            "excitement": 0.73,
+            "fear": 0.03,
+            "sadness": 0.01
+          }
+        },
+        {
+          "filename": "disgust/disgust_02554.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5481,
+            "anger": 0.6741,
+            "awe": 0.3333,
+            "contentment": 0.2741,
+            "disgust": 1.0,
+            "excitement": 0.1185,
+            "fear": 0.0,
+            "sadness": 0.9333
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 2,
+          "similarity": 0.895164,
+          "train_user_average": {
+            "amusement": 0.44,
+            "anger": 0.5,
+            "awe": 0.5,
+            "contentment": 0.09,
+            "disgust": 0.25,
+            "excitement": 0.69,
+            "fear": 0.505,
+            "sadness": 0.17
+          }
+        },
+        {
+          "filename": "disgust/disgust_02047.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4323,
+            "anger": 0.7871,
+            "awe": 0.2258,
+            "contentment": 0.2452,
+            "disgust": 1.0,
+            "excitement": 0.0968,
+            "fear": 0.0,
+            "sadness": 0.9548
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.87787,
+          "train_user_average": {
+            "amusement": 0.38,
+            "anger": 0.46,
+            "awe": 0.5,
+            "contentment": 0.37,
+            "disgust": 0.2,
+            "excitement": 0.35,
+            "fear": 0.2,
+            "sadness": 0.18
+          }
+        }
+      ],
+      "filename": "sadness/sadness_07966.mp3",
+      "intended_emotion": "sadness"
+    },
+    "sadness/sadness_07971.mp3": {
+      "few_shot_example_count": 6,
+      "few_shot_examples": [
+        {
+          "filename": "sadness/sadness_03451.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.4437,
+            "anger": 0.6127,
+            "awe": 0.3134,
+            "contentment": 0.257,
+            "disgust": 0.4859,
+            "excitement": 0.0,
+            "fear": 0.493,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.970322,
+          "train_user_average": {
+            "amusement": 0.02,
+            "anger": 0.17,
+            "awe": 0.22,
+            "contentment": 0.41,
+            "disgust": 0.01,
+            "excitement": 0.04,
+            "fear": 0.08,
+            "sadness": 0.26
+          }
+        },
+        {
+          "filename": "sadness/sadness_07965.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.5043,
+            "anger": 0.765,
+            "awe": 0.6538,
+            "contentment": 0.0,
+            "disgust": 0.5342,
+            "excitement": 0.359,
+            "fear": 0.5085,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.969911,
+          "train_user_average": {
+            "amusement": 0.0,
+            "anger": 0.0,
+            "awe": 0.32,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 0.0,
+            "fear": 0.29,
+            "sadness": 1.0
+          }
+        },
+        {
+          "filename": "sadness/sadness_03392.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.2818,
+            "anger": 0.4033,
+            "awe": 0.3481,
+            "contentment": 0.2652,
+            "disgust": 0.3536,
+            "excitement": 0.0,
+            "fear": 0.1768,
+            "sadness": 1.0
+          },
+          "intended_emotion": "sadness",
+          "num_ratings": 1,
+          "similarity": 0.930287,
+          "train_user_average": {
+            "amusement": 1.0,
+            "anger": 0.0,
+            "awe": 0.59,
+            "contentment": 0.0,
+            "disgust": 0.0,
+            "excitement": 1.0,
+            "fear": 1.0,
+            "sadness": 0.0
+          }
+        },
+        {
+          "filename": "disgust/disgust_02051.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7863,
+            "anger": 0.8803,
+            "awe": 0.5897,
+            "contentment": 0.3162,
+            "disgust": 1.0,
+            "excitement": 0.0,
+            "fear": 0.5641,
+            "sadness": 0.8376
+          },
+          "intended_emotion": "disgust",
+          "num_ratings": 1,
+          "similarity": 0.951884,
+          "train_user_average": {
+            "amusement": 0.13,
+            "anger": 0.0,
+            "awe": 0.06,
+            "contentment": 0.09,
+            "disgust": 0.3,
+            "excitement": 0.04,
+            "fear": 0.0,
+            "sadness": 0.13
+          }
+        },
+        {
+          "filename": "anger/anger_04395.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.57,
+            "anger": 1.0,
+            "awe": 0.55,
+            "contentment": 0.0,
+            "disgust": 0.745,
+            "excitement": 0.17,
+            "fear": 0.69,
+            "sadness": 0.64
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.935465,
+          "train_user_average": {
+            "amusement": 0.49,
+            "anger": 0.31,
+            "awe": 0.73,
+            "contentment": 0.47,
+            "disgust": 0.74,
+            "excitement": 0.48,
+            "fear": 0.24,
+            "sadness": 0.24
+          }
+        },
+        {
+          "filename": "anger/anger_04341.mp3",
+          "ground_truth_vector": {
+            "amusement": 0.7621,
+            "anger": 1.0,
+            "awe": 0.7298,
+            "contentment": 0.0,
+            "disgust": 0.6492,
+            "excitement": 0.5282,
+            "fear": 0.625,
+            "sadness": 0.8589
+          },
+          "intended_emotion": "anger",
+          "num_ratings": 1,
+          "similarity": 0.933521,
+          "train_user_average": {
+            "amusement": 0.71,
+            "anger": 0.03,
+            "awe": 0.22,
+            "contentment": 0.02,
+            "disgust": 0.01,
+            "excitement": 0.57,
+            "fear": 0.01,
+            "sadness": 0.03
+          }
+        }
+      ],
+      "filename": "sadness/sadness_07971.mp3",
+      "intended_emotion": "sadness"
+    }
+  },
+  "fold": 3,
+  "max_few_shot_examples": 6,
+  "max_same_emotion_examples": 3,
+  "prompt_method": "few_shot_in_context_learning",
+  "train_song_profile_count": 175
+}
