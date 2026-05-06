@@ -334,15 +334,13 @@ def _render_model_predictions(df_predictions: pd.DataFrame) -> None:
     st.plotly_chart(chart, use_container_width=True)
     st.markdown(
         """
-        **How to read this graph**
+            **How to read this graph**
 
-        - **X axis:** the eight emotion categories used throughout the project: `amusement`, `anger`, `awe`, `contentment`, `disgust`, `excitement`, `fear`, and `sadness`. Each bar group represents one emotional dimension for the selected song.
-        - **Y axis:** the raw emotion score on the project's standard `0` to `1` scale. Higher values mean that the corresponding source assigned more intensity to that emotion for the selected song.
-        - **What is a good result:** a good result means the model bar and the human consensus bar are very close to each other for most emotions. That indicates the model reproduced the collective human judgment for the selected song with small per-emotion disagreement.
-        - **What is a bad result:** a bad result means there are large vertical gaps between the model and consensus bars, especially on the dominant emotions. That indicates the model is misestimating how listeners perceived that song.
-        - **Where the data comes from:** the model values come from saved 5k-fold annotation CSVs such as `deepseek.csv` or `gpt_oss.csv`; the reference values come from `human_consensus.csv` in the same completed fold directory under `llm analysis 5 k fold/data/annotations/fold_N/`.
-        - **What formula is being applied:** this chart itself is a direct value comparison. It does not aggregate or transform the values beyond aligning rows by `filename`. For each emotion, it plots `model_score` and `consensus_score` side by side so the disagreement is visually inspectable before any summary metric is applied.
-        - **Why this representation is used:** grouped bars are appropriate here because the goal is direct pairwise comparison on the original scale. You can inspect not only whether the model is wrong, but also *how* it is wrong: whether it overshoots, undershoots, or shifts emotional emphasis across dimensions.
+            - **X-axis:** the eight emotion categories for the selected song.
+            - **Y-axis:** emotion intensity scores on a `0–1` scale. Higher values mean stronger predicted emotion.
+            - **Good result and Bad result:** model and human consensus bars are close together across emotions, while large gaps between model and consensus bars, especially on dominant emotions.
+            - **Data source:** model scores come from annotation CSVs (e.g. `deepseek.csv`, `gpt_oss.csv`) and are compared against `human_consensus.csv` from the same fold.
+            - **Computation:** the chart directly compares `model_score` and `consensus_score` for each emotion after matching rows by `filename`.
         """
     )
 
