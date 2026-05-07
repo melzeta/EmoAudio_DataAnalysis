@@ -452,12 +452,11 @@ def render() -> None:
         """
             **How to read this graph**
 
-            - **X-axis:** the eight emotion categories for the selected song.
-            - **Y-axis:** emotion intensity scores on a `0–1` scale. Higher values mean stronger predicted emotion.
-            - **Good result and Bad result:** model and human consensus bars are close together across emotions represent a good result, while large gaps between model and consensus bars, especially on dominant emotions a bad one.
-            - **Data source:** model scores come from annotation CSVs (e.g. `deepseek.csv`, `gpt_oss.csv`) and are compared against `human_consensus.csv` from the same fold.
-            - **Computation:** the chart directly compares `model_score` and `consensus_score` for each emotion after matching rows by `filename`.
-        
+            - **X-axis:** the eight emotion categories, grouped by model.
+            - **Y-axis:** mean squared distance between model predictions and human consensus.
+            - **Good vs bad result:** lower values indicate closer agreement; higher values indicate larger disagreement.
+            - **Data source:** model scores from completed 5k-fold prediction CSVs are matched with `human_consensus.csv` using `filename`.
+            - **Computation:** for each emotion, the graph computes `(model_score - consensus_score)^2`, then averages the result across all matched rows.
         """
     )
 
@@ -486,15 +485,13 @@ def render() -> None:
     st.plotly_chart(error_chart, use_container_width=True)
     st.markdown(
         """
-        **How to read this graph**
+            **How to read this graph**
 
-        - **X axis:** the eight emotion categories used by the dataset and the LLM evaluation workflow.
-        - **Y axis:** the mean signed error for each emotion, aggregated across all matched rows for each model. Signed error is measured on the original `0` to `1` emotion scale.
-        - **What is a good result:** the best result is a bar close to `0`, because that means the model is not systematically overpredicting or underpredicting that emotion relative to the human consensus.
-        - **What is a bad result:** large positive bars indicate consistent overestimation, and large negative bars indicate consistent underestimation. Either pattern means the model has directional bias for that emotion.
-        - **Where the data comes from:** the page reads completed 5k-fold model prediction CSVs and the corresponding `human_consensus.csv` files from `llm analysis 5 k fold/data/annotations/`. Only rows with matching `filename` values are used.
-        - **What formula is being applied:** for every matched row, the page computes `error = model_score - consensus_score`. It then averages those signed errors across all rows for each emotion and each model to produce `mean_error`.
-        - **Why this representation is used:** unlike squared error, mean signed error preserves direction. This makes it the right plot for diagnosing systematic tendency: whether a model tends to overshoot or undershoot human consensus for specific emotional dimensions. The horizontal line at `y = 0` is the conceptual target, because it represents perfect agreement with no directional bias.
+            - **X-axis:** the eight emotion categories used in the dataset and evaluation workflow.
+            - **Y-axis:** mean signed error on the original `0–1` emotion scale.
+            - **Good vs bad result:** bars close to `0` indicate little systematic bias; large positive values indicate overestimation, while large negative values indicate underestimation.
+            - **Data source:** scores come from completed 5k-fold model prediction CSVs matched with `human_consensus.csv` using `filename`.
+            - **Computation:** for each matched row, the graph computes `error = model_score - consensus_score`, then averages these values across rows to produce `mean_error` for each emotion and model.
         """
     )
 
