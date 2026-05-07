@@ -296,6 +296,7 @@ def _render_context_charts(df_summary: pd.DataFrame, df_predictions: pd.DataFram
 
 
 def _render_model_predictions(df_predictions: pd.DataFrame) -> None:
+    st.divider()
     st.subheader("Model Predictions")
     st.caption(
         "Each row compares one saved model prediction against the human consensus for the same song in the 5k-fold workflow."
@@ -411,12 +412,6 @@ def render() -> None:
         st.info("No completed 5k-fold outputs with matching model CSVs and `human_consensus.csv` were found.")
         return
 
-    headline = st.columns(2)
-    with headline[0]:
-        st.metric("Matched Rows Across Completed 5k Folds", int(df_summary["matched_rows"].max()))
-    with headline[1]:
-        st.metric("Models Found", df_summary["model"].nunique())
-
     st.subheader("Mean Squared Distance by Emotion")
     chart = px.bar(
         df_summary,
@@ -461,6 +456,8 @@ def render() -> None:
     )
 
     _render_context_charts(df_summary, df_predictions)
+
+    st.divider()
 
     st.subheader("Mean Signed Error by Emotion")
     st.caption(
@@ -528,6 +525,7 @@ def render() -> None:
         )
 
     if not df_per_fold.empty:
+        st.divider()
         st.subheader("Per-Fold Breakdown")
         with st.expander("Show per-fold mean squared distance table", expanded=False):
             st.dataframe(
